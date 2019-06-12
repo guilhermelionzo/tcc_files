@@ -1,0 +1,691 @@
+EESchema Schematic File Version 2
+LIBS:pcb_v1-rescue
+LIBS:uSD_push-push_ebay
+LIBS:mcp9700t_e_lt
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:msp432p4111
+LIBS:stwd100
+LIBS:mpu-9250
+LIBS:tmp422-ep
+LIBS:acs711
+LIBS:FM25V05
+LIBS:pcb_v1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MSP432P4111-RESCUE-pcb_v1 U1
+U 1 1 5AFB756C
+P 6650 3400
+F 0 "U1" H 6750 500 60  0000 C CNN
+F 1 "MSP432P4111" H 6900 3450 60  0000 C CNN
+F 2 "PCB_TCC:MSP432P4111_QFP" H 6250 5400 60  0001 C CNN
+F 3 "" H 6250 5400 60  0001 C CNN
+	1    6650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5AFB8F74
+P 3950 5450
+F 0 "#PWR01" H 3950 5200 50  0001 C CNN
+F 1 "GND" H 3950 5300 50  0000 C CNN
+F 2 "" H 3950 5450 50  0001 C CNN
+F 3 "" H 3950 5450 50  0001 C CNN
+	1    3950 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5AFB9135
+P 4250 5450
+F 0 "R1" V 4400 5450 50  0000 C CNN
+F 1 "91kOhm" V 4150 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4180 5450 50  0001 C CNN
+F 3 "" H 4250 5450 50  0001 C CNN
+	1    4250 5450
+	0    -1   -1   0   
+$EndComp
+Text Label 5050 2350 2    60   ~ 0
+3v3_ACS
+Text Label 8500 3350 0    60   ~ 0
+3v3_ACS
+Text Label 2775 1250 0    60   ~ 0
+3v3
+$Comp
+L +5V #PWR02
+U 1 1 5AFB98AF
+P 900 1100
+F 0 "#PWR02" H 900 950 50  0001 C CNN
+F 1 "+5V" H 900 1240 50  0000 C CNN
+F 2 "" H 900 1100 50  0001 C CNN
+F 3 "" H 900 1100 50  0001 C CNN
+	1    900  1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X02 J1
+U 1 1 5AFB9978
+P 1300 1250
+F 0 "J1" H 1300 1400 50  0000 C CNN
+F 1 "CONN_02X02" H 1300 1100 50  0000 C CNN
+F 2 "Connectors_JAE:JAE_LY20-04P-2T_2x02x2.00mm_Straight" H 1300 50  50  0001 C CNN
+F 3 "" H 1300 50  50  0001 C CNN
+	1    1300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 5AFB9B97
+P 900 1300
+F 0 "#PWR03" H 900 1150 50  0001 C CNN
+F 1 "+3.3V" H 900 1440 50  0000 C CNN
+F 2 "" H 900 1300 50  0001 C CNN
+F 3 "" H 900 1300 50  0001 C CNN
+	1    900  1300
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1675 1000 950  700 
+U 5AFC2476
+F0 "ALIMENTACAO" 60
+F1 "alimentacao.sch" 60
+F2 "LM_in" I L 1675 1250 60 
+F3 "LM_out" I R 2625 1250 60 
+$EndSheet
+$Sheet
+S 1750 2025 850  475 
+U 5B1CC14F
+F0 "BANCO_CAP_A_D" 60
+F1 "banco_cap_a_d.sch" 60
+F2 "ANALOG_VCC" I L 1750 2125 60 
+F3 "DIGITAL_VCC" I L 1750 2225 60 
+F4 "VCC" I R 2600 2400 60 
+$EndSheet
+Text Label 1450 2125 2    60   ~ 0
+analog_vcc
+Text Label 1450 2225 2    60   ~ 0
+digital_vcc
+Text Label 5050 5550 2    60   ~ 0
+analog_vcc
+Wire Wire Line
+	4100 5450 3950 5450
+Wire Wire Line
+	1550 1200 1550 1300
+Wire Wire Line
+	1550 1250 1675 1250
+Connection ~ 1550 1250
+Wire Wire Line
+	900  1100 1050 1100
+Wire Wire Line
+	1050 1100 1050 1200
+Wire Wire Line
+	900  1300 1050 1300
+Wire Wire Line
+	2625 1250 2775 1250
+Wire Wire Line
+	1450 2125 1750 2125
+Wire Wire Line
+	1450 2225 1750 2225
+Wire Wire Line
+	5050 5450 4400 5450
+Text Label 8500 4750 0    60   ~ 0
+analog_vcc
+Text Label 5050 5350 2    60   ~ 0
+GND
+$Comp
+L GND #PWR04
+U 1 1 5B1CEA15
+P 9300 900
+F 0 "#PWR04" H 9300 650 50  0001 C CNN
+F 1 "GND" H 9300 750 50  0000 C CNN
+F 2 "" H 9300 900 50  0001 C CNN
+F 3 "" H 9300 900 50  0001 C CNN
+	1    9300 900 
+	1    0    0    -1  
+$EndComp
+Text Label 9300 900  0    60   ~ 0
+GND
+Text Label 8500 4450 0    60   ~ 0
+GND
+Text Label 5050 5050 2    60   ~ 0
+GND
+Text Label 5050 2550 2    60   ~ 0
+GND
+Text Label 8500 3250 0    60   ~ 0
+GND
+Text Label 8500 4250 0    60   ~ 0
+GND
+Text Label 5050 2250 2    60   ~ 0
+VCORE
+$Comp
+L L L1
+U 1 1 5B1D0C56
+P 10100 900
+F 0 "L1" V 10050 900 50  0000 C CNN
+F 1 "4.7uH" V 10175 900 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10100 900 50  0001 C CNN
+F 3 "" H 10100 900 50  0001 C CNN
+	1    10100 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5B1D0DBC
+P 10250 1200
+F 0 "C3" H 10260 1270 50  0000 L CNN
+F 1 "100n" H 10260 1120 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 10250 1200 50  0001 C CNN
+F 3 "" H 10250 1200 50  0001 C CNN
+	1    10250 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small 4u7
+U 1 1 5B1D0E36
+P 10600 1200
+F 0 "4u7" H 10610 1270 50  0000 L CNN
+F 1 "C_Small" H 10610 1120 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Hand" H 10600 1200 50  0001 C CNN
+F 3 "" H 10600 1200 50  0001 C CNN
+	1    10600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 1050 10600 1100
+Wire Wire Line
+	10250 1050 10600 1050
+Wire Wire Line
+	10250 1050 10250 1100
+Wire Wire Line
+	10600 1300 10600 1350
+Wire Wire Line
+	10600 1350 10250 1350
+Wire Wire Line
+	10250 1350 10250 1300
+$Comp
+L GND #PWR05
+U 1 1 5B1D1221
+P 10400 1350
+F 0 "#PWR05" H 10400 1100 50  0001 C CNN
+F 1 "GND" H 10400 1200 50  0000 C CNN
+F 2 "" H 10400 1350 50  0001 C CNN
+F 3 "" H 10400 1350 50  0001 C CNN
+	1    10400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 900  10550 900 
+Wire Wire Line
+	10400 900  10400 1050
+Connection ~ 10400 1050
+Text Label 9950 900  2    60   ~ 0
+VSW
+Text Label 10550 900  0    60   ~ 0
+VCORE
+Connection ~ 10400 900 
+Wire Notes Line
+	10950 1550 10950 700 
+Wire Notes Line
+	10950 700  9750 700 
+Wire Notes Line
+	9750 700  9750 1650
+Wire Notes Line
+	9750 1650 10950 1650
+Wire Notes Line
+	10950 1650 10950 1500
+Text Notes 9850 1600 0    39   ~ 0
+DC-DC
+Text Label 5050 2450 2    60   ~ 0
+VSW
+$Comp
+L Crystal Y1
+U 1 1 5B1D1FF5
+P 10100 2300
+F 0 "Y1" H 10100 2450 50  0000 C CNN
+F 1 "Q1" H 10100 2150 50  0000 C CNN
+F 2 "Crystals:Crystal_HC33-U_Vertical" H 10100 2300 50  0001 C CNN
+F 3 "" H 10100 2300 50  0001 C CNN
+	1    10100 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 5B1D237F
+P 10500 2100
+F 0 "C4" V 10600 2100 50  0000 L CNN
+F 1 "22p" V 10550 1900 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 10500 2100 50  0001 C CNN
+F 3 "" H 10500 2100 50  0001 C CNN
+	1    10500 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 5B1D23E4
+P 10500 2550
+F 0 "C5" V 10550 2600 50  0000 L CNN
+F 1 "22p" V 10550 2350 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 10500 2550 50  0001 C CNN
+F 3 "" H 10500 2550 50  0001 C CNN
+	1    10500 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 2550 10100 2550
+Wire Wire Line
+	10100 2550 10100 2450
+Wire Wire Line
+	10400 2100 10100 2100
+Wire Wire Line
+	10100 2100 10100 2150
+Wire Wire Line
+	10600 2100 10850 2100
+Wire Wire Line
+	10600 2550 10850 2550
+Wire Wire Line
+	10850 2550 10850 2100
+$Comp
+L GND #PWR06
+U 1 1 5B1D2B45
+P 10850 2100
+F 0 "#PWR06" H 10850 1850 50  0001 C CNN
+F 1 "GND" H 10850 1950 50  0000 C CNN
+F 2 "" H 10850 2100 50  0001 C CNN
+F 3 "" H 10850 2100 50  0001 C CNN
+	1    10850 2100
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	9750 1850 11000 1850
+Wire Notes Line
+	11000 1850 11000 2750
+Wire Notes Line
+	11000 2750 9750 2750
+Wire Notes Line
+	9750 2750 9750 1850
+Text Notes 9800 1950 0    59   ~ 0
+LFX\n
+Text Label 10100 2100 2    59   ~ 0
+LFXIN
+Text Label 10100 2550 2    59   ~ 0
+LFXOUT
+$Comp
+L Crystal Y2
+U 1 1 5B1D36C9
+P 10100 3350
+F 0 "Y2" H 10100 3500 50  0000 C CNN
+F 1 "Q2" H 10100 3200 50  0000 C CNN
+F 2 "Crystals:Crystal_HC33-U_Vertical" H 10100 3350 50  0001 C CNN
+F 3 "" H 10100 3350 50  0001 C CNN
+	1    10100 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 5B1D36CF
+P 10500 3150
+F 0 "C6" V 10600 3150 50  0000 L CNN
+F 1 "22p" V 10550 2950 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 10500 3150 50  0001 C CNN
+F 3 "" H 10500 3150 50  0001 C CNN
+	1    10500 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 5B1D36D5
+P 10500 3600
+F 0 "C7" V 10550 3650 50  0000 L CNN
+F 1 "22p" V 10550 3400 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Reflow" H 10500 3600 50  0001 C CNN
+F 3 "" H 10500 3600 50  0001 C CNN
+	1    10500 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 3600 10100 3600
+Wire Wire Line
+	10100 3600 10100 3500
+Wire Wire Line
+	10400 3150 10100 3150
+Wire Wire Line
+	10100 3150 10100 3200
+Wire Wire Line
+	10600 3150 10850 3150
+Wire Wire Line
+	10600 3600 10850 3600
+Wire Wire Line
+	10850 3600 10850 3150
+$Comp
+L GND #PWR07
+U 1 1 5B1D36E2
+P 10850 3150
+F 0 "#PWR07" H 10850 2900 50  0001 C CNN
+F 1 "GND" H 10850 3000 50  0000 C CNN
+F 2 "" H 10850 3150 50  0001 C CNN
+F 3 "" H 10850 3150 50  0001 C CNN
+	1    10850 3150
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	9750 2900 11000 2900
+Wire Notes Line
+	11000 2900 11000 3800
+Wire Notes Line
+	11000 3800 9750 3800
+Wire Notes Line
+	9750 3800 9750 2900
+Text Notes 9800 3000 0    59   ~ 0
+HFX\n
+Text Label 10100 3600 2    59   ~ 0
+HFXIN
+Text Label 10100 3150 2    59   ~ 0
+HFXOUT
+Text Label 5050 5150 2    59   ~ 0
+LFXIN
+Text Label 5050 5250 2    59   ~ 0
+LFXOUT
+Text Label 8500 4650 0    59   ~ 0
+HFXIN
+Text Label 8500 4550 0    59   ~ 0
+HFXOUT
+$Sheet
+S 1750 2775 850  700 
+U 5B1D7EBC
+F0 "WTD_Externo" 60
+F1 "wtd_externo.sch" 60
+F2 "WTD_OUT" I R 2600 3125 60 
+F3 "WTD_VCC" I L 1750 2925 60 
+F4 "WTD_TOGGLE" I L 1750 3325 60 
+$EndSheet
+Text Label 2750 3125 0    60   ~ 0
+RESET_MCU
+Wire Wire Line
+	2750 3125 2600 3125
+Text Label 1600 2925 2    60   ~ 0
+3v3_ACS
+Wire Wire Line
+	1600 2925 1750 2925
+Text Label 1600 3325 2    60   ~ 0
+WTD_TOGGLE
+Wire Wire Line
+	1600 3325 1750 3325
+$Sheet
+S 1699 3726 926  624 
+U 5B1DB60E
+F0 "SENSOR_INERCIAL " 60
+F1 "sensor_inercial.sch" 60
+F2 "VCC" I L 1699 3850 60 
+F3 "~CS" I L 1699 4000 60 
+F4 "AD0/SDC" I L 1699 4150 60 
+F5 "SCL/SCLK" I L 1699 4300 60 
+F6 "SDA/SDI" I R 2625 3900 60 
+F7 "INT" I R 2625 4050 60 
+F8 "FSYNK" I R 2625 4200 60 
+$EndSheet
+Text Label 1575 3850 2    60   ~ 0
+3v3_ACS
+Wire Wire Line
+	1700 3850 1575 3850
+Text Label 8500 4350 0    60   ~ 0
+RESET_MCU
+Text Label 2700 2400 0    60   ~ 0
+3v3_ACS
+Wire Wire Line
+	2700 2400 2600 2400
+$Comp
+L 2SD600 Q1
+U 1 1 5B1E4B02
+P 10350 5425
+F 0 "Q1" H 10550 5500 50  0000 L CNN
+F 1 "2SD600" H 10550 5425 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-126_Vertical" H 10550 5350 50  0001 L CIN
+F 3 "" H 10350 5425 50  0001 L CNN
+	1    10350 5425
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5B1E5455
+P 10450 5675
+F 0 "#PWR08" H 10450 5425 50  0001 C CNN
+F 1 "GND" H 10450 5525 50  0000 C CNN
+F 2 "" H 10450 5675 50  0001 C CNN
+F 3 "" H 10450 5675 50  0001 C CNN
+	1    10450 5675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 5625 10450 5675
+$Comp
+L R R6
+U 1 1 5B1E56B3
+P 10450 5025
+F 0 "R6" V 10530 5025 50  0000 C CNN
+F 1 "R" V 10450 5025 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 10380 5025 50  0001 C CNN
+F 3 "" H 10450 5025 50  0001 C CNN
+	1    10450 5025
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 5B1E5846
+P 10450 4575
+F 0 "R5" V 10530 4575 50  0000 C CNN
+F 1 "R" V 10450 4575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 10380 4575 50  0001 C CNN
+F 3 "" H 10450 4575 50  0001 C CNN
+	1    10450 4575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10450 4800 10175 4800
+Wire Wire Line
+	10450 4725 10450 4800
+Connection ~ 10450 5650
+Text Label 10175 4800 0    60   ~ 0
+ADC
+Wire Wire Line
+	10450 4425 10150 4425
+Text Label 10150 4425 0    60   ~ 0
+VCC
+$Comp
+L R R4
+U 1 1 5B1E610D
+P 9850 5425
+F 0 "R4" V 9930 5425 50  0000 C CNN
+F 1 "R" V 9850 5425 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 9780 5425 50  0001 C CNN
+F 3 "" H 9850 5425 50  0001 C CNN
+	1    9850 5425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 5425 10150 5425
+Text Label 9700 5425 2    60   ~ 0
+GPIO
+Wire Wire Line
+	10450 4775 10450 4875
+Connection ~ 10450 4775
+Wire Wire Line
+	10450 5175 10450 5225
+$Sheet
+S 1200 4675 1250 700 
+U 5B5D629B
+F0 "CurrentSensor" 60
+F1 "CurrentSensor.sch" 60
+F2 "3v3" I L 1200 4825 60 
+F3 "ADC_CurrentSensor" I R 2450 5200 60 
+F4 "3v3_ACS" I R 2450 5025 60 
+$EndSheet
+Text Label 950  4825 0    60   ~ 0
+3v3
+Wire Wire Line
+	1200 4825 950  4825
+Text Label 2650 5025 0    60   ~ 0
+3v3_ACS
+Wire Wire Line
+	2650 5025 2450 5025
+Text Label 8500 2750 0    60   ~ 0
+CurrentSensor
+Text Label 2625 5200 0    60   ~ 0
+CurrentSensor
+Wire Wire Line
+	2625 5200 2450 5200
+$Sheet
+S 1500 5700 950  425 
+U 5B5E7622
+F0 "TemperatureSensor" 60
+F1 "TemperatureSensor.sch" 60
+F2 "VCC" I L 1500 5875 60 
+F3 "ADC_VOUT" I R 2450 5900 60 
+$EndSheet
+Text Label 1275 5875 2    60   ~ 0
+3v3_ACS
+Wire Wire Line
+	1275 5875 1500 5875
+Text Label 2550 5900 0    60   ~ 0
+TemperatureSensor
+Wire Wire Line
+	2550 5900 2450 5900
+Text Label 8500 2950 0    60   ~ 0
+TemperatureSensor
+$Sheet
+S 1600 6475 1025 675 
+U 5B5F07C9
+F0 "Memory" 60
+F1 "Memory.sch" 60
+F2 "chipSelection" I L 1600 6625 60 
+F3 "MISO" I L 1600 6800 60 
+F4 "~WP" I L 1600 6975 60 
+$EndSheet
+Wire Wire Line
+	1700 4000 1575 4000
+Text Label 1575 4000 2    60   ~ 0
+CS_Sensor_Inercial
+Text Label 1550 4300 2    60   ~ 0
+CLK_Sensor_Inercial
+Wire Wire Line
+	1700 4300 1550 4300
+Wire Wire Line
+	2625 3900 2725 3900
+Text Label 2725 3900 0    60   ~ 0
+SDA_Sensor_Inercial
+Text Label 2750 4050 0    60   ~ 0
+INIT_Sensor_Inercial
+Wire Wire Line
+	2750 4050 2625 4050
+Text Label 8500 2450 0    60   ~ 0
+GPIO
+$Comp
+L +5V #PWR09
+U 1 1 5C6230D9
+P 10450 4425
+F 0 "#PWR09" H 10450 4275 50  0001 C CNN
+F 1 "+5V" H 10450 4565 50  0000 C CNN
+F 2 "" H 10450 4425 50  0001 C CNN
+F 3 "" H 10450 4425 50  0001 C CNN
+	1    10450 4425
+	1    0    0    -1  
+$EndComp
+Text Label 9950 4425 0    60   ~ 0
+VCC
+Wire Wire Line
+	9950 4425 9950 4575
+$Comp
+L GND #PWR010
+U 1 1 5C6258BE
+P 9950 4575
+F 0 "#PWR010" H 9950 4325 50  0001 C CNN
+F 1 "GND" H 9950 4425 50  0000 C CNN
+F 2 "" H 9950 4575 50  0001 C CNN
+F 3 "" H 9950 4575 50  0001 C CNN
+	1    9950 4575
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8500 1150
+NoConn ~ 8500 1250
+NoConn ~ 8500 1350
+NoConn ~ 8500 1450
+NoConn ~ 8500 1550
+NoConn ~ 8500 1650
+NoConn ~ 8500 1750
+NoConn ~ 8500 1850
+NoConn ~ 8500 2050
+NoConn ~ 8500 2150
+NoConn ~ 8500 2250
+NoConn ~ 8500 2350
+NoConn ~ 8500 2550
+NoConn ~ 8500 3050
+NoConn ~ 8500 3150
+NoConn ~ 8500 3450
+NoConn ~ 8500 3550
+NoConn ~ 8500 3650
+NoConn ~ 8500 3750
+NoConn ~ 8500 3850
+NoConn ~ 8500 3950
+NoConn ~ 8500 4050
+NoConn ~ 8500 6050
+NoConn ~ 8500 5950
+NoConn ~ 8500 5850
+NoConn ~ 8500 5750
+NoConn ~ 8500 5650
+NoConn ~ 8500 5550
+NoConn ~ 8500 5450
+NoConn ~ 8500 5350
+NoConn ~ 8500 5250
+NoConn ~ 8500 5150
+NoConn ~ 8500 4850
+NoConn ~ 8500 4950
+NoConn ~ 8500 5050
+NoConn ~ 8500 1950
+NoConn ~ 8500 2850
+NoConn ~ 8500 2650
+NoConn ~ 8500 4150
+NoConn ~ 5050 5650
+NoConn ~ 5050 5750
+NoConn ~ 5050 5850
+NoConn ~ 5050 5950
+NoConn ~ 5050 6050
+$EndSCHEMATC

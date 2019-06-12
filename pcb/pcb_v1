@@ -1,0 +1,53 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>C:\Users\Guilherme\Documents\MEGA\UNB\TCC\tcc\pcb\pcb_v1.sch</h1>
+    <p>11/05/2019 20:45:40</p>
+    <p>Eeschema (5.1.2)-1</p>
+    <p><b>Component Count:</b>47</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C1, C9, C10, C11, C12</td><td>5</td><td>0,1uF</td><td>Device:C_Small</td><td>Capacitors_SMD:C_1206</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C2, C3, C4, C5</td><td>4</td><td>22p</td><td>Device:C_Small</td><td>Capacitors_SMD:C_1206</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C6</td><td>1</td><td>4u7</td><td>Device:C_Small</td><td>Capacitors_SMD:C_1206</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C7, C8</td><td>2</td><td>0,1uF</td><td>Device:CP1</td><td>Capacitors_SMD:C_1206</td><td>Polarized capacitor, US symbol</td><td></td></tr>
+    <tr><td>C13</td><td>1</td><td>10u</td><td>Device:CP</td><td>Capacitors_SMD:C_1206</td><td>Polarized capacitor</td><td></td></tr>
+    <tr><td>C14</td><td>1</td><td>10nF</td><td>Device:C</td><td>Capacitors_SMD:C_1206</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C15, C16, C17</td><td>3</td><td>0.1uF</td><td>Device:C</td><td>Capacitors_SMD:C_1206</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C18</td><td>1</td><td>0.56nF</td><td>Device:C</td><td>Capacitors_SMD:C_1206</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C19</td><td>1</td><td>1nF</td><td>Device:C</td><td>Capacitors_SMD:C_1206</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>D1</td><td>1</td><td>LED</td><td>Device:LED</td><td>Resistors_SMD:R_0603</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>IC1</td><td>1</td><td>MPU-9250</td><td>mpu-9250:MPU-9250</td><td>Housings_DFN_QFN:QFN-24_3x3mm_Pitch0.4mm</td><td>MPU-9250 9DoF IMU from InvenSense</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>CONN_01X10</td><td>conn:CONN_01X10</td><td>Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm</td><td>Connector, single row, 01x10, pin header</td><td></td></tr>
+    <tr><td>J2</td><td>1</td><td>CONN_01X02</td><td>conn:CONN_01X02</td><td>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</td><td>Connector, single row, 01x02, pin header</td><td></td></tr>
+    <tr><td>L1</td><td>1</td><td>4.7uH</td><td>Device:L</td><td>Inductors_SMD:L_1206</td><td>Inductor</td><td></td></tr>
+    <tr><td>R1</td><td>1</td><td>91kOhm</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2</td><td>1</td><td>47K</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>R3</td><td>1</td><td>49K9</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>R4</td><td>1</td><td>68K1</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>R5</td><td>1</td><td>240</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>R6</td><td>1</td><td>140</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>R7</td><td>1</td><td>0R</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>R8</td><td>1</td><td>4.7K</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>R9</td><td>1</td><td>1K</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>R10, R11, R12, R13</td><td>4</td><td>49k9</td><td>Device:R</td><td>Resistors_SMD:R_1206</td><td>Resistor</td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>ISA_BUS_connector</td><td>isa_bus_connector:ISA_BUS_connector</td><td>isaConnector:ISA_CONNECTOR</td><td></td><td></td></tr>
+    <tr><td>U2</td><td>1</td><td>MSP432P4111</td><td>pcb_v1-rescue:MSP432P4111-RESCUE-pcb_v1</td><td>PCB_TCC:MSP432P4111</td><td></td><td></td></tr>
+    <tr><td>U3</td><td>1</td><td>LM317_SOT223</td><td>regul:LM317_SOT223</td><td>TO_SOT_Packages_SMD:SOT-223-3_TabPin2</td><td>Linear Regulator (adjustable)</td><td></td></tr>
+    <tr><td>U4</td><td>1</td><td>STWD100</td><td>stwd100:STWD100</td><td>TO_SOT_Packages_SMD:SOT-23-5</td><td></td><td></td></tr>
+    <tr><td>U5</td><td>1</td><td>ACS711</td><td>acs711:ACS711</td><td>.pretty:ACS711_8-pin SOICN</td><td></td><td></td></tr>
+    <tr><td>U6</td><td>1</td><td>MCP9701T-E/TTCT-ND</td><td>pcb_v1-rescue:MCP9700T-E_LT</td><td>TO_SOT_Packages_SMD:SOT-23</td><td></td><td></td></tr>
+    <tr><td>U7</td><td>1</td><td>FM25V05</td><td>FM25V05:FM25V05</td><td>SMD_Packages:SOIC-8-N</td><td></td><td></td></tr>
+    <tr><td>U8</td><td>1</td><td>ST1W008S4ER</td><td>st1w008s4er:ST1W008S4ER</td><td>ST1W008S4ER1500:ST1W008S4ER1500</td><td></td><td></td></tr>
+    <tr><td>Y1</td><td>1</td><td>32kHz</td><td>Device:Crystal</td><td>Crystals:Crystal_DS26_d2.0mm_l6.0mm_Horizontal</td><td>Two pin crystal</td><td></td></tr>
+    <tr><td>Y2</td><td>1</td><td>42MHz</td><td>Device:Crystal_GND23</td><td>Oscillators:Oscillator_SMD_Abracon_ASE-4pin_3.2x2.5mm</td><td>Four pin crystal, GND on pins 2 and 3</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
