@@ -794,6 +794,47 @@ Conforme  Frost e Agasid (2015), o \textit{Watchdog}  é normalmente utilizado p
 
 A escolha do tempo de \textit{reset} será feita no TCC2. Nessa fase, o desenvolvimento do \textit{software} embarcado estará em sua fase final e informações do código, como o tempo para executar todas as \textit{Tasks}, estarão disponível.
 
+\newpage
+\section{Implementação}
+
+Apos a escolha dos componentes é possível ter uma visão abrangente do \textit{hardware}, como é mostrado na Figura \ref{arquiteturaOBC}. Como é possível notar, ha algumas interfaces que ainda nao foram definidas, como os pinos do modulo \textit{PPT} e \textit{TTC}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.78]{figuras/arquiteturaHard2.PNG}
+	\caption{Arquitetura do OBC.}
+	\label{arquiteturaOBC}
+\end{figure}
+
+\newpage
+Para o elaboração da protoboard, utilizou-se o software KiCad. Essa ferramenta é openSource e bem difundida entre a comunidade de engenharia eletrônica e hobistas. O fato do KiCad ser de graça facilita a manutenção do OBC em futuras melhorias, pois nao ha a necessidade de comprar uma licença e qualquer pessoa pode sugerir melhorias no sistema.
+
+A figura X mostra o Esquematico eletronico exportado do Kicad, caso o leitor queire ver com mais detalhes, consultar apendice XX.
+
+\begin{figure}[h]
+	\centering
+	\includepdf{pcb_v1.pdf}
+	\caption{Arquitetura do OBC.}
+	\label{arquiteturaOBC}
+\end{figure}
+
+\newpage
+
+Apos a realização do esquemático, foi realizado o designer da PCB. O designer demorou mais do que o previsto pois o numero de trilhas para se rotear foi subestimado. 
+
+Para a redução dos custos utilizou-se componentes SMD 1206, aproximadamente Xmm por Ymm. Ainda é possibvel soldar a mao esses componentes.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.78]{figuras/pcbRealistic.PNG}
+	\caption{PCB em vista Realística.}
+	\label{arquiteturaOBC}
+\end{figure}
+
+Alguns componentes não estao presentes no render 3D pois nao foi possível desenha-los. Nao havia tempo suficiente para realizar o desenho.
+
+No apendice YY ha as imagens do plano de terra e plano de alimentação da PCB.
+
 \chapter[DESENVOLVIMENTO DO SOFTWARE]{DESENVOLVIMENTO DO SOFTWARE}
 
 Este capítulo visa descrever o desenvolvimento do \textit{software} embarcado. Inicialmente será mostrado os requisitos e funcionalidades consideradas no desenvolvimento do sistema. Logo em seguida, será exposto a arquitetura utilizada para a aplicação. Após essa etapa, será mostrado com mais detalhes os \textit{softwares} FreeRTOS, DriverLib e a camada de serviço do cliente. 
@@ -1157,7 +1198,7 @@ Para o desenvolvimento do \textit{hardware}, quase todos os componentes foram de
 Não foi possível cumprir o cronograma previsto na Seção \ref{metodo}, devido a alguns imprevistos. Alguns fatores não foram cogitados durante a elaboração do cronograma, como: o atraso de alguns componentes comprados no exterior, atraso do desenvolvimento do software devido a falta de experiência com o FreeRTOS, entre outros. Para recuperar o tempo perdido, o autor utilizará o período das férias para realizar as atividades ausentes. 
 
 
-\chapter[TRABALHOS FUTUROS]{TRABALHOS FUTUROS}
+\chapter[CONCLUSÕES E RECOMENDAÇÕES]{CONCLUSÕES E RECOMENDAÇÕES}
 
 O objetivo do TCC1 era realizar o projeto teórico do OBC para que o TCC2 fosse dedicado à elaboração do \textit{layout} da PCB e implementação do \textit{software} embarcado. Para evitar que haja atrasos no projeto, o autor realizará as atividades restantes no período das férias.
 

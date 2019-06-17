@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 10
-Title ""
+Title "Schematic Overview"
 Date ""
-Rev ""
-Comp ""
+Rev "1"
+Comp "Universidade de Brasília - Campus Gama"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -40,17 +40,17 @@ F2 "LM_in" I L 2625 1075 60
 F3 "LM_out" I R 3575 1075 60 
 $EndSheet
 $Sheet
-S 10225 5250 700  400 
+S 10275 5375 700  400 
 U 5B1CC14F
 F0 "CAP_AC_DC" 39
 F1 "CAP_AC_DC.sch" 39
-F2 "ANALOG_VCC" O L 10225 5350 60 
-F3 "DIGITAL_VCC" O L 10225 5450 60 
-F4 "VCC" I L 10225 5575 60 
+F2 "ANALOG_VCC" O L 10275 5475 60 
+F3 "DIGITAL_VCC" O L 10275 5575 60 
+F4 "VCC" I L 10275 5700 60 
 $EndSheet
-Text Label 10150 5350 2    60   ~ 0
+Text Label 10200 5475 2    60   ~ 0
 analog_vcc
-Text Label 10150 5450 2    60   ~ 0
+Text Label 10200 5575 2    60   ~ 0
 digital_vcc
 Text Label 5325 5550 2    60   ~ 0
 analog_vcc
@@ -198,25 +198,25 @@ HFXIN
 Text Label 8775 4550 0    59   ~ 0
 HFXOUT
 $Sheet
-S 3725 5850 850  700 
+S 1025 5550 850  700 
 U 5B1D7EBC
 F0 "WTD_Externo" 60
 F1 "wtd_externo.sch" 60
-F2 "WTD_OUT" O R 4575 6200 60 
-F3 "WTD_VCC" I L 3725 6000 60 
-F4 "WTD_TOGGLE" O L 3725 6400 60 
+F2 "WTD_OUT" O R 1875 5900 60 
+F3 "WTD_VCC" I L 1025 5700 60 
+F4 "WTD_TOGGLE" O L 1025 6100 60 
 $EndSheet
-Text Label 4650 6200 0    60   ~ 0
+Text Label 1950 5900 0    60   ~ 0
 resetMCU
-Text Label 3625 6000 2    60   ~ 0
+Text Label 925  5700 2    60   ~ 0
 3v3_ACS
-Text Label 3675 6400 2    60   ~ 0
+Text Label 975  6100 2    60   ~ 0
 wtdToggle
-Text Label 4300 7475 0    60   ~ 0
+Text Label 3225 6100 0    60   ~ 0
 3v3_ACS
 Text Label 8775 4350 0    60   ~ 0
 resetMCU
-Text Label 10175 5575 2    60   ~ 0
+Text Label 10225 5700 2    60   ~ 0
 3v3_ACS
 $Sheet
 S 625  6950 975  550 
@@ -235,37 +235,29 @@ Text Label 8800 2550 0    60   ~ 0
 currentSensor
 Text Label 1675 7050 0    60   ~ 0
 currentSensor
-$Sheet
-S 5250 7150 575  375 
-U 5B5E7622
-F0 "TemperatureSensor" 60
-F1 "TemperatureSensor.sch" 60
-F2 "VCC" I L 5250 7325 60 
-F3 "ADC_VOUT" O R 5825 7425 60 
-$EndSheet
-Text Label 5175 7325 2    60   ~ 0
+Text Label 4725 7075 0    60   ~ 0
 3v3_ACS
-Text Label 5900 7425 0    60   ~ 0
+Text Label 4700 7225 0    60   ~ 0
 temperatureSensor
 Text Label 8825 2750 0    60   ~ 0
 temperatureSensor
 $Sheet
-S 1425 5900 1025 675 
+S 3000 2525 1025 675 
 U 5B5F07C9
 F0 "Memory" 60
 F1 "Memory.sch" 60
-F2 "chipSelectorFRAM" I L 1425 5975 60 
-F3 "~wp" I L 1425 6150 60 
-F4 "hold" I L 1425 6050 60 
-F5 "chipSelectorSD" I L 1425 6500 60 
-F6 "MOSI" I R 2450 6325 60 
-F7 "VCC" I R 2450 6425 60 
-F8 "CLK" I R 2450 6100 60 
-F9 "MISO" I R 2450 6225 60 
+F2 "chipSelectorFRAM" I L 3000 2600 60 
+F3 "~wp" I L 3000 2775 60 
+F4 "hold" I L 3000 2675 60 
+F5 "chipSelectorSD" I L 3000 3125 60 
+F6 "MOSI" I R 4025 2950 60 
+F7 "VCC" I R 4025 3050 60 
+F8 "CLK" I R 4025 2725 60 
+F9 "MISO" I R 4025 2850 60 
 $EndSheet
-Text Label 4325 7300 0    60   ~ 0
+Text Label 3250 5925 0    60   ~ 0
 clkIMU
-Text Label 4325 7150 0    60   ~ 0
+Text Label 3250 5775 0    60   ~ 0
 sdaIMU
 Text Label 1600 3425 0    60   ~ 0
 +5V
@@ -276,7 +268,7 @@ L isa_bus_connector:ISA_BUS_connector U1
 U 1 1 5C8098BD
 P 1050 1225
 F 0 "U1" H 1150 -1225 60  0000 C CNN
-F 1 "ISA_BUS_connector" H 1150 -1425 60  0000 C CNN
+F 1 "ISA_BUS_connector" H 975 -1375 60  0000 C CNN
 F 2 "isaConnector:ISA_CONNECTOR" H 1050 1225 60  0001 C CNN
 F 3 "http://www.dpieshop.com/pc104-connector-pin-bit-isa-connector-stackthrough-version-p-520.html" H 1050 1225 60  0001 C CNN
 	1    1050 1225
@@ -287,15 +279,15 @@ wtdToggle
 $Comp
 L power:GND #PWR03
 U 1 1 5C85D820
-P 10775 6325
-F 0 "#PWR03" H 10775 6075 50  0001 C CNN
-F 1 "GND" H 10775 6175 50  0000 C CNN
-F 2 "" H 10775 6325 50  0001 C CNN
-F 3 "" H 10775 6325 50  0001 C CNN
-	1    10775 6325
+P 10725 4775
+F 0 "#PWR03" H 10725 4525 50  0001 C CNN
+F 1 "GND" H 10725 4625 50  0000 C CNN
+F 2 "" H 10725 4775 50  0001 C CNN
+F 3 "" H 10725 4775 50  0001 C CNN
+	1    10725 4775
 	1    0    0    -1  
 $EndComp
-Text Label 10775 6225 0    60   ~ 0
+Text Label 10725 4675 0    60   ~ 0
 GND
 Text Label 1550 825  0    60   ~ 0
 +5V
@@ -304,69 +296,69 @@ Text Label 1600 1025 0    60   ~ 0
 Text Label 1600 1225 0    60   ~ 0
 +12V
 $Sheet
-S 3649 6976 601  574 
+S 2574 5601 601  574 
 U 5B1DB60E
 F0 "SENSOR_INERCIAL " 60
 F1 "sensor_inercial.sch" 60
-F2 "SDA/SDI" I R 4250 7150 60 
-F3 "VCC" I R 4250 7475 60 
-F4 "SCL/SCLK" I R 4250 7300 60 
+F2 "SDA/SDI" I R 3175 5775 60 
+F3 "VCC" I R 3175 6100 60 
+F4 "SCL/SCLK" I R 3175 5925 60 
 $EndSheet
 Text Label 8825 3950 0    60   ~ 0
 clkIMU
 Text Label 8825 3850 0    60   ~ 0
 sdaIMU
-Text Label 1325 6500 2    60   ~ 0
+Text Label 2900 3125 2    60   ~ 0
 chipSelectorSD
-Text Label 1350 5975 2    60   ~ 0
+Text Label 2925 2600 2    60   ~ 0
 chipSelectorFRAM
-Text Label 2525 6100 0    60   ~ 0
+Text Label 4100 2725 0    60   ~ 0
 clkMemory
 Text Label 5275 1950 2    60   ~ 0
 clkMemory
-Text Label 2550 6225 0    60   ~ 0
+Text Label 4125 2850 0    60   ~ 0
 misoMemory
 Text Label 5275 2150 2    60   ~ 0
 misoMemory
 Text Label 5275 2050 2    60   ~ 0
 mosiMemory
-Text Label 2550 6325 0    60   ~ 0
+Text Label 4125 2950 0    60   ~ 0
 mosiMemory
-Text Label 2550 6425 0    60   ~ 0
+Text Label 4125 3050 0    60   ~ 0
 3v3_ACS
-Text Label 1325 6050 2    60   ~ 0
+Text Label 2900 2675 2    60   ~ 0
 holdFRAM
-Text Label 1325 6150 2    60   ~ 0
+Text Label 2900 2775 2    60   ~ 0
 wpFRAM
 Text Label 8775 2350 0    60   ~ 0
 wpFRAM
 $Sheet
-S 2850 7050 525  400 
+S 2525 6925 525  400 
 U 5CD44408
 F0 "VoltageSensor" 39
 F1 "voltageSensor.sch" 39
-F2 "VCC" I L 2850 7175 60 
-F3 "ADC" I L 2850 7325 60 
+F2 "VCC" I R 3050 7025 60 
+F3 "ADC" I R 3050 7175 60 
 $EndSheet
-Text Label 2775 7175 2    60   ~ 0
+Text Label 3125 7175 0    60   ~ 0
 3v3_ACS
-Text Label 2750 7325 2    60   ~ 0
+Text Label 3150 7025 0    60   ~ 0
 adcVoltage3V3
 Text Label 8850 2650 0    60   ~ 0
 adcVoltage3V3
 $Sheet
-S 1375 4525 1350 700 
+S 1425 4375 1350 700 
 U 5CD7D296
 F0 "jtag" 60
 F1 "jtag.sch" 60
-F2 "P1.2_BCLUART_RXD" I L 1375 4600 60 
-F3 "P1.3_BCLUART_TXD" I L 1375 4700 60 
-F4 "~RST" I L 1375 4825 60 
-F5 "TMS_SWDIO" I L 1375 4925 60 
-F6 "TCK_SWDCLK" I L 1375 5025 60 
-F7 "TDO_SWO" I L 1375 5125 60 
-F8 "TDI" I R 2725 4600 60 
-F9 "jtag_3v3_" I R 2725 5125 60 
+F2 "P1.2_BCLUART_RXD" I L 1425 4450 60 
+F3 "P1.3_BCLUART_TXD" I L 1425 4550 60 
+F4 "~RST" I L 1425 4675 60 
+F5 "TMS_SWDIO" I L 1425 4775 60 
+F6 "TCK_SWDCLK" I L 1425 4875 60 
+F7 "TDO_SWO" I L 1425 4975 60 
+F8 "TDI" I R 2775 4450 60 
+F9 "jtag_3v3_" I R 2775 4975 60 
 $EndSheet
 $Comp
 L Device:R R2
@@ -398,33 +390,33 @@ Text Label 10400 4800 3    60   ~ 0
 GND
 Text Notes 9825 4125 0    59   ~ 0
 PULL-UP\nRESET\n
-Text Label 2800 5125 0    60   ~ 0
+Text Label 2850 4975 0    60   ~ 0
 3v3_ACS
-Text Label 1275 4825 2    60   ~ 0
+Text Label 1325 4675 2    60   ~ 0
 resetMCU
 Text Label 8850 5350 0    60   ~ 0
 jtag_tdoSwo
-Text Label 1275 5125 2    60   ~ 0
+Text Label 1325 4975 2    60   ~ 0
 jtag_tdoSwo
 Text Label 8850 5250 0    60   ~ 0
 jtag_tdi
-Text Label 2775 4600 0    60   ~ 0
+Text Label 2825 4450 0    60   ~ 0
 jtag_tdi
 Text Label 8850 5550 0    60   ~ 0
 jtag_tckSwdClk
-Text Label 1300 5025 2    60   ~ 0
+Text Label 1350 4875 2    60   ~ 0
 jtag_tckSwdClk
 Text Label 4400 5450 2    60   ~ 0
 GND
 Text Label 8850 5450 0    60   ~ 0
 jtag_tmsSwdio
-Text Label 1300 4925 2    60   ~ 0
+Text Label 1350 4775 2    60   ~ 0
 jtag_tmsSwdio
 Text Label 5275 1750 2    60   ~ 0
 jtag_bclUartTxd
-Text Label 1300 4700 2    60   ~ 0
+Text Label 1350 4550 2    60   ~ 0
 jtag_bclUartTxd
-Text Label 1300 4600 2    60   ~ 0
+Text Label 1350 4450 2    60   ~ 0
 jtag_bclUartRxd
 Text Label 5275 1650 2    60   ~ 0
 jtag_bclUartRxd
@@ -495,33 +487,29 @@ Wire Wire Line
 Wire Wire Line
 	3575 1075 3725 1075
 Wire Wire Line
-	10775 6225 10775 6325
+	10725 4675 10725 4775
 Wire Wire Line
-	1325 6500 1425 6500
+	2900 3125 3000 3125
 Wire Wire Line
-	1350 5975 1425 5975
+	2925 2600 3000 2600
 Wire Wire Line
-	2525 6100 2450 6100
+	4100 2725 4025 2725
 Wire Wire Line
 	5275 1950 5325 1950
 Wire Wire Line
-	2550 6225 2450 6225
+	4125 2850 4025 2850
 Wire Wire Line
 	5275 2150 5325 2150
 Wire Wire Line
 	5275 2050 5325 2050
 Wire Wire Line
-	2550 6325 2450 6325
+	4125 2950 4025 2950
 Wire Wire Line
-	2550 6425 2450 6425
+	4125 3050 4025 3050
 Wire Wire Line
-	1325 6050 1425 6050
+	2900 2675 3000 2675
 Wire Wire Line
-	1325 6150 1425 6150
-Wire Wire Line
-	2775 7175 2850 7175
-Wire Wire Line
-	2750 7325 2850 7325
+	2900 2775 3000 2775
 Wire Wire Line
 	10400 4350 10400 4375
 Wire Wire Line
@@ -540,33 +528,33 @@ Wire Notes Line
 Wire Notes Line
 	9775 5025 9775 3925
 Wire Wire Line
-	2800 5125 2725 5125
+	2850 4975 2775 4975
 Wire Wire Line
 	8850 5350 8775 5350
 Wire Wire Line
-	1275 4825 1375 4825
+	1325 4675 1425 4675
 Wire Wire Line
-	1275 5125 1375 5125
+	1325 4975 1425 4975
 Wire Wire Line
 	8850 5250 8775 5250
 Wire Wire Line
-	2775 4600 2725 4600
+	2825 4450 2775 4450
 Wire Wire Line
 	8775 5550 8850 5550
 Wire Wire Line
-	1300 5025 1375 5025
+	1350 4875 1425 4875
 Wire Wire Line
 	4400 5450 4450 5450
 Wire Wire Line
 	8850 5450 8775 5450
 Wire Wire Line
-	1300 4925 1375 4925
+	1350 4775 1425 4775
 Wire Wire Line
 	5275 1750 5325 1750
 Wire Wire Line
-	1300 4700 1375 4700
+	1350 4550 1425 4550
 Wire Wire Line
-	1300 4600 1375 4600
+	1350 4450 1425 4450
 Wire Wire Line
 	5275 1650 5325 1650
 Wire Wire Line
@@ -583,21 +571,19 @@ Wire Wire Line
 Wire Wire Line
 	1600 3425 1550 3425
 Wire Wire Line
-	3625 6000 3725 6000
+	925  5700 1025 5700
 Wire Wire Line
-	3675 6400 3725 6400
+	975  6100 1025 6100
 Wire Wire Line
-	4650 6200 4575 6200
+	1950 5900 1875 5900
 Wire Wire Line
-	5175 7325 5250 7325
+	4700 7225 4625 7225
 Wire Wire Line
-	5900 7425 5825 7425
+	3225 6100 3175 6100
 Wire Wire Line
-	4300 7475 4250 7475
+	3250 5925 3175 5925
 Wire Wire Line
-	4325 7300 4250 7300
-Wire Wire Line
-	4325 7150 4250 7150
+	3250 5775 3175 5775
 Wire Wire Line
 	1675 7050 1600 7050
 Wire Wire Line
@@ -612,11 +598,11 @@ Wire Wire Line
 	10400 1475 10400 1350
 Connection ~ 10400 1350
 Wire Wire Line
-	10175 5575 10225 5575
+	10225 5700 10275 5700
 Wire Wire Line
-	10150 5350 10225 5350
+	10200 5475 10275 5475
 Wire Wire Line
-	10150 5450 10225 5450
+	10200 5575 10275 5575
 $Comp
 L Device:Crystal_GND23 Y2
 U 1 1 5CE1ECEA
@@ -1070,8 +1056,6 @@ Wire Wire Line
 	8825 4050 8775 4050
 Wire Wire Line
 	8775 4150 8825 4150
-Text Label 2700 3125 0    60   ~ 0
-p81
 Wire Wire Line
 	1600 3325 1550 3325
 Wire Wire Line
@@ -1196,30 +1180,6 @@ Text Label 725  1125 2    60   ~ 0
 p4
 Text Label 1600 1325 0    60   ~ 0
 p5
-Text Label 2700 3050 0    60   ~ 0
-p80
-Text Label 2700 2650 0    60   ~ 0
-p74
-Text Label 2700 2750 0    60   ~ 0
-p75
-Text Label 2700 2850 0    60   ~ 0
-p76
-Text Label 2700 2950 0    60   ~ 0
-p77
-Text Label 2700 2550 0    60   ~ 0
-p71
-Text Label 2700 2450 0    60   ~ 0
-p70
-Text Label 2700 2350 0    60   ~ 0
-p66
-Text Label 2700 3500 0    60   ~ 0
-p91
-Text Label 2700 3400 0    60   ~ 0
-p90
-Text Label 2700 3300 0    60   ~ 0
-p89
-Text Label 2700 3200 0    60   ~ 0
-p88
 Text Label 8825 3050 0    60   ~ 0
 p70
 Text Label 8825 3150 0    60   ~ 0
@@ -1236,4 +1196,125 @@ Text Label 8775 2450 0    60   ~ 0
 chipSelectorFRAM
 Text Label 8825 2150 0    60   ~ 0
 holdFRAM
+NoConn ~ 725  1225
+NoConn ~ 725  1325
+NoConn ~ 1600 1425
+NoConn ~ 700  3425
+NoConn ~ 675  3525
+NoConn ~ 700  3625
+NoConn ~ 1600 3525
+Wire Notes Line
+	1950 3950 500  3950
+Wire Notes Line
+	500  3950 500  500 
+Wire Notes Line
+	500  500  1950 500 
+Wire Notes Line
+	1950 500  1950 3950
+Text Notes 1575 3925 0    59   ~ 0
+ISA BUS\n
+Wire Notes Line
+	3400 4225 3400 5350
+Wire Notes Line
+	3400 5350 500  5350
+Wire Notes Line
+	500  5350 500  4225
+Wire Notes Line
+	500  4225 3400 4225
+Text Notes 3150 5300 0    59   ~ 0
+JTAG\n
+Wire Notes Line
+	11000 6000 9650 6000
+Wire Notes Line
+	9650 6000 9650 5200
+Wire Notes Line
+	9650 5200 11000 5200
+Wire Notes Line
+	11000 5200 11000 6000
+Text Notes 9675 5975 0    59   ~ 0
+CAPACITOR BANK
+Wire Notes Line
+	500  5400 2425 5400
+Wire Notes Line
+	2425 5400 2425 6575
+Wire Notes Line
+	2425 6575 500  6575
+Wire Notes Line
+	500  6575 500  5400
+Text Notes 1900 6525 0    59   ~ 0
+WATCHDOG\n
+Wire Notes Line
+	2475 5400 3725 5400
+Wire Notes Line
+	3725 5400 3725 6550
+Wire Notes Line
+	3725 6550 2475 6550
+Wire Notes Line
+	2475 6550 2475 5400
+Text Notes 3500 6600 0    59   ~ 0
+MPU\n\n
+Wire Notes Line
+	2225 525  4000 525 
+Wire Notes Line
+	4000 525  4000 1750
+Wire Notes Line
+	4000 1750 2225 1750
+Wire Notes Line
+	2225 1750 2225 525 
+Text Notes 3600 1725 0    59   ~ 0
+SUPPLY
+Wire Notes Line
+	500  6675 2425 6675
+Wire Notes Line
+	2425 6675 2425 7725
+Wire Notes Line
+	2425 7725 500  7725
+Wire Notes Line
+	500  7725 500  6675
+Text Notes 1575 7700 0    59   ~ 0
+CURRENT SENSOR
+Wire Notes Line
+	2475 6675 3925 6675
+Wire Notes Line
+	3925 6675 3925 7725
+Wire Notes Line
+	3925 7725 2475 7725
+Wire Notes Line
+	2475 7725 2475 6675
+Wire Wire Line
+	3050 7025 3150 7025
+Wire Wire Line
+	3125 7175 3050 7175
+Text Notes 3125 7675 0    59   ~ 0
+VOLTAGE SENSOR
+Wire Wire Line
+	4725 7075 4625 7075
+$Sheet
+S 4050 6950 575  375 
+U 5B5E7622
+F0 "TemperatureSensor" 60
+F1 "TemperatureSensor.sch" 60
+F2 "VCC" I R 4625 7075 60 
+F3 "ADC_VOUT" O R 4625 7225 60 
+$EndSheet
+Wire Notes Line
+	3975 6675 5750 6675
+Wire Notes Line
+	5750 6675 5750 7725
+Wire Notes Line
+	5750 7725 3975 7725
+Wire Notes Line
+	3975 7725 3975 6675
+Text Notes 4725 7675 0    59   ~ 0
+TEMPERATURE SENSOR
+Wire Notes Line
+	4750 2300 4750 3400
+Wire Notes Line
+	4750 3400 2075 3400
+Wire Notes Line
+	2075 3400 2075 2300
+Wire Notes Line
+	2075 2300 4750 2300
+Text Notes 4325 3350 0    59   ~ 0
+MEMORY
 $EndSCHEMATC

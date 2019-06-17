@@ -4,248 +4,268 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 10
-Title ""
+Sheet 6 10
+Title "Memory Module Schematic"
 Date ""
-Rev ""
-Comp ""
+Rev "1"
+Comp "Universidade de Brasília - Campus Gama"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3600 4100 0    60   Input ~ 0
+Text HLabel 5475 2050 0    60   Input ~ 0
 chipSelectorFRAM
 $Comp
 L power:GND #PWR011
 U 1 1 5BB228F1
-P 3650 4500
-F 0 "#PWR011" H 3650 4250 50  0001 C CNN
-F 1 "GND" H 3650 4350 50  0000 C CNN
-F 2 "" H 3650 4500 50  0001 C CNN
-F 3 "" H 3650 4500 50  0001 C CNN
-	1    3650 4500
+P 5525 2450
+F 0 "#PWR011" H 5525 2200 50  0001 C CNN
+F 1 "GND" H 5525 2300 50  0000 C CNN
+F 2 "" H 5525 2450 50  0001 C CNN
+F 3 "" H 5525 2450 50  0001 C CNN
+	1    5525 2450
 	1    0    0    -1  
 $EndComp
-Text HLabel 3575 4300 0    60   Input ~ 0
+Text HLabel 5450 2250 0    60   Input ~ 0
 ~wp
 $Comp
 L FM25V05:FM25V05 U7
 U 1 1 5BB2AF28
-P 4300 4600
-F 0 "U7" H 4300 4600 60  0000 C CNN
-F 1 "FM25V05" H 4250 5200 60  0000 C CNN
-F 2 "SMD_Packages:SOIC-8-N" H 4300 4600 60  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/cypress-semiconductor-corp/FM25V05-G/428-3213-ND/3788675" H 4300 4600 60  0001 C CNN
-	1    4300 4600
+P 6175 2550
+F 0 "U7" H 6175 2550 60  0000 C CNN
+F 1 "FM25V05" H 6125 3150 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 6175 2550 60  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/cypress-semiconductor-corp/FM25V05-G/428-3213-ND/3788675" H 6175 2550 60  0001 C CNN
+	1    6175 2550
 	1    0    0    -1  
 $EndComp
-Text HLabel 4950 4200 2    60   Input ~ 0
+Text HLabel 6825 2150 2    60   Input ~ 0
 hold
-Text HLabel 3675 5125 0    60   Input ~ 0
+Text HLabel 5400 3550 0    60   Input ~ 0
 chipSelectorSD
 Wire Wire Line
-	3750 4400 3650 4400
+	5625 2350 5525 2350
 Wire Wire Line
-	3650 4400 3650 4500
+	5525 2350 5525 2450
 Wire Wire Line
-	3600 4200 3750 4200
+	5475 2150 5625 2150
 Wire Wire Line
-	3575 4300 3750 4300
+	5450 2250 5625 2250
 Wire Wire Line
-	4950 4100 4750 4100
+	6825 2050 6625 2050
 Wire Wire Line
-	4950 4200 4750 4200
+	6825 2150 6625 2150
 Wire Wire Line
-	4950 4400 4750 4400
+	6825 2350 6625 2350
 Wire Wire Line
-	3600 4100 3675 4100
+	5475 2050 5550 2050
 Wire Wire Line
-	3675 5125 3700 5125
-Text HLabel 2675 4775 0    60   Input ~ 0
+	5400 3550 5425 3550
+Text HLabel 3825 2550 0    60   Input ~ 0
 MOSI
-Text HLabel 2675 4900 0    60   Input ~ 0
+Text HLabel 3825 2675 0    60   Input ~ 0
 VCC
 Wire Wire Line
-	3625 5325 3750 5325
-NoConn ~ 3750 5025
+	5350 3750 5475 3750
+NoConn ~ 5475 3450
 $Comp
 L st1w008s4er:ST1W008S4ER U8
 U 1 1 5CD04CC3
-P 4250 5275
-F 0 "U8" H 4250 5025 60  0000 C CNN
-F 1 "ST1W008S4ER" H 4250 5725 60  0000 C CNN
-F 2 "ST1W008S4ER1500:ST1W008S4ER1500" H 4250 5275 60  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/jae-electronics/ST1W008S4ER1500/670-1528-1-ND/1668844" H 4250 5275 60  0001 C CNN
-	1    4250 5275
+P 5975 3700
+F 0 "U8" H 5975 3450 60  0000 C CNN
+F 1 "ST1W008S4ER" H 5975 4150 60  0000 C CNN
+F 2 "ST1W008S4ER1500:ST1W008S4ER1500" H 5975 3700 60  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/jae-electronics/ST1W008S4ER1500/670-1528-1-ND/1668844" H 5975 3700 60  0001 C CNN
+	1    5975 3700
 	1    0    0    -1  
 $EndComp
-Text HLabel 2675 5100 0    60   Input ~ 0
+Text HLabel 3825 2875 0    60   Input ~ 0
 CLK
 Wire Wire Line
-	4800 5125 5175 5125
-Text HLabel 2675 5000 0    60   Input ~ 0
+	6525 3550 6900 3550
+Text HLabel 3825 2775 0    60   Input ~ 0
 MISO
-Text Label 2775 4775 0    60   ~ 0
+Text Label 3925 2550 0    60   ~ 0
 MOSI
 Wire Wire Line
-	2675 4775 2725 4775
-Text Label 3650 5225 2    60   ~ 0
+	3825 2550 3875 2550
+Text Label 5375 3650 2    60   ~ 0
 MOSI
-Text Label 4950 4400 0    60   ~ 0
+Text Label 6825 2350 0    60   ~ 0
 MOSI
-Text Label 2775 4900 0    60   ~ 0
+Text Label 3925 2675 0    60   ~ 0
 VCC
 Wire Wire Line
-	2775 4900 2675 4900
-Text Label 4950 4100 0    60   ~ 0
+	3925 2675 3825 2675
+Text Label 6825 2050 0    60   ~ 0
 VCC
-Text Label 2775 5000 0    60   ~ 0
+Text Label 3925 2775 0    60   ~ 0
 MISO
 Wire Wire Line
-	2775 5000 2725 5000
-Text Label 4875 5225 0    60   ~ 0
+	3925 2775 3875 2775
+Text Label 6600 3650 0    60   ~ 0
 MISO
-Text Label 3600 4200 2    60   ~ 0
+Text Label 5475 2150 2    60   ~ 0
 MISO
 $Comp
 L power:GND #PWR012
 U 1 1 5CD06116
-P 5175 5125
-F 0 "#PWR012" H 5175 4875 50  0001 C CNN
-F 1 "GND" H 5175 4975 50  0000 C CNN
-F 2 "" H 5175 5125 50  0001 C CNN
-F 3 "" H 5175 5125 50  0001 C CNN
-	1    5175 5125
+P 6900 3550
+F 0 "#PWR012" H 6900 3300 50  0001 C CNN
+F 1 "GND" H 6900 3400 50  0000 C CNN
+F 2 "" H 6900 3550 50  0001 C CNN
+F 3 "" H 6900 3550 50  0001 C CNN
+	1    6900 3550
 	0    -1   -1   0   
 $EndComp
-Text Label 2775 5100 0    60   ~ 0
+Text Label 3925 2875 0    60   ~ 0
 CLK
-Text Label 4925 5025 0    60   ~ 0
+Text Label 6650 3450 0    60   ~ 0
 CLK
-Text Label 4950 4300 0    60   ~ 0
+Text Label 6825 2250 0    60   ~ 0
 CLK
 $Comp
 L Device:R R11
 U 1 1 5CD25E39
-P 2725 5600
-F 0 "R11" V 2805 5600 50  0000 C CNN
-F 1 "49k9" V 2725 5600 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 2655 5600 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-8AEB4992V/P49.9KBCCT-ND/3069837" H 2725 5600 50  0001 C CNN
-	1    2725 5600
+P 3875 3375
+F 0 "R11" V 3955 3375 50  0000 C CNN
+F 1 "49k9" V 3875 3375 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3805 3375 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-8AEB4992V/P49.9KBCCT-ND/3069837" H 3875 3375 50  0001 C CNN
+	1    3875 3375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2725 5000 2725 5450
+	3875 2775 3875 3225
 $Comp
 L Device:R R12
 U 1 1 5CD25E97
-P 3550 4875
-F 0 "R12" V 3630 4875 50  0000 C CNN
-F 1 "49k9" V 3550 4875 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 3480 4875 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-8AEB4992V/P49.9KBCCT-ND/3069837" H 3550 4875 50  0001 C CNN
-	1    3550 4875
+P 5275 3300
+F 0 "R12" V 5355 3300 50  0000 C CNN
+F 1 "49k9" V 5275 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5205 3300 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-8AEB4992V/P49.9KBCCT-ND/3069837" H 5275 3300 50  0001 C CNN
+	1    5275 3300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R10
 U 1 1 5CD26002
-P 2725 4600
-F 0 "R10" V 2805 4600 50  0000 C CNN
-F 1 "49k9" V 2725 4600 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 2655 4600 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-8AEB4992V/P49.9KBCCT-ND/3069837" H 2725 4600 50  0001 C CNN
-	1    2725 4600
+P 3875 2375
+F 0 "R10" V 3955 2375 50  0000 C CNN
+F 1 "49k9" V 3875 2375 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3805 2375 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-8AEB4992V/P49.9KBCCT-ND/3069837" H 3875 2375 50  0001 C CNN
+	1    3875 2375
 	1    0    0    -1  
 $EndComp
-Connection ~ 3700 5125
+Connection ~ 5425 3550
 Wire Wire Line
-	3700 4875 3700 5125
-Text Label 3350 4875 2    60   ~ 0
+	5425 3300 5425 3550
+Text Label 5075 3300 2    60   ~ 0
 VCC
 Wire Wire Line
-	3350 4875 3400 4875
-Text Label 2725 5850 3    60   ~ 0
+	5075 3300 5125 3300
+Text Label 3875 3625 3    60   ~ 0
 VCC
 Wire Wire Line
-	2725 5850 2725 5750
-Connection ~ 2725 5000
+	3875 3625 3875 3525
+Connection ~ 3875 2775
 Wire Wire Line
-	2725 4775 2725 4750
-Connection ~ 2725 4775
-Text Label 2725 4400 1    60   ~ 0
+	3875 2550 3875 2525
+Connection ~ 3875 2550
+Text Label 3875 2175 1    60   ~ 0
 VCC
 Wire Wire Line
-	2725 4400 2725 4450
+	3875 2175 3875 2225
 $Comp
 L Device:R R13
 U 1 1 5CD2B918
-P 3675 3850
-F 0 "R13" V 3755 3850 50  0000 C CNN
-F 1 "49k9" V 3675 3850 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 3605 3850 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-8AEB4992V/P49.9KBCCT-ND/3069837" H 3675 3850 50  0001 C CNN
-	1    3675 3850
+P 5550 1800
+F 0 "R13" V 5630 1800 50  0000 C CNN
+F 1 "49k9" V 5550 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5480 1800 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-8AEB4992V/P49.9KBCCT-ND/3069837" H 5550 1800 50  0001 C CNN
+	1    5550 1800
 	-1   0    0    1   
 $EndComp
-Connection ~ 3675 4100
-Text Label 3675 3650 1    60   ~ 0
+Connection ~ 5550 2050
+Text Label 5550 1600 1    60   ~ 0
 VCC
 Wire Wire Line
-	3675 3650 3675 3700
+	5550 1600 5550 1650
 $Comp
 L power:GND #PWR013
 U 1 1 5CD2CEAE
-P 4250 5925
-F 0 "#PWR013" H 4250 5675 50  0001 C CNN
-F 1 "GND" H 4250 5775 50  0000 C CNN
-F 2 "" H 4250 5925 50  0001 C CNN
-F 3 "" H 4250 5925 50  0001 C CNN
-	1    4250 5925
+P 5975 4350
+F 0 "#PWR013" H 5975 4100 50  0001 C CNN
+F 1 "GND" H 5975 4200 50  0000 C CNN
+F 2 "" H 5975 4350 50  0001 C CNN
+F 3 "" H 5975 4350 50  0001 C CNN
+	1    5975 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 5925 4200 5925
+	5825 4350 5925 4350
 Wire Wire Line
-	4100 5925 4100 5825
+	5825 4350 5825 4250
 Wire Wire Line
-	4400 5925 4400 5825
-Connection ~ 4250 5925
+	6125 4350 6125 4250
+Connection ~ 5975 4350
 Wire Wire Line
-	4300 5825 4300 5925
-Connection ~ 4300 5925
+	6025 4250 6025 4350
+Connection ~ 6025 4350
 Wire Wire Line
-	4200 5825 4200 5925
-Connection ~ 4200 5925
+	5925 4250 5925 4350
+Connection ~ 5925 4350
 Wire Wire Line
-	3675 4000 3675 4100
+	5550 1950 5550 2050
 Wire Wire Line
-	4750 4300 4950 4300
+	6625 2250 6825 2250
 Wire Wire Line
-	2775 5100 2675 5100
+	3925 2875 3825 2875
 Wire Wire Line
-	4925 5025 4800 5025
+	6650 3450 6525 3450
 Wire Wire Line
-	3700 5125 3750 5125
+	5425 3550 5475 3550
 Wire Wire Line
-	2725 5000 2675 5000
+	3875 2775 3825 2775
 Wire Wire Line
-	2725 4775 2775 4775
+	3875 2550 3925 2550
 Wire Wire Line
-	3675 4100 3750 4100
+	5550 2050 5625 2050
 Wire Wire Line
-	4250 5925 4300 5925
+	5975 4350 6025 4350
 Wire Wire Line
-	4300 5925 4400 5925
+	6025 4350 6125 4350
 Wire Wire Line
-	4200 5925 4250 5925
+	5925 4350 5975 4350
 Wire Wire Line
-	3650 5225 3750 5225
+	5375 3650 5475 3650
 Wire Wire Line
-	4800 5225 4875 5225
-Text Label 3625 5325 2    60   ~ 0
+	6525 3650 6600 3650
+Text Label 5350 3750 2    60   ~ 0
 VCC
-NoConn ~ 4800 5325
+NoConn ~ 6525 3750
+Wire Notes Line
+	4400 1300 7200 1300
+Wire Notes Line
+	7200 1300 7200 2800
+Wire Notes Line
+	7200 2800 4400 2800
+Wire Notes Line
+	4400 1300 4400 2800
+Text Notes 6475 2750 0    60   ~ 0
+FLASH MEMORY
+Wire Notes Line
+	4400 3025 7200 3025
+Text Notes 6750 4525 0    60   ~ 0
+SD CARD
+Wire Notes Line
+	7200 3025 7200 4575
+Wire Notes Line
+	7200 4575 4400 4575
+Wire Notes Line
+	4400 4575 4400 3025
 $EndSCHEMATC
