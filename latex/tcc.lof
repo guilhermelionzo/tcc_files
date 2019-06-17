@@ -1,34 +1,37 @@
 \babel@toc {brazil}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces Cronograma do Trabalho de Pesquisa.}}{18}{figure.1.1}% 
-\contentsline {figure}{\numberline {2}{\ignorespaces Categoria de Pequenos Sat\IeC {\'e}lites e alguns exemplos.}}{19}{figure.2.2}% 
-\contentsline {figure}{\numberline {3}{\ignorespaces Lan\IeC {\c c}amento de pequenos sat\IeC {\'e}lites entre 1995 e 2014.}}{20}{figure.2.3}% 
-\contentsline {figure}{\numberline {4}{\ignorespaces Algumas varia\IeC {\c c}\IeC {\~o}es de CubeSat.}}{21}{figure.2.4}% 
-\contentsline {figure}{\numberline {5}{\ignorespaces Especifica\IeC {\c c}\IeC {\~o}es Estruturais para um CubeSat 3U+.}}{22}{figure.2.5}% 
-\contentsline {figure}{\numberline {6}{\ignorespaces Arquitetura de um Sat\IeC {\'e}lite.}}{24}{figure.2.6}% 
-\contentsline {figure}{\numberline {7}{\ignorespaces Estrutura 3U Padr\IeC {\~a}o NanoAvionics.}}{24}{figure.2.7}% 
-\contentsline {figure}{\numberline {8}{\ignorespaces Principais componentes de um EPS.}}{25}{figure.2.8}% 
-\contentsline {figure}{\numberline {9}{\ignorespaces Componentes AODCS da empresa Clyde Space.}}{25}{figure.2.9}% 
-\contentsline {figure}{\numberline {10}{\ignorespaces Componentes TT\&C da empresa EnduroSat.}}{26}{figure.2.10}% 
-\contentsline {figure}{\numberline {11}{\ignorespaces Computador de bordo da empresa EnduroSat.}}{26}{figure.2.11}% 
-\contentsline {figure}{\numberline {12}{\ignorespaces Arquitetura do OBDH do FloripaSat.}}{28}{figure.2.12}% 
-\contentsline {figure}{\numberline {13}{\ignorespaces Arquitetura do OpenOBC.}}{29}{figure.2.13}% 
-\contentsline {figure}{\numberline {14}{\ignorespaces Placa Eletr\IeC {\^o}nica - iOBC.}}{29}{figure.2.14}% 
-\contentsline {figure}{\numberline {15}{\ignorespaces Arquitetura do FM430.}}{30}{figure.2.15}% 
-\contentsline {figure}{\numberline {16}{\ignorespaces PCB Padr\IeC {\~a}o PC104 8-bits.}}{32}{figure.2.16}% 
-\contentsline {figure}{\numberline {17}{\ignorespaces Classifica\IeC {\c c}\IeC {\~a}o dos efeitos da Radia\IeC {\c c}\IeC {\~a}o Espacial.}}{33}{figure.2.17}% 
-\contentsline {figure}{\numberline {18}{\ignorespaces Performance dos processadores CORTEX-M.}}{40}{figure.3.18}% 
-\contentsline {figure}{\numberline {19}{\ignorespaces Arquitetura do microcontrolador MSP432P4111.}}{41}{figure.3.19}% 
-\contentsline {figure}{\numberline {20}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do INA193A-EP.}}{45}{figure.3.20}% 
-\contentsline {figure}{\numberline {21}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do MPU9250.}}{46}{figure.3.21}% 
-\contentsline {figure}{\numberline {22}{\ignorespaces Dimens\IeC {\~o}es do m\IeC {\'o}dulo PC/104-Plus em polegadas e mil\IeC {\'\i }metros.}}{47}{figure.3.22}% 
-\contentsline {figure}{\numberline {23}{\ignorespaces Arquitetura do OBC.}}{49}{figure.3.23}% 
-\contentsline {figure}{\numberline {24}{\ignorespaces Arquitetura do OBC.}}{50}{figure.3.24}% 
-\contentsline {figure}{\numberline {25}{\ignorespaces PCB em vista Real\IeC {\'\i }stica.}}{51}{figure.3.25}% 
-\contentsline {figure}{\numberline {26}{\ignorespaces Arquitetura de abstra\IeC {\c c}\IeC {\~a}o de Camadas.}}{54}{figure.4.26}% 
-\contentsline {figure}{\numberline {27}{\ignorespaces Estados das Tasks no FreeRTOS}}{59}{figure.4.27}% 
-\contentsline {figure}{\numberline {28}{\ignorespaces Exemplo Timer UML.}}{62}{figure.4.28}% 
-\contentsline {figure}{\numberline {29}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{63}{figure.4.29}% 
-\contentsline {figure}{\numberline {30}{\ignorespaces Arquitetura pr\IeC {\'e}via do OBC.}}{65}{figure.5.30}% 
-\contentsline {figure}{\numberline {31}{\ignorespaces Esquem\IeC {\'a}tico pr\IeC {\'e}vio do OBC.}}{66}{figure.5.31}% 
-\contentsline {figure}{\numberline {32}{\ignorespaces Esquem\IeC {\'a}tico do MPU9250.}}{89}{figure.E.32}% 
-\contentsline {figure}{\numberline {33}{\ignorespaces Esquem\IeC {\'a}tico do STWD100.}}{89}{figure.E.33}% 
+\contentsline {figure}{\numberline {1}{\ignorespaces Cronograma do Trabalho de Pesquisa.}}{22}{figure.1.1}% 
+\contentsline {figure}{\numberline {2}{\ignorespaces Categoria de Pequenos Sat\IeC {\'e}lites e alguns exemplos.}}{23}{figure.2.2}% 
+\contentsline {figure}{\numberline {3}{\ignorespaces Lan\IeC {\c c}amento de pequenos sat\IeC {\'e}lites entre 1995 e 2014.}}{24}{figure.2.3}% 
+\contentsline {figure}{\numberline {4}{\ignorespaces Algumas varia\IeC {\c c}\IeC {\~o}es de CubeSat.}}{25}{figure.2.4}% 
+\contentsline {figure}{\numberline {5}{\ignorespaces Especifica\IeC {\c c}\IeC {\~o}es Estruturais para um CubeSat 3U+.}}{26}{figure.2.5}% 
+\contentsline {figure}{\numberline {6}{\ignorespaces Arquitetura de um Sat\IeC {\'e}lite.}}{28}{figure.2.6}% 
+\contentsline {figure}{\numberline {7}{\ignorespaces Estrutura 3U Padr\IeC {\~a}o NanoAvionics.}}{28}{figure.2.7}% 
+\contentsline {figure}{\numberline {8}{\ignorespaces Principais componentes de um EPS.}}{29}{figure.2.8}% 
+\contentsline {figure}{\numberline {9}{\ignorespaces Componentes AODCS da empresa Clyde Space.}}{29}{figure.2.9}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces Componentes TT\&C da empresa EnduroSat.}}{30}{figure.2.10}% 
+\contentsline {figure}{\numberline {11}{\ignorespaces Computador de bordo da empresa EnduroSat.}}{30}{figure.2.11}% 
+\contentsline {figure}{\numberline {12}{\ignorespaces Arquitetura do OBDH do FloripaSat.}}{32}{figure.2.12}% 
+\contentsline {figure}{\numberline {13}{\ignorespaces Arquitetura do OpenOBC.}}{33}{figure.2.13}% 
+\contentsline {figure}{\numberline {14}{\ignorespaces Placa Eletr\IeC {\^o}nica - iOBC.}}{33}{figure.2.14}% 
+\contentsline {figure}{\numberline {15}{\ignorespaces Arquitetura do FM430.}}{34}{figure.2.15}% 
+\contentsline {figure}{\numberline {16}{\ignorespaces PCB Padr\IeC {\~a}o PC104 8-bits.}}{36}{figure.2.16}% 
+\contentsline {figure}{\numberline {17}{\ignorespaces Classifica\IeC {\c c}\IeC {\~a}o dos efeitos da Radia\IeC {\c c}\IeC {\~a}o Espacial.}}{37}{figure.2.17}% 
+\contentsline {figure}{\numberline {18}{\ignorespaces Performance dos processadores CORTEX-M.}}{44}{figure.3.18}% 
+\contentsline {figure}{\numberline {19}{\ignorespaces Arquitetura do microcontrolador MSP432P4111.}}{45}{figure.3.19}% 
+\contentsline {figure}{\numberline {20}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do INA193A-EP.}}{49}{figure.3.20}% 
+\contentsline {figure}{\numberline {21}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do MPU9250.}}{50}{figure.3.21}% 
+\contentsline {figure}{\numberline {22}{\ignorespaces Dimens\IeC {\~o}es do m\IeC {\'o}dulo PC/104-Plus em polegadas e mil\IeC {\'\i }metros.}}{51}{figure.3.22}% 
+\contentsline {figure}{\numberline {23}{\ignorespaces Arquitetura do OBC.}}{53}{figure.3.23}% 
+\contentsline {figure}{\numberline {24}{\ignorespaces Arquitetura do OBC.}}{54}{figure.3.24}% 
+\contentsline {figure}{\numberline {25}{\ignorespaces PCB em vista Real\IeC {\'\i }stica.}}{55}{figure.3.25}% 
+\contentsline {figure}{\numberline {26}{\ignorespaces Arquitetura de abstra\IeC {\c c}\IeC {\~a}o de Camadas.}}{58}{figure.4.26}% 
+\contentsline {figure}{\numberline {27}{\ignorespaces Estados das Tasks no FreeRTOS}}{63}{figure.4.27}% 
+\contentsline {figure}{\numberline {28}{\ignorespaces Exemplo Timer UML.}}{66}{figure.4.28}% 
+\contentsline {figure}{\numberline {29}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{67}{figure.4.29}% 
+\contentsline {figure}{\numberline {30}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{69}{figure.5.30}% 
+\contentsline {figure}{\numberline {31}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{70}{figure.5.31}% 
+\contentsline {figure}{\numberline {32}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{71}{figure.5.32}% 
+\contentsline {figure}{\numberline {33}{\ignorespaces Arquitetura pr\IeC {\'e}via do OBC.}}{72}{figure.5.33}% 
+\contentsline {figure}{\numberline {34}{\ignorespaces Esquem\IeC {\'a}tico pr\IeC {\'e}vio do OBC.}}{73}{figure.5.34}% 
+\contentsline {figure}{\numberline {35}{\ignorespaces Esquem\IeC {\'a}tico do MPU9250.}}{97}{figure.E.35}% 
+\contentsline {figure}{\numberline {36}{\ignorespaces Esquem\IeC {\'a}tico do STWD100.}}{97}{figure.E.36}% 

@@ -1173,7 +1173,52 @@ O desenvolvimento do Fluxograma será realizado no TCC2.
 
 \end{itemize}
 
-\chapter[RESULTADOS PRELIMINARES]{RESULTADOS PRELIMINARES}
+\chapter[RESULTADOS E DISCUSSÕES]{RESULTADOS E DISCUSSÕES}
+
+Devido um atraso no acordo entre as duas instituições, a capitação de recursos não foi possível. Isso impossibilitou a compra dos componentes e fabricação da PCB.
+Sendo assim, os resultados apresentados serão pertinentes ao teste em protoboard, utilizando a launchpad e alguns módulos COTS.
+
+\subsection{Modos de Operação}
+OBC-SW-R7
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.72]{figuras/trace_snapshoot.png}
+	\caption{UML da Camada de Serviço do Sistema.}
+	\label{uml_CSS}
+\end{figure}
+
+\subsection{Aquisição de Dados}
+OBC-H-R1
+OBC-H-R7
+OBC-SW-R1
+OBC-SW-R3
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.70]{figuras/telemetryData.PNG}
+	\caption{UML da Camada de Serviço do Sistema.}
+	\label{uml_CSS}
+\end{figure}
+
+\subsection{Sistema Antitravamento}
+OBC-H-R2
+OBC-H-R6
+OBC-SW-R8
+
+O sistema possui watchdog pelo FreeFrtos, por hardware via MSP432 e externo pelo STD.
+
+\subsection{Consumo}
+OBC-SW-R7
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.72]{figuras/powerComsuption.PNG}
+	\caption{UML da Camada de Serviço do Sistema.}
+	\label{uml_CSS}
+\end{figure}
+
+Foi possível também confirmar que em microcontroladores de 32-bits o consumo de energia diminui, devido o tamanho de instruções. Outro ponto interessante é que quando o tempo de processamento diminui, o processamento aumenta e a potencia diminui, apos o Kernel reativar as Tasks.
 
 Para o desenvolvimento do \textit{hardware}, quase todos os componentes foram definidos. Em relação às interfaces, há a necessidade de definir os pinos que serão conectados ao barramento ISA. A arquitetura prévia do OBC pode ser vista na Figura \ref{arquiteturaOBC}. Os pontos de interrogação serão resolvidos após a definição das interfaces.
 
@@ -1199,6 +1244,10 @@ Não foi possível cumprir o cronograma previsto na Seção \ref{metodo}, devido
 
 
 \chapter[CONCLUSÕES E RECOMENDAÇÕES]{CONCLUSÕES E RECOMENDAÇÕES}
+
+\subsection{Conclusões}
+
+\subsection{Recomendações}
 
 O objetivo do TCC1 era realizar o projeto teórico do OBC para que o TCC2 fosse dedicado à elaboração do \textit{layout} da PCB e implementação do \textit{software} embarcado. Para evitar que haja atrasos no projeto, o autor realizará as atividades restantes no período das férias.
 
