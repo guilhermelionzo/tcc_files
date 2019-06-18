@@ -1,4 +1,4 @@
-247139410179323
+248711131424139
 .pretty
 ACS711_8-pin SOICN
 
@@ -23505,6 +23505,13 @@ ACS711_8-pin SOICN
 0
 8
 8
+footprint
+cubesat_logo
+
+
+0
+0
+0
 footprint
 ST1W008S4ER1500
 
