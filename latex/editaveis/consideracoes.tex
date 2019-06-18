@@ -1,6 +1,6 @@
 \chapter[REFERENCIAL TEÓRICO]{REFERENCIAL TEÓRICO}
 
-Esta seção visa oferecer uma introdução aos conceitos básicos para o entendimento deste trabalho de pesquisa. Inicialmente será mostrado a categoria de pequenos satélites e a concepção do padrão CubeSat. Logo em seguida, será exposto os principais subsistemas de um CubeSat, dando ênfase no computador de bordo. Será mostrado a importância do barramento PC104 e as interferências do ambiente espacial em sistemas embarcados.
+Esta seção visa oferecer uma os conceitos básicos para o entendimento deste trabalho de pesquisa. Inicialmente será mostrado a categoria de pequenos satélites e a concepção do padrão CubeSat. Logo em seguida, será exposto os principais subsistemas de um CubeSat, dando ênfase no computador de bordo. Será mostrado a importância do barramento PC104 e as interferências do ambiente espacial em sistemas embarcados.
 
 
 \section{Pequenos Satélites}
@@ -17,7 +17,7 @@ O termo “pequenos satélites” é designado para caracterizar satélites que 
 	\label{fig02}
 \end{figure}
 
-As espaçonaves são normalmente agrupadas conforme sua massa. Como visto na figura acima, pequenos satélites podem ser divididos nas seguintes subcategorias: minissatélites com massa entre 100-500kg, microsatélites com massa entre 10-100kg, nanosatélites com massa entre 1-10kg, picosatélites com massa entre 0.1-1kg e femtosatélites com massa entre 1-100g. No limite superior dessa categoria, existem minisatélites como o Globalstar, satélite de telecomunicações da empresa Globalstar LP, que possui massa úmida de 450 kg (GLOBALSTAR, L.P, 2000). Já no extremo inferior, existem projetos como o KickSat que colocou em órbita 128 femtosatelites  com 5g (GRIFFITHS, 2017).
+As espaçonaves são normalmente agrupadas conforme sua massa. Como visto na figura acima, pequenos satélites podem ser divididos nas seguintes subcategorias: minissatélites com massa entre 100-500kg, microsatélites com massa entre 10-100kg, nanosatélites com massa entre 1-10kg, picosatélites com massa entre 0.1-1kg e femtosatélites com massa entre 1-100g. No limite superior dessa categoria, existem minisatélites como o Globalstar, satélite de telecomunicações da empresa Globalstar LP, que possui massa úmida de 450kg (GLOBALSTAR, L.P, 2000). Já no extremo inferior, existem projetos como o KickSat que colocou em órbita 128 femtosatelites  com 5g (GRIFFITHS, 2017).
 
 Nas últimas décadas, houve um aumento no lançamento de nanosatélites. Esse crescimento pode ser observado na Figura \ref{fig03}, que mostra a quantidade de pequenos satélites colocados em órbita entre os anos de 1995 e 2014. Fatores como a miniaturização da eletrônica, otimização dos veículos lançadores e crescimento de empresas no setor ajudaram nesse crescimento (FACCHINETTI et al., 2016).
 
@@ -29,9 +29,9 @@ Nas últimas décadas, houve um aumento no lançamento de nanosatélites. Esse c
 	\label{fig03}
 \end{figure}
 
-Fazendo uma análise minuciosa nos sites Nanosatellite Database\footnote{ KULU, Erik. Nanosatellite Database by Erik. 2018. Disponível em: \url{http://www.nanosats.eu/}. Acesso em: 14 maio 2018.} e Space Launch Report\footnote{N2YO. Browse Satellites by Launch date. 2018. Disponível em:\url{https://www.n2yo.com/browse/}.  Acesso em: 14 maio 2018.}, sites que armazenam dados de missões satelitais, observa-se que em 2007 cerca de 2,6\%(9 de 348 satélites) eram CubeSats. Já em 2017 o numero de lançamentos passou para 57,6\% (295 de 512 satélites). Tendo como base esses valores, pode-se afirmar que os CubeSats ajudaram na popularização da categoria de nanosatélites.
+Fazendo uma análise minuciosa nos sites Nanosatellite Database\footnote{ KULU, Erik. Nanosatellite Database by Erik. 2018. Disponível em: \url{http://www.nanosats.eu/}. Acesso em: 14 maio 2018.} e Space Launch Report\footnote{N2YO. Browse Satellites by Launch date. 2018. Disponível em:\url{https://www.n2yo.com/browse/}.  Acesso em: 14 maio 2018.}, sites que armazenam dados de missões satelitais, observa-se que em 2007 cerca de 2,6\%(9 de 348 satélites) eram CubeSats. Já em 2017 o numero de lançamentos passou para 57,6\% (295 de 512 satélites). Tendo como base esses valores, pode-se afirmar que os CubeSats ajudaram a popularização da categoria de nanosatélites.
 
-De forma resumida, o CubeSat é um satélite cúbico de 10cm de aresta e que pesa apenas alguns quilogramas, sendo muito utilizado no meio acadêmico. Eles podem ser compostos por um único cubo (uma unidade ou 1U) ou vários cubos combinados formando, por exemplo, unidades 3U e 6U. A Figura \ref{fig04} mostra as configurações mais usuais para uma CubeSat (FROST; AGASID, 2015).
+De forma resumida, o CubeSat é um satélite cúbico de 10 cm de aresta e que pesa apenas alguns quilogramas, sendo muito utilizado no meio acadêmico. Eles podem ser compostos por um único cubo (uma unidade ou 1U) ou vários cubos combinados formando, por exemplo, unidades 3U e 6U. A Figura \ref{fig04} mostra as configurações mais usuais de um CubeSat (FROST; AGASID, 2015).
 
 
 \begin{figure}[h]
@@ -47,7 +47,7 @@ De forma resumida, o CubeSat é um satélite cúbico de 10cm de aresta e que pes
 
 O padrão CubeSat começou como um esforço colaborativo entre Jordi Puig-Suari, professor na Universidade Politécnica da Califórnia (CalPoly), e Bob Twiggs, professor na Universidade de Stanford. A intenção original era fornecer para a comunidade científica universitária meios mais acessíveis ao espaço (DEEPAK; TWIGGS, 2012).
 
-Twiggs retrata o contexto histórico do desenvolvimento do conceito CubeSat em detalhes no seu artigo “\textit{Origin of CubeSat}” (TWIGGS, 2008). Em resumo, o abandono radical do design tradicional de satélites, ocasionado pelo CubeSat, começou após o lançamento bem-sucedido do \textit{Orbiting Picosatellite Automatic Launcher} (OPAL), projeto liderado por Twiggs, que pôs em órbita seis \textit{hockey} picosatélites. Inspirado por esse sucesso, Twiggs explorou um \textit{design} maior e mais cúbico para suportar mais capacidade. Ele encontrou o modelo perfeito para seu novo \textit{design} em uma loja varejo, uma embalagem cúbica de 10 cm para ursinhos de pelúcia. O nanosatélites resultante, foi um cubo medindo 10 cm de aresta e pesando apenas 1 kg, nomeado CubeSat (DEEPAK; TWIGGS, 2012).
+Twiggs retrata o contexto histórico do desenvolvimento do conceito CubeSat em detalhes no seu artigo “\textit{Origin of CubeSat}” (TWIGGS, 2008). Em resumo, o abandono radical do design tradicional de satélites, ocasionado pelo CubeSat, começou após o lançamento bem-sucedido do \textit{Orbiting Picosatellite Automatic Launcher} (OPAL), projeto liderado por Twiggs, que pôs em órbita seis \textit{hockey} picosatélites. Inspirado por esse sucesso, Twiggs explorou um \textit{design} maior e mais cúbico para suportar mais capacidade. Ele encontrou o modelo perfeito para seu novo \textit{design} em uma loja varejo, uma embalagem cúbica de 10 cm para ursinhos de pelúcia. O nanosatélites resultante foi um cubo medindo 10 cm de aresta e pesando apenas 1 kg, nomeado CubeSat (DEEPAK; TWIGGS, 2012).
 
 Mais tarde naquele ano, Twiggs e Puig-Suari disponibilizaram as especificações para o Padrão CubeSat. Em 2003, Puig-Suari e CalPoly desenvolveram o \textit{Poly-PicoSatellite Orbital Deploye} (P-POD) para lançar até três CubeSats 1U. As primeiras missões CubeSat começaram no  mesmo ano do desenvolvimento do P-POD (DEEPAK; TWIGGS, 2012).
 
@@ -242,33 +242,41 @@ O FM430, da fabricante Pumpkin Inc, é uma solução compacta para sistemas ambi
 \end{itemize}
 
 \newpage
-\textbf{Tabela Comparativa entre os microcontroladores}
+\begin{itemize}
+	\item \textbf{Tabela Comparativa entre os Computadores de Bordo}
+	
+	Abaixo há as características tabeladas.
+	
+	\begin{table}[h]
+		\centering
+		\caption{Tabela comparativa dos OBCs.}
+		\label{tabela1}
+		\makebox[1 \textwidth][c]{
+			\scalebox{0.8}{
+				\begin{tabular}{@{}c|cccc@{}}
+					\hline
+					\textbf{}      & \multicolumn{4}{c}{\textbf{Projetos}}                                          \\ \hline
+					Projeto/OBC       & FloripaSat OBDH    & Open OBC          & iOBC              & FM430 Flight Mode \\
+					Processador    & MSP430F6659IPZ     & TMS570LS0432      & AT91SAM9G20       & MSP430F1612       \\
+					Fabricante     & Texas Instruments  & Texas Instruments & Micro Chip        & Texas Instruments \\
+					Clock          & 8 MHz              & 80 MHz            & 400 MHz           & 7.3728 MHz        \\
+					Watchdog Timer & Sim                & Sim               & Sim               & Sim               \\
+					Memória Flash  & 512 KB             & 16 KB             & X                 & 55 KB             \\
+					Memória RAM    & 66 KB              & 32 KB             & 32 KB             & 5 KB              \\
+					EEPROM         & X                  & 16 KB             & X                 & X                 \\
+					I2C            & 3                  & 0                 & 2                 & 1                 \\
+					Canais ADC     & 16 canais de 12bit & 6 canais de 12bit & 6 canais de 10bit & 8 canais de 12bit \\
+					CAN            & X                  & X                 & X                 & X                 \\
+					SPI            & 3                  & 2                 & 2                 & 2                 \\
+					PWM            & 5 canais           & 0                 & 6                 & 1                 \\
+					UART           & 3                  & 1                 & 7                 & 2                 \\ \hline
+		\end{tabular}}}
+	\end{table}
+	
+\end{itemize}
 
-\begin{table}[h]
-\centering
-\caption{Microcontroladores selecionados.}
-\label{tabela1}
-\makebox[1 \textwidth][c]{
-\scalebox{0.8}{
-\begin{tabular}{@{}c|cccc@{}}
-\hline
-\textbf{}      & \multicolumn{4}{c}{\textbf{Projetos}}                                          \\ \hline
-Recursos       & FloripaSat OBDH    & Open OBC          & iOBC              & FM430 Flight Mode \\
-Processador    & MSP430F6659IPZ     & TMS570LS0432      & AT91SAM9G20       & MSP430F1612       \\
-Fabricante     & Texas Instruments  & Texas Instruments & Micro Chip        & Texas Instruments \\
-Clock          & 8 MHz              & 80 MHz            & 400 MHz           & 7.3728 MHz        \\
-Watchdog Timer & Sim                & Sim               & Sim               & Sim               \\
-Memória Flash  & 512 KB             & 16 KB             & X                 & 55 KB             \\
-Memória RAM    & 66 KB              & 32 KB             & 32 KB             & 5 KB              \\
-EEPROM         & X                  & 16 KB             & X                 & X                 \\
-I2C            & 3                  & 0                 & 2                 & 1                 \\
-Canais ADC     & 16 canais de 12bit & 6 canais de 12bit & 6 canais de 10bit & 8 canais de 12bit \\
-CAN            & X                  & X                 & X                 & X                 \\
-SPI            & 3                  & 2                 & 2                 & 2                 \\
-PWM            & 5 canais           & 0                 & 6                 & 1                 \\
-UART           & 3                  & 1                 & 7                 & 2                 \\ \hline
-\end{tabular}}}
-\end{table}
+
+
 
 
 \section{Padrão PC/104}
@@ -419,17 +427,17 @@ A resistência a radiação dos componentes é um fator muito importante para es
 
 \chapter[DESENVOLVIMENTO DO HARDWARE]{DESENVOLVIMENTO DO HARDWARE}
 \label{secaoHardware}
-Esse capítulo descreverá o desenvolvimento do \textit{hardware}. Inicialmente será mostrado os requisitos e funcionalidades consideradas para o sistema. O passo seguinte é um dos mais importantes pois mostrará o processo de seleção do microcontrolador, componente que afetará restante do projeto. Em seguida será exposto os componentes adicionais que formarão o OBC, como: memória, sensores, etc. Por fim, será apresentado alguns mecanismos de mitigação de falhas e os esquemáticos do sistema.
+Esse capítulo descreverá o desenvolvimento do \textit{hardware}. Inicialmente será mostrado os requisitos e funcionalidades consideradas para o sistema. O passo seguinte é um dos mais importantes pois mostrará o processo de seleção do microcontrolador, componente que afetará restante do projeto. Em seguida será exposto os componentes adicionais que formarão o OBC, como: memória, sensores, etc. Por fim, será apresentado o esquemático do OBC e o \textit{layout} da Placa de Circuíto Impresso. 
 
-
+\hl{alguns mecanismos de mitigacao de falhas e os esquematicos do sistema.}
 
 \section{Requisitos e Funcionalidades}
 \label{seção1_1}
 Para o desenvolvimento de qualquer projeto, a definição dos requisitos é essencial, pois essa etapa influenciará as demais fases e definirá as expectativas das partes interessadas. Até o presente momento, poucos requisitos foram delimitados, pois o projeto da missão CubeSat ainda está em fase de discussão. 
 
-A abordagem utilizada para contornar essa situação foi adicionando requisitos de CubeSats já lançados com alguns requisitos já especificados para a missão. No Apêndice \ref{apendiceb} há uma explicação sobre essa abordagem. 
+A abordagem utilizada para contornar essa situação foi adicionar requisitos de CubeSats já lançados à alguns requisitos já especificados para a missão. No Apêndice \ref{apendiceb} há uma explicação sobre essa abordagem. 
 
-Com base no Apêndice \ref{apendiceb}, foi possível delimitar as funcionalidades para o \textit{hardware} do sistema. Esses requisitos podem ser vistos na tabela abaixo.
+Com base no Apêndice \ref{apendiceb}, foi possível delimitar as funcionalidades para o \textit{hardware} do sistema. Esses requisitos podem ser vistos na Tabela \ref{tabela1}.
 
 \begin{table}[h]
 \centering
@@ -500,7 +508,7 @@ ADuCM360         & \begin{tabular}[c]{@{}c@{}}18,15mW \\ @16MHz\end{tabular} & 4
 \end{tabular}}}
 \end{table}
 
-Após a seleção dos microcontroladores, foi colocado pesos para cada característica de acordo com a importância no sistema. Vale a pensa ressaltar que os dados acima foram retirados dos datasheet de cada microcontrolador. 
+Após a seleção dos microcontroladores, foi colocado pesos para cada característica de acordo com a importância no sistema. Vale a pensa ressaltar que os dados acima foram retirados dos \textit{datasheet} de cada microcontrolador. 
 
 
 \begin{table}[h]
@@ -511,7 +519,7 @@ Após a seleção dos microcontroladores, foi colocado pesos para cada caracter�
 \scalebox{0.8}{
 \begin{tabular}{@{}cccccccccc@{}}
 \toprule
-Microcontrolador & Consumo & AD  & I/O  & InterfaceSerial & PMW & \begin{tabular}[c]{@{}c@{}}Watchdog \\ Timer\end{tabular} & Frequência & \begin{tabular}[c]{@{}c@{}}Faixa de \\ Temperatura {[}$^{\circ}${C]}\end{tabular} & SOMA  \\ \midrule
+Microcontrolador & Consumo & AD  & I/O  & Interface Serial & PMW & \begin{tabular}[c]{@{}c@{}}Watchdog \\ Timer\end{tabular} & Frequência & \begin{tabular}[c]{@{}c@{}}Faixa de \\ Temperatura {[}$^{\circ}${C]}\end{tabular} & SOMA  \\ \midrule
 PESO             & 5       & 3   & 3    & 4               & 3   & 3                                                         & 5          & 4                                                                                & 30    \\ \midrule
 MSP432P4111      & 5       & 3   & 3    & 3,5             & 3   & 3                                                         & 2,4        & 3,03                                                                             & 25,93 \\
 MC9S12XHZ512     & 2,83    & 2   & 2,04 & 3,7             & 3   & 3                                                         & 2          & 3,52                                                                             & 22,09 \\
@@ -663,32 +671,32 @@ SQF-MSDM1-4G-21E & Advantech Corp                    & -40$^{\circ}$C $\sim$85$^
 
 \subsection{Sensor de Corrente}
 
-Com o intuito de cumprir o requisito de leitura de corrente, escolheu-se o sensor INA193A-EP. Esse sensor possui qualificação de alta confiabilidade (Hi-Rel, do inglês High Reliability), ideal para aplicações onde há grande variação de temperatura. O INA193A-EP soportar valores de –16V a 80V  e um máximo de 1,3A.
+Com o intuito de cumprir o requisito de leitura de corrente, escolheu-se o sensor ACS711. Esse sensor possui um diferencial, ele conta com um sistema que protege o circuito contra sobre corrente, em caso de panes elétricas e tempestades solares. O ACS711 suporta valores de 3 a 5V de tensão e -40 a 125$^{\circ}$C de temperatura.
 
-A figura \ref{fig20} mostra o esquemático eletrônico de uma aplicação usual do INA193A-EP.
+A figura \ref{fig20} mostra o esquemático eletrônico de uma aplicação usual do ACS711.
 
 \newpage
 
 \begin{figure}[h]
 	\centering
-    Fonte:(TEXAS INSTRUMENTS, 2018d, pág.2)\linebreak
-	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/currentSensor.PNG}
-	\caption{Esquemático Eletrônico de uma aplicação usual do INA193A-EP.}
+    Fonte:(ALLEGRO, 2017, pág.1)\linebreak
+	\includegraphics[keepaspectratio=true,scale=0.8]{figuras/currentSensor.PNG}
+	\caption{Esquemático Eletrônico de uma aplicação usual do ACS711.}
 	\label{fig20}
 \end{figure}
 
-A tabela \ref{tab_ina} mostra as especificações do INA193A-EP. Essas informações foram retiradas da ficha técnica do sensor.
+A tabela \ref{tab_ina} mostra as especificações do ACS711. Essas informações foram retiradas da ficha técnica do sensor.
 
 \begin{table}[h]
 \centering
-\caption{Informações técnicas do INA193A-EP.}
+\caption{Informações técnicas do ACS711.}
 \label{tab_ina}
 \makebox[1 \textwidth][c]{
 \scalebox{0.74}{
 \begin{tabular}{cccccc}
 \hline
-Produto    & Fornecedor        & \begin{tabular}[c]{@{}c@{}}Temp Op\\ {[}$^{\circ}$C{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Corrente \\ {[}mA{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Vin \\ {[}V{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Erro\\ {[}\%{]}\end{tabular} \\ \hline
-INA193A-EP & Texas Instruments & -55$\sim$105                                                        & 1.3mA                                                        & 2.7 $\sim$18                                           & 2.2                                                     \\ \hline
+Produto    & Fornecedor        & \begin{tabular}[c]{@{}c@{}}Temp Op\\ {[}$^{\circ}$C{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textit{Overcurrent limit} \\ {[}A{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Vin \\ {[}V{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Erro\\ {[}\%{]}\end{tabular} \\ \hline
+ACS711 & Allegro & -40$\sim$125                                                        & 100                                                        & 3$\sim$5                                           & 5                                                     \\ \hline
 \end{tabular}}}
 \end{table}
 
@@ -725,38 +733,32 @@ A figura \ref{mpu} mostra o esquemático eletrônico de uma aplicação usual do
 
 \subsection{Sensor de Temperatura}
 
-Mesmo o MPU9250 possuindo um sensor de temperatura, foi escolhido outro para realizar a medida da temperatura do OBC. Possuir um sensor de temperatura dedicado à essa função é ideal, pois as funções primárias do MPU9250 podem interferir no valor das medidas. Por exemplo, caso o sensor inercial esteja sendo utilizado por um período muito longo, a temperatura aferida será acima da temperatura correta. 
+Mesmo o MPU9250 e o MSP432P4111 possuindo um sensor de temperatura, foi escolhido outro para realizar a medida da temperatura do OBC. Possuir um sensor de temperatura dedicado à essa função é ideal, pois as funções primárias do MPU9250/MSP432P4111 podem interferir no valor das medidas. Por exemplo, o microcontrolador começará a esquentar após um período muito longo em modo de alta performance. 
 
-O sensor de temperatura escolhido foi o TMP422-EP, da fabricante Texas Instruments, dividido sua confiabilidade HI-REL. O dispositivo comunica através do protocolo de comunicação o SPI, sendo capaz de medir temperaturas com uma precisão de 2 $^{\circ}$C em uma faixa de temperatura de -55$^{\circ}$C a 125$^{\circ}$C (TEXAS INSTRUMENTS, 2008).
+O sensor de temperatura escolhido foi o MCP9701T, da fabricante Microchip, devido sua fácil usabilidade e baixo consumo. O dispositivo comunica através de uma saída analógica, sendo capaz de medir temperaturas com uma precisão de 2 $^{\circ}$C em uma faixa de temperatura de -40$^{\circ}$C a 125$^{\circ}$C (MICROCHIP, 2016).
 
-A tabela \ref{caracTMP} mostra as especificações do TMP422-EP. Essas informações foram retiradas da ficha técnica do sensor.
+A tabela \ref{caracTMP} mostra as especificações do MCP9701T. Essas informações foram retiradas da ficha técnica do sensor.
 
 \begin{table}[h]
 \centering
-\caption{Informações técnicas sobre sensor TMP422-EP.}
+\caption{Informações técnicas sobre sensor MCP9701T.}
 \label{caracTMP}
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
-Produto   & Fornecedor                                                   & \begin{tabular}[c]{@{}c@{}}Temp. Op. \\ {[}$^{\circ}$C{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Corrente \\ {[}uA{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Vin \\ {[}V{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Resolução \\ {[}bit{]}\end{tabular} & Protocolo \\ \midrule
-TMP422-EP & \begin{tabular}[c]{@{}c@{}}Texas \\ Instruments\end{tabular} & -55 $\sim$127                                                          & 60                                                           & 2.7 $\sim$5.5                                          & 12                                                             & SPI       \\ \bottomrule
+Produto   & Fornecedor                                                   & \begin{tabular}[c]{@{}c@{}}Temp. Op. \\ {[}$^{\circ}$C{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Corrente \\ {[}uA{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Vin \\ {[}V{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Resolução \\ {[}bit{]}\end{tabular} & Comunicação \\ \midrule
+MCP9701T & \begin{tabular}[c]{@{}c@{}}Microchip\end{tabular} & -55 $\sim$127                                                          & 60                                                           & 2.7 $\sim$5.5                                          & 12                                                             & Analógico       \\ \bottomrule
 \end{tabular}
 \end{table}
 
 \section{Interfaces}
 
-Essa seção visa descrever as interfaces que possibilitam a comunicação do OBC entre os demais subsistemas do satélite, durante a missão, e também com o usuário, a fase de programação e debug.
+Essa seção visa descrever as interfaces que possibilitam a comunicação do OBC entre os demais subsistemas do satélite, durante a missão, e também com o usuário, a fase de programação e \textit{debug}.
 
-Vale a pena ressaltar que devido ao tempo, essa parte será melhor descrita no TCC2. Os pontos a serem discutidos no TCC2 são:
-
-\begin{itemize}
-\item Barramento PC104;
-\item USB (Universal Synchronous Bus);
-\item JTAG (Joint Test Action Group).
-\end{itemize}
+Vale a pena ressaltar que devido à escassez de requisitos dos demais subsistemas da missão, algumas interfaces não foram definidas.
 
 \section{Dimensões da Placa}
 
-Como foi mencionado anteriormente, o formato da placa seguirá o padrão \textit{PC/104-Plus}. Esse padrão é comumente visto em missões CubeSat. A placa possui dimensões físicas de 90.17 x 95.89 mm, possuíndo 4 furos M3 nas extremidades da placa. A Figura \ref{pc104} ilustra as dimensões da placa estabelecida pelo \textit{PC/104 Consorsium}.
+Como foi mencionado anteriormente, o formato da placa seguirá o padrão \textit{PC/104-Plus}. Esse padrão é comumente visto em missões CubeSat. A placa possui dimensões físicas de 90.17 x 95.89 mm, possuindo 4 furos M3 nas extremidades da placa. A Figura \ref{pc104} ilustra as dimensões da placa estabelecida pelo \textit{PC/104 Consorsium}.
 
 \begin{figure}[h]
 	\centering
@@ -767,6 +769,46 @@ Como foi mencionado anteriormente, o formato da placa seguirá o padrão \textit
 \end{figure}
 
 \newpage
+
+\section{JTAG (\textit{Joint Test Action Group})}
+
+JTAG, commonly referred to as boundary-scan and defined by the Institute
+of Electrical and Electronic Engineers (IEEE) 1149.1, originally began as an
+integrated method for testing interconnects on printed circuit boards (PCBs)
+implemented at the integrated circuit (IC) level. As PCBs grew in complexity
+and density—a trend that continues today—limitations in the traditional test
+methods of in-circuit testers (ICTs) and bed of nails fixtures became evident.
+Packaging formats, specifically Ball Grid Array (BGA, depicted in Figure 1)
+and other fine pitch components, designed to meet ever-increasing physical
+space constraints, also led to a loss of physical access to signals.
+
+O MSP432P4111 possui esse tipo de interface de comunicação. Os pinos destinados para o JTAG são mostrados na Tabela \ref{jtagPin}.
+
+\hl{https://www.corelis.com/educationdownload/JTAG-Tutorial.pdf}
+
+\hl{http://www.ti.com/lit/ug/slau747b/slau747b.pdf}
+
+\begin{table}[h]
+	\centering
+	\caption{Pinos JTAG no MSP432P4111.}
+	\label{jtagPin}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		Sinal   & Descrição & Pino 
+		\\ \midrule
+		TCK\underline{ }SWCLK & JTAG clock input (TCK) & P.95
+		\\ \midrule
+		TMS\underline{ }SWDIO & JTAG test mode select (TMS) & P.94
+		\\ \midrule
+		TDO\underline{ }SWO & JTAG trace output (TWO) & P.93
+		\\ \midrule
+		TDI & JTAG test data input & P.92        
+		\\ \bottomrule
+	\end{tabular}
+\end{table}
+
+\section{Barramento PC104}
+
 
 \section{Sistema para Mitigar Falhas}
 
@@ -792,10 +834,10 @@ Conforme  Frost e Agasid (2015), o \textit{Watchdog}  é normalmente utilizado p
     
 	O contador utilizado para o sistema de \textit{Watchdog} externo foi o STWD100, o mesmo utilizado pelo projeto do Botma (2011). Esse dispositivo é produzido pela fabricante STMicroelectronics e possui três tempos para \textit{reset} (3.4 ms, 6.3 ms, 102 ms e 1.6 s).  
 
-A escolha do tempo de \textit{reset} será feita no TCC2. Nessa fase, o desenvolvimento do \textit{software} embarcado estará em sua fase final e informações do código, como o tempo para executar todas as \textit{Tasks}, estarão disponível.
+A escolha do tempo de \textit{reset} será feita durante o teste do protótipo. Nessa fase, o \textit{software} embarcado estará com a logica de programação de todos os subsistemas estará finalizado, disponibilizando o tempo de execução de todas as \textit{Tasks}.
 
 \newpage
-\section{Implementação}
+\section{Placa de Circuito Impresso}
 
 Apos a escolha dos componentes é possível ter uma visão abrangente do \textit{hardware}, como é mostrado na Figura \ref{arquiteturaOBC}. Como é possível notar, ha algumas interfaces que ainda nao foram definidas, como os pinos do modulo \textit{PPT} e \textit{TTC}.
 

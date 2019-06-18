@@ -18,12 +18,12 @@
 \contentsline {figure}{\numberline {17}{\ignorespaces Classifica\IeC {\c c}\IeC {\~a}o dos efeitos da Radia\IeC {\c c}\IeC {\~a}o Espacial.}}{37}{figure.2.17}% 
 \contentsline {figure}{\numberline {18}{\ignorespaces Performance dos processadores CORTEX-M.}}{44}{figure.3.18}% 
 \contentsline {figure}{\numberline {19}{\ignorespaces Arquitetura do microcontrolador MSP432P4111.}}{45}{figure.3.19}% 
-\contentsline {figure}{\numberline {20}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do INA193A-EP.}}{49}{figure.3.20}% 
+\contentsline {figure}{\numberline {20}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do ACS711.}}{49}{figure.3.20}% 
 \contentsline {figure}{\numberline {21}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do MPU9250.}}{50}{figure.3.21}% 
 \contentsline {figure}{\numberline {22}{\ignorespaces Dimens\IeC {\~o}es do m\IeC {\'o}dulo PC/104-Plus em polegadas e mil\IeC {\'\i }metros.}}{51}{figure.3.22}% 
-\contentsline {figure}{\numberline {23}{\ignorespaces Arquitetura do OBC.}}{53}{figure.3.23}% 
-\contentsline {figure}{\numberline {24}{\ignorespaces Arquitetura do OBC.}}{54}{figure.3.24}% 
-\contentsline {figure}{\numberline {25}{\ignorespaces PCB em vista Real\IeC {\'\i }stica.}}{55}{figure.3.25}% 
+\contentsline {figure}{\numberline {23}{\ignorespaces Arquitetura do OBC.}}{54}{figure.3.23}% 
+\contentsline {figure}{\numberline {24}{\ignorespaces Arquitetura do OBC.}}{55}{figure.3.24}% 
+\contentsline {figure}{\numberline {25}{\ignorespaces PCB em vista Real\IeC {\'\i }stica.}}{56}{figure.3.25}% 
 \contentsline {figure}{\numberline {26}{\ignorespaces Arquitetura de abstra\IeC {\c c}\IeC {\~a}o de Camadas.}}{58}{figure.4.26}% 
 \contentsline {figure}{\numberline {27}{\ignorespaces Estados das Tasks no FreeRTOS}}{63}{figure.4.27}% 
 \contentsline {figure}{\numberline {28}{\ignorespaces Exemplo Timer UML.}}{66}{figure.4.28}% 

@@ -6,7 +6,7 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{21}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Contexo e Justificativa}{21}{section.1.1}% 
+\contentsline {section}{\numberline {1.1}Contexto e Justificativa}{21}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Objetivos}{21}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Metodologia}{22}{section.1.3}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -23,7 +23,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {DESENVOLVIMENTO DO HARDWARE}}{41}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Requisitos e Funcionalidades}{41}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lise do Microcontrolador}{41}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lise do Microcontrolador}{42}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Microcontrolador MSP432P4111}{44}{section.3.3}% 
 \contentsline {subsection}{\numberline {3.3.1}Unidade de Mem\IeC {\'o}ria}{45}{subsection.3.3.1}% 
 \contentsline {subsection}{\numberline {3.3.2}Portas e Perif\IeC {\'e}ricos}{46}{subsection.3.3.2}% 
@@ -35,9 +35,11 @@
 \contentsline {subsection}{\numberline {3.5.3}Sensor de Temperatura}{50}{subsection.3.5.3}% 
 \contentsline {section}{\numberline {3.6}Interfaces}{50}{section.3.6}% 
 \contentsline {section}{\numberline {3.7}Dimens\IeC {\~o}es da Placa}{51}{section.3.7}% 
-\contentsline {section}{\numberline {3.8}Sistema para Mitigar Falhas}{52}{section.3.8}% 
-\contentsline {subsection}{\numberline {3.8.1}\textit {Watchdog} Externo}{52}{subsection.3.8.1}% 
-\contentsline {section}{\numberline {3.9}Implementa\IeC {\c c}\IeC {\~a}o}{53}{section.3.9}% 
+\contentsline {section}{\numberline {3.8}JTAG (\textit {Joint Test Action Group})}{52}{section.3.8}% 
+\contentsline {section}{\numberline {3.9}Barramento PC104}{52}{section.3.9}% 
+\contentsline {section}{\numberline {3.10}Sistema para Mitigar Falhas}{52}{section.3.10}% 
+\contentsline {subsection}{\numberline {3.10.1}\textit {Watchdog} Externo}{53}{subsection.3.10.1}% 
+\contentsline {section}{\numberline {3.11}Placa de Circuito Impresso}{54}{section.3.11}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {DESENVOLVIMENTO DO SOFTWARE}}{57}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Requisitos e Funcionalidades}{57}{section.4.1}% 

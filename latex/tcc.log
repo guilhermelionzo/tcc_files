@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.17)  17 JUN 2019 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.17)  17 JUN 2019 22:07
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1268,7 +1268,7 @@ File: tikzlibraryfit.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \c@umlcdClassAbstractClassNum=\count303
 \c@umlcdClassInterfaceNum=\count304
 \c@umlcdClassSplitPartNum=\count305
-))
+)
 ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pdfpa
 ges.sty"
 Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
@@ -1284,8 +1284,20 @@ File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks44
 \c@AM@survey=\count306
 \AM@templatesizebox=\box75
-) (fixos/comandos.tex) (fixos/customizacoes.sty)
-(editaveis/informacoes.tex) (fixos/informacoes.tex) (fixos/setup.tex
+))
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/soul\soul.sty"
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks45
+\SOUL@lasttoken=\toks46
+\SOUL@cmds=\toks47
+\SOUL@buffer=\toks48
+\SOUL@token=\toks49
+\SOUL@spaceskip=\skip269
+\SOUL@ttwidth=\dimen283
+\SOUL@uldp=\dimen284
+\SOUL@ulht=\dimen285
+) (fixos/comandos.tex) (fixos/customizacoes.sty) (editaveis/informacoes.tex)
+(fixos/informacoes.tex) (fixos/setup.tex
 Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 )
 \tcc@idxfile=\write5
@@ -1395,7 +1407,7 @@ LaTeX Info: Redefining \degres on input line 9.
 LaTeX Info: Redefining \dots on input line 9.
 LaTeX Info: Redefining \up on input line 9.
 \myptabbox=\box77
-\myptabboxwidth=\skip269
+\myptabboxwidth=\skip270
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 9.
@@ -1404,16 +1416,16 @@ Package lastpage Info: Please have a look at the pageslts package at
 pp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count308
-\scratchdimen=\dimen283
+\scratchdimen=\dimen286
 \scratchbox=\box78
 \nofMPsegments=\count309
 \nofMParguments=\count310
-\everyMPshowfont=\toks45
+\everyMPshowfont=\toks50
 \MPscratchCnt=\count311
-\MPscratchDim=\dimen284
+\MPscratchDim=\dimen287
 \MPnumerator=\count312
 \makeMPintoPDFobject=\count313
-\everyMPtoPDFconversion=\toks46
+\everyMPtoPDFconversion=\toks51
 )
 ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epsto
 pdf-base.sty"
@@ -1580,13 +1592,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]) (editaveis/abreviaturas.tex)
 (editaveis/simbolos.tex) (fixos/indiceAutomatico.tex (tcc.toc
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 38.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 39.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 41.
+
+Underfull \vbox (badness 4531) has occurred while \output is active []
+
  [19]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 65.
-) [20])
-(editaveis/introducao.tex
+(Font)              <14.4> on input line 67.
+)
+[20]) (editaveis/introducao.tex
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 29.
 
 ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmr.fd"
@@ -1604,19 +1621,19 @@ le-men-tary Metal-Oxide-Semiconductor\T1/lmr/m/n/12 );
 
 
 ]
-<figuras/cronograma_2.jpg, id=373, 908.9157pt x 322.5651pt>
+<figuras/cronograma_2.jpg, id=380, 908.9157pt x 322.5651pt>
 File: figuras/cronograma_2.jpg Graphic file (type jpg)
 <use figuras/cronograma_2.jpg>
-Package pdftex.def Info: figuras/cronograma_2.jpg  used on input line 56.
+Package pdftex.def Info: figuras/cronograma_2.jpg  used on input line 61.
 (pdftex.def)             Requested size: 490.80717pt x 174.18256pt.
 
-Overfull \hbox (35.80717pt too wide) in paragraph at lines 56--57
+Overfull \hbox (35.80717pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
 ) (editaveis/aspectosgerais.tex) (editaveis/consideracoes.tex [22 <./figuras/cr
 onograma_2.jpg>]
-<figuras/categoria_satellite.PNG, id=379, 690.32906pt x 395.97937pt>
+<figuras/categoria_satellite.PNG, id=386, 690.32906pt x 395.97937pt>
 File: figuras/categoria_satellite.PNG Graphic file (type png)
 <use figuras/categoria_satellite.PNG>
 Package pdftex.def Info: figuras/categoria_satellite.PNG  used on input line 15
@@ -1625,13 +1642,13 @@ Package pdftex.def Info: figuras/categoria_satellite.PNG  used on input line 15
  [23
 
  <./figuras/categoria_satellite.PNG>]
-<figuras/lancamentoPequenoSatellite.PNG, id=388, 713.66624pt x 448.67625pt>
+<figuras/lancamentoPequenoSatellite.PNG, id=395, 713.66624pt x 448.67625pt>
 File: figuras/lancamentoPequenoSatellite.PNG Graphic file (type png)
 <use figuras/lancamentoPequenoSatellite.PNG>
 Package pdftex.def Info: figuras/lancamentoPequenoSatellite.PNG  used on input 
 line 27.
 (pdftex.def)             Requested size: 392.51764pt x 246.77269pt.
-<figuras/cubesatVariacoes.PNG, id=394, 548.80031pt x 265.74281pt>
+<figuras/cubesatVariacoes.PNG, id=401, 548.80031pt x 265.74281pt>
 File: figuras/cubesatVariacoes.PNG Graphic file (type png)
 <use figuras/cubesatVariacoes.PNG>
 Package pdftex.def Info: figuras/cubesatVariacoes.PNG  used on input line 41.
@@ -1646,14 +1663,13 @@ Overfull \hbox (1.86201pt too wide) in paragraph at lines 52--53
 vol-ve-ram o \T1/lmr/m/it/12 Poly-PicoSatellite
  []
 
-[25 <./figuras/cubesatVariacoes.PNG>]
-<figuras/cubesat3u+.PNG, id=413, 810.77907pt x 524.71031pt>
+<figuras/cubesat3u+.PNG, id=414, 810.77907pt x 524.71031pt>
 File: figuras/cubesat3u+.PNG Graphic file (type png)
 <use figuras/cubesat3u+.PNG>
 Package pdftex.def Info: figuras/cubesat3u+.PNG  used on input line 59.
 (pdftex.def)             Requested size: 445.92987pt x 288.59155pt.
- [26 <./figuras/cubesat3u+.PNG>]
-<figuras/estrutura_satellite.png, id=420, 701.2599pt x 213.9192pt>
+[25 <./figuras/cubesatVariacoes.PNG>] [26 <./figuras/cubesat3u+.PNG>]
+<figuras/estrutura_satellite.png, id=427, 701.2599pt x 213.9192pt>
 File: figuras/estrutura_satellite.png Graphic file (type png)
 <use figuras/estrutura_satellite.png>
 Package pdftex.def Info: figuras/estrutura_satellite.png  used on input line 90
@@ -1664,13 +1680,13 @@ Package pdftex.def Info: figuras/estrutura_satellite.png  used on input line 90
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [27]
-<figuras/cubesat-structure-main.jpg, id=428, 602.25pt x 401.5pt>
+<figuras/cubesat-structure-main.jpg, id=435, 602.25pt x 401.5pt>
 File: figuras/cubesat-structure-main.jpg Graphic file (type jpg)
 <use figuras/cubesat-structure-main.jpg>
 Package pdftex.def Info: figuras/cubesat-structure-main.jpg  used on input line
  108.
 (pdftex.def)             Requested size: 240.89572pt x 160.59715pt.
-<figuras/eps.png, id=430, 120.45pt x 81.1833pt>
+<figuras/eps.png, id=437, 120.45pt x 81.1833pt>
 File: figuras/eps.png Graphic file (type png)
 <use figuras/eps.png>
 Package pdftex.def Info: figuras/eps.png  used on input line 118.
@@ -1680,12 +1696,12 @@ Package pdftex.def Info: figuras/eps.png  used on input line 118.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [28 <./figuras/estrutura_satellite.png> <./figuras/cubesat-structure-main.jpg>]
-<figuras/aodcs.png, id=440, 120.45pt x 56.8524pt>
+<figuras/aodcs.png, id=447, 120.45pt x 56.8524pt>
 File: figuras/aodcs.png Graphic file (type png)
 <use figuras/aodcs.png>
 Package pdftex.def Info: figuras/aodcs.png  used on input line 129.
 (pdftex.def)             Requested size: 264.98895pt x 125.07477pt.
-<figuras/tt_c.png, id=444, 120.45pt x 42.1575pt>
+<figuras/tt_c.png, id=451, 120.45pt x 42.1575pt>
 File: figuras/tt_c.png Graphic file (type png)
 <use figuras/tt_c.png>
 Package pdftex.def Info: figuras/tt_c.png  used on input line 139.
@@ -1694,14 +1710,14 @@ Package pdftex.def Info: figuras/tt_c.png  used on input line 139.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [29 <./figuras/eps.png> <./figuras/aodcs.png>]
-<figuras/Cubesat-OBC-module-1.jpg, id=455, 1927.2pt x 1084.05pt>
+<figuras/Cubesat-OBC-module-1.jpg, id=462, 1927.2pt x 1084.05pt>
 File: figuras/Cubesat-OBC-module-1.jpg Graphic file (type jpg)
 <use figuras/Cubesat-OBC-module-1.jpg>
 Package pdftex.def Info: figuras/Cubesat-OBC-module-1.jpg  used on input line 1
 50.
 (pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
  [30 <./figuras/tt_c.png> <./figuras/Cubesat-OBC-module-1.jpg>]
-<figuras/floripasatobdh.PNG, id=463, 633.11531pt x 414.79968pt>
+<figuras/floripasatobdh.PNG, id=470, 633.11531pt x 414.79968pt>
 File: figuras/floripasatobdh.PNG Graphic file (type png)
 <use figuras/floripasatobdh.PNG>
 Package pdftex.def Info: figuras/floripasatobdh.PNG  used on input line 192.
@@ -1711,7 +1727,7 @@ Package pdftex.def Info: figuras/floripasatobdh.PNG  used on input line 192.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31]
-<figuras/openObc.PNG, id=468, 411.03563pt x 371.13657pt>
+<figuras/openObc.PNG, id=475, 411.03563pt x 371.13657pt>
 File: figuras/openObc.PNG Graphic file (type png)
 <use figuras/openObc.PNG>
 Package pdftex.def Info: figuras/openObc.PNG  used on input line 207.
@@ -1721,28 +1737,28 @@ Package pdftex.def Info: figuras/openObc.PNG  used on input line 207.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [32 <./figuras/floripasatobdh.PNG>]
-<figuras/isis.PNG, id=477, 538.26094pt x 396.7322pt>
+<figuras/isis.PNG, id=484, 538.26094pt x 396.7322pt>
 File: figuras/isis.PNG Graphic file (type png)
 <use figuras/isis.PNG>
 Package pdftex.def Info: figuras/isis.PNG  used on input line 224.
 (pdftex.def)             Requested size: 258.36232pt x 190.42928pt.
  [33 <./figuras/openObc.PNG> <./figuras/isis.PNG>]
-<figuras/fm430.PNG, id=485, 701.62125pt x 551.05875pt>
+<figuras/fm430.PNG, id=492, 701.62125pt x 551.05875pt>
 File: figuras/fm430.PNG Graphic file (type png)
 <use figuras/fm430.PNG>
 Package pdftex.def Info: figuras/fm430.PNG  used on input line 237.
 (pdftex.def)             Requested size: 385.89287pt x 303.08324pt.
  [34 <./figuras/fm430.PNG>] [35]
-<figuras/pc104.PNG, id=501, 587.19376pt x 547.2947pt>
+<figuras/pc104.PNG, id=508, 587.19376pt x 547.2947pt>
 File: figuras/pc104.PNG Graphic file (type png)
 <use figuras/pc104.PNG>
-Package pdftex.def Info: figuras/pc104.PNG  used on input line 294.
+Package pdftex.def Info: figuras/pc104.PNG  used on input line 302.
 (pdftex.def)             Requested size: 322.95757pt x 301.013pt.
  [36 <./figuras/pc104.PNG>]
-<figuras/radiation.jpg, id=508, 488.3043pt x 146.7081pt>
+<figuras/radiation.jpg, id=515, 488.3043pt x 146.7081pt>
 File: figuras/radiation.jpg Graphic file (type jpg)
 <use figuras/radiation.jpg>
-Package pdftex.def Info: figuras/radiation.jpg  used on input line 316.
+Package pdftex.def Info: figuras/radiation.jpg  used on input line 324.
 (pdftex.def)             Requested size: 268.56819pt x 80.6897pt.
 
 
@@ -1750,24 +1766,28 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [37 <./figuras/radiation.jpg>] [38] [39] [40
 
-] [41] [42]
-<figuras/arm-cortex-m-series-performance-graph.jpg, id=543, 1032.85875pt x 651.
+]
+Underfull \vbox (badness 7238) has occurred while \output is active []
+
+ [41]
+[42]
+<figuras/arm-cortex-m-series-performance-graph.jpg, id=551, 1032.85875pt x 651.
 43375pt>
 File: figuras/arm-cortex-m-series-performance-graph.jpg Graphic file (type jpg)
 
 <use figuras/arm-cortex-m-series-performance-graph.jpg>
 Package pdftex.def Info: figuras/arm-cortex-m-series-performance-graph.jpg  use
-d on input line 541.
+d on input line 549.
 (pdftex.def)             Requested size: 413.13618pt x 260.56888pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [43]
-<figuras/msp432.PNG, id=549, 509.65407pt x 304.13625pt>
+<figuras/msp432.PNG, id=557, 509.65407pt x 304.13625pt>
 File: figuras/msp432.PNG Graphic file (type png)
 <use figuras/msp432.PNG>
-Package pdftex.def Info: figuras/msp432.PNG  used on input line 555.
+Package pdftex.def Info: figuras/msp432.PNG  used on input line 563.
 (pdftex.def)             Requested size: 407.7238pt x 243.30933pt.
 
 
@@ -1782,93 +1802,102 @@ Underfull \vbox (badness 1496) has occurred while \output is active []
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [46] [47] [48]
-<figuras/currentSensor.PNG, id=581, 286.06876pt x 345.54094pt>
+<figuras/currentSensor.PNG, id=589, 308.65312pt x 249.93375pt>
 File: figuras/currentSensor.PNG Graphic file (type png)
 <use figuras/currentSensor.PNG>
-Package pdftex.def Info: figuras/currentSensor.PNG  used on input line 675.
-(pdftex.def)             Requested size: 171.64258pt x 207.32616pt.
-<figuras/mpu9250.PNG, id=585, 893.58844pt x 414.04688pt>
+Package pdftex.def Info: figuras/currentSensor.PNG  used on input line 683.
+(pdftex.def)             Requested size: 246.92282pt x 199.94727pt.
+<figuras/mpu9250.PNG, id=593, 893.58844pt x 414.04688pt>
 File: figuras/mpu9250.PNG Graphic file (type png)
 <use figuras/mpu9250.PNG>
-Package pdftex.def Info: figuras/mpu9250.PNG  used on input line 721.
+Package pdftex.def Info: figuras/mpu9250.PNG  used on input line 729.
 (pdftex.def)             Requested size: 357.42905pt x 165.6158pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Overfull \hbox (7.05054pt too wide) in paragraph at lines 736--737
+\T1/lmr/m/n/12 ra-tura de-di-cado à essa fun-ção é ideal, pois as fun-ções pri-
+má-rias do MPU9250/MSP432P4111
+ []
+
 [49 <./figuras/currentSensor.PNG>] [50 <./figuras/mpu9250.PNG>]
-<figuras/pc104_32bit.PNG, id=598, 548.0475pt x 500.62032pt>
+<figuras/pc104_32bit.PNG, id=606, 548.0475pt x 500.62032pt>
 File: figuras/pc104_32bit.PNG Graphic file (type png)
 <use figuras/pc104_32bit.PNG>
-Package pdftex.def Info: figuras/pc104_32bit.PNG  used on input line 764.
+Package pdftex.def Info: figuras/pc104_32bit.PNG  used on input line 766.
 (pdftex.def)             Requested size: 383.63063pt x 350.43182pt.
  [51 <./figuras/pc104_32bit.PNG>]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 787.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 773.
  [52]
-<figuras/arquiteturaHard2.PNG, id=608, 629.35126pt x 404.26031pt>
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 829.
+ [53]
+<figuras/arquiteturaHard2.PNG, id=623, 629.35126pt x 404.26031pt>
 File: figuras/arquiteturaHard2.PNG Graphic file (type png)
 <use figuras/arquiteturaHard2.PNG>
-Package pdftex.def Info: figuras/arquiteturaHard2.PNG  used on input line 804.
+Package pdftex.def Info: figuras/arquiteturaHard2.PNG  used on input line 846.
 (pdftex.def)             Requested size: 490.892pt x 315.32178pt.
 
-Overfull \hbox (35.892pt too wide) in paragraph at lines 804--805
+Overfull \hbox (35.892pt too wide) in paragraph at lines 846--847
  [][] 
  []
 
-[53 <./figuras/arquiteturaHard2.PNG>]
-<pcb_v1.pdf, id=615, 845.1575pt x 598.235pt>
+[54 <./figuras/arquiteturaHard2.PNG>]
+<pcb_v1.pdf, id=629, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf>
-Package pdftex.def Info: pcb_v1.pdf  used on input line 816.
+Package pdftex.def Info: pcb_v1.pdf  used on input line 858.
 (pdftex.def)             Requested size: 845.15544pt x 598.23354pt.
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf>
-Package pdftex.def Info: pcb_v1.pdf  used on input line 816.
+Package pdftex.def Info: pcb_v1.pdf  used on input line 858.
 (pdftex.def)             Requested size: 845.15544pt x 598.23354pt.
-<pcb_v1.pdf, id=618, page=1, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=632, page=1, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 1>
-Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 816.
+Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 858.
 (pdftex.def)             Requested size: 845.15544pt x 598.23354pt.
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 1>
-Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 816.
+Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 858.
 (pdftex.def)             Requested size: 597.61578pt x 423.01544pt.
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 1>
-Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 816.
+Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 858.
 (pdftex.def)             Requested size: 597.61578pt x 423.01544pt.
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 1>
-Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 816.
+Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 858.
 (pdftex.def)             Requested size: 597.61578pt x 423.01544pt.
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 1>
-Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 821.
+Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 863.
 (pdftex.def)             Requested size: 597.61578pt x 423.01544pt.
- [54 <./pcb_v1.pdf>]
-<figuras/pcbRealistic.PNG, id=628, 516.42938pt x 441.90094pt>
+ [55 <./pcb_v1.pdf>]
+<figuras/pcbRealistic.PNG, id=642, 516.42938pt x 441.90094pt>
 File: figuras/pcbRealistic.PNG Graphic file (type png)
 <use figuras/pcbRealistic.PNG>
-Package pdftex.def Info: figuras/pcbRealistic.PNG  used on input line 829.
+Package pdftex.def Info: figuras/pcbRealistic.PNG  used on input line 871.
 (pdftex.def)             Requested size: 402.8133pt x 344.68134pt.
 
-Overfull \hbox (1.81494pt too wide) in paragraph at lines 834--835
+Overfull \hbox (1.81494pt too wide) in paragraph at lines 876--877
 []\T1/lmr/m/n/12 Alguns com-po-nen-tes não es-tao pre-sen-tes no ren-der 3D poi
 s nao foi pos-sí-vel desenha-
  []
 
-[55 <./figuras/pcbRealistic.PNG>] [56
+[56 <./figuras/pcbRealistic.PNG>] [57
 
-] [57]
-<figuras/arquiteturaSof.PNG, id=644, 712.91344pt x 152.82094pt>
+]
+<figuras/arquiteturaSof.PNG, id=654, 712.91344pt x 152.82094pt>
 File: figuras/arquiteturaSof.PNG Graphic file (type png)
 <use figuras/arquiteturaSof.PNG>
-Package pdftex.def Info: figuras/arquiteturaSof.PNG  used on input line 884.
+Package pdftex.def Info: figuras/arquiteturaSof.PNG  used on input line 926.
 (pdftex.def)             Requested size: 499.03601pt x 106.9739pt.
 
-Overfull \hbox (44.03601pt too wide) in paragraph at lines 883--885
+Overfull \hbox (44.03601pt too wide) in paragraph at lines 925--927
  [] 
  []
 
@@ -1882,70 +1911,70 @@ sc.sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 951.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 951.
+nput line 993.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 993.
 
 
 ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 964.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1006.
 
-Overfull \hbox (0.30493pt too wide) in paragraph at lines 964--965
+Overfull \hbox (0.30493pt too wide) in paragraph at lines 1006--1007
 [][][][][][][][][][][][][][][][] 
  []
 
 [60] [61]
-<figuras/freertosTasks.PNG, id=686, 449.42906pt x 406.51875pt>
+<figuras/freertosTasks.PNG, id=696, 449.42906pt x 406.51875pt>
 File: figuras/freertosTasks.PNG Graphic file (type png)
 <use figuras/freertosTasks.PNG>
-Package pdftex.def Info: figuras/freertosTasks.PNG  used on input line 1012.
+Package pdftex.def Info: figuras/freertosTasks.PNG  used on input line 1054.
 (pdftex.def)             Requested size: 359.54372pt x 325.21542pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [62] [63 <./figuras/freertosTasks.PNG>] [64] [65] [66]
-<figuras/CSS.png, id=715, 648.17157pt x 384.6872pt>
+<figuras/CSS.png, id=725, 648.17157pt x 384.6872pt>
 File: figuras/CSS.png Graphic file (type png)
 <use figuras/CSS.png>
-Package pdftex.def Info: figuras/CSS.png  used on input line 1161.
+Package pdftex.def Info: figuras/CSS.png  used on input line 1203.
 (pdftex.def)             Requested size: 466.68317pt x 276.97456pt.
 
-Overfull \hbox (11.68317pt too wide) in paragraph at lines 1161--1162
+Overfull \hbox (11.68317pt too wide) in paragraph at lines 1203--1204
  [][] 
  []
 
 [67 <./figuras/CSS.png>] [68
 
 ]
-<figuras/trace_snapshoot.png, id=735, 737.00343pt x 453.19313pt>
+<figuras/trace_snapshoot.png, id=745, 737.00343pt x 453.19313pt>
 File: figuras/trace_snapshoot.png Graphic file (type png)
 <use figuras/trace_snapshoot.png>
-Package pdftex.def Info: figuras/trace_snapshoot.png  used on input line 1186.
+Package pdftex.def Info: figuras/trace_snapshoot.png  used on input line 1228.
 (pdftex.def)             Requested size: 530.64207pt x 326.2988pt.
 
-Overfull \hbox (75.64207pt too wide) in paragraph at lines 1186--1187
+Overfull \hbox (75.64207pt too wide) in paragraph at lines 1228--1229
  [][] 
  []
 
-<figuras/telemetryData.PNG, id=736, 505.89pt x 556.32843pt>
+<figuras/telemetryData.PNG, id=746, 505.89pt x 556.32843pt>
 File: figuras/telemetryData.PNG Graphic file (type png)
 <use figuras/telemetryData.PNG>
-Package pdftex.def Info: figuras/telemetryData.PNG  used on input line 1199.
+Package pdftex.def Info: figuras/telemetryData.PNG  used on input line 1241.
 (pdftex.def)             Requested size: 354.12057pt x 389.42725pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [69 <./figuras/trace_snapshoot.png>]
-<figuras/powerComsuption.PNG, id=742, 702.37407pt x 479.54156pt>
+<figuras/powerComsuption.PNG, id=752, 702.37407pt x 479.54156pt>
 File: figuras/powerComsuption.PNG Graphic file (type png)
 <use figuras/powerComsuption.PNG>
-Package pdftex.def Info: figuras/powerComsuption.PNG  used on input line 1216.
+Package pdftex.def Info: figuras/powerComsuption.PNG  used on input line 1258.
 (pdftex.def)             Requested size: 505.70895pt x 345.26965pt.
 
-Overfull \hbox (50.70895pt too wide) in paragraph at lines 1216--1217
+Overfull \hbox (50.70895pt too wide) in paragraph at lines 1258--1259
  [][] 
  []
 
@@ -1954,11 +1983,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: figuras/arquiteturaHard2.PNG Graphic file (type png)
 <use figuras/arquiteturaHard2.PNG>
-Package pdftex.def Info: figuras/arquiteturaHard2.PNG  used on input line 1227.
+Package pdftex.def Info: figuras/arquiteturaHard2.PNG  used on input line 1269.
 
 (pdftex.def)             Requested size: 490.892pt x 315.32178pt.
 
-Overfull \hbox (35.892pt too wide) in paragraph at lines 1227--1228
+Overfull \hbox (35.892pt too wide) in paragraph at lines 1269--1270
  [][] 
  []
 
@@ -1966,13 +1995,13 @@ Overfull \hbox (35.892pt too wide) in paragraph at lines 1227--1228
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [70 <./figuras/telemetryData.PNG>] [71 <./figuras/powerComsuption.PNG>]
-<figuras/esquematico.PNG, id=757, 712.91344pt x 404.26031pt>
+<figuras/esquematico.PNG, id=767, 712.91344pt x 404.26031pt>
 File: figuras/esquematico.PNG Graphic file (type png)
 <use figuras/esquematico.PNG>
-Package pdftex.def Info: figuras/esquematico.PNG  used on input line 1238.
+Package pdftex.def Info: figuras/esquematico.PNG  used on input line 1280.
 (pdftex.def)             Requested size: 499.03601pt x 282.98029pt.
 
-Overfull \hbox (44.03601pt too wide) in paragraph at lines 1238--1239
+Overfull \hbox (44.03601pt too wide) in paragraph at lines 1280--1281
  [][] 
  []
 
@@ -2236,12 +2265,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [91] [92] [93] [94] [95] [96]
-<figuras/mpu9250_esquema.PNG, id=972, 652.68843pt x 391.4625pt>
+<figuras/mpu9250_esquema.PNG, id=982, 652.68843pt x 391.4625pt>
 File: figuras/mpu9250_esquema.PNG Graphic file (type png)
 <use figuras/mpu9250_esquema.PNG>
 Package pdftex.def Info: figuras/mpu9250_esquema.PNG  used on input line 502.
 (pdftex.def)             Requested size: 326.34341pt x 195.73076pt.
-<figuras/wtd_esquema.PNG, id=973, 520.94624pt x 361.35pt>
+<figuras/wtd_esquema.PNG, id=983, 520.94624pt x 361.35pt>
 File: figuras/wtd_esquema.PNG Graphic file (type png)
 <use figuras/wtd_esquema.PNG>
 Package pdftex.def Info: figuras/wtd_esquema.PNG  used on input line 510.
@@ -2274,11 +2303,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 27144 strings out of 492895
- 497929 string characters out of 3121867
- 855594 words of memory out of 3000000
- 30119 multiletter control sequences out of 15000+200000
- 94684 words of font info for 63 fonts, out of 3000000 for 9000
+ 27328 strings out of 492895
+ 500290 string characters out of 3121867
+ 859123 words of memory out of 3000000
+ 30291 multiletter control sequences out of 15000+200000
+ 100614 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,18n,62p,1211b,1213s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
@@ -2303,18 +2332,20 @@ c/lm/lmri10.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/lm/lmri12.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/lm/lmss12.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Users/Guilherme/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Guilherme/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Users/Guilherme/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Gu
-ilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/U
-sers/Guilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pf
-b><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-msy8.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmtk10.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (99 pages, 5756118 bytes).
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/Guilherme/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Guilherme
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Users/
+Guilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso17.pfb><
+C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy
+10.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmsy6.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmsy7.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/lm/lmsy8.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Guilherme/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on tcc.pdf (99 pages, 5816529 bytes).
 PDF statistics:
- 1301 PDF objects out of 1440 (max. 8388607)
- 271 named destinations out of 1000 (max. 500000)
- 727 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1323 PDF objects out of 1440 (max. 8388607)
+ 274 named destinations out of 1000 (max. 500000)
+ 743 words of extra memory for PDF output out of 10000 (max. 10000000)
 
