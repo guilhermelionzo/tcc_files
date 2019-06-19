@@ -20,18 +20,24 @@
 \contentsline {figure}{\numberline {19}{\ignorespaces Arquitetura do microcontrolador MSP432P4111.}}{45}{figure.3.19}% 
 \contentsline {figure}{\numberline {20}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do ACS711.}}{49}{figure.3.20}% 
 \contentsline {figure}{\numberline {21}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do MPU9250.}}{50}{figure.3.21}% 
-\contentsline {figure}{\numberline {22}{\ignorespaces Dimens\IeC {\~o}es do m\IeC {\'o}dulo PC/104-Plus em polegadas e mil\IeC {\'\i }metros.}}{51}{figure.3.22}% 
-\contentsline {figure}{\numberline {23}{\ignorespaces Arquitetura do OBC.}}{54}{figure.3.23}% 
-\contentsline {figure}{\numberline {24}{\ignorespaces Arquitetura do OBC.}}{55}{figure.3.24}% 
-\contentsline {figure}{\numberline {25}{\ignorespaces PCB em vista Real\IeC {\'\i }stica.}}{56}{figure.3.25}% 
+\contentsline {figure}{\numberline {22}{\ignorespaces Dimens\IeC {\~o}es do m\IeC {\'o}dulo PC/104-Plus em polegadas e mil\IeC {\'\i }metros.}}{52}{figure.3.22}% 
+\contentsline {figure}{\numberline {23}{\ignorespaces Arquitetura do OBC.}}{53}{figure.3.23}% 
+\contentsline {figure}{\numberline {24}{\ignorespaces Arquitetura do OBC.}}{54}{figure.3.24}% 
+\contentsline {figure}{\numberline {25}{\ignorespaces PCB em vista Real\IeC {\'\i }stica.}}{55}{figure.3.25}% 
 \contentsline {figure}{\numberline {26}{\ignorespaces Arquitetura de abstra\IeC {\c c}\IeC {\~a}o de Camadas.}}{58}{figure.4.26}% 
 \contentsline {figure}{\numberline {27}{\ignorespaces Estados das Tasks no FreeRTOS}}{63}{figure.4.27}% 
 \contentsline {figure}{\numberline {28}{\ignorespaces Exemplo Timer UML.}}{66}{figure.4.28}% 
 \contentsline {figure}{\numberline {29}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{67}{figure.4.29}% 
-\contentsline {figure}{\numberline {30}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{69}{figure.5.30}% 
-\contentsline {figure}{\numberline {31}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{70}{figure.5.31}% 
-\contentsline {figure}{\numberline {32}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{71}{figure.5.32}% 
-\contentsline {figure}{\numberline {33}{\ignorespaces Arquitetura pr\IeC {\'e}via do OBC.}}{72}{figure.5.33}% 
-\contentsline {figure}{\numberline {34}{\ignorespaces Esquem\IeC {\'a}tico pr\IeC {\'e}vio do OBC.}}{73}{figure.5.34}% 
-\contentsline {figure}{\numberline {35}{\ignorespaces Esquem\IeC {\'a}tico do MPU9250.}}{97}{figure.E.35}% 
-\contentsline {figure}{\numberline {36}{\ignorespaces Esquem\IeC {\'a}tico do STWD100.}}{97}{figure.E.36}% 
+\contentsline {figure}{\numberline {30}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{68}{figure.4.30}% 
+\contentsline {figure}{\numberline {31}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{69}{figure.5.31}% 
+\contentsline {figure}{\numberline {32}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{70}{figure.5.32}% 
+\contentsline {figure}{\numberline {33}{\ignorespaces UML da Camada de Servi\IeC {\c c}o do Sistema.}}{71}{figure.5.33}% 
+\contentsline {figure}{\numberline {34}{\ignorespaces Arquitetura pr\IeC {\'e}via do OBC.}}{72}{figure.5.34}% 
+\contentsline {figure}{\numberline {35}{\ignorespaces Esquem\IeC {\'a}tico pr\IeC {\'e}vio do OBC.}}{73}{figure.5.35}% 
+\contentsline {figure}{\numberline {36}{\ignorespaces Esquem\IeC {\'a}tico do MPU9250.}}{97}{figure.E.36}% 
+\contentsline {figure}{\numberline {37}{\ignorespaces Esquem\IeC {\'a}tico do STWD100.}}{97}{figure.E.37}% 
+\contentsline {figure}{\numberline {38}{\ignorespaces Esquem\IeC {\'a}tico do MPU9250.}}{99}{figure.F.38}% 
+\contentsline {figure}{\numberline {39}{\ignorespaces Esquem\IeC {\'a}tico do STWD100.}}{99}{figure.F.39}% 
+\contentsline {figure}{\numberline {40}{\ignorespaces Esquem\IeC {\'a}tico do STWD100.}}{100}{figure.F.40}% 
+\contentsline {figure}{\numberline {41}{\ignorespaces Esquem\IeC {\'a}tico do STWD100.}}{100}{figure.F.41}% 
+\contentsline {figure}{\numberline {42}{\ignorespaces Esquem\IeC {\'a}tico do STWD100.}}{101}{figure.F.42}% 

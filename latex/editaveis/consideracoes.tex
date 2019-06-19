@@ -756,21 +756,7 @@ Essa seção visa descrever as interfaces que possibilitam a comunicação do OB
 
 Vale a pena ressaltar que devido à escassez de requisitos dos demais subsistemas da missão, algumas interfaces não foram definidas.
 
-\section{Dimensões da Placa}
-
-Como foi mencionado anteriormente, o formato da placa seguirá o padrão \textit{PC/104-Plus}. Esse padrão é comumente visto em missões CubeSat. A placa possui dimensões físicas de 90.17 x 95.89 mm, possuindo 4 furos M3 nas extremidades da placa. A Figura \ref{pc104} ilustra as dimensões da placa estabelecida pelo \textit{PC/104 Consorsium}.
-
-\begin{figure}[h]
-	\centering
-    Fonte:(PC/104 EMBEDDED CONSORTIUM, 2008, pág.20)
-	\includegraphics[keepaspectratio=true,scale=0.7]{figuras/pc104_32bit.PNG}
-	\caption{Dimensões do módulo PC/104-Plus em polegadas e milímetros.}
-	\label{pc104}
-\end{figure}
-
-\newpage
-
-\section{JTAG (\textit{Joint Test Action Group})}
+\subsection{JTAG (\textit{Joint Test Action Group})}
 
 JTAG, commonly referred to as boundary-scan and defined by the Institute
 of Electrical and Electronic Engineers (IEEE) 1149.1, originally began as an
@@ -807,8 +793,20 @@ O MSP432P4111 possui esse tipo de interface de comunicação. Os pinos destinado
 	\end{tabular}
 \end{table}
 
-\section{Barramento PC104}
+\subsection{Barramento PC104}
 
+
+\section{Dimensões da Placa}
+
+Como foi mencionado anteriormente, o formato da placa seguirá o padrão \textit{PC/104-Plus}. Esse padrão é comumente visto em missões CubeSat. A placa possui dimensões físicas de 90.17 x 95.89 mm, possuindo 4 furos M3 nas extremidades da placa. A Figura \ref{pc104} ilustra as dimensões da placa estabelecida pelo \textit{PC/104 Consorsium}.
+
+\begin{figure}[h]
+	\centering
+	Fonte:(PC/104 EMBEDDED CONSORTIUM, 2008, pág.20)
+	\includegraphics[keepaspectratio=true,scale=0.7]{figuras/pc104_32bit.PNG}
+	\caption{Dimensões do módulo PC/104-Plus em polegadas e milímetros.}
+	\label{pc104}
+\end{figure}
 
 \section{Sistema para Mitigar Falhas}
 
@@ -816,27 +814,24 @@ De acordo com  Frost e Agasid (2015), missões de longa duração necessitam de 
 
 A partir de uma breve pesquisa, levantou-se as seguintes estratégias:
 \begin{itemize}
-\item Proteção Metálica (EMI \textit{shielding});
-\item Proteção contra corrente excessiva (\textit{OverCurrent});
-\item Código Corretor;
-\item \textit{Watchdog} externo.
+	\item Proteção Metálica (EMI \textit{shielding});
+	\item Proteção contra corrente excessiva (\textit{OverCurrent});
+	\item Código Corretor;
+	\item \textit{Watchdog} externo.
 \end{itemize}
 
-A discussão sobre as estratégias acima serão abordadas realizadas no TCC2. O único ponto a ser discutido no TCC1 será o \textit{Watchdog} externo.
-
-
+Dentre as estrategias acima, a única que será discutida é a\textit{Watchdog} externo pois é uma solução simples e que não demanda muito tempo de implementação. As demais estrategias podem ser implementadas em uma segunda versão do computador de bordo.
 
 \subsection{\textit{Watchdog} Externo}
 
 Conforme  Frost e Agasid (2015), o \textit{Watchdog}  é normalmente utilizado para monitorar o estado do microcontrolador, evitando o travamento do sistema. Basicamente, um \textit{Watchdog} externo é um contador regressivo que, ao final da contagem, reinicia o microcontrolador em caso de um evento SEE. 
-	
-    O microcontrolador já possui um \textit{Watchdog} interno que reiniciará o microcontrolador em caso de travamento. O uso de um contador externo trará mais robustez ao sistema.
-    
-	O contador utilizado para o sistema de \textit{Watchdog} externo foi o STWD100, o mesmo utilizado pelo projeto do Botma (2011). Esse dispositivo é produzido pela fabricante STMicroelectronics e possui três tempos para \textit{reset} (3.4 ms, 6.3 ms, 102 ms e 1.6 s).  
+
+O microcontrolador já possui um \textit{Watchdog} interno que reiniciará o microcontrolador em caso de travamento. O uso de um contador externo trará mais robustez ao sistema.
+
+O contador utilizado para o sistema de \textit{Watchdog} externo foi o STWD100, o mesmo utilizado pelo projeto do Botma (2011). Esse dispositivo é produzido pela fabricante STMicroelectronics e possui três tempos para \textit{reset} (3.4 ms, 6.3 ms, 102 ms e 1.6 s).  
 
 A escolha do tempo de \textit{reset} será feita durante o teste do protótipo. Nessa fase, o \textit{software} embarcado estará com a logica de programação de todos os subsistemas estará finalizado, disponibilizando o tempo de execução de todas as \textit{Tasks}.
 
-\newpage
 \section{Placa de Circuito Impresso}
 
 Apos a escolha dos componentes é possível ter uma visão abrangente do \textit{hardware}, como é mostrado na Figura \ref{arquiteturaOBC}. Como é possível notar, ha algumas interfaces que ainda nao foram definidas, como os pinos do modulo \textit{PPT} e \textit{TTC}.
@@ -881,7 +876,7 @@ No apendice YY ha as imagens do plano de terra e plano de alimentação da PCB.
 
 Este capítulo visa descrever o desenvolvimento do \textit{software} embarcado. Inicialmente será mostrado os requisitos e funcionalidades consideradas no desenvolvimento do sistema. Logo em seguida, será exposto a arquitetura utilizada para a aplicação. Após essa etapa, será mostrado com mais detalhes os \textit{softwares} FreeRTOS, DriverLib e a camada de serviço do cliente. 
 
-Tendo em vista que a missão CubeSat ainda está em fase de discussão, a abordagem a ser utilizada no desenvolvimento é realizar um \textit{software} modular que, a medida que os requisitos se tornem definitivos, as funcionalidades sejam implementadas. Com isso, o \textit{software} a ser desenvolvido servirá para teste do \textit{hardware} e deverá ser atualizado para a missão final.
+Tendo em vista que a missão CubeSat ainda está em fase de discussão, a abordagem utilizada no desenvolvimento foi realizar um \textit{software} modular que, a medida que os requisitos se tornem definitivos, as funcionalidades fossem implementadas. Com isso, o \textit{software} desenvolvido servirá para teste do \textit{hardware} e deverá ser atualizado para a missão final.
 
 \section{Requisitos e Funcionalidades}
 
@@ -1138,19 +1133,19 @@ De acordo com Douglass (2009), o \textit{FunctionalC} é a extensão da UML que 
 \begin{tabular}{cccl}
 \hline
 \textbf{Tipo de Diagrama}      & \textbf{Diagrama FuncionalC} & \textbf{Diagrama UML}   & \multicolumn{1}{c}{\textbf{Descriçao}}                                                                                                                                                                          \\ \hline
-Requisitos                     & Diagrama de Caso de Uso      & Diagrama de Caso de Uso & \begin{tabular}[c]{@{}l@{}}Representa os usos do sistema com relação \\ aos atores\end{tabular}                                                                                                                 \\ \hline
-\multirow{4}{*}{Estrutura}     & Diagrama de Construção       & Diagrama de Componente  & \begin{tabular}[c]{@{}l@{}}Mostra o conjunto de artefatos construídos\\ a partir dos arquivos de origem, como \\ executáveis e bibliotecas\end{tabular}                                                         \\
-                               & Gráfico de Chamadas          & Diagrama de Classes     & \begin{tabular}[c]{@{}l@{}}Mostra as chamadas e suas sequências \\ entre conjuntos de funções\end{tabular}                                                                                                      \\
-                               & Diagrama de Arquivos         & Diagrama de Classes     & \begin{tabular}[c]{@{}l@{}}Mostra o conjunto de arquivos .c e .h \\ e suas relações\end{tabular}                                                                                                                \\
-                               & Diagrama do Código           & nenhum                  & Mostra o código-fonte gerado                                                                                                                                                                                    \\ \hline
-\multirow{3}{*}{Comportamento} & Diagrama de Mensagens        & Diagrama Sequencial     & \begin{tabular}[c]{@{}l@{}}Mostra sequências de chamadas e \\ eventos enviados entre um conjunto \\ de arquivos, incluindo valores de \\ parâmetros passados\end{tabular}                                       \\
-                               & Maquina de Estados           & Diagrama de Estados     & \begin{tabular}[c]{@{}l@{}}Mostra a máquina de estado para \\ arquivos e como suas funções \\ e ações incluídas são executadas \\ à medida que eventos (síncronos ou \\ assíncronos) são recebidos\end{tabular} \\
-                               & Fluxograma                   & Diagrama de Atividades  & \begin{tabular}[c]{@{}l@{}}Detalha o fluxo de controle para\\  uma função ou caso de uso\end{tabular}                                                                                                           \\ \hline
+Requisitos                     & Diagrama de Caso de Uso      & Diagrama de Caso de Uso & \begin{tabular}[c]{@{}l@{}}Representa os usos do sistema com relação \\ aos atores.\end{tabular}                                                                                                                 \\ \hline
+\multirow{4}{*}{Estrutura}     & Diagrama de Construção       & Diagrama de Componente  & \begin{tabular}[c]{@{}l@{}}Mostra o conjunto de artefatos construídos\\ a partir dos arquivos de origem, como \\ executáveis e bibliotecas.\end{tabular}                                                         \\
+                               & Gráfico de Chamadas          & Diagrama de Classes     & \begin{tabular}[c]{@{}l@{}}Mostra as chamadas e suas sequências \\ entre conjuntos de funções.\end{tabular}                                                                                                      \\
+                               & Diagrama de Arquivos         & Diagrama de Classes     & \begin{tabular}[c]{@{}l@{}}Mostra o conjunto de arquivos .c e .h \\ e suas relações.\end{tabular}                                                                                                                \\
+                               & Diagrama do Código           & nenhum                  & Mostra o código-fonte gerado.                                                                                                                                                                                    \\ \hline
+\multirow{3}{*}{Comportamento} & Diagrama de Mensagens        & Diagrama Sequencial     & \begin{tabular}[c]{@{}l@{}}Mostra sequências de chamadas e \\ eventos enviados entre um conjunto \\ de arquivos, incluindo valores de \\ parâmetros passados.\end{tabular}                                       \\
+                               & Maquina de Estados           & Diagrama de Estados     & \begin{tabular}[c]{@{}l@{}}Mostra a máquina de estado para \\ arquivos e como suas funções \\ e ações incluídas são executadas \\ à medida que eventos (síncronos ou \\ assíncronos) são recebidos.\end{tabular} \\
+                               & Fluxograma                   & Diagrama de Atividades  & \begin{tabular}[c]{@{}l@{}}Detalha o fluxo de controle para\\  uma função ou caso de uso.\end{tabular}                                                                                                           \\ \hline
 \end{tabular}}}
 Fonte: (DOUGLASS, pag 3,2009).
 \end{table}
 
-Para ilustrar como é realizada a implementação de um diagrama UML em linguagem C, o considera-se um arquivo Timer, que tem o objetivo de atualizar o tempo. Ele possui como atributo os segundos e minutos, bem como métodos e operações, como: Reset() e Tick().  A função reset poderia inicializar as variáveis para zero, e a função tick poderia incrementar o tempo em um segundo. Em UML esse elemento seria representado conforme a Figura \textcolor{blue}{25}. Em C++ seria realizado uma classe, mas em C seria realizado uma \textbf{struct}, conforme mostra o Código \ref{lst:codigo3}.
+Para ilustrar como é realizada a implementação de um diagrama UML em linguagem C, o considera-se um arquivo Timer, que tem o objetivo de atualizar o tempo. Ele possui como atributo os segundos e minutos, bem como métodos e operações, como: Reset() e Tick().  A função Reset() poderia inicializar as variáveis para zero, e a função Tick() poderia incrementar o tempo a cada segundo. Em UML esse elemento seria representado conforme a Figura \textcolor{blue}{25}. Em C++ seria realizado uma classe, mas em C seria implementado conforme mostra o Código \ref{lst:codigo3}.
 
 \begin{figure}[h]
 \centering
@@ -1163,8 +1158,8 @@ Para ilustrar como é realizada a implementação de um diagrama UML em linguage
 \centering
 \attribute {+ mins : int}
 \attribute {+ secs : int}
-\operation {- Tick(): void}
-\operation {- Reset(): void}
+\operation {- tick(): void}
+\operation {- reset(): void}
 \end{class}
 \end{tikzpicture}
 \caption{Exemplo Timer UML.}
@@ -1180,27 +1175,27 @@ extern int mins;
 extern int secs;
 
 /*## operation Reset() */
-void Reset();
+void reset();
 
 /*## operation tick() */
 void tick();
 
-}
 \end{lstlisting}
 \begin{center}
 Fonte: (DOUGLASS, 2009, pág.5).
 \end{center}
 
+\subsection{Desenvolvimento da UML}
 
 \begin{itemize}
-\item \textbf{Desenvolvimento da UML}
+	
+\item \textbf{Diagrama de Arquivos}
 
 Analisando os requisitos do sistema, tabela \ref{tabela_req}, foi possível abstrair as funções principais exigidas para o software: Controle dos Subsistemas, Controle das Tarefas e  Armazenamento dos dados. Essas funcionalidades foram transformadas em tres pacotes: \textbf{ControleTarefas} (Controle das Tarefas), \textbf{Sistema} (Controle dos Subsistemas) e \textbf{ArmazenamentoDados} (Armazenamento de dados). A UML do CSS é mostrado na Figura \ref{uml_CSS}.
 
-
 \begin{figure}[h]
 	\centering
-\includegraphics[keepaspectratio=true,scale=0.72]{figuras/CSS.png}
+	\includegraphics[keepaspectratio=true,scale=0.72]{figuras/CSS.png}
 	\caption{UML da Camada de Serviço do Sistema.}
 	\label{uml_CSS}
 \end{figure}
@@ -1210,6 +1205,21 @@ Analisando os requisitos do sistema, tabela \ref{tabela_req}, foi possível abst
 
 O desenvolvimento do Fluxograma será realizado no TCC2.
 \end{comment}
+
+
+
+\item \textbf{Fluxograma}
+
+O fluxograma foi feito com base nos requisitos. As atividades do OBC foi divividas em \textit{Tasks}. Abaixo ha o fluxograma do software embarcado. Caso o leitor queire, no apêndice \ref{apendicef} ha todos os 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.72]{figuras/flowChart_obc.png}
+	\caption{UML da Camada de Serviço do Sistema.}
+	\label{uml_CSS}
+\end{figure}
+
+\item \textbf{Maquina de Estados}
 
 
 

@@ -10,7 +10,7 @@
 \contentsline {table}{\numberline {9}{\ignorespaces Informa\IeC {\c c}\IeC {\~o}es t\IeC {\'e}cnicas do ACS711.}}{49}{table.3.9}% 
 \contentsline {table}{\numberline {10}{\ignorespaces Informa\IeC {\c c}\IeC {\~o}es t\IeC {\'e}cnicas sobre sensor MPU9250.}}{49}{table.3.10}% 
 \contentsline {table}{\numberline {11}{\ignorespaces Informa\IeC {\c c}\IeC {\~o}es t\IeC {\'e}cnicas sobre sensor MCP9701T.}}{50}{table.3.11}% 
-\contentsline {table}{\numberline {12}{\ignorespaces Pinos JTAG no MSP432P4111.}}{52}{table.3.12}% 
+\contentsline {table}{\numberline {12}{\ignorespaces Pinos JTAG no MSP432P4111.}}{51}{table.3.12}% 
 \contentsline {table}{\numberline {13}{\ignorespaces Requis\IeC {\'\i }tos do \textit {software} emabarcado.}}{57}{table.4.13}% 
 \contentsline {table}{\numberline {14}{\ignorespaces Lista de todas as APIs dispon\IeC {\'\i }veis no pacote DriverLib.}}{61}{table.4.14}% 
 \contentsline {table}{\numberline {15}{\ignorespaces APIs da categoria Task Control e Task Creation.}}{64}{table.4.15}% 
