@@ -512,49 +512,65 @@ Pixels                          & 921600 & JPG                        \\ \midrul
 	\label{STWD}
 \end{figure}
 
-\chapter{Fluxograma do Software Embarcado}
+\chapter{Fluxogramas da Camada de Serviço}
 \label{apendicef}
 
+Este apêndice contem os fluxogramas da Camada de Serviço do Software Embarcado.
 
 \begin{figure}[!h]
 	\centerfloat
 	\centering
-	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/flowChart_obc.PNG}
-	\caption{Esquemático do MPU9250.}
+	\includegraphics[keepaspectratio=true,scale=0.65]{figuras/flowChart_obc.PNG}
+	\caption{Fluxograma de Inicialização.}
 	\label{flowChart_obc}
 \end{figure}
 
 \begin{figure}[!h]
 	\centerfloat
 	\centering
-	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/flowChart_hardware.PNG}
-	\caption{Esquemático do STWD100.}
+	\includegraphics[keepaspectratio=true,scale=0.4]{figuras/flowChart_hardware.PNG}
+	\caption{Fluxograma de Inicialização do Hardware.}
 	\label{flowChart_hardware}
 \end{figure}
 
 \begin{figure}[!h]
 	\centerfloat
 	\centering
-	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/flowChart_clockSetup.PNG}
-	\caption{Esquemático do STWD100.}
+	\includegraphics[keepaspectratio=true,scale=0.4]{figuras/flowChart_clockSetup.PNG}
+	\caption{Fluxograma de Inicialização do Clock.}
 	\label{flowChart_clockSetup}
 \end{figure}
 
 \begin{figure}[!h]
 	\centerfloat
 	\centering
-	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/flowChart_taskCreate.PNG}
-	\caption{Esquemático do STWD100.}
+	\includegraphics[keepaspectratio=true,scale=0.85]{figuras/flowChart_taskCreate.PNG}
+	\caption{Fluxograma de criação das \textit{Tasks}.}
 	\label{flowChart_taskCreate}
 \end{figure}
 
 \begin{figure}[!h]
 	\centerfloat
 	\centering
-	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/flowChart_wdt.PNG}
-	\caption{Esquemático do STWD100.}
+	\includegraphics[keepaspectratio=true,scale=0.35]{figuras/flowChart_wdt.PNG}
+	\caption{Fluxograma do \textit{Watchdog Task}.}
 	\label{flowChart_wdt}
 \end{figure}
 
+\begin{figure}[!h]
+	\centerfloat
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/flowChart_dataStorage.PNG}
+	\caption{Fluxograma do \textit{DataStorage Task}.}
+	\label{flowChart_dataStorage}
+\end{figure}
+
+\begin{figure}[!h]
+	\centerfloat
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.45]{figuras/flowChart_houseKeeping.PNG}
+	\caption{Fluxograma do \textit{HouseKeeping Task}.}
+	\label{flowChart_houseKeeping}
+\end{figure}
 
 \end{apendicesenv}

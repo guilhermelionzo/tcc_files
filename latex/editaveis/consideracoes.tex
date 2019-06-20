@@ -427,7 +427,7 @@ A resistência a radiação dos componentes é um fator muito importante para es
 
 \chapter[DESENVOLVIMENTO DO HARDWARE]{DESENVOLVIMENTO DO HARDWARE}
 \label{secaoHardware}
-Esse capítulo descreverá o desenvolvimento do \textit{hardware}. Inicialmente será mostrado os requisitos e funcionalidades consideradas para o sistema. O passo seguinte é um dos mais importantes pois mostrará o processo de seleção do microcontrolador, componente que afetará restante do projeto. Em seguida será exposto os componentes adicionais que formarão o OBC, como: memória, sensores, etc. Por fim, será apresentado o esquemático do OBC e o \textit{layout} da Placa de Circuíto Impresso. 
+Esse capítulo descreverá o desenvolvimento do \textit{hardware}. Inicialmente será mostrado os requisitos e funcionalidades consideradas para o sistema. O passo seguinte é um dos mais importantes pois mostrará o processo de seleção do microcontrolador, componente que afetará restante do projeto. Em seguida será exposto os componentes adicionais que formarão o OBC, como: memória, sensores, etc. Por fim, será apresentado o esquemático do OBC e o \textit{layout} da placa de circuito impresso. 
 
 \hl{alguns mecanismos de mitigacao de falhas e os esquematicos do sistema.}
 
@@ -665,6 +665,9 @@ SQF-MSDM1-4G-21E & Advantech Corp                    & -40$^{\circ}$C $\sim$85$^
 \end{tabular}}}
 \end{table}
 
+\newpage
+
+
 \section{Periféricos}
 
 	Essa seção visa mostrar os sensores utilizados para compor o sistema e ajudar o microcontrolador a atingir os requisitos exigidos na Seção \ref{seção1_1}.
@@ -675,12 +678,11 @@ Com o intuito de cumprir o requisito de leitura de corrente, escolheu-se o senso
 
 A figura \ref{fig20} mostra o esquemático eletrônico de uma aplicação usual do ACS711.
 
-\newpage
 
 \begin{figure}[h]
 	\centering
     Fonte:(ALLEGRO, 2017, pág.1)\linebreak
-	\includegraphics[keepaspectratio=true,scale=0.8]{figuras/currentSensor.PNG}
+	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/currentSensor.PNG}
 	\caption{Esquemático Eletrônico de uma aplicação usual do ACS711.}
 	\label{fig20}
 \end{figure}
@@ -738,6 +740,14 @@ Mesmo o MPU9250 e o MSP432P4111 possuindo um sensor de temperatura, foi escolhid
 O sensor de temperatura escolhido foi o MCP9701T, da fabricante Microchip, devido sua fácil usabilidade e baixo consumo. O dispositivo comunica através de uma saída analógica, sendo capaz de medir temperaturas com uma precisão de 2 $^{\circ}$C em uma faixa de temperatura de -40$^{\circ}$C a 125$^{\circ}$C (MICROCHIP, 2016).
 
 A tabela \ref{caracTMP} mostra as especificações do MCP9701T. Essas informações foram retiradas da ficha técnica do sensor.
+http://ww1.microchip.com/downloads/en/devicedoc/20001942g.pdf
+\begin{figure}[h]
+	\centering
+	Fonte:(MICROCHIP, 2018, pág.20)\linebreak
+	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/MCP9700.PNG}
+	\caption{Esquemático Eletrônico de uma aplicação usual do MCP9700.}
+	\label{MCP9700}
+\end{figure}
 
 \begin{table}[h]
 \centering
@@ -750,29 +760,11 @@ MCP9701T & \begin{tabular}[c]{@{}c@{}}Microchip\end{tabular} & -55 $\sim$127    
 \end{tabular}
 \end{table}
 
-\section{Interfaces}
+\section{Interface de Programação/\textit{Debug}}
 
-Essa seção visa descrever as interfaces que possibilitam a comunicação do OBC entre os demais subsistemas do satélite, durante a missão, e também com o usuário, a fase de programação e \textit{debug}.
+O MSP432P4111 possui dois tipos de interface de programação: JTAG (\textit{Joint Test Action Group}), SWD (\textit{Serial Wire Debug}). Essas duas interfaces são utilizadas em conjunto para programar e "\textit{debugar}" o microcontrolador\footnote{Disponível em: http://www.ti.com/lit/ug/slau747b/slau747b.pdf}. 
 
-Vale a pena ressaltar que devido à escassez de requisitos dos demais subsistemas da missão, algumas interfaces não foram definidas.
-
-\subsection{JTAG (\textit{Joint Test Action Group})}
-
-JTAG, commonly referred to as boundary-scan and defined by the Institute
-of Electrical and Electronic Engineers (IEEE) 1149.1, originally began as an
-integrated method for testing interconnects on printed circuit boards (PCBs)
-implemented at the integrated circuit (IC) level. As PCBs grew in complexity
-and density—a trend that continues today—limitations in the traditional test
-methods of in-circuit testers (ICTs) and bed of nails fixtures became evident.
-Packaging formats, specifically Ball Grid Array (BGA, depicted in Figure 1)
-and other fine pitch components, designed to meet ever-increasing physical
-space constraints, also led to a loss of physical access to signals.
-
-O MSP432P4111 possui esse tipo de interface de comunicação. Os pinos destinados para o JTAG são mostrados na Tabela \ref{jtagPin}.
-
-\hl{https://www.corelis.com/educationdownload/JTAG-Tutorial.pdf}
-
-\hl{http://www.ti.com/lit/ug/slau747b/slau747b.pdf}
+Os pinos destinados para a interface JTAG/SDW são mostrados na Tabela \ref{jtagPin}.
 
 \begin{table}[h]
 	\centering
@@ -793,7 +785,8 @@ O MSP432P4111 possui esse tipo de interface de comunicação. Os pinos destinado
 	\end{tabular}
 \end{table}
 
-\subsection{Barramento PC104}
+
+%\subsection{Barramento PC104}
 
 
 \section{Dimensões da Placa}
@@ -814,13 +807,27 @@ De acordo com  Frost e Agasid (2015), missões de longa duração necessitam de 
 
 A partir de uma breve pesquisa, levantou-se as seguintes estratégias:
 \begin{itemize}
-	\item Proteção Metálica (EMI \textit{shielding});
+	\item Proteção Metálica (EMI \textit{Shielding});
 	\item Proteção contra corrente excessiva (\textit{OverCurrent});
 	\item Código Corretor;
 	\item \textit{Watchdog} externo.
 \end{itemize}
 
 Dentre as estrategias acima, a única que será discutida é a\textit{Watchdog} externo pois é uma solução simples e que não demanda muito tempo de implementação. As demais estrategias podem ser implementadas em uma segunda versão do computador de bordo.
+
+\begin{comment}
+	\subsection{Proteção contra corrente excessiva (\textit{OverCurrent})}
+	
+	Conforme mencionado anteriormente, o sensor de corrente ACS711 possui um sistema de proteção contra corrente excessiva. Isso se torna uma vantagem, pois caso ocorra alguma anomalia no EPS, ou qualquer outro sistema que afete o suprimento de energia, o OBC não será danificado.
+	
+	O funcionamento do ACS711, caso a corrente suba mais que o permitido
+	
+	Com o intuito de cumprir o requisito de leitura de corrente, escolheu-se o sensor ACS711. Esse sensor possui um diferencial, ele conta com um sistema que protege o circuito contra sobre corrente, em caso de panes elétricas e tempestades solares. O ACS711 suporta valores de 3 a 5V de tensão e -40 a 125$^{\circ}$C de temperatura.
+	
+	A figura \ref{fig20} mostra o esquemático eletrônico de uma aplicação usual do ACS711.
+	
+\end{comment}
+
 
 \subsection{\textit{Watchdog} Externo}
 
@@ -832,28 +839,44 @@ O contador utilizado para o sistema de \textit{Watchdog} externo foi o STWD100, 
 
 A escolha do tempo de \textit{reset} será feita durante o teste do protótipo. Nessa fase, o \textit{software} embarcado estará com a logica de programação de todos os subsistemas estará finalizado, disponibilizando o tempo de execução de todas as \textit{Tasks}.
 
+\newpage
+
 \section{Placa de Circuito Impresso}
+
+
+\begin{comment}
 
 Apos a escolha dos componentes é possível ter uma visão abrangente do \textit{hardware}, como é mostrado na Figura \ref{arquiteturaOBC}. Como é possível notar, ha algumas interfaces que ainda nao foram definidas, como os pinos do modulo \textit{PPT} e \textit{TTC}.
 
+
 \begin{figure}[h]
-	\centering
-	\includegraphics[keepaspectratio=true,scale=0.78]{figuras/arquiteturaHard2.PNG}
-	\caption{Arquitetura do OBC.}
-	\label{arquiteturaOBC}
+\centering
+\includegraphics[keepaspectratio=true,scale=0.78]{figuras/arquiteturaHard2.PNG}
+\caption{Arquitetura do OBC.}
+\label{arquiteturaOBC}
 \end{figure}
 
-\newpage
-Para o elaboração da protoboard, utilizou-se o software KiCad. Essa ferramenta é openSource e bem difundida entre a comunidade de engenharia eletrônica e hobistas. O fato do KiCad ser de graça facilita a manutenção do OBC em futuras melhorias, pois nao ha a necessidade de comprar uma licença e qualquer pessoa pode sugerir melhorias no sistema.
+\end{comment}
+
+Para o elaboração da placa de circuito impresso, utilizou-se o software KiCad. Essa ferramenta é openSource e bem difundida entre a comunidade de engenharia eletrônica e hobistas. O fato do KiCad ser de graça facilita a manutenção do OBC em futuras melhorias, pois nao ha a necessidade de comprar uma licença e qualquer pessoa pode sugerir melhorias no sistema.
 
 A figura X mostra o Esquematico eletronico exportado do Kicad, caso o leitor queire ver com mais detalhes, consultar apendice XX.
 
+%\includepdf[pagecommand={\null\enlargethispage{2\baselineskip}\vfill\captionof{Esquemático Eletrônico do OBC.}}]{pcb_v1.pdf}
+%\includepdf[pagecommand={\null\vfill\captionof{table}{blub}}]{example-image}
+
+
 \begin{figure}[h]
 	\centering
-	\includepdf{pcb_v1.pdf}
-	\caption{Arquitetura do OBC.}
-	\label{arquiteturaOBC}
+	\begin{tabular}{@{}c@{\hspace{.5cm}}c@{}}
+		\includegraphics[page=1,width=1.1\textwidth]{pcb_v1.pdf}
+	\end{tabular}
+	\caption{Esquemático Eletrônico do OBC.}
+	\label{fig:Test}
 \end{figure}
+
+
+%\includepdf[pages=1,scale=.9,picturecommand*={\put (\LenToUnit{.05\paperwidth},20) {};}]{}
 
 \newpage
 
@@ -1187,17 +1210,43 @@ Fonte: (DOUGLASS, 2009, pág.5).
 
 \subsection{Desenvolvimento da UML}
 
-\begin{itemize}
-	
-\item \textbf{Diagrama de Arquivos}
+Analisando os requisitos do sistema, Tabela \ref{tabela_req}, foi possível abstrair as funções principais exigidas para o software: Controle das Tarefas, Coleta de Dados e Armazenamento. Sendo assim, foram realizado a Maquina de Estados, Fluxograma e o Diagrama de Arquivos necessário para o software embarcado. 
 
-Analisando os requisitos do sistema, tabela \ref{tabela_req}, foi possível abstrair as funções principais exigidas para o software: Controle dos Subsistemas, Controle das Tarefas e  Armazenamento dos dados. Essas funcionalidades foram transformadas em tres pacotes: \textbf{ControleTarefas} (Controle das Tarefas), \textbf{Sistema} (Controle dos Subsistemas) e \textbf{ArmazenamentoDados} (Armazenamento de dados). A UML do CSS é mostrado na Figura \ref{uml_CSS}.
+\begin{itemize}
+
+\item \textbf{Maquina de Estados}
+
+A maquina de estados desenvolvida levou em consideração os casos macros do CubeSat em sua orbita. Não foi levado em consideração os estágios de pre-lançamento e \textit{deployment}. Foram considerados quatro modos de operação: \textbf{Nominal Mode}, \textbf{Safe Mode}, \textbf{Battery Low Level Mode} e \textbf{Hibernate Mode}. Esses modos são mostrados na Figura \ref{uml_me}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[keepaspectratio=true,scale=0.72]{figuras/CSS.png}
-	\caption{UML da Camada de Serviço do Sistema.}
-	\label{uml_CSS}
+	\includegraphics[keepaspectratio=true,scale=0.62]{figuras/stateMachine.png}
+	\caption{Maquina de Estados da Camada de Serviço.}
+	\label{uml_me}
+\end{figure}
+
+\item \textbf{Fluxograma}
+
+Como o \textit{kernel} escolhido foi o \textit{FreeRTOS} as atividades do OBC foi divididas em \textit{Tasks}. A CCS possui 8 rotinas, sendo: uma de controle (\textbf{TaskManager}); uma de coleta de dados (\textbf{HouseKeeping}); uma de armazenamento (\textbf{DataStorage}); uma de controle de travamento (\textbf{WatchDogTask}); cinco de referentes à camada de aplicação. A Figura \ref{uml_floxograma} mostra o fluxograma de inicialização do sistema e no Apencice \ref{apendicef} há os demais fluxogramas da CSS. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.7]{figuras/flowChart_obc.png}
+	\caption{Fluxograma de Inicialização do sistema.}
+	\label{uml_floxograma}
+\end{figure}
+
+
+\newpage
+
+\item \textbf{Diagrama de Arquivos}
+
+O diagrama de arquivos é semelhante ao diagrama de classes em orientação à objetos. Nele há a relação entre os arquivos. Na figura \ref{label}
+\begin{figure}[h]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.3]{figuras/CSS.png}
+	\caption{Diagrama de Arquivos do Sistema.}
+	\label{uml_da}
 \end{figure}
 
 \begin{comment}
@@ -1207,23 +1256,14 @@ O desenvolvimento do Fluxograma será realizado no TCC2.
 \end{comment}
 
 
-
-\item \textbf{Fluxograma}
-
-O fluxograma foi feito com base nos requisitos. As atividades do OBC foi divividas em \textit{Tasks}. Abaixo ha o fluxograma do software embarcado. Caso o leitor queire, no apêndice \ref{apendicef} ha todos os 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[keepaspectratio=true,scale=0.72]{figuras/flowChart_obc.png}
-	\caption{UML da Camada de Serviço do Sistema.}
-	\label{uml_CSS}
-\end{figure}
-
-\item \textbf{Maquina de Estados}
-
-
-
 \end{itemize}
+
+
+\section{Desenvolvimento do Código}
+
+Com base na UML e no diagrama de interface do hardware foi realizado o código embarcado. Vale a pena ressaltar que como a metodologia de desenvolvimento utilizada foi co-design, o desenvolvimento do código foi realizado em paralelo com o desenvolvimento do hardware. 
+
+O Ambiente de Desenvolvimento (IDE, do ingles \textit{Integrated Development Environment}) escolhido foi o \textit{Code Composer Studio}, devido seu amplo uso ... Todo o código foi colocado no repositório\footnote{Código disponível em: \url{https://github.com/guilionzzo/firmware_onBoardComputer/tree/master}} do aluno no GitHub. 
 
 \chapter[RESULTADOS E DISCUSSÕES]{RESULTADOS E DISCUSSÕES}
 

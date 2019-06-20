@@ -1,30 +1,30 @@
 \babel@toc {brazil}{}
-\contentsline {table}{\numberline {1}{\ignorespaces Tabela comparativa dos OBCs.}}{35}{table.2.1}% 
-\contentsline {table}{\numberline {2}{\ignorespaces Efeitos Acumulativos causada pela radia\IeC {\c c}\IeC {\~a}o espacial.}}{38}{table.2.2}% 
-\contentsline {table}{\numberline {3}{\ignorespaces Efeitos de Evento \IeC {\'U}nico causados pela radia\IeC {\c c}\IeC {\~a}o espacial.}}{38}{table.2.3}% 
-\contentsline {table}{\numberline {4}{\ignorespaces Requisitos do Hardware.}}{41}{table.3.4}% 
-\contentsline {table}{\numberline {5}{\ignorespaces Microcontroladores selecionados.}}{43}{table.3.5}% 
-\contentsline {table}{\numberline {6}{\ignorespaces Pontua\IeC {\c c}\IeC {\~a}o de cada microcontrolador.}}{43}{table.3.6}% 
-\contentsline {table}{\numberline {7}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o dos tipos de Mem\IeC {\'o}ria.}}{47}{table.3.7}% 
-\contentsline {table}{\numberline {8}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das mem\IeC {\'o}rias da Unidade de Armazenamento.}}{48}{table.3.8}% 
-\contentsline {table}{\numberline {9}{\ignorespaces Informa\IeC {\c c}\IeC {\~o}es t\IeC {\'e}cnicas do ACS711.}}{49}{table.3.9}% 
-\contentsline {table}{\numberline {10}{\ignorespaces Informa\IeC {\c c}\IeC {\~o}es t\IeC {\'e}cnicas sobre sensor MPU9250.}}{49}{table.3.10}% 
-\contentsline {table}{\numberline {11}{\ignorespaces Informa\IeC {\c c}\IeC {\~o}es t\IeC {\'e}cnicas sobre sensor MCP9701T.}}{50}{table.3.11}% 
-\contentsline {table}{\numberline {12}{\ignorespaces Pinos JTAG no MSP432P4111.}}{51}{table.3.12}% 
-\contentsline {table}{\numberline {13}{\ignorespaces Requis\IeC {\'\i }tos do \textit {software} emabarcado.}}{57}{table.4.13}% 
-\contentsline {table}{\numberline {14}{\ignorespaces Lista de todas as APIs dispon\IeC {\'\i }veis no pacote DriverLib.}}{61}{table.4.14}% 
-\contentsline {table}{\numberline {15}{\ignorespaces APIs da categoria Task Control e Task Creation.}}{64}{table.4.15}% 
-\contentsline {table}{\numberline {16}{\ignorespaces Perfil do Diagrama FunctionalC.}}{66}{table.4.16}% 
-\contentsline {table}{\numberline {17}{\ignorespaces An\IeC {\'a}lise de OBCs em Miss\IeC {\~o}es Passadas}}{85}{table.A.17}% 
-\contentsline {table}{\numberline {18}{\ignorespaces Requisitos do OBC.}}{88}{table.B.18}% 
-\contentsline {table}{\numberline {19}{\ignorespaces Modos de Opera\IeC {\c c}\IeC {\~a}o e Consumo do MSP432P4111}}{89}{table.C.19}% 
-\contentsline {table}{\numberline {20}{\ignorespaces EPS - SID 97 (0x61)}}{91}{table.D.20}% 
-\contentsline {table}{\numberline {21}{\ignorespaces EPS Min/Max - SID 81 (0x51)}}{92}{table.D.21}% 
-\contentsline {table}{\numberline {23}{\ignorespaces COM - SID 65 (0x41)}}{93}{table.D.23}% 
-\contentsline {table}{\numberline {24}{\ignorespaces Payload - SID 113 (0x71)}}{93}{table.D.24}% 
-\contentsline {table}{\numberline {25}{\ignorespaces ADCS - SID 17 (0x11) }}{94}{table.D.25}% 
-\contentsline {table}{\numberline {27}{\ignorespaces EPS archive - temperatures - SID 98 (0x62)}}{95}{table.D.27}% 
-\contentsline {table}{\numberline {28}{\ignorespaces My caption}}{95}{table.D.28}% 
-\contentsline {table}{\numberline {29}{\ignorespaces EPS archive - voltages - SID 100 (0x64)}}{95}{table.D.29}% 
-\contentsline {table}{\numberline {30}{\ignorespaces PAYLOAD - Image Sensor}}{96}{table.D.30}% 
-\contentsline {table}{\numberline {31}{\ignorespaces Quantidade total de dados.}}{96}{table.D.31}% 
+\contentsline {table}{\numberline {1}{\ignorespaces Tabela comparativa dos OBCs.\relax }}{35}{table.caption.24}% 
+\contentsline {table}{\numberline {2}{\ignorespaces Efeitos Acumulativos causada pela radia\IeC {\c c}\IeC {\~a}o espacial.\relax }}{37}{table.caption.27}% 
+\contentsline {table}{\numberline {3}{\ignorespaces Efeitos de Evento \IeC {\'U}nico causados pela radia\IeC {\c c}\IeC {\~a}o espacial.\relax }}{38}{table.caption.28}% 
+\contentsline {table}{\numberline {4}{\ignorespaces Requisitos do Hardware.\relax }}{41}{table.caption.29}% 
+\contentsline {table}{\numberline {5}{\ignorespaces Microcontroladores selecionados.\relax }}{43}{table.caption.30}% 
+\contentsline {table}{\numberline {6}{\ignorespaces Pontua\IeC {\c c}\IeC {\~a}o de cada microcontrolador.\relax }}{43}{table.caption.31}% 
+\contentsline {table}{\numberline {7}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o dos tipos de Mem\IeC {\'o}ria.\relax }}{47}{table.caption.34}% 
+\contentsline {table}{\numberline {8}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das mem\IeC {\'o}rias da Unidade de Armazenamento.\relax }}{48}{table.caption.35}% 
+\contentsline {table}{\numberline {9}{\ignorespaces Informa\IeC {\c c}\IeC {\~o}es t\IeC {\'e}cnicas do ACS711.\relax }}{49}{table.caption.37}% 
+\contentsline {table}{\numberline {10}{\ignorespaces Informa\IeC {\c c}\IeC {\~o}es t\IeC {\'e}cnicas sobre sensor MPU9250.\relax }}{50}{table.caption.38}% 
+\contentsline {table}{\numberline {11}{\ignorespaces Informa\IeC {\c c}\IeC {\~o}es t\IeC {\'e}cnicas sobre sensor MCP9701T.\relax }}{51}{table.caption.41}% 
+\contentsline {table}{\numberline {12}{\ignorespaces Pinos JTAG no MSP432P4111.\relax }}{51}{table.caption.42}% 
+\contentsline {table}{\numberline {13}{\ignorespaces Requis\IeC {\'\i }tos do \textit {software} emabarcado.\relax }}{57}{table.caption.46}% 
+\contentsline {table}{\numberline {14}{\ignorespaces Lista de todas as APIs dispon\IeC {\'\i }veis no pacote DriverLib.\relax }}{61}{table.caption.48}% 
+\contentsline {table}{\numberline {15}{\ignorespaces APIs da categoria Task Control e Task Creation.\relax }}{64}{table.caption.50}% 
+\contentsline {table}{\numberline {16}{\ignorespaces Perfil do Diagrama FunctionalC.\relax }}{66}{table.caption.51}% 
+\contentsline {table}{\numberline {17}{\ignorespaces An\IeC {\'a}lise de OBCs em Miss\IeC {\~o}es Passadas\relax }}{87}{table.caption.63}% 
+\contentsline {table}{\numberline {18}{\ignorespaces Requisitos do OBC.\relax }}{90}{table.caption.64}% 
+\contentsline {table}{\numberline {19}{\ignorespaces Modos de Opera\IeC {\c c}\IeC {\~a}o e Consumo do MSP432P4111\relax }}{91}{table.caption.65}% 
+\contentsline {table}{\numberline {20}{\ignorespaces EPS - SID 97 (0x61)\relax }}{93}{table.caption.66}% 
+\contentsline {table}{\numberline {21}{\ignorespaces EPS Min/Max - SID 81 (0x51)\relax }}{94}{table.caption.67}% 
+\contentsline {table}{\numberline {23}{\ignorespaces COM - SID 65 (0x41)\relax }}{95}{table.caption.68}% 
+\contentsline {table}{\numberline {24}{\ignorespaces Payload - SID 113 (0x71)\relax }}{95}{table.caption.69}% 
+\contentsline {table}{\numberline {25}{\ignorespaces ADCS - SID 17 (0x11) \relax }}{96}{table.caption.70}% 
+\contentsline {table}{\numberline {27}{\ignorespaces EPS archive - temperatures - SID 98 (0x62)\relax }}{97}{table.caption.71}% 
+\contentsline {table}{\numberline {28}{\ignorespaces My caption\relax }}{97}{table.caption.72}% 
+\contentsline {table}{\numberline {29}{\ignorespaces EPS archive - voltages - SID 100 (0x64)\relax }}{97}{table.caption.73}% 
+\contentsline {table}{\numberline {30}{\ignorespaces PAYLOAD - Image Sensor\relax }}{98}{table.caption.74}% 
+\contentsline {table}{\numberline {31}{\ignorespaces Quantidade total de dados.\relax }}{98}{table.caption.75}% 
