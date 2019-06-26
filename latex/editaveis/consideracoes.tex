@@ -469,7 +469,7 @@ A resistência a radiação dos componentes é um fator muito importante para es
 \end{itemize}
 
 
-\chapter[DESENVOLVIMENTO DO HARDWARE]{DESENVOLVIMENTO DO HARDWARE}
+\chapter[Desenvolvimento do Hardware]{Desenvolvimento do Hardware}
 \label{secaoHardware}
 Esse capítulo descreverá o desenvolvimento do \textit{hardware}. Inicialmente será apresentado os requisitos e funcionalidades consideradas para o sistema. O passo seguinte é um dos mais importantes pois mostrará o processo de seleção do microcontrolador, componente que afetará restante do projeto. Em seguida, serão expostos os componentes adicionais que formarão o OBC, como: memória, sensores, etc. Por fim, será apresentado o esquemático do OBC e o \textit{layout} da placa de circuito impresso. 
 
@@ -964,7 +964,7 @@ Alguns componentes não estão presentes na renderização 3D pois não foi poss
 A partir do BOM, realizou-se a cotação dos componentes na fornecedora online \textit{DigiKey}. O valor ficou em US\$ 56,34 (BRL 216,73) e o frete em US\$40,00 (BRL 153,88). No Apêndice \ref{apendiceg} há a lista do \textit{Bill Of Material}. 
 
 
-\chapter[DESENVOLVIMENTO DO SOFTWARE]{DESENVOLVIMENTO DO SOFTWARE}
+\chapter[Desenvolvimento do Software]{Desenvolvimento do Software}
 
 Este capítulo visa descrever o desenvolvimento do \textit{software} embarcado. Inicialmente será mostrado os requisitos e funcionalidades consideradas no desenvolvimento do sistema. Logo em seguida, será exposto a arquitetura utilizada para a aplicação. Após essa etapa, será mostrado com mais detalhes os \textit{softwares} FreeRTOS, DriverLib e a camada de serviço do cliente. 
 
@@ -1003,7 +1003,7 @@ OBC-SW-R8                    & O OBC deve possuir um sistema anti travamento.   
 
 \section{Arquitetura do Software}
 
-A arquitetura de um software é um dos principais pontos a serem definidos em um projeto de \textit{software}, pois a arquitetura influenciará na manutenibilidade e reusabilidade do sistema. Existem várias arquitetura de \textit{software}, sendo as mais usuais: Arquitetura Baseada em Camadas (LBA, do inglês \textit{Layered-based Architecture}), Arquitetura Orientada em Serviços (SOA, do inglês \textit{Service Oriented Architecture}) e a Arquitetura Baseada em Desenvolvimento (CBD, do inglês \textit{Component-based Development}). Dentre essas, a arquitetura que melhor atende os padrões de modularidade é a Arquitetura em Camadas, pois abstrai o \textit{software} embarcado de acordo com sua proximidade com o \textit{hardware} (BACELO, 2010).
+A arquitetura de um software é um dos principais pontos a serem definidos em um projeto de \textit{software}, pois a arquitetura influenciará na manutenibilidade e reusabilidade do sistema. Existem várias arquiteturas de \textit{software}, sendo as mais usuais: Arquitetura Baseada em Camadas (LBA, do inglês \textit{Layered-based Architecture}), Arquitetura Orientada em Serviços (SOA, do inglês \textit{Service Oriented Architecture}) e a Arquitetura Baseada em Desenvolvimento (CBD, do inglês \textit{Component-based Development}). Dentre essas, a arquitetura que melhor atende os padrões de modularidade é a Arquitetura em Camadas, pois abstrai o \textit{software} embarcado de acordo com sua proximidade com o \textit{hardware} (BACELO, 2010).
 
 	A arquitetura em camadas (do inglês \textit{Layered Architecture}) é muito utilizada em sistemas embarcados, pois ajuda na abstração de alguns componentes e interfaces. Isso faz com que o usuário não precise ter noção de partes muito específicas do sistema, facilitando na usabilidade e na atualização do \textit{software}. A figura abaixo mostra uma arquitetura em camadas de abstração, a mesma que será utilizada no sistema.
 
@@ -1245,7 +1245,8 @@ Requisitos                     & Diagrama de Caso de Uso      & Diagrama de Caso
 Fonte: (DOUGLASS, pag 3,2009).
 \end{table}
 
-Para ilustrar como é realizada a implementação de um diagrama UML em linguagem C, o considera-se um arquivo Timer, que tem o objetivo de atualizar o tempo. Ele possui como atributo os segundos e minutos, bem como métodos e operações, como: Reset() e Tick().  A função Reset() poderia inicializar as variáveis para zero, e a função Tick() poderia incrementar o tempo a cada segundo. Em UML esse elemento seria representado conforme a Figura \textcolor{blue}{25}. Em C++ seria realizado uma classe, mas em C seria implementado conforme mostra o Código \ref{lst:codigo3}.
+\newpage
+Para ilustrar como é realizada a implementação de um diagrama UML em linguagem C, considera-se um arquivo Timer, que tem o objetivo de atualizar o tempo. Ele possui como atributo os segundos e minutos, bem como métodos e operações, como: Reset() e Tick().  A função Reset() poderia inicializar as variáveis para zero, e a função Tick() poderia incrementar o tempo a cada segundo. Em UML esse elemento seria representado conforme a Figura \textcolor{blue}{25}. Em C++ seria realizado uma classe, mas em C seria implementado conforme mostra o Código \ref{lst:codigo3}.
 
 \begin{figure}[h]
 \centering
@@ -1307,13 +1308,13 @@ A maquina de estados desenvolvida levou em consideração os casos macros do Cub
 
 \item \textbf{Fluxograma}
 
-Como o \textit{kernel} escolhido foi o \textit{FreeRTOS} as atividades do OBC foi divididas em \textit{Tasks}. A CCS possui 8 rotinas, sendo: uma de controle (\textbf{TaskManager}); uma de coleta de dados (\textbf{HouseKeeping}); uma de armazenamento (\textbf{DataStorage}); uma de controle de travamento (\textbf{WatchDogTask}); cinco de referentes à camada de aplicação. A Figura \ref{uml_floxograma} mostra o fluxograma de inicialização do sistema e no Apencice \ref{apendicef} há os demais fluxogramas da CSS. 
+Como o \textit{kernel} escolhido foi o \textit{FreeRTOS} as atividades do OBC foi divididas em \textit{Tasks}. A CCS possui 8 rotinas, sendo: uma de controle (\textbf{TaskManager}); uma de coleta de dados (\textbf{HouseKeeping}); uma de armazenamento (\textbf{DataStorage}); uma de controle de travamento (\textbf{WatchDogTask}); cinco de referentes à camada de aplicação. A Figura \ref{uml_floxograma} mostra o fluxograma de inicialização do sistema e no Apêndice \ref{apendicef} há os demais fluxogramas da CSS. 
 
 \begin{figure}[h]
 	\centering
 	\caption{Fluxograma de Inicialização do sistema.}
 	
-	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/flowChart_obc.png}
+	\includegraphics[keepaspectratio=true,scale=0.54]{figuras/flowChart_obc.png}
 	
 	\label{uml_floxograma}
 \end{figure}
@@ -1347,9 +1348,11 @@ O desenvolvimento do Fluxograma será realizado no TCC2.
 
 Com base na UML e no diagrama de interface do hardware foi realizado o código embarcado. O Ambiente de Desenvolvimento (IDE, do ingles \textit{Integrated Development Environment}) escolhido foi o \textit{Code Composer Studio}, devido  a familiaridade do aluno com a ferramenta. Todo o código foi colocado no repositório\footnote{Código disponível em: \url{https://github.com/guilionzzo/firmware_onBoardComputer/tree/master}} do aluno no GitHub. 
 
-\chapter[RESULTADOS E DISCUSSÃO]{RESULTADOS E DISCUSSÃO}
+\chapter[Resultados e Discussão]{Resultados e Discussão}
 
 Até o presente momento, as duas instituições estão discutindo os acordos da parceria. Esse fato impossibilitou a capitação de recursos para a compra dos componentes eletrônicos e fabricação da PCB. Sendo assim, os resultados apresentados serão pertinentes ao teste em protoboard, utilizando a LaunchPad do MSP432 e alguns módulos COTS.
+
+Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Esse tipo de abordagem pode ser uma boa pois de certa forma a incidência de luz estará relacionada com a energia armazenada no EPS.
 
 A Figura abaixo mostra a conexão dos componentes na LaunchPad.
 
@@ -1361,26 +1364,12 @@ A Figura abaixo mostra a conexão dos componentes na LaunchPad.
 	\label{proto}
 \end{figure}
 
-\section{Modos de Operação}
-
-Para facilitar o entendimento da maquina de estados e utilizou-se o software Tracealyzer
-OBC-SW-R7
-
-\begin{figure}[h]
-	\centering
-	\caption{Tracealyzer SnapShoot.}
-	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/trace_snapshoot.png}
-	
-	\label{operationMode}
-\end{figure}
 
 \section{Aquisição e Armazenamento de Dados}
 
-O serviço de armazenamento de aquisição e armazenamento de dados é feito pelas Tasks HouseKeeping e DataStorage, respectivamente. 
+O serviço de armazenamento de aquisição e armazenamento de dados é feito pelas Tasks HouseKeeping e DataStorage, respectivamente. Durante os testes realizados, os dados foram salvados em formato de strings, para facilitar o debug, mas no futuro os dados serão armazenados conforme mostra o Apêndice \ref{apendiceb}, pois o armazenamento será muito mais eficiente e rápido. 
 
-Durante os testes realizados, os dados foram salvados em formato de strings, para facilitar o debug. Mas no futuro os dados serão armazenados conforme mostra o Apêndice \ref{apendiceb}, pois o armazenamento será muito mais eficiente e rápido. 
-
-O pacote de telemetria especificado para o teste seguia a forma mostrada abaixo. Durante os testes houveram algumas falhas para armazenar os tempo relativo no computador de bordo. Alguns valores tiveram valor nulo.
+O pacote de telemetria especificado para o teste seguia a forma mostrada abaixo. Durante os testes houveram algumas falhas para armazenar os tempos relativos no computador de bordo. Alguns valores tiveram valor nulo.
 
 \begin{figure}[h]
 	\centering
@@ -1390,7 +1379,7 @@ O pacote de telemetria especificado para o teste seguia a forma mostrada abaixo.
 	\label{telemetryPacket}
 \end{figure}
 
-Todos os requisitos pertinentes à aquisição e armazenamento forma cumpridos, conforme mostra a Tabela \ref{table_Aquis}. Vale a pena ressaltar que o requisito \textit{OBC-H-R1} pede que os dados os dados dos subsistemas e Camera sejam armazenados. Ate o presente momento os subsitemas nao foram finalizados e o aluno enfrentou dificuldade para desenvolver o driver para a comunicação com a camera. 
+Todos os requisitos pertinentes à aquisição e armazenamento foram cumpridos, conforme mostra a Tabela \ref{table_Aquis}. Vale a pena ressaltar que o requisito \textit{OBC-H-R1} pede que os dados dos subsistemas e Câmera sejam armazenados. Até o presente momento os subsistemas não foram finalizados e o aluno enfrentou dificuldade para desenvolver o driver para a comunicação com a câmera. 
 
 \begin{longtable}[c]{clcl}
 	\caption{Requisitos referentes à aquisição e armazenamento de dados.}
@@ -1416,17 +1405,34 @@ A Figura \ref{telemetryData} mostra os dados armazenados durante os testes.
 \begin{figure}[h]
 	\centering
 	\caption{Dados da telemetria armazenados no cartão de memoria.}
-	\includegraphics[keepaspectratio=true,scale=0.50]{figuras/telemetryData.PNG}
+	\includegraphics[keepaspectratio=true,scale=0.48]{figuras/telemetryData.PNG}
 	
 	\label{telemetryData}
 \end{figure}
 
-\section{Sistema Anti Travamento}
-OBC-H-R2
-OBC-H-R6
-OBC-SW-R8
+\newpage
 
-O sistema possui watchdog pelo FreeFrtos, por hardware via MSP432 e externo pelo STD.
+\section{Sistema Anti Travamento}
+
+Uma das grandes preocupações no desenvolvimento do OBC foi sobre a confiabilidade do sistema. O uso de componentes COTS poem em risco a vida útil da missão pois esses componentes não possui resistência à radiação. Como mencionado a \textit{Task} Task do WTD foi responsável por gerencias os travamentos a nível de software e desarar os watchdogs via hardware.
+
+A nível de software foi possível perceber que a \textit{task} do watchdog reiniciou a task que não setou o bit no tempo estabelecido. A imagem abaixo mostra a task do TT\&C sendo reiniciada.
+
+No nível a baixo, ha o watchdog do microcontrolador. Caso algum travamento no sistema operacional ocorra, o microcontrolador a nível de\textit{ hardrware} reiniciar o sistema. Foi possível constatar isso quando que a task do watchdog não reiniciou o timer do WTD do msp, a conexão com a seção foi perdida devido ao \textit{reset}.
+
+Por fim, há o WTD externo que resetará o OBC em caso de travamento do MSP432, trazendo mais robustez à solução. Esse componente não foi testado pois não há um modulo apenas o componente SMD.
+
+É claro que e essa solução só funcionará em casos de \textit{Single Event Upset} (SEU), já em outros casos, como o SEL, é possível que haja danos permanentes no OBC. 
+
+\begin{comment}
+	Mesmo com essa ressalva, pode se considerar que os requisitos pertinentes à robustez e solução antitravamento foram alcançados. 
+	
+	OBC-H-R2
+	OBC-H-R6
+	OBC-SW-R8
+	
+\end{comment}
+
 
 \section{Consumo}
 
@@ -1434,9 +1440,9 @@ Um dos critérios mais importantes para o design de um OBC é o consumo energét
 
 Os testes de consumo foram realizados utilizando a ferramenta \textit{EnergyTracer} do \textit{Code Composer Studio}. Essa ferramenta mede a corrente sendo consumida no barramento JTAG/SW, sendo assim ela permite calcular a corrente de todos os módulos/sensores alimentados pela launchpad. 
 
-Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Houveram tres baterias de teste de cinco minutos, um para cada estado. Os dados do consumo de cada um esta presente na tabela 1.
+Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Houveram três baterias de teste de cinco minutos, um para cada estado. Os dados do consumo de cada um está presente na tabela 1.
 
-Comparando o estado de nominal com o estado de hibernação, observa-se que houve uma economia de mais de 40\textperthousand aumentando a vida da bateria em dois dias. A Figura mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
+Comparando o estado de nominal com o estado de hibernação, observa-se que houve uma economia de mais de 40\textperthousand, aumentando a vida da bateria em dois dias. A Figura \ref{hibernatexNormal} mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
 
 \begin{figure}[h]
 	\centering
@@ -1446,7 +1452,7 @@ Comparando o estado de nominal com o estado de hibernação, observa-se que houv
 	\label{hibernatexNormal}
 \end{figure}
 
-Não foi possível concluir a mesma melhoria comparando o modo de baixo consumo com o modo de hibernação. Houve apenas uma economia de 9\textperthousand,0.6 dias. Esse fato ocorre por que o modo de hibernação não está completamente otimizado. A fonte de sincronismo durante esse estado ainda continua sendo 48MHz. O ideal seria utilizar o clock externo de 32KHz para realizar as interrupções do kernel. Infelizmente devido à inexperiência do aluno com o FreeRTOS, não foi possível adicionar uma segunda fonte de sincronismo no modo de baixo consumo. A Figura mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
+Não foi possível concluir a mesma melhoria comparando o modo de baixo consumo com o modo de hibernação. Houve apenas uma economia de 9\textperthousand,0.6 dias. Esse fato ocorre por que o modo de hibernação não está completamente otimizado. A fonte de sincronismo durante esse estado ainda continua sendo 48MHz. O ideal seria utilizar o clock externo de 32KHz para realizar as interrupções do kernel. Infelizmente devido à inexperiência do aluno com o FreeRTOS, não foi possível adicionar uma segunda fonte de sincronismo no modo de baixo consumo. A Figura \ref{hibernatexLBM} mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
 
 \begin{figure}[h]
 	\centering
@@ -1458,14 +1464,85 @@ Não foi possível concluir a mesma melhoria comparando o modo de baixo consumo 
 
 Apesar de não ter sido implementado o clock de baixa frequência para o modo de hibernação, é possível confinar que o software embarcado consegue alterar o modo de operação dependendo de uma fonte externa. Sendo assim, o requisito OBC-SW-R7 foi cumprido.
 
+
+
+\begin{comment}
 Fazendo uma estimativa com os outros sensores/periféricos. A tabela abaixo mostra o consumo de cada componente, de acordo com cada fabricante
 
-\hl{TABELA COMPARATIVA}
+	\hl{TABELA COMPARATIVA}
+\end{comment}
 
 
-\chapter[CONCLUSÃO E RECOMENDAÇÕES]{CONCLUSÃO E RECOMENDAÇÕES}
+\section{Modos de Operação}
 
-\section{Conclusões}
+
+Para testar a maquina de estados do OBC, utilizou-se o software Tracealyzer, da empresa Percepio. Essa ferramenta consiste em uma interface gráfica que interpreta os dados gerados durante a execução do código. Os dados são armazenados em um buffer na memoria RAM do microcontrolador. apos a execução o buffer é enviado para o computador. Utilizou-se a ferramenta em modo snapshoot, oque consiste em pegar os dados do buffer e interpretar na interface grafica. O modo streaming nao foi utilizado pq nao havia o cabo de debug J-link.
+
+Durante os testes foi possivel observar varias coisas interessantes. Na primeira parte, foi possivel notar que nas primeiras atividades do sistema a task de DataStorage consome grande parte do processamento da CPU e cai com o passar do tempo. Isso ocorre pq a task esta montando a imagem do SD CARD, oq consome muito processamento. Tambem é possivel notar que essa mesma Task é a que mais consome de todas, isso ocorre pq para a fase de teste, os dados estao sendo armazenados em forma de string, oque consome muito tempo de conversao de dados e muito tempo para armazenar. A figura X mostra o teste realizado com o sistema em modo nominal, na esquerda a inicialização do sistema e à direita o sistema depois de 5min.
+
+\begin{figure}[h]
+	\centering
+	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
+	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_1.PNG}
+	
+	\label{hibernatexLBM}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
+	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_2.PNG}
+	
+	\label{hibernatexLBM}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
+	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_3.PNG}
+	
+	\label{hibernatexLBM}
+\end{figure}
+
+
+Colocando o sistema em modo de baixo consumo é possivel notar que há uma 
+
+\begin{figure}[h]
+	\centering
+	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
+	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_5.PNG}
+	
+	\label{hibernatexLBM}
+\end{figure}
+
+Quando o sistema entra em modo de hibernação, observou-se um fato curioso. O consumo de energia se torna muito baixo, mas a CPU fica em sua carga maxima, isso ocorre pq a fonte do Systick (clock de sincronismo do kernel) é o oscilador de 48MHz. Entao mesmo que nao haja nenhuma. A imagem abaixo mostra 
+
+\begin{figure}[h]
+	\centering
+	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
+	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_4.PNG}
+	
+	\label{hibernatexLBM}
+\end{figure}
+
+
+Outro ponto importante a ser mencionado é que após a hibernação, algumas tasks ficaram desalinhadas, como foi o caso da housekeeping. Esse desalinhamento influenciou no envio dos dados para o QueueHandler do DataStorage.
+
+Para facilitar o entendimento da maquina de estados e utilizou-se o software Tracealyzer
+OBC-SW-R7
+
+\begin{figure}[h]
+	\centering
+	\caption{Tracealyzer SnapShoot.}
+	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/trace_snapshoot.png}
+	
+	\label{operationMode}
+\end{figure}
+
+
+\chapter[Conclusão e Recomendações]{Conclusão e Recomendações}
+
+\section{Conclusão}
 Os objetivos da pesquisa foram alcançados em parte.
 - houve o controle da câmera CMOS.
 - Até o presente momento, a parceria está em fase de discussão. Sendo assim não foi possível realizar os teste com o PPT, mas o barramento ISA PC104 está com os pinos especificados para o realizar a interface.

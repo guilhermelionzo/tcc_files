@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {2.6.1}Radia\IeC {\c c}\IeC {\~a}o Espacial}{37}{subsection.2.6.1}% 
 \contentsline {subsection}{\numberline {2.6.2}Categoria de Componentes}{38}{subsection.2.6.2}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {DESENVOLVIMENTO DO HARDWARE}}{41}{chapter.3}% 
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Desenvolvimento do Hardware}}{41}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Requisitos e Funcionalidades}{41}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}An\IeC {\'a}lise do Microcontrolador}{42}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Microcontrolador MSP432P4111}{44}{section.3.3}% 
@@ -39,7 +39,7 @@
 \contentsline {subsection}{\numberline {3.8.1}\textit {Watchdog} Externo}{52}{subsection.3.8.1}% 
 \contentsline {section}{\numberline {3.9}Placa de Circuito Impresso}{53}{section.3.9}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {DESENVOLVIMENTO DO SOFTWARE}}{55}{chapter.4}% 
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento do Software}}{55}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Requisitos e Funcionalidades}{55}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Arquitetura do Software}{56}{section.4.2}% 
 \contentsline {section}{\numberline {4.3}DriverLib}{58}{section.4.3}% 
@@ -50,47 +50,47 @@
 \contentsline {subsection}{\numberline {4.5.1}Desenvolvimento da UML}{64}{subsection.4.5.1}% 
 \contentsline {section}{\numberline {4.6}Desenvolvimento do C\IeC {\'o}digo}{66}{section.4.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {RESULTADOS E DISCUSS\IeC {\~A}O}}{67}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Modos de Opera\IeC {\c c}\IeC {\~a}o}{67}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Aquisi\IeC {\c c}\IeC {\~a}o e Armazenamento de Dados}{68}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Sistema Anti Travamento}{69}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Consumo}{69}{section.5.4}% 
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Resultados e Discuss\IeC {\~a}o}}{69}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Aquisi\IeC {\c c}\IeC {\~a}o e Armazenamento de Dados}{69}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Sistema Anti Travamento}{71}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Consumo}{71}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Modos de Opera\IeC {\c c}\IeC {\~a}o}{73}{section.5.4}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONCLUS\IeC {\~A}O E RECOMENDA\IeC {\c C}\IeC {\~O}ES}}{73}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Conclus\IeC {\~o}es}{73}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Recomenda\IeC {\c c}\IeC {\~o}es}{74}{section.6.2}% 
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o e Recomenda\IeC {\c c}\IeC {\~o}es}}{77}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Conclus\IeC {\~a}o}{77}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Recomenda\IeC {\c c}\IeC {\~o}es}{78}{section.6.2}% 
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\IeC {\^E}NCIAS}}{75}{chapter.7}% 
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\IeC {\^E}NCIAS}}{79}{chapter.7}% 
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{81}{section*.62}% 
+\contentsline {part}{\uppercase {Ap\^endices}}{85}{section*.67}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {An\IeC {\'a}lise das Miss\IeC {\~o}es Anteriores}}{83}{appendix.A}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {An\IeC {\'a}lise das Miss\IeC {\~o}es Anteriores}}{87}{appendix.A}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Requisitos do OBC}}{85}{appendix.B}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Requisitos do OBC}}{89}{appendix.B}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Modos de Opera\IeC {\c c}\IeC {\~a}o}}{87}{appendix.C}% 
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Modos de Opera\IeC {\c c}\IeC {\~a}o}}{91}{appendix.C}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Estimativa de Armazenamento de Dados}}{89}{appendix.D}% 
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Estimativa de Armazenamento de Dados}}{93}{appendix.D}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase {Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico}}{95}{appendix.E}% 
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase {Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico}}{99}{appendix.E}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase {\textit {Bill of Material}}}{107}{appendix.F}% 
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase {\textit {Bill of Material}}}{111}{appendix.F}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {G}\MakeTextUppercase {Fluxogramas da Camada de Servi\IeC {\c c}o}}{109}{appendix.G}% 
+\contentsline {appendix}{\chapternumberline {G}\MakeTextUppercase {Fluxogramas da Camada de Servi\IeC {\c c}o}}{113}{appendix.G}% 

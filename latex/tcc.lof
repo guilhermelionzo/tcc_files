@@ -27,32 +27,37 @@
 \contentsline {figure}{\numberline {26}{\ignorespaces Estados das Tasks no FreeRTOS\relax }}{60}{figure.caption.48}% 
 \contentsline {figure}{\numberline {27}{\ignorespaces Exemplo Timer UML.\relax }}{64}{figure.caption.51}% 
 \contentsline {figure}{\numberline {28}{\ignorespaces Maquina de Estados da Camada de Servi\IeC {\c c}o.\relax }}{65}{figure.caption.52}% 
-\contentsline {figure}{\numberline {29}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do sistema.\relax }}{65}{figure.caption.53}% 
-\contentsline {figure}{\numberline {30}{\ignorespaces Diagrama de Arquivos do Sistema.\relax }}{66}{figure.caption.54}% 
-\contentsline {figure}{\numberline {31}{\ignorespaces Protoboard.\relax }}{67}{figure.caption.55}% 
-\contentsline {figure}{\numberline {32}{\ignorespaces Tracealyzer SnapShoot.\relax }}{67}{figure.caption.56}% 
-\contentsline {figure}{\numberline {33}{\ignorespaces Formato do Pacote de Telemetria.\relax }}{68}{figure.caption.57}% 
-\contentsline {figure}{\numberline {34}{\ignorespaces Dados da telemetria armazenados no cart\IeC {\~a}o de memoria.\relax }}{69}{figure.caption.58}% 
-\contentsline {figure}{\numberline {35}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Nominal (amarelo).\relax }}{70}{figure.caption.59}% 
-\contentsline {figure}{\numberline {36}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Pouca Bateria (amarelo).\relax }}{70}{figure.caption.60}% 
-\contentsline {figure}{\numberline {37}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico do OBC.\relax }}{95}{figure.caption.76}% 
-\contentsline {figure}{\numberline {38}{\ignorespaces Esquem\IeC {\'a}tico Regulador de Tens\IeC {\~a}o.\relax }}{96}{figure.caption.77}% 
-\contentsline {figure}{\numberline {39}{\ignorespaces Esquem\IeC {\'a}tico Banco de Capacitores.\relax }}{97}{figure.caption.78}% 
-\contentsline {figure}{\numberline {40}{\ignorespaces Esquem\IeC {\'a}tico Watchdog Externo.\relax }}{98}{figure.caption.79}% 
-\contentsline {figure}{\numberline {41}{\ignorespaces Esquem\IeC {\'a}tico Sensor de Corrent.\relax }}{99}{figure.caption.80}% 
-\contentsline {figure}{\numberline {42}{\ignorespaces Esquem\IeC {\'a}tico Armazenamento de Dados.\relax }}{100}{figure.caption.81}% 
-\contentsline {figure}{\numberline {43}{\ignorespaces Esquem\IeC {\'a}tico Sensor Inercial.\relax }}{101}{figure.caption.82}% 
-\contentsline {figure}{\numberline {44}{\ignorespaces Esquem\IeC {\'a}tico Medidor de Tens\IeC {\~a}o.\relax }}{102}{figure.caption.83}% 
-\contentsline {figure}{\numberline {45}{\ignorespaces Esquem\IeC {\'a}tico JTAG.\relax }}{103}{figure.caption.84}% 
-\contentsline {figure}{\numberline {46}{\ignorespaces Esquem\IeC {\'a}tico Sensor de Temperatura.\relax }}{104}{figure.caption.85}% 
-\contentsline {figure}{\numberline {47}{\ignorespaces PCB - Vista Isom\IeC {\'e}trica.\relax }}{104}{figure.caption.86}% 
-\contentsline {figure}{\numberline {48}{\ignorespaces PCB - Plano de Cobre Superior [3V3].\relax }}{105}{figure.caption.87}% 
-\contentsline {figure}{\numberline {49}{\ignorespaces PCB - Plano de Cobre Inferior [GND].\relax }}{105}{figure.caption.88}% 
-\contentsline {figure}{\numberline {50}{\ignorespaces \textit {Bill of Material} do OBC\relax }}{107}{figure.caption.89}% 
-\contentsline {figure}{\numberline {51}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o.\relax }}{109}{figure.caption.90}% 
-\contentsline {figure}{\numberline {52}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do Hardware.\relax }}{109}{figure.caption.91}% 
-\contentsline {figure}{\numberline {53}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do Clock.\relax }}{110}{figure.caption.92}% 
-\contentsline {figure}{\numberline {54}{\ignorespaces Fluxograma de cria\IeC {\c c}\IeC {\~a}o das \textit {Tasks}.\relax }}{110}{figure.caption.93}% 
-\contentsline {figure}{\numberline {55}{\ignorespaces Fluxograma do \textit {Watchdog Task}.\relax }}{111}{figure.caption.94}% 
-\contentsline {figure}{\numberline {56}{\ignorespaces Fluxograma do \textit {DataStorage Task}.\relax }}{111}{figure.caption.95}% 
-\contentsline {figure}{\numberline {57}{\ignorespaces Fluxograma do \textit {HouseKeeping Task}.\relax }}{111}{figure.caption.96}% 
+\contentsline {figure}{\numberline {29}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do sistema.\relax }}{66}{figure.caption.53}% 
+\contentsline {figure}{\numberline {30}{\ignorespaces Diagrama de Arquivos do Sistema.\relax }}{67}{figure.caption.54}% 
+\contentsline {figure}{\numberline {31}{\ignorespaces Protoboard.\relax }}{69}{figure.caption.55}% 
+\contentsline {figure}{\numberline {32}{\ignorespaces Formato do Pacote de Telemetria.\relax }}{69}{figure.caption.56}% 
+\contentsline {figure}{\numberline {33}{\ignorespaces Dados da telemetria armazenados no cart\IeC {\~a}o de memoria.\relax }}{70}{figure.caption.57}% 
+\contentsline {figure}{\numberline {34}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Nominal (amarelo).\relax }}{72}{figure.caption.58}% 
+\contentsline {figure}{\numberline {35}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Pouca Bateria (amarelo).\relax }}{72}{figure.caption.59}% 
+\contentsline {figure}{\numberline {36}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Pouca Bateria (amarelo).\relax }}{73}{figure.caption.60}% 
+\contentsline {figure}{\numberline {37}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Pouca Bateria (amarelo).\relax }}{74}{figure.caption.61}% 
+\contentsline {figure}{\numberline {38}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Pouca Bateria (amarelo).\relax }}{74}{figure.caption.62}% 
+\contentsline {figure}{\numberline {39}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Pouca Bateria (amarelo).\relax }}{75}{figure.caption.63}% 
+\contentsline {figure}{\numberline {40}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Pouca Bateria (amarelo).\relax }}{75}{figure.caption.64}% 
+\contentsline {figure}{\numberline {41}{\ignorespaces Tracealyzer SnapShoot.\relax }}{76}{figure.caption.65}% 
+\contentsline {figure}{\numberline {42}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico do OBC.\relax }}{99}{figure.caption.81}% 
+\contentsline {figure}{\numberline {43}{\ignorespaces Esquem\IeC {\'a}tico Regulador de Tens\IeC {\~a}o.\relax }}{100}{figure.caption.82}% 
+\contentsline {figure}{\numberline {44}{\ignorespaces Esquem\IeC {\'a}tico Banco de Capacitores.\relax }}{101}{figure.caption.83}% 
+\contentsline {figure}{\numberline {45}{\ignorespaces Esquem\IeC {\'a}tico Watchdog Externo.\relax }}{102}{figure.caption.84}% 
+\contentsline {figure}{\numberline {46}{\ignorespaces Esquem\IeC {\'a}tico Sensor de Corrent.\relax }}{103}{figure.caption.85}% 
+\contentsline {figure}{\numberline {47}{\ignorespaces Esquem\IeC {\'a}tico Armazenamento de Dados.\relax }}{104}{figure.caption.86}% 
+\contentsline {figure}{\numberline {48}{\ignorespaces Esquem\IeC {\'a}tico Sensor Inercial.\relax }}{105}{figure.caption.87}% 
+\contentsline {figure}{\numberline {49}{\ignorespaces Esquem\IeC {\'a}tico Medidor de Tens\IeC {\~a}o.\relax }}{106}{figure.caption.88}% 
+\contentsline {figure}{\numberline {50}{\ignorespaces Esquem\IeC {\'a}tico JTAG.\relax }}{107}{figure.caption.89}% 
+\contentsline {figure}{\numberline {51}{\ignorespaces Esquem\IeC {\'a}tico Sensor de Temperatura.\relax }}{108}{figure.caption.90}% 
+\contentsline {figure}{\numberline {52}{\ignorespaces PCB - Vista Isom\IeC {\'e}trica.\relax }}{108}{figure.caption.91}% 
+\contentsline {figure}{\numberline {53}{\ignorespaces PCB - Plano de Cobre Superior [3V3].\relax }}{109}{figure.caption.92}% 
+\contentsline {figure}{\numberline {54}{\ignorespaces PCB - Plano de Cobre Inferior [GND].\relax }}{109}{figure.caption.93}% 
+\contentsline {figure}{\numberline {55}{\ignorespaces \textit {Bill of Material} do OBC\relax }}{111}{figure.caption.94}% 
+\contentsline {figure}{\numberline {56}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o.\relax }}{113}{figure.caption.95}% 
+\contentsline {figure}{\numberline {57}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do Hardware.\relax }}{113}{figure.caption.96}% 
+\contentsline {figure}{\numberline {58}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do Clock.\relax }}{114}{figure.caption.97}% 
+\contentsline {figure}{\numberline {59}{\ignorespaces Fluxograma de cria\IeC {\c c}\IeC {\~a}o das \textit {Tasks}.\relax }}{114}{figure.caption.98}% 
+\contentsline {figure}{\numberline {60}{\ignorespaces Fluxograma do \textit {Watchdog Task}.\relax }}{115}{figure.caption.99}% 
+\contentsline {figure}{\numberline {61}{\ignorespaces Fluxograma do \textit {DataStorage Task}.\relax }}{115}{figure.caption.100}% 
+\contentsline {figure}{\numberline {62}{\ignorespaces Fluxograma do \textit {HouseKeeping Task}.\relax }}{115}{figure.caption.101}% 
