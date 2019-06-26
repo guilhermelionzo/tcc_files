@@ -11,10 +11,10 @@
 \contentsline {figure}{\numberline {10}{\ignorespaces Computador de bordo da empresa EnduroSat.\relax }}{30}{figure.caption.18}% 
 \contentsline {figure}{\numberline {11}{\ignorespaces Arquitetura do OBDH do FloripaSat.\relax }}{32}{figure.caption.19}% 
 \contentsline {figure}{\numberline {12}{\ignorespaces Arquitetura do OpenOBC.\relax }}{33}{figure.caption.20}% 
-\contentsline {figure}{\numberline {13}{\ignorespaces Placa Eletr\IeC {\^o}nica - iOBC.\relax }}{34}{figure.caption.21}% 
-\contentsline {figure}{\numberline {14}{\ignorespaces Arquitetura do FM430.\relax }}{35}{figure.caption.22}% 
-\contentsline {figure}{\numberline {15}{\ignorespaces PCB Padr\IeC {\~a}o PC104 8-bits.\relax }}{37}{figure.caption.24}% 
-\contentsline {figure}{\numberline {16}{\ignorespaces Classifica\IeC {\c c}\IeC {\~a}o dos efeitos da Radia\IeC {\c c}\IeC {\~a}o Espacial.\relax }}{38}{figure.caption.25}% 
+\contentsline {figure}{\numberline {13}{\ignorespaces Placa Eletr\IeC {\^o}nica - iOBC.\relax }}{33}{figure.caption.21}% 
+\contentsline {figure}{\numberline {14}{\ignorespaces Arquitetura do FM430.\relax }}{34}{figure.caption.22}% 
+\contentsline {figure}{\numberline {15}{\ignorespaces PCB Padr\IeC {\~a}o PC104 8-bits.\relax }}{36}{figure.caption.24}% 
+\contentsline {figure}{\numberline {16}{\ignorespaces Classifica\IeC {\c c}\IeC {\~a}o dos efeitos da Radia\IeC {\c c}\IeC {\~a}o Espacial.\relax }}{37}{figure.caption.25}% 
 \contentsline {figure}{\numberline {17}{\ignorespaces Performance dos processadores CORTEX-M.\relax }}{44}{figure.caption.31}% 
 \contentsline {figure}{\numberline {18}{\ignorespaces Arquitetura do microcontrolador MSP432P4111.\relax }}{45}{figure.caption.32}% 
 \contentsline {figure}{\numberline {19}{\ignorespaces Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico de uma aplica\IeC {\c c}\IeC {\~a}o usual do ACS711.\relax }}{49}{figure.caption.35}% 
@@ -48,10 +48,11 @@
 \contentsline {figure}{\numberline {47}{\ignorespaces PCB - Vista Isom\IeC {\'e}trica.\relax }}{104}{figure.caption.86}% 
 \contentsline {figure}{\numberline {48}{\ignorespaces PCB - Plano de Cobre Superior [3V3].\relax }}{105}{figure.caption.87}% 
 \contentsline {figure}{\numberline {49}{\ignorespaces PCB - Plano de Cobre Inferior [GND].\relax }}{105}{figure.caption.88}% 
-\contentsline {figure}{\numberline {50}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o.\relax }}{107}{figure.caption.89}% 
-\contentsline {figure}{\numberline {51}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do Hardware.\relax }}{107}{figure.caption.90}% 
-\contentsline {figure}{\numberline {52}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do Clock.\relax }}{108}{figure.caption.91}% 
-\contentsline {figure}{\numberline {53}{\ignorespaces Fluxograma de cria\IeC {\c c}\IeC {\~a}o das \textit {Tasks}.\relax }}{108}{figure.caption.92}% 
-\contentsline {figure}{\numberline {54}{\ignorespaces Fluxograma do \textit {Watchdog Task}.\relax }}{109}{figure.caption.93}% 
-\contentsline {figure}{\numberline {55}{\ignorespaces Fluxograma do \textit {DataStorage Task}.\relax }}{109}{figure.caption.94}% 
-\contentsline {figure}{\numberline {56}{\ignorespaces Fluxograma do \textit {HouseKeeping Task}.\relax }}{109}{figure.caption.95}% 
+\contentsline {figure}{\numberline {50}{\ignorespaces \textit {Bill of Material} do OBC\relax }}{107}{figure.caption.89}% 
+\contentsline {figure}{\numberline {51}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o.\relax }}{109}{figure.caption.90}% 
+\contentsline {figure}{\numberline {52}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do Hardware.\relax }}{109}{figure.caption.91}% 
+\contentsline {figure}{\numberline {53}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do Clock.\relax }}{110}{figure.caption.92}% 
+\contentsline {figure}{\numberline {54}{\ignorespaces Fluxograma de cria\IeC {\c c}\IeC {\~a}o das \textit {Tasks}.\relax }}{110}{figure.caption.93}% 
+\contentsline {figure}{\numberline {55}{\ignorespaces Fluxograma do \textit {Watchdog Task}.\relax }}{111}{figure.caption.94}% 
+\contentsline {figure}{\numberline {56}{\ignorespaces Fluxograma do \textit {DataStorage Task}.\relax }}{111}{figure.caption.95}% 
+\contentsline {figure}{\numberline {57}{\ignorespaces Fluxograma do \textit {HouseKeeping Task}.\relax }}{111}{figure.caption.96}% 

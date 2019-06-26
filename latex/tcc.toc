@@ -5,18 +5,18 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{21}{chapter.1}% 
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{21}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Contexto e Justificativa}{21}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Objetivos}{21}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Metodologia}{22}{section.1.3}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {REFERENCIAL TE\IeC {\'O}RICO}}{23}{chapter.2}% 
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{23}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Pequenos Sat\IeC {\'e}lites}{23}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Padr\IeC {\~a}o CubeSat}{25}{section.2.2}% 
 \contentsline {section}{\numberline {2.3}Principais Subsistemas de um CubeSat}{27}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Vis\IeC {\~a}o Geral de um OBC}{30}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}Vis\IeC {\~a}o Geral de um OBC}{31}{section.2.4}% 
 \contentsline {subsection}{\numberline {2.4.1}Computadores de Bordo Existentes}{31}{subsection.2.4.1}% 
-\contentsline {section}{\numberline {2.5}Padr\IeC {\~a}o PC/104}{36}{section.2.5}% 
+\contentsline {section}{\numberline {2.5}Padr\IeC {\~a}o PC/104}{35}{section.2.5}% 
 \contentsline {section}{\numberline {2.6}Ambiente Espacial}{36}{section.2.6}% 
 \contentsline {subsection}{\numberline {2.6.1}Radia\IeC {\c c}\IeC {\~a}o Espacial}{37}{subsection.2.6.1}% 
 \contentsline {subsection}{\numberline {2.6.2}Categoria de Componentes}{38}{subsection.2.6.2}% 
@@ -89,4 +89,8 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase {Fluxogramas da Camada de Servi\IeC {\c c}o}}{107}{appendix.F}% 
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase {\textit {Bill of Material}}}{107}{appendix.F}% 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {G}\MakeTextUppercase {Fluxogramas da Camada de Servi\IeC {\c c}o}}{109}{appendix.G}% 

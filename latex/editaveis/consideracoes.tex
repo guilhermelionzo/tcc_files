@@ -1,6 +1,6 @@
-\chapter[REFERENCIAL TEÓRICO]{REFERENCIAL TEÓRICO}
+\chapter[Referencial Teórico]{Referencial Teórico}
 
-Esta seção visa oferecer uma os conceitos básicos para o entendimento deste trabalho de pesquisa. Inicialmente será mostrado a categoria de pequenos satélites e a concepção do padrão CubeSat. Logo em seguida, será exposto os principais subsistemas de um CubeSat, dando ênfase no computador de bordo. Será mostrado a importância do barramento PC104 e as interferências do ambiente espacial em sistemas embarcados.
+Esta seção visa oferecer uma os conceitos básicos para o entendimento deste trabalho de pesquisa. Inicialmente será mostrado a categoria de pequenos satélites e a concepção do padrão CubeSat. Logo em seguida, serão expostos os principais subsistemas de um CubeSat, dando ênfase no computador de bordo. Será mostrado a importância do barramento PC104 e as interferências do ambiente espacial em sistemas embarcados.
 
 
 \section{Pequenos Satélites}
@@ -31,9 +31,9 @@ Nas últimas décadas, houve um aumento no lançamento de nanosatélites. Esse c
 \end{figure}
 }
 
-Fazendo uma análise minuciosa nos sites Nanosatellite Database\footnote{ KULU, Erik. Nanosatellite Database by Erik. 2018. Disponível em: \url{http://www.nanosats.eu/}. Acesso em: 14 maio 2018.} e Space Launch Report\footnote{N2YO. Browse Satellites by Launch date. 2018. Disponível em:\url{https://www.n2yo.com/browse/}.  Acesso em: 14 maio 2018.}, sites que armazenam dados de missões satelitais, observa-se que em 2007 cerca de 2,6\%(9 de 348 satélites) eram CubeSats. Já em 2017 o numero de lançamentos passou para 57,6\% (295 de 512 satélites). Tendo como base esses valores, pode-se afirmar que os CubeSats ajudaram a popularização da categoria de nanosatélites.
+Fazendo uma análise minuciosa nos sites Nanosatellite Database\footnote{ KULU, Erik. Nanosatellite Database by Erik. 2018. Disponível em: \url{http://www.nanosats.eu/}. Acesso em: 14 maio 2018.} e Space Launch Report\footnote{N2YO. Browse Satellites by Launch date. 2018. Disponível em:\url{https://www.n2yo.com/browse/}.  Acesso em: 14 maio 2018.}, sites que armazenam dados de missões satelitais, observa-se que em 2007 cerca de 2,6\%(9 de 348 satélites) eram CubeSats. Já em 2017 o número de lançamentos passou para 57,6\% (295 de 512 satélites). Tendo como base esses valores, pode-se afirmar que os CubeSats ajudaram a popularização da categoria de nanosatélites.
 
-De forma resumida, o CubeSat é um satélite cúbico de 10 cm de aresta e que pesa apenas alguns quilogramas, sendo muito utilizado no meio acadêmico. Eles podem ser compostos por um único cubo (uma unidade ou 1U) ou vários cubos combinados formando, por exemplo, unidades 3U e 6U. A Figura \ref{fig04} mostra as configurações mais usuais de um CubeSat (FROST; AGASID, 2015).
+De forma resumida, o CubeSat é um satélite cúbico de 10 cm de aresta e que pesa apenas alguns quilogramas, sendo muito utilizado no meio acadêmico como demonstrador tecnológico. Eles podem ser compostos por um único cubo (uma unidade ou 1U) ou vários cubos combinados formando, por exemplo, unidades 3U e 6U. A Figura \ref{fig04} mostra as configurações mais usuais de um CubeSat (FROST; AGASID, 2015).
 
 {\small
 \begin{figure}[h]
@@ -88,19 +88,21 @@ Essa facilidade de acesso ao espaço é consequência de algumas característica
 
 Os CubeSats são formados por duas partes principais, que são: a Carga Útil (do inglês \textit{Payload}) e a plataforma (chamada em inglês de \textit{Bus}). A Carga Útil é definida de acordo com a missão do satélite, por exemplo: satélites para observação da Terra possuem como carga útil uma câmera; satélites para telecomunicações possuem um rádio; etc. A Plataforma tem o objetivo de abrigar a Carga Útil para que ela funcione normalmente no ambiente espacial. A Plataforma é geralmente composta por: Sistema Estrutural (SS, do inglês \textit{Structural System}), Sistema de Potência Elética (EPS, do inglês \textit{Electrical Power System}), Sistema de Controle e Determinação de Órbita \& Atitude (AODCS,do inglês \textit{Attitude and Orbit Determination and Control System}), Controle de Telecomando e Telemetria (TT\&C, do inglês \textit{Telemetry Telecomand Control}) e o Computador de Bordo (OBC, do inglês \textit{On-Board Computer}). 
 
+\newpage
+
 A Figura \ref{fig06} visa ilustrar esses subsistemas (ADDAIM; KHERRAS; ZANTOU, 2010).
 
 \begin{figure}[h]
 	\centering
     \caption{Arquitetura de um Satélite.}
-	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/estrutura_satellite.png}
+	\includegraphics[keepaspectratio=true,scale=0.57]{figuras/estrutura_satellite.png}
 	
 	Fonte:(ADDAIM; KHERRAS ; ZANTOU, 2010, adaptado pág.6).
 	
 	\label{fig06}
 \end{figure}
 
-\newpage
+
 
 Abaixo há uma breve descrição dos subsistemas e alguns exemplos de componentes comerciais.
 
@@ -114,34 +116,35 @@ Abaixo há uma breve descrição dos subsistemas e alguns exemplos de componente
 	\centering
     \caption{Estrutura 3U Padrão NanoAvionics.}
     
-	\includegraphics[keepaspectratio=true,scale=0.4]{figuras/cubesat-structure-main.jpg}
+	\includegraphics[keepaspectratio=true,scale=0.45]{figuras/cubesat-structure-main.jpg}
 	
 	Fonte:(NANO AVIONICS, 2018, pág.1).\linebreak
 	
 	\label{fig07}
 \end{figure}
 
+\newpage
 	\item \textbf{EPS}: O \textit{Electrical Power System} tem o objetivo de fornecer energia elétrica à todos os subsistemas, inclusive a carga útil. Ele é responsável pela geração, armazenamento e distribuição da energia elétrica. Os principais elementos de um EPS são: baterias, painéis solares e switchs. A Figura \ref{fig08} é mostra os principais elementos de um EPS.
     
 \begin{figure}[h]
 	\centering
     \caption{Principais componentes de um EPS.}
 	
-	\includegraphics[keepaspectratio=true,scale=1.5]{figuras/eps.png}
+	\includegraphics[keepaspectratio=true,scale=2.2]{figuras/eps.png}
 	
 	Fonte:(CUBESTAR, 2018, pág.1).\linebreak
 	
 	\label{fig08}
 \end{figure}
 
-\newpage
+
 	\item \textbf{AODCS}: Esse subsistema tem o objetivo de garantir que câmeras e antenas estejam apontados para os alvos predeterminados. Os principais componentes do AODCS são: rodas de reação, sensores inerciais, fotodiodos  e magnetorques. Recentemente estão sendo utilizados módulos PPT (\textit{Pulsed Plasma Thruster}) para compensar o arrasto atmosférico. A Figura \ref{fig09} é mostra o AODCS (esquerda)  e PPT (direita) da empresa Clyde Space\footnote{Empresa Clyde Space. 2018. Disponível em:\url{https://www.clyde.space/}. Acesso em: 30 maio 2018.}.
 
 \begin{figure}[h]
 	\centering
     \caption{Componentes AODCS da empresa Clyde Space.}
     
-	\includegraphics[keepaspectratio=true,scale=2.2]{figuras/aodcs.png}
+	\includegraphics[keepaspectratio=true,scale=2.7]{figuras/aodcs.png}
 	
 	Fonte: (CLYDE SPACE, 2018, pág.1).\linebreak
 	
@@ -149,6 +152,7 @@ Abaixo há uma breve descrição dos subsistemas e alguns exemplos de componente
 \end{figure}
 
     \item \textbf{TT\&C}: Esse subsistema serve como interface entre a estação de solo e o Satélite. Ele envia pacotes de telemetria e dados da \textit{Payload}, e recebe telecomandos da estação terrestre. Os componentes principais desse subsistema são: transceptor e antena. A Figura \ref{fig10} mostra uma antena (esquerda) e um módulo de telecomunicações (direita) da empresa Endurosat\footnote{Empresa EnduroSat. 2018. Disponível em:\url{https://www.endurosat.com/}. Acesso em: 30 maio 2018.}.
+
 
 \begin{figure}[h]
 	\centering
@@ -161,7 +165,7 @@ Abaixo há uma breve descrição dos subsistemas e alguns exemplos de componente
 	\label{fig10}
 \end{figure}
 
-\newpage
+
     \item \textbf{OBC}: O satélite precisa de um subsistema capaz de gerenciar todos os outros subsistemas. O OBC tem o intuito de garantir o funcionamento de todos os subsistemas de acordo com os telecomandos, provindos da estação de solo, e do software embarcado. Os principais componentes são: microcontrolador, sistema operacional e módulo de armazenamento.  A Figura \ref{fig11} mostra o OBC da empresa EnduroSat.
 
 \begin{figure}[h]
@@ -222,10 +226,10 @@ Essa avaliação tem como objetivo mostrar ao leitor alguns OBCs, utilizados em 
 	\label{fig12}
 \end{figure}
 
-\newpage
+
 \item \textbf{Open OBC}
 
-Esse é um computador open source para CubeSat, desenvolvido pela Universidade Federal do Ceará (UFC) com o do Instituto Nacional de Pesquisas Espaciais (INPE), tendo como pontos fortes o baixo custo e a ata confiabilidade. A arquitetura utilizada no Open OBC  contém: processador TMS570LS0432 da fabricante Texas Instruments.
+Esse é um computador open source para CubeSat, desenvolvido pela Universidade Federal do Ceará (UFC) com o do Instituto Nacional de Pesquisas Espaciais (INPE), tendo como pontos fortes o baixo custo e a alta confiabilidade. A arquitetura utilizada no Open OBC  contém: processador TMS570LS0432 da fabricante Texas Instruments.
 
 A arquitetura proposta utiliza o processador TMS570LS0432 do fabricante Texas Instruments, o qual possui: núcleo ARM Cortex-R4 em duas CPUs; detecção e correção de falhas em suas memórias RAM e ROM internas; \textit{hardware} BIST (Auto-teste interno de fábrica) tanto na CPU quanto na memória RAM; e outras características de segurança como o monitoramento do clock e da tensão de alimentação. Uma memória \textit{Flash} externa foi utilizada para armazenamento de código e dados. Foram disponibilizadas duas interfaces I2C para a comunicação com os subsistemas existentes em um CubeSat, sendo uma exclusiva para comunicação com o Transponder e outra comum para os demais. A arquitetura é complementada por uma interface UART para diagnóstico e depuração, sinais PWM para acionamento das bobinas de torque e entradas ADC para medição da intensidade da luz solar nas faces do satélite. Estão previstos ainda um cartão MicroSD para armazenamentos de dados e uma interface CAN para tráfego de informações transmitidas em tempo real, garantindo assim um controle rígido de erros e a recepção de mensagens (OPENOBC, 2017).
 
@@ -233,14 +237,13 @@ A arquitetura proposta utiliza o processador TMS570LS0432 do fabricante Texas In
 	\centering
     \caption{Arquitetura do OpenOBC.}
     
-	\includegraphics[keepaspectratio=true,scale=0.55]{figuras/openObc.PNG}
+	\includegraphics[keepaspectratio=true,scale=0.4]{figuras/openObc.PNG}
 	
 	Fonte: (OPENOBC, 2017, pág.28). \linebreak
 	
 	\label{fig13}
 \end{figure}
 
-\newpage
 
 \item \textbf{ISIS On Board Computer (iOBC)}
 
@@ -252,7 +255,7 @@ A fabricante não disponibilizou a arquitetura do iOBC. A Figura \ref{fig14} mos
 	\centering
     \caption{Placa Eletrônica - iOBC.}
     
-	\includegraphics[keepaspectratio=true,scale=0.48]{figuras/isis.PNG}
+	\includegraphics[keepaspectratio=true,scale=0.44]{figuras/isis.PNG}
 	
 	Fonte: Empresa ISIS\footnote{Empresa ISIS. 2018. Disponível em:\url{goo.gl/NfTdwS
 		}. Acesso em: 31 maio 2018.}. \linebreak
@@ -343,7 +346,7 @@ A tecnologia PC/104 é vantajosa para missões CubeSat devido a padronização d
 \end{figure}
 
 \section{Ambiente Espacial}
-Um problema a ser considerado no desenvolvimento de um de um satélite, é o efeito do ambiente espacial nos subsistemas. Os problemas podem variar entre mal funcionamento operacional até danos físicos. Geralmente essas considerações são feitas para missões LEO (do inglês \textit{Low Earth Orbit}) e Deep Space (do inglês \textit{Espaço Profundo}) de longa duração (FROST; AGASID, 2015).
+Um problema a ser considerado no desenvolvimento de um satélite, é o efeito do ambiente espacial nos subsistemas. Os problemas podem variar entre mal funcionamento operacional até danos físicos. Geralmente essas considerações são feitas para missões LEO (do inglês \textit{Low Earth Orbit}) e Deep Space (do inglês \textit{Espaço Profundo}) de longa duração (FROST; AGASID, 2015).
 
 De acordo com Finckenor e Groh (2015), vários testes foram realizados na ISS (o inglês \textit{International Space Station}) para estudar a degradação dos materiais no ambiente espacial. Os principais efeitos são o vácuo, radiação ultravioleta, radiação espacial, plasma, temperaturas extremas, fadiga térmica e impacto de lixo espacial. 
 
@@ -370,7 +373,7 @@ De acordo com Petkov (2003), os efeitos provocados por essas radiações podem s
 \begin{itemize}
 \item \textbf{Efeito Acumulativo}
 
-O Total de Dose Ionizante (TID, do inglês \textit{Total Ionizing Dose}) e o Dano de Deslocamento (DD, do inglês \textit{Displacement Damage}) são efeitos permanentes causados pela radiação ao longo do tempo. Com isso, o tempo da missão é um fator que intensifica tais efeitos. Abaixo há uma breve descrição sobre tais efeitos (PETKOV, 2003).
+O Total de Dose Ionizante (TID, do inglês \textit{Total Ionizing Dose}) e o Dano de Deslocamento (DD, do inglês \textit{Displacement Damage}) são efeitos permanentes causados pela radiação ao longo do tempo, com isso, o tempo da missão é um fator que intensifica tais efeitos. Abaixo há uma breve descrição sobre tais efeitos (PETKOV, 2003).
 
 \begin{table}[h]
 \centering
@@ -468,7 +471,7 @@ A resistência a radiação dos componentes é um fator muito importante para es
 
 \chapter[DESENVOLVIMENTO DO HARDWARE]{DESENVOLVIMENTO DO HARDWARE}
 \label{secaoHardware}
-Esse capítulo descreverá o desenvolvimento do \textit{hardware}. Inicialmente será mostrado os requisitos e funcionalidades consideradas para o sistema. O passo seguinte é um dos mais importantes pois mostrará o processo de seleção do microcontrolador, componente que afetará restante do projeto. Em seguida será exposto os componentes adicionais que formarão o OBC, como: memória, sensores, etc. Por fim, será apresentado o esquemático do OBC e o \textit{layout} da placa de circuito impresso. 
+Esse capítulo descreverá o desenvolvimento do \textit{hardware}. Inicialmente será apresentado os requisitos e funcionalidades consideradas para o sistema. O passo seguinte é um dos mais importantes pois mostrará o processo de seleção do microcontrolador, componente que afetará restante do projeto. Em seguida, serão expostos os componentes adicionais que formarão o OBC, como: memória, sensores, etc. Por fim, será apresentado o esquemático do OBC e o \textit{layout} da placa de circuito impresso. 
 
 \section{Requisitos e Funcionalidades}
 \label{seção1_1}
@@ -547,7 +550,7 @@ ADuCM360         & \begin{tabular}[c]{@{}c@{}}18,15mW \\ @16MHz\end{tabular} & 4
 \end{tabular}}}
 \end{table}
 
-Após a seleção dos microcontroladores, foi colocado pesos para cada característica de acordo com a importância no sistema. Vale a pensa ressaltar que os dados acima foram retirados dos \textit{datasheet} de cada microcontrolador. 
+Após a seleção dos microcontroladores, foi colocado pesos para cada característica de acordo com a importância no sistema. Vale a pena ressaltar que os dados acima foram retirados dos \textit{datasheet} de cada microcontrolador. 
 
 
 \begin{table}[h]
@@ -569,7 +572,7 @@ ADuCM360         & 1,93    & 0,5 & 0,68 & 3,5             & 3   & 3             
 \end{tabular}}}
 \end{table}
 
-A partir da tabela acima pode-se observar que microcontroladores MSP432P4111 e o ATSAMD21J18 possuem as maiores nota. Ambos contam com processadores da família ARM Cortex M, sendo o Microchip da categoria M0+ e o TI da categoria M4F. Alguns pontos podem ser levantados em comparação aos dois microcontroladores:
+A partir da tabela acima pode-se observar que microcontroladores MSP432P4111 e o ATSAMD21J18 possuem as maiores notas. Ambos contam com processadores da família ARM Cortex M, sendo o Microchip da categoria M0+ e o TI da categoria M4F. Alguns pontos podem ser levantados em comparação aos dois microcontroladores:
 
 \begin{itemize}
 \item O microcontrolador da Texas Instruments possui 32 GPIOs e 4 ADC a mais que o microcontrolador da Microchip.
@@ -886,11 +889,11 @@ Dentre as estrategias acima, a única que será discutida é a\textit{Watchdog} 
 
 Conforme  Frost e Agasid (2015), o \textit{Watchdog}  é normalmente utilizado para monitorar o estado do microcontrolador, evitando o travamento do sistema. Basicamente, um \textit{Watchdog} externo é um contador regressivo que, ao final da contagem, reinicia o microcontrolador em caso de um evento SEE. 
 
-O microcontrolador já possui um \textit{Watchdog} interno que reiniciará o microcontrolador em caso de travamento. O uso de um contador externo trará mais robustez ao sistema.
+O microcontrolador já possui um \textit{Watchdog} interno que reiniciará o sistema em caso de travamento. O uso de um contador externo trará mais robustez ao OBC.
 
-O contador utilizado para o sistema de \textit{Watchdog} externo foi o STWD100, o mesmo utilizado pelo projeto do Botma (2011). Esse dispositivo é produzido pela fabricante STMicroelectronics e possui três tempos para \textit{reset} (3.4 ms, 6.3 ms, 102 ms e 1.6 s).  
+O contador selecionado \textit{Watchdog} externo foi o STWD100, mesmo contador utilizado pelo pesquisador Botma (2011) no desenvolvimento de um OBC. Esse dispositivo é produzido pela fabricante STMicroelectronics e possui três tempos para \textit{reset} (3.4 ms, 6.3 ms, 102 ms e 1.6 s).  
 
-A escolha do tempo de \textit{reset} será feita durante o teste do protótipo. Nessa fase, o \textit{software} embarcado estará com a logica de programação de todos os subsistemas estará finalizado, disponibilizando o tempo de execução de todas as \textit{Tasks}.
+A escolha do tempo de \textit{reset} será feita durante o teste do protótipo. Nessa fase, o \textit{software} embarcado estará finalizado e possuirá o tempo de execução de todas as \textit{Tasks}.
 
 \newpage
 
@@ -911,9 +914,9 @@ Apos a escolha dos componentes é possível ter uma visão abrangente do \textit
 
 \end{comment}
 
-Para o elaboração da placa de circuito impresso utilizou-se o software KiCad\footnote{Para mais detalhes, consulte:  http://www.kicad-pcb.org/}. Essa ferramenta possui uma interface amigável e fácil de usar, sendo bem difundida na comunidade de engenharia eletrônica e \textit{hobistas}. O fato do KiCad ser \textit{Open Source} facilita a manutenção do OBC em futuras melhorias, pois não ha a necessidade de comprar uma licença.
+Para o elaboração da placa de circuito impresso utilizou-se o software KiCad\footnote{Para mais detalhes, consulte:  \url{http://www.kicad-pcb.org/}}. Essa ferramenta possui uma interface amigável e fácil de usar, sendo bem difundida na comunidade de engenharia eletrônica e \textit{hobistas}. O fato do KiCad ser \textit{Open Source} facilita a manutenção do OBC em futuras melhorias, pois não há a necessidade de comprar uma licença.
 
-A Figura \ref{esquematicoObc} mostra o esquemático eletrônico do OBC. Nele há todos os competentes/sensores mencionados anteriormente. Foi utilizado o \textit{datasheet} de cada sensor para o desenvolvimento do esquemático. 
+A Figura \ref{esquematicoObc} mostra o esquemático eletrônico do OBC. Nele há todos os competentes/sensores mencionados nas seções anteriores. Foi utilizado o \textit{datasheet} de cada componente para o desenvolvimento do esquemático. O Apêndice \ref{apendicee} possui todos os esquemáticos realizados.
 
 %\includepdf[pagecommand={\null\enlargethispage{2\baselineskip}\vfill\captionof{Esquemático Eletrônico do OBC.}}]{pcb_v1.pdf}
 %\includepdf[pagecommand={\null\vfill\captionof{table}{blub}}]{example-image}
@@ -924,7 +927,7 @@ A Figura \ref{esquematicoObc} mostra o esquemático eletrônico do OBC. Nele há
 		\caption{Esquemático Eletrônico do OBC.}
 		
 	\begin{tabular}{@{}c@{\hspace{.5cm}}c@{}}
-		\includegraphics[page=1,width=1.1\textwidth]{pcb_v1.pdf}
+		\includegraphics[page=1,width=1.0\textwidth]{pcb_v1.pdf}
 	\end{tabular}
 
 	\label{esquematicoObc}
@@ -937,8 +940,10 @@ A Figura \ref{esquematicoObc} mostra o esquemático eletrônico do OBC. Nele há
 
 Apos a realização do esquemático, exportou-se o arquivo de conexões (.net) e o importou no ambiente "pcbnew" do KiCad. Esse ambiente permite realizar o roteamento das trilhas, criação de planos de alimentação, etc. Essa foi uma das etapas mais trabalhosas do trabalho pois o roteamento é realizado manualmente. 
 
-Como a soldagem de componentes utilizando maquinas automatizadas é um processo caro e difícil de achar, utilizou-se componentes SMD 1206 (aproximadamente 3.2mm por 1.6mm) para soldar os componentes manualmente. A Figura \ref{pcb_isoView} mostra PCB apos o roteamento e adição das legendas.
+Com o intuito de reduzir custo e aumentar a flexibilidade do projeto, os componentes SMD escolhidos possuíam tamanho 1206 (aproximadamente 3.2mm por 1.6mm). Essa escolha permite que os componentes sejam soldados manualmente sem ajuda de maquinário robotizado. A Figura \ref{pcb_isoView} mostra PCB após o roteamento das trilhas.
 
+\begin{comment}, com o intuito de nao utilizar maquinas automatizadas para realizar a soldagem dos compont Como a soldagem de componentes utilizando maquinas automatizadas é um processo caro e difícil de achar, utilizou-se componentes SMD 1206 (aproximadamente 3.2mm por 1.6mm) para soldar os componentes manualmente. 
+\end{comment}
 \begin{comment}
 
 Para a redução dos custos na soldagem dos componentes, utilizou-se componentes SMD 1206, . Ainda é possibilitável soldar a mão esses componentes.
@@ -954,9 +959,9 @@ Para a redução dos custos na soldagem dos componentes, utilizou-se componentes
 	\label{pcb_isoView}
 \end{figure}
 
-Alguns componentes não estão presentes na renderização 3D pois não foi possível desenha-los. Não havia tempo suficiente para realizar o desenho. No Apêndice \ref{apendicee} há as imagens do plano de terra e plano de alimentação da PCB.
+Alguns componentes não estão presentes na renderização 3D pois não foi possível desenha-los, devido ao tempo limitado do projeto. No Apêndice \ref{apendicee} há as imagens do plano de terra e plano de alimentação da PCB.
 
-O BOM (do inglês, \textit{Bill of Material}) também foi exportado da ferramenta e pode ser encontrado no apêndice x. O orçamento dos componentes foi realizado no site Digikey. O valor ficou X, mas o frete ficou y. 
+A partir do BOM, realizou-se a cotação dos componentes na fornecedora online \textit{DigiKey}. O valor ficou em US\$ 56,34 (BRL 216,73) e o frete em US\$40,00 (BRL 153,88). No Apêndice \ref{apendiceg} há a lista do \textit{Bill Of Material}. 
 
 
 \chapter[DESENVOLVIMENTO DO SOFTWARE]{DESENVOLVIMENTO DO SOFTWARE}
@@ -1289,7 +1294,7 @@ Analisando os requisitos do sistema, Tabela \ref{tabela_req}, foi possível abst
 
 \item \textbf{Maquina de Estados}
 
-A maquina de estados desenvolvida levou em consideração os casos macros do CubeSat em sua orbita. Não foi levado em consideração os estágios de pre-lançamento e \textit{deployment}. Foram considerados quatro modos de operação: \textbf{Nominal Mode}, \textbf{Safe Mode}, \textbf{Battery Low Level Mode} e \textbf{Hibernate Mode}. Esses modos são mostrados na Figura \ref{uml_me}
+A maquina de estados desenvolvida levou em consideração os casos macros do CubeSat em sua orbita. Não foi levado em consideração os estágios de pre-lançamento e \textit{deployment}. Foram considerados quatro modos de operação: \textbf{Nominal Mode}, \textbf{Safe Mode}, \textbf{Battery Low Level Mode} e \textbf{Hibernate Mode}. Esses modos são mostrados na Figura \ref{uml_me}.
 
 \begin{figure}[h]
 	\centering
@@ -1340,9 +1345,7 @@ O desenvolvimento do Fluxograma será realizado no TCC2.
 
 \section{Desenvolvimento do Código}
 
-Com base na UML e no diagrama de interface do hardware foi realizado o código embarcado. Vale a pena ressaltar que como a metodologia de desenvolvimento utilizada foi co-design, o desenvolvimento do código foi realizado em paralelo com o desenvolvimento do hardware. 
-
-O Ambiente de Desenvolvimento (IDE, do ingles \textit{Integrated Development Environment}) escolhido foi o \textit{Code Composer Studio}, devido seu amplo uso ... Todo o código foi colocado no repositório\footnote{Código disponível em: \url{https://github.com/guilionzzo/firmware_onBoardComputer/tree/master}} do aluno no GitHub. 
+Com base na UML e no diagrama de interface do hardware foi realizado o código embarcado. O Ambiente de Desenvolvimento (IDE, do ingles \textit{Integrated Development Environment}) escolhido foi o \textit{Code Composer Studio}, devido  a familiaridade do aluno com a ferramenta. Todo o código foi colocado no repositório\footnote{Código disponível em: \url{https://github.com/guilionzzo/firmware_onBoardComputer/tree/master}} do aluno no GitHub. 
 
 \chapter[RESULTADOS E DISCUSSÃO]{RESULTADOS E DISCUSSÃO}
 
