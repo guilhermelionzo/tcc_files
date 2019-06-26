@@ -1476,68 +1476,73 @@ Fazendo uma estimativa com os outros sensores/periféricos. A tabela abaixo most
 \section{Modos de Operação}
 
 
-Para testar a maquina de estados do OBC, utilizou-se o software Tracealyzer, da empresa Percepio. Essa ferramenta consiste em uma interface gráfica que interpreta os dados gerados durante a execução do código. Os dados são armazenados em um buffer na memoria RAM do microcontrolador. apos a execução o buffer é enviado para o computador. Utilizou-se a ferramenta em modo snapshoot, oque consiste em pegar os dados do buffer e interpretar na interface grafica. O modo streaming nao foi utilizado pq nao havia o cabo de debug J-link.
+Para testar a maquina de estados do OBC, utilizou-se o software Tracealyzer, da empresa Percepio. Essa ferramenta consiste em uma interface gráfica que interpreta os dados gerados durante a execução do FreeRTOS. Os dados são armazenados em um \textit{buffer} na memoria RAM do microcontrolador e, após a solicitação do Tracealyzer, os dados são enviados para o computador. Utilizou-se a ferramenta em modo \textit{snapshoot}, o que consiste em pegar os dados do \textit{buffer} e interpretar na interface gráfica. O modo \textit{streaming} não foi utilizado pq não havia o cabo de \textit{debug} J-link.
 
-Durante os testes foi possivel observar varias coisas interessantes. Na primeira parte, foi possivel notar que nas primeiras atividades do sistema a task de DataStorage consome grande parte do processamento da CPU e cai com o passar do tempo. Isso ocorre pq a task esta montando a imagem do SD CARD, oq consome muito processamento. Tambem é possivel notar que essa mesma Task é a que mais consome de todas, isso ocorre pq para a fase de teste, os dados estao sendo armazenados em forma de string, oque consome muito tempo de conversao de dados e muito tempo para armazenar. A figura X mostra o teste realizado com o sistema em modo nominal, na esquerda a inicialização do sistema e à direita o sistema depois de 5min.
-
-\begin{figure}[h]
-	\centering
-	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
-	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_1.PNG}
-	
-	\label{hibernatexLBM}
-\end{figure}
+No decorrer dos testes foi possível observar vários fenômenos interessantes. Durante a inicialização do sistema, nota-se que há um grande consumo de CPU pelas \textit{Tasks}, principalmente \textit{DataStorage},devido a montagem da imagem do SD Card. Isso acontece pois o sistema operacional está alocando memoria para as \textit{tasks,queues} e outros \textit{handlers}. A Figura \ref{trace_snapshoot_1} mostra a inicialização do sistema.
 
 \begin{figure}[h]
 	\centering
-	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
-	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_2.PNG}
+	\caption{Snapshoot no Tracealyzer durante a inicialização do sistema.}
+	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/trace_snapshoot_1.PNG}
 	
-	\label{hibernatexLBM}
+	\label{trace_snapshoot_1}
 \end{figure}
+
+Apos alguns segundos foi possível notar que a task do \textit{DataStorage} ainda consome muita CPU. Isso ocorre pois durante os testes os dados dos sensores foram convertidos e armazenados, o que consome muito processamento. É bem provável que salvar os dados em sua forma original diminuirá o poder de processamento em mais da metade. Figura \ref{trace_snapshoot_2}
+
 
 \begin{figure}[h]
 	\centering
-	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
-	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_3.PNG}
+	\caption{Snapshoot no Tracealyzer alguns segundos após a inicialização do sistema.}
+	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/trace_snapshoot_2.PNG}
 	
-	\label{hibernatexLBM}
+	\label{trace_snapshoot_2}
 \end{figure}
 
-
-Colocando o sistema em modo de baixo consumo é possivel notar que há uma 
+\newpage
+Após o período de inicialização, colocando o sistema em modo de alta performance (NM\_MODE) é possível ver que as tasks se estabilizaram e começaram a diminuir o processamento do kernel. O processamento medio ficou em torno de 8\%. Nesse estado o \textit{TaskManager} é que consome mais que os outras \textit{Tasks}, em torno de 2\%. Tambem é possivel notar que . Figura \ref{trace_snapshoot_3}
 
 \begin{figure}[h]
 	\centering
-	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
-	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_5.PNG}
+	\caption{Snapshoot no Tracealyzer do sistema executando NM\_MODE.}
+	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/trace_snapshoot_3.PNG}
 	
-	\label{hibernatexLBM}
+	\label{trace_snapshoot_3}
 \end{figure}
 
-Quando o sistema entra em modo de hibernação, observou-se um fato curioso. O consumo de energia se torna muito baixo, mas a CPU fica em sua carga maxima, isso ocorre pq a fonte do Systick (clock de sincronismo do kernel) é o oscilador de 48MHz. Entao mesmo que nao haja nenhuma. A imagem abaixo mostra 
+\newpage
+Colocando o sistema em modo de baixo consumo é possível notar que há uma redução no tempo de execução das \textit{Tasks}, que durante os testes esse tempo foi 5 vezes o tempo de execução nominal, como mostrado na Figura \ref{trace_snapshoot_5}. Também é visto que as \textit{Tasks} com menos prioridade foram coladas em modo de sleep, restando apenas as \textit{Tasks} que são de controle e coleta/armazenamento de dados.
 
 \begin{figure}[h]
 	\centering
-	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
-	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/trace_snapshoot_4.PNG}
+	\caption{Snapshoot no Tracealyzer do sistema executando BLLM1\_MODE.}
+	\includegraphics[keepaspectratio=true,scale=0.49]{figuras/trace_snapshoot_5.PNG}
 	
-	\label{hibernatexLBM}
+	\label{trace_snapshoot_5}
 \end{figure}
 
+Como era de se esperar, durante o modo de hibernação apenas o \textit{TaskManager} fica ativo e consumindo mais CPU do que o usual, quase de 11\%. O kernel tambem executa essa task com um espassamento maior em 5 vezes ao normal. A\ref{trace_snapshoot_4} o OBC sendo executado em modo HB\_MODE.
 
-Outro ponto importante a ser mencionado é que após a hibernação, algumas tasks ficaram desalinhadas, como foi o caso da housekeeping. Esse desalinhamento influenciou no envio dos dados para o QueueHandler do DataStorage.
-
-Para facilitar o entendimento da maquina de estados e utilizou-se o software Tracealyzer
-OBC-SW-R7
 
 \begin{figure}[h]
 	\centering
-	\caption{Tracealyzer SnapShoot.}
-	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/trace_snapshoot.png}
+	\caption{Snapshoot no Tracealyzer do sistema executando HB\_MODE.}
+	\includegraphics[keepaspectratio=true,scale=0.41]{figuras/trace_snapshoot_4.PNG}
 	
-	\label{operationMode}
+	\label{trace_snapshoot_4}
 \end{figure}
+
+\newpage
+Por fim, alternou-se os modos de operação para e o resultado saiu como esperado. Na figura \ref{trace_snapshoot_8}  há 
+\begin{figure}[h]
+	\centering
+	\caption{Snapshoot no Tracealyzer do sistema executando em todos os modos.}
+	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/trace_snapshoot_8.PNG}
+	
+	\label{trace_snapshoot_8}
+\end{figure}
+
+Com essa sessão foi possível concluir que os estados estão sendo alternados conforme o nível de bateria, que no caso foi simulado pelo nível de intensidade de luz. Com isso o requisitos OBC-SW-R7 foi comprido.
 
 
 \chapter[Conclusão e Recomendações]{Conclusão e Recomendações}
