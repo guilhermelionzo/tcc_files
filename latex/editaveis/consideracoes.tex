@@ -622,7 +622,7 @@ Mesmo o microprocessador possuindo o \textit{System Control Block}, que informa 
 O MSP432P4111 possui os seguintes componentes de memória:
 
 \begin{itemize}
-\item 2048KB Memoria Flash principal;
+\item 2048KB Memória Flash principal;
 \item 32KB Memória Flash de informação (área utilizada para \textit{Bootloader, TVL} e \textit{Flash MailBox});
 \item 256KB SRAM (incluindo 8KB de memória de backup);
 \item 32KB ROM carregada com as bibliotecas MSP432™ \textit{Peripheral Driver}.
@@ -632,7 +632,7 @@ Esse microcontrolador suporta um endereçamento de 4GB dividido em oito zonas de
 
 \subsection{Portas e Periféricos}
 
-O microcontrolador MSP432P4111 possui 11 	portas de propósito geral (GPIO), cada porta pode variar de 1 a 10. Para o controle de saída e entrada utiliza-se os registradores: PxIN, PxOUT, PxDIR, PxREN e PxDS. Para selecionar as portas, utiliza-se os registradores: PxSEL0, PxSEL1 e PxSEL2. Por fim, para configurar as interrupções das portas, utiliza-se os registradores: PxIFG, PxIES, PxIE e PxIV. O valor de ‘x’ indica o número da porta, 1 a 10 (BAI, 2018).
+O microcontrolador MSP432P4111 possui 11 	portas de propósito geral (GPIO), cada porta pode variar de 1 a 10. Para o controle de saída e entrada manipula-se os registradores: PxIN, PxOUT, PxDIR, PxREN e PxDS. Para selecionar as portas, utiliza-se os registradores: PxSEL0, PxSEL1 e PxSEL2. Por fim, para configurar as interrupções das portas, utiliza-se os registradores: PxIFG, PxIES, PxIE e PxIV. O valor de ‘x’ indica o número da porta, 1 a 10 (BAI, 2018).
 
 O microcontrolador conta com os seguintes periféricos:
 
@@ -683,13 +683,13 @@ Pacote                                                                          
 Fonte: (FROST; AGASID, 2015, pág.97).\linebreak
 \end{table}
 
-De acordo com a Tabela \ref{tabela_memoria}, as memória MRAM e FERAM (ou FRAM) são as que mais resistem a radiação (TID), o que as caracterizam como ótimas alternativas para a unidade de armazenamento. Comparando-se essas memórias, pôde-se observa-se que ambas possuem as seguintes características em comum: não-volatilidade, tensão de operação, retenção de dados, ciclos de operação, tempo de acesso, TID, SEU e  faixa de temperatura.
+De acordo com a Tabela \ref{tabela_memoria}, as memória MRAM e FERAM (ou FRAM) são as que mais resistem a radiação (TID), o que as caracterizam como ótimas alternativas para a unidade de armazenamento. Comparando-se essas memórias, pôde-se observar que ambas possuem as seguintes características em comum: não-volatilidade, tensão de operação, retenção de dados, ciclos de operação, tempo de acesso, TID, SEU e  faixa de temperatura.
 
 Dentre as características distintas entre as memórias MRAM e FRAM, observa-se que a memória do MRAM gasta três vezes mais energia que a memória do FRAM. Como o quesito consumo elétrico é primordial em aplicações espaciais, a memória FRAM foi escolhida para compor a unidade de armazenamento. Essa memória será destinada para arquivar o software embarcado.
 
-Para escolher o tamanho da memória FRAM, há a necessidade de estimar o tamanho do software embarcado. Esse software depende de vários fatores, como: redundâncias, funcionalidades implementadas, segurança, algoritmos, etc, o que torna essa estimativa muito complicado. Sendo assim, definiu-se o espaço como o dobro da memória SRAM do microcontrolador,  resultando em 512KB.
+Para escolher o tamanho da memória FRAM, há a necessidade de estimar o tamanho do software embarcado. Esse software depende de vários fatores, como: redundâncias, funcionalidades implementadas, segurança, algoritmos, etc, o que torna essa estimativa muito complicada. Sendo assim, definiu-se o espaço como o dobro da memória SRAM do microcontrolador,  resultando em 512KB.
 
-Em relação ao espaço para a telemetria e dados dos subsistemas, foi realizado uma estimativa, utilizando os parâmetros de armazenamento de dados da missão \textit{SWISSCube}. Esses parâmetros foram adaptados ao contexto do projeto, adicionando os dados proveniente da Câmera. Esses parâmetros se encontram no Apêndice \ref{apendiced}.
+Em relação ao espaço para a telemetria e dados dos subsistemas, foi realizado uma estimativa, utilizando os parâmetros de armazenamento de dados da missão \textit{SWISSCube}. Esses parâmetros foram adaptados ao contexto do projeto, adicionando os dados proveniente da Câmera. A estimativa da quantidade de dados se encontra no Apêndice \ref{apendiced}.
 
 A partir dessa estimativa, a quantidade de dados armazenado em 1 dia seria de 176MB, 10MB proveniente de telemetría e 166MB da \textit{Payload} (imagens). Desse modo, um cartão de 512MB seria mais que o suficiente para armazenar os dados provenientes do sistema em 2 dias. Entretanto, como não se sabe a quantidade de estações de solo disponíveis para descarregar os dados, optou-se por escolher o tamanho máximo que o microcontrolador pode suportar, que no caso é de 4GB.
 
@@ -791,14 +791,14 @@ Mesmo o MPU9250 e o MSP432P4111 possuindo um sensor de temperatura, foi escolhid
 O sensor de temperatura escolhido foi o MCP9701T, da fabricante Microchip, devido sua fácil usabilidade e baixo consumo. O dispositivo comunica através de uma saída analógica, sendo capaz de medir temperaturas com uma precisão de 2 $^{\circ}$C em uma faixa de temperatura de -40$^{\circ}$C a 125$^{\circ}$C (MICROCHIP, 2016).
 
 A tabela \ref{caracTMP} mostra as especificações do MCP9701T. Essas informações foram retiradas da ficha técnica do sensor.
-http://ww1.microchip.com/downloads/en/devicedoc/20001942g.pdf
+
 \begin{figure}[h]
 	\centering
 	\caption{Esquemático Eletrônico de uma aplicação usual do MCP9700.}
 	
 	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/MCP9700.PNG}
 	
-	Fonte:(MICROCHIP, 2018, pág.20)\linebreak
+	Fonte:(MICROCHIP, 2016, pág.20)\linebreak
 	\label{MCP9700}
 \end{figure}
 
@@ -869,7 +869,7 @@ A partir de uma breve pesquisa, levantou-se as seguintes estratégias:
 	\item \textit{Watchdog} externo.
 \end{itemize}
 
-Dentre as estrategias acima, a única que será discutida é a\textit{Watchdog} externo pois é uma solução simples e que não demanda muito tempo de implementação. As demais estrategias podem ser implementadas em uma segunda versão do computador de bordo.
+Dentre as estratégias acima, a única que será discutida é a\textit{Watchdog} externo pois é uma solução simples e que não demanda muito tempo de implementação. As demais estratégias podem ser implementadas em uma segunda versão do computador de bordo.
 
 \begin{comment}
 	\subsection{Proteção contra corrente excessiva (\textit{OverCurrent})}
@@ -938,7 +938,7 @@ A Figura \ref{esquematicoObc} mostra o esquemático eletrônico do OBC. Nele há
 
 \newpage
 
-Apos a realização do esquemático, exportou-se o arquivo de conexões (.net) e o importou no ambiente "pcbnew" do KiCad. Esse ambiente permite realizar o roteamento das trilhas, criação de planos de alimentação, etc. Essa foi uma das etapas mais trabalhosas do trabalho pois o roteamento é realizado manualmente. 
+Após a realização do esquemático, exportou-se o arquivo de conexões (.net) e o importou no ambiente "pcbnew" do KiCad. Esse ambiente permite realizar o roteamento das trilhas, criação de planos de alimentação, etc. Essa foi uma das etapas mais trabalhosas da pesquisa pois o roteamento é realizado manualmente. 
 
 Com o intuito de reduzir custo e aumentar a flexibilidade do projeto, os componentes SMD escolhidos possuíam tamanho 1206 (aproximadamente 3.2mm por 1.6mm). Essa escolha permite que os componentes sejam soldados manualmente sem ajuda de maquinário robotizado. A Figura \ref{pcb_isoView} mostra PCB após o roteamento das trilhas.
 
@@ -1026,13 +1026,13 @@ A camada de abstração de \textit{hardware} (HAL, do inglês \textit{Hardware A
 
 No sistema, a camada de HAL é desempenhada pelo pacote \textit{Driver Library} (\textit{DriverLib}), desenvolvido pela Texas Instruments, que tem o intuito de facilitar o desenvolvimento de projetos embarcados e ajudar na portabilidade dos códigos. Utilizando esse pacote, o desenvolvedor não necessita saber o que acontece a nível de registrador, tornando o desenvolvimento mais amigável e rápido  (TEXAS INSTRUMENTS, 2018).
 
-O \textit{DriverLib} inclui as Interface de Programação de Aplicativos (APIs, do inglês \textit{Application Programming Interface}) das funcionalidades de ADC, Interrupção, UART, entre outros. Esse pacote pode ser também embutido no código final ou não. O MSP432P4111 possui em sua memória ROM uma cópia do \textit{DriverLib}, fazendo com que o pacote não interfira no tamanho do código final.
+O \textit{DriverLib} inclui a Interface de Programação de Aplicativos (APIs, do inglês \textit{Application Programming Interface}) das funcionalidades de ADC, Interrupção, UART, entre outros. Esse pacote pode ser também embutido no código final ou não. O MSP432P4111 possui em sua memória ROM uma cópia do \textit{DriverLib}, fazendo com que o pacote não interfira no tamanho do código final.
 
 \item \textbf{Camada do Sistema Operacional}
 
 Um Sistema Operacional de Tempo Real (RTOS, do inglês \textit{Real-Time Operationg System}) é um sistema de \textit{software} que tem a habilidade de prover um serviço em um tempo pré-determinado. O RTOS gerencia uniformemente os recursos da camada inferior, camada HAL, oferecendo esses recursos em forma de serviços (EBRARY,2018).
 
-Escolher um RTOS é uma tarefa importante para dar suporte à interrupções, temporizadores, comunicação entre tarefas, sincronização, gerenciamento de memória, múltiplo acesso, prioridade de execução e escalonamento de tarefas (BASKIYAR ; MEGHANATHAN, 2005).
+Escolher um RTOS é uma tarefa importante para dar suporte às interrupções, temporizadores, comunicação entre tarefas, sincronização, gerenciamento de memória, múltiplo acesso, prioridade de execução e escalonamento de tarefas (BASKIYAR ; MEGHANATHAN, 2005).
 
 Analisando o Apêndice \ref{apendicea}, pôde-se afirmar que a maioria das missões utilizavam RTOS, sendo os mais comuns o FreeRTOS e o Linux. Dentre esses, apenas o FreeRTOS possui suporte para o MSP432P4111 pois o Linux necessita de um \textit{hardware} com maior velocidade de clock e maior memória RAM. Tendo esse cenário, o sistema operacional escolhido para o sistema foi o FreeRTOS e ele será explicado mais adiante. 
 
@@ -1040,7 +1040,7 @@ Analisando o Apêndice \ref{apendicea}, pôde-se afirmar que a maioria das miss�
 
 A Camada de Serviço do Sistema (CSS) é uma interface que o sistema operacional fornece à Camada de Aplicação Final. Usando essa interface, os aplicativos podem acessar vários serviços fornecidos pelo sistema operacional. Essa camada geralmente inclui o sistema de arquivos, o gerenciador de tarefas, temporizadores, etc (EBRARY,2018).
 
-Nesse caso, o FreeRTOS já oferece APIs para que auxiliam o acesso de suas funcionalidades. Entretanto a CSS não estaria completa só com essas APIS, com isso será há a necessidade de implementar mais funcionalidades nessa camada, levando em consideração os requisitos da Tabela \ref{tabela_req}. Mais adiante, será explicado a proposta de implementação.
+Nesse caso, o FreeRTOS já oferece APIs que auxiliam o acesso de suas funcionalidades. Entretanto a CSS não estaria completa só com essas APIS, com isso há a necessidade de implementar mais funcionalidades nessa camada, levando em consideração os requisitos da Tabela \ref{tabela_req}. Mais adiante, será explicado a proposta de implementação.
 
 
 \item \textbf{Camada de Aplicação}
@@ -1134,7 +1134,7 @@ O FreeRTOS é utilizado tanto em sistemas Não Críticos de Tempo Real (Soft-RTO
 
 No caso de aplicações aeroespaciais, o sistema deve ser projetado para ser um Hard-RTOS pois o travamento do \textit{software} embarcado ocasionaria em falha total do sistema. Foi percebido que todas as missões pesquisadas, Apêndice \ref{apendiceb}, possuíam algum tipo de sistema operacional para gerenciar as tarefas embarcadas.
 
-No FreeRTOS, cada tarefa em execução é chamada de ‘\textit{task}’. Para manter um padrão, será utilizada essa nomenclatura. No contexto do projeto, o uso das tasks é fundamental para criar um certo nível de abstração e garantir o requisito de Hard-RTOS. Por exemplo, a leitura da tensão da bateria é de extrema importância, então ela possuirá maior prioridade em relação a task de envio de dados; pois se o satélite consumir por completo a carga da bateria, ocasionando na perda do satélite .
+No FreeRTOS, cada tarefa em execução é chamada de ‘\textit{task}’. Para manter um padrão, será utilizada essa nomenclatura. No contexto do projeto, o uso das tasks é fundamental para criar um certo nível de abstração e garantir o requisito de Hard-RTOS. Por exemplo, a leitura da tensão da bateria é de extrema importância, então ela possuirá maior prioridade em relação a task de envio de dados; pois se o satélite consumir por completo a carga da bateria, ocasionando a perda do satélite.
 
 Uma task só pode estar em quatro estados: \textit{Ready}, \textit{Running}, \textit{Suspend} e \textit{Blocked}. As APIs são encarregadas de alterar os estados de cada \textit{task}. Os estados são melhores ilustrados na figura abaixo, onde há evidenciado as APIs responsáveis pela mudança.
 
@@ -1155,7 +1155,7 @@ As APIs do FreeRTOS foram criadas para facilitar o desenvolvimento, fazendo uma 
 \begin{itemize}
 \item\textit{Task Creation}, permite que o usuário crie ou elimine uma \textit{task} do sistema.
 \item\textit{Task Control}, permite a troca dos estados das \textit{task}.
-\item\textit{Task Utilities}, possui APIs que APIs que permitem o usuário pegar alguma informação sobre as \textit{task}, por exemplo, quais \textit{task} estão em execução.
+\item\textit{Task Utilities}, possui APIs que permitem o usuário pegar alguma informação sobre as \textit{task}, por exemplo, quais \textit{task} estão em execução.
 \item\textit{RTOS Kernel Control}, essa API oferece controle sobre o \textit{kernel}, permitindo o usuário começar o \textit{task scheduler},  suspender as \textit{task} em execução, entre outros.
 \item\textit{Direct To Task Notifications} , permite a troca de mensagens entre as \textit{task}.
 \item\textit{FreeRTOS-MPU Specific}, possui 3 APIs que permitem o usuário realizar o controle do \textit{kernel} MPU.
@@ -1169,11 +1169,14 @@ As APIs do FreeRTOS foram criadas para facilitar o desenvolvimento, fazendo uma 
 
 Descrever cada API do \textit{kernel} seria um tarefa cansativa e desnecessária, uma vez que há o manual de referência que explica cada uma e ainda mostra alguns exemplos. Com isso, abaixo há uma tabela que contém a descrição das funcionalidades das APIs das categorias \textit{Task Creation} e \textit{Task Control}. Essas categorias foram escolhidas para serem tratadas no texto, pois a manipulação das tarefas é a ação mais usual em um projeto com o FreeRTOS.
 
+\newpage
 Abaixo há uma breve descrição sobre as APIs das categorias \textit{Task Creation} e \textit{Task Control}.
+
+\vspace{30pt}
 
 \begin{table}[h]
 \centering
-\caption{APIs da categoria Task Control e Task Creation.}
+\caption{APIs da categoria \textit{Task Creation} e \textit{Task Control}.}
 \label{my-label}
 \makebox[1 \textwidth][c]{
 \scalebox{0.66}{
@@ -1194,11 +1197,38 @@ Abaixo há uma breve descrição sobre as APIs das categorias \textit{Task Creat
 \end{tabular}}}
 \end{table}
 
-\newpage
-
+%\newpage
+\vspace{20pt}
 \subsection{Configuração do FreeRTOS}
 
-Como o kernel do FreeRTOS é comum para a maioria dos microcontroladores, o porting é essencial para adaptar o kernel para o tipo de microcontrolador usado. No site da empresa há um template do arquivo portmacro.h para o MSP432. Foram modificados poucos parametros, pois o aluno estava se adaptando à tecnologia.
+Como o \textit{kernel} do FreeRTOS é comum para a maioria dos microcontroladores, o porting é essencial para adaptar o sistema para o tipo de microcontrolador usado. No site da empresa há um template dos arquivos \textbf{portmacro.h} e \textbf{FreeRTOSConfig.h} para o MSP432. Foram modificados poucos parâmetros, pois o aluno estava se adaptando à tecnologia. Na tabela \ref{port_freertos} há os parâmetros modificados.
+
+\newpage
+\begin{longtable}[c]{ccccl}
+	\caption{Configurações realizadas nos arquivos de \textit{porting}}
+	\label{port_freertos}\\
+	\cline{1-3}
+	\textbf{Arquivo} & \textbf{Parâmetro}                 & \textbf{Configuração Realizada} & \textbf{}            & \multicolumn{1}{c}{\textbf{}} \\ \cline{1-3}
+	\endfirsthead
+	%
+	\endhead
+	%
+	\cline{1-3}
+	\endfoot
+	%
+	\endlastfoot
+	%
+	portmacro.h      & configCPU\_CLOCK\_HZ               & 48 MHz                          &                      &                               \\
+	portmacro.h      & configTICK\_RATE\_HZ               & 100 KHz                         &                      &                               \\
+	FreeRTOSConfig.h & configUSE\_TICKLESS\_IDLE          & Habilitado                      &                      &                               \\
+	FreeRTOSConfig.h & configUSE\_COUNTING\_SEMAPHORES    & Habilitado                      &                      &                               \\
+	FreeRTOSConfig.h & configUSE\_RECURSIVE\_MUTEXES      & Habilitado                      &                      &                               \\
+	FreeRTOSConfig.h & configUSE\_TASK\_NOTIFICATIONS     & Habilitado                      &                      &                               \\
+	FreeRTOSConfig.h & configUSE\_IDLE\_HOOK              & Habilitado                      &                      &                               \\
+	FreeRTOSConfig.h & configUSE\_TICK\_HOOK              & Habilitado                      &                      &                               \\
+	FreeRTOSConfig.h & configPRE\_SLEEP\_PROCESSING( x )  & vPreSleepProcessing( x )        & \multicolumn{1}{l}{} &                               \\
+	FreeRTOSConfig.h & configPOST\_SLEEP\_PROCESSING( x ) & vPostSleepProcessing( x )       & \multicolumn{1}{l}{} &                               \\ \cline{1-3}
+\end{longtable}
 
 
 \section{Desenvolvimento da Camada de Serviços do Sistema}
@@ -1245,7 +1275,7 @@ Requisitos                     & Diagrama de Caso de Uso      & Diagrama de Caso
 Fonte: (DOUGLASS, pag 3,2009).
 \end{table}
 
-\newpage
+%\newpage
 Para ilustrar como é realizada a implementação de um diagrama UML em linguagem C, considera-se um arquivo Timer, que tem o objetivo de atualizar o tempo. Ele possui como atributo os segundos e minutos, bem como métodos e operações, como: Reset() e Tick().  A função Reset() poderia inicializar as variáveis para zero, e a função Tick() poderia incrementar o tempo a cada segundo. Em UML esse elemento seria representado conforme a Figura \textcolor{blue}{25}. Em C++ seria realizado uma classe, mas em C seria implementado conforme mostra o Código \ref{lst:codigo3}.
 
 \begin{figure}[h]
@@ -1268,7 +1298,7 @@ Fonte: (DOUGLASS, 2009, pág.5).\linebreak
 
 \end{figure}
 
-
+\newpage
 \renewcommand{\lstlistingname}{Código}
 
 
@@ -1289,13 +1319,13 @@ Fonte: (DOUGLASS, 2009, pág.5).
 
 \subsection{Desenvolvimento da UML}
 
-Analisando os requisitos do sistema, Tabela \ref{tabela_req}, foi possível abstrair as funções principais exigidas para o software: Controle das Tarefas, Coleta de Dados e Armazenamento. Sendo assim, foram realizado a Maquina de Estados, Fluxograma e o Diagrama de Arquivos necessário para o software embarcado. 
+Analisando os requisitos do sistema, Tabela \ref{tabela_req}, foi possível abstrair as funções principais exigidas para o software: Controle das Tarefas, Coleta de Dados e Armazenamento. Sendo assim, foram realizado a Máquina de Estados, Fluxograma e o Diagrama de Arquivos necessário para o software embarcado. 
 
 \begin{itemize}
 
-\item \textbf{Maquina de Estados}
+\item \textbf{Máquina de Estados}
 
-A maquina de estados desenvolvida levou em consideração os casos macros do CubeSat em sua orbita. Não foi levado em consideração os estágios de pre-lançamento e \textit{deployment}. Foram considerados quatro modos de operação: \textbf{Nominal Mode}, \textbf{Safe Mode}, \textbf{Battery Low Level Mode} e \textbf{Hibernate Mode}. Esses modos são mostrados na Figura \ref{uml_me}.
+A máquina de estados desenvolvida levou em consideração os casos macros do CubeSat em sua órbita. Não foi levado em consideração os estágios de pré-lançamento e \textit{deployment}. Foram considerados quatro modos de operação: \textbf{Nominal Mode}, \textbf{Safe Mode}, \textbf{Battery Low Level Mode} e \textbf{Hibernate Mode}. Esses modos são mostrados na Figura \ref{uml_me}.
 
 \begin{figure}[h]
 	\centering
@@ -1320,16 +1350,17 @@ Como o \textit{kernel} escolhido foi o \textit{FreeRTOS} as atividades do OBC fo
 \end{figure}
 
 
-\newpage
+%\newpage
 
 \item \textbf{Diagrama de Arquivos}
 
-O diagrama de arquivos é semelhante ao diagrama de classes em orientação à objetos. Devido a complexidade do sistema, alguns arquivos ainda estão sendo finalizados. A figura \ref{uml_da} mostra o Diagrama de Arquivos.
+O diagrama de arquivos é semelhante ao diagrama de classes em orientação a objetos. Devido a complexidade do sistema, alguns arquivos ainda estão sendo finalizados. A Figura \ref{uml_da} mostra o Diagrama de Arquivos.
+%\newpage
 
 \begin{figure}[h]
 	\centering
 	\caption{Diagrama de Arquivos do Sistema.}
-	\includegraphics[keepaspectratio=true,scale=0.3]{figuras/CSS.png}
+	\includegraphics[keepaspectratio=true,scale=0.36]{figuras/CSS.png}
 	
 	\label{uml_da}
 \end{figure}
@@ -1346,30 +1377,33 @@ O desenvolvimento do Fluxograma será realizado no TCC2.
 
 \section{Desenvolvimento do Código}
 
-Com base na UML e no diagrama de interface do hardware foi realizado o código embarcado. O Ambiente de Desenvolvimento (IDE, do ingles \textit{Integrated Development Environment}) escolhido foi o \textit{Code Composer Studio}, devido  a familiaridade do aluno com a ferramenta. Todo o código foi colocado no repositório\footnote{Código disponível em: \url{https://github.com/guilionzzo/firmware_onBoardComputer/tree/master}} do aluno no GitHub. 
+Com base na UML e no diagrama de interface do hardware foi realizado o código embarcado. O Ambiente de Desenvolvimento (IDE, do ingles \textit{Integrated Development Environment}) escolhido foi o \textit{Code Composer Studio}, devido  a familiaridade do aluno com a ferramenta. Todo o código foi colocado no repositório\footnote{Código disponível em: \url{https://github.com/guilhermelionzo/firmware_onBoardComputer}} do aluno no GitHub. 
 
 \chapter[Resultados e Discussão]{Resultados e Discussão}
 
-Até o presente momento, as duas instituições estão discutindo os acordos da parceria. Esse fato impossibilitou a capitação de recursos para a compra dos componentes eletrônicos e fabricação da PCB. Sendo assim, os resultados apresentados serão pertinentes ao teste em protoboard, utilizando a LaunchPad do MSP432 e alguns módulos COTS.
+Até o presente momento, as duas instituições estão discutindo os acordos da parceria. Esse fato impossibilitou a capitação de recursos para a compra dos componentes eletrônicos e fabricação da PCB. Sendo assim, os resultados apresentados são pertinentes ao teste em protoboard, utilizando a LaunchPad do MSP432 e alguns módulos COTS.
 
 Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Esse tipo de abordagem pode ser uma boa pois de certa forma a incidência de luz estará relacionada com a energia armazenada no EPS.
 
 A Figura abaixo mostra a conexão dos componentes na LaunchPad.
 
+\hl{[LAUNCHPAD+PROTOBOARD FIGURE]}
+\begin{comment}
 \begin{figure}[h]
-	\centering
-	\caption{Protoboard.}
-	\includegraphics[keepaspectratio=true,scale=0.15]{figuras/protoboard.png}
-	
-	\label{proto}
+\centering
+\caption{Protoboard.}
+\includegraphics[keepaspectratio=true,scale=0.15]{figuras/protoboard.png}
+
+\label{proto}
 \end{figure}
+\end{comment}
+
 
 
 \section{Aquisição e Armazenamento de Dados}
 
-O serviço de armazenamento de aquisição e armazenamento de dados é feito pelas Tasks HouseKeeping e DataStorage, respectivamente. Durante os testes realizados, os dados foram salvados em formato de strings, para facilitar o debug, mas no futuro os dados serão armazenados conforme mostra o Apêndice \ref{apendiceb}, pois o armazenamento será muito mais eficiente e rápido. 
+O serviço de armazenamento de aquisição e armazenamento de dados é feito pelas Tasks HouseKeeping e DataStorage, respectivamente. Durante os testes realizados, os dados foram salvados em formato de strings, para facilitar o debug, mas no futuro os dados serão armazenados conforme mostra o Apêndice \ref{apendiceb}, pois o armazenamento será muito mais eficiente e rápido. O pacote de telemetria especificado para o teste seguiu o formato especificado na Figura \ref{telemetryPacket}.
 
-O pacote de telemetria especificado para o teste seguia a forma mostrada abaixo. Durante os testes houveram algumas falhas para armazenar os tempos relativos no computador de bordo. Alguns valores tiveram valor nulo.
 
 \begin{figure}[h]
 	\centering
@@ -1379,7 +1413,9 @@ O pacote de telemetria especificado para o teste seguia a forma mostrada abaixo.
 	\label{telemetryPacket}
 \end{figure}
 
-Todos os requisitos pertinentes à aquisição e armazenamento foram cumpridos, conforme mostra a Tabela \ref{table_Aquis}. Vale a pena ressaltar que o requisito \textit{OBC-H-R1} pede que os dados dos subsistemas e Câmera sejam armazenados. Até o presente momento os subsistemas não foram finalizados e o aluno enfrentou dificuldade para desenvolver o driver para a comunicação com a câmera. 
+\begin{comment}
+Todos os requisitos pertinentes à aquisição e armazenamento foram cumpridos, conforme mostra a Tabela \ref{table_Aquis}. Vale a pena ressaltar que o requisito \textit{OBC-H-R1} pede que os dados dos subsistemas e Câmera sejam armazenados.
+
 
 \begin{longtable}[c]{clcl}
 	\caption{Requisitos referentes à aquisição e armazenamento de dados.}
@@ -1399,8 +1435,9 @@ Todos os requisitos pertinentes à aquisição e armazenamento foram cumpridos, 
 	&                                                                                                                                                                                                                                                                                                   &           &                               \\
 	&                                                                                                                                                                                                                                                                                                   &           &                              
 \end{longtable}
+\end{comment}
 
-A Figura \ref{telemetryData} mostra os dados armazenados durante os testes.
+Durante os testes houveram algumas falhas para armazenar o tempo relativo no computador de bordo, alguns valores tiveram valor nulo. Não foi encontrar a causa exata desse problema, mas uma possível causa é na conversão dos valores gerados pelo SysTick do sistema. A Figura \ref{telemetryData} mostra os dados armazenados durante os testes. 
 
 \begin{figure}[h]
 	\centering
@@ -1410,16 +1447,16 @@ A Figura \ref{telemetryData} mostra os dados armazenados durante os testes.
 	\label{telemetryData}
 \end{figure}
 
-\newpage
+O desenvolvimento do driver de comunicação com a câmera teve um atraso pois houve um Em relação ao armazenamento da câmera, Até o presente momento os subsistemas não foram finalizados e o aluno enfrentou dificuldade para desenvolver o driver para a comunicação com a câmera.
 
 \section{Sistema Anti Travamento}
 
 Uma das grandes preocupações no desenvolvimento do OBC foi sobre a confiabilidade do sistema. O uso de componentes COTS poem em risco a vida útil da missão pois esses componentes não possui resistência à radiação. Como mencionado a \textit{Task} Task do WTD foi responsável por gerencias os travamentos a nível de software e desarar os watchdogs via hardware.
 
 A nível de software foi possível perceber que a \textit{task} do watchdog reiniciou a task que não setou o bit no tempo estabelecido. A imagem abaixo mostra a task do TT\&C sendo reiniciada.
-
-No nível a baixo, ha o watchdog do microcontrolador. Caso algum travamento no sistema operacional ocorra, o microcontrolador a nível de\textit{ hardrware} reiniciar o sistema. Foi possível constatar isso quando que a task do watchdog não reiniciou o timer do WTD do msp, a conexão com a seção foi perdida devido ao \textit{reset}.
-
+\newline\hl{[WTD SOFTWARE]}\newline
+No nível a baixo, ha o watchdog do microcontrolador. Caso algum travamento no sistema operacional ocorra, o microcontrolador a nível de\textit{hardrware} reiniciar o sistema. Foi possível constatar isso quando que a task do watchdog não reiniciou o timer do WTD do msp, a conexão com a seção foi perdida devido ao \textit{reset}.
+\newline\hl{[WTD MSP432]}\newline
 Por fim, há o WTD externo que resetará o OBC em caso de travamento do MSP432, trazendo mais robustez à solução. Esse componente não foi testado pois não há um modulo apenas o componente SMD.
 
 É claro que e essa solução só funcionará em casos de \textit{Single Event Upset} (SEU), já em outros casos, como o SEL, é possível que haja danos permanentes no OBC. 
@@ -1442,7 +1479,7 @@ Os testes de consumo foram realizados utilizando a ferramenta \textit{EnergyTrac
 
 Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Houveram três baterias de teste de cinco minutos, um para cada estado. Os dados do consumo de cada um está presente na tabela 1.
 
-Comparando o estado de nominal com o estado de hibernação, observa-se que houve uma economia de mais de 40\textperthousand, aumentando a vida da bateria em dois dias. A Figura \ref{hibernatexNormal} mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
+Comparando o estado de nominal com o estado de hibernação, observa-se que houve uma economia de mais de 40\%, aumentando a vida da bateria em dois dias. A Figura \ref{hibernatexNormal} mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
 
 \begin{figure}[h]
 	\centering
@@ -1452,8 +1489,9 @@ Comparando o estado de nominal com o estado de hibernação, observa-se que houv
 	\label{hibernatexNormal}
 \end{figure}
 
-Não foi possível concluir a mesma melhoria comparando o modo de baixo consumo com o modo de hibernação. Houve apenas uma economia de 9\textperthousand,0.6 dias. Esse fato ocorre por que o modo de hibernação não está completamente otimizado. A fonte de sincronismo durante esse estado ainda continua sendo 48MHz. O ideal seria utilizar o clock externo de 32KHz para realizar as interrupções do kernel. Infelizmente devido à inexperiência do aluno com o FreeRTOS, não foi possível adicionar uma segunda fonte de sincronismo no modo de baixo consumo. A Figura \ref{hibernatexLBM} mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
-
+\newpage
+Não foi possível concluir a mesma melhoria comparando o modo de baixo consumo com o modo de hibernação. Houve apenas uma economia de 9\%,0.6 dias. Esse fato ocorre por que o modo de hibernação não está completamente otimizado. A fonte de sincronismo durante esse estado ainda continua sendo 48MHz. O ideal seria utilizar o clock externo de 32KHz para realizar as interrupções do kernel. Infelizmente devido à inexperiência do aluno com o FreeRTOS, não foi possível adicionar uma segunda fonte de sincronismo no modo de baixo consumo. A Figura \ref{hibernatexLBM} mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
+\newline
 \begin{figure}[h]
 	\centering
 	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
@@ -1476,9 +1514,9 @@ Fazendo uma estimativa com os outros sensores/periféricos. A tabela abaixo most
 \section{Modos de Operação}
 
 
-Para testar a maquina de estados do OBC, utilizou-se o software Tracealyzer, da empresa Percepio. Essa ferramenta consiste em uma interface gráfica que interpreta os dados gerados durante a execução do FreeRTOS. Os dados são armazenados em um \textit{buffer} na memoria RAM do microcontrolador e, após a solicitação do Tracealyzer, os dados são enviados para o computador. Utilizou-se a ferramenta em modo \textit{snapshoot}, o que consiste em pegar os dados do \textit{buffer} e interpretar na interface gráfica. O modo \textit{streaming} não foi utilizado pq não havia o cabo de \textit{debug} J-link.
+Para testar a máquina de estados do OBC, utilizou-se o software Tracealyzer, da empresa Percepio\footnote{Para mais detalhes da empresa consulte \url{https://percepio.com/}}. Essa ferramenta consiste em uma interface gráfica que interpreta os dados gerados durante a execução do FreeRTOS. Os dados são armazenados em um \textit{buffer}, na memória RAM do microcontrolador, e após a solicitação do Tracealyzer são enviados para o computador. Utilizou-se a ferramenta em modo \textit{snapshoot}, o que consiste em pegar os dados do \textit{buffer} e interpretar na interface gráfica. O modo \textit{streaming}, que consiste em pegar os dados em modo continuo, não foi utilizado pois não havia o cabo de \textit{debug} J-link.
 
-No decorrer dos testes foi possível observar vários fenômenos interessantes. Durante a inicialização do sistema, nota-se que há um grande consumo de CPU pelas \textit{Tasks}, principalmente \textit{DataStorage},devido a montagem da imagem do SD Card. Isso acontece pois o sistema operacional está alocando memoria para as \textit{tasks,queues} e outros \textit{handlers}. A Figura \ref{trace_snapshoot_1} mostra a inicialização do sistema.
+No decorrer dos testes foi possível observar vários fenômenos interessantes. Durante a inicialização do sistema, nota-se que há um grande consumo de CPU pelas \textit{Tasks}, principalmente \textit{DataStorage},devido a montagem da imagem do SD Card. Isso acontece pois o sistema operacional está alocando memória para as \textit{tasks,queues} e outros \textit{handlers}. A Figura \ref{trace_snapshoot_1} mostra a inicialização do sistema.
 
 \begin{figure}[h]
 	\centering
@@ -1488,7 +1526,7 @@ No decorrer dos testes foi possível observar vários fenômenos interessantes. 
 	\label{trace_snapshoot_1}
 \end{figure}
 
-Apos alguns segundos foi possível notar que a task do \textit{DataStorage} ainda consome muita CPU. Isso ocorre pois durante os testes os dados dos sensores foram convertidos e armazenados, o que consome muito processamento. É bem provável que salvar os dados em sua forma original diminuirá o poder de processamento em mais da metade. Figura \ref{trace_snapshoot_2}
+Após alguns segundos foi possível notar que a task do \textit{DataStorage} ainda consome muita CPU. Isso ocorre pois durante os testes os dados dos sensores foram convertidos e armazenados, o que consome muito processamento. É bem provável que salvar os dados em sua forma original diminuirá o poder de processamento em mais da metade. Figura \ref{trace_snapshoot_2}
 
 
 \begin{figure}[h]
@@ -1500,7 +1538,7 @@ Apos alguns segundos foi possível notar que a task do \textit{DataStorage} aind
 \end{figure}
 
 \newpage
-Após o período de inicialização, colocando o sistema em modo de alta performance (NM\_MODE) é possível ver que as tasks se estabilizaram e começaram a diminuir o processamento do kernel. O processamento medio ficou em torno de 8\%. Nesse estado o \textit{TaskManager} é que consome mais que os outras \textit{Tasks}, em torno de 2\%. Tambem é possivel notar que . Figura \ref{trace_snapshoot_3}
+Após o período de inicialização, colocando o sistema em modo de alta performance (NM\_MODE) é possível ver que as \textit{Tasks} se estabilizaram e começaram a diminuir o processamento do \textit{kernel}, como é mostrado na Figura \ref{trace_snapshoot_3}. O processamento médio ficou em torno de 8\%. Nesse estado o \textit{TaskManager} consome mais que os outras \textit{Tasks}, em torno de 2\%. 
 
 \begin{figure}[h]
 	\centering
@@ -1511,7 +1549,7 @@ Após o período de inicialização, colocando o sistema em modo de alta perform
 \end{figure}
 
 \newpage
-Colocando o sistema em modo de baixo consumo é possível notar que há uma redução no tempo de execução das \textit{Tasks}, que durante os testes esse tempo foi 5 vezes o tempo de execução nominal, como mostrado na Figura \ref{trace_snapshoot_5}. Também é visto que as \textit{Tasks} com menos prioridade foram coladas em modo de sleep, restando apenas as \textit{Tasks} que são de controle e coleta/armazenamento de dados.
+Colocando o sistema em modo de baixo consumo é possível notar que há uma redução no tempo de execução das \textit{Tasks}, que durante os testes esse tempo foi cinco vezes maior que o tempo de execução nominal, como mostrado na Figura \ref{trace_snapshoot_5}. Também é visto que as \textit{Tasks} com menos prioridade foram coladas em modo de sleep, restando apenas as \textit{Tasks} que são de controle(\textit{WTD Task} e \textit{TaskManager}) e manipulação de dados (\textit{HouseKeeeping} e \textit{DataManager})
 
 \begin{figure}[h]
 	\centering
@@ -1521,7 +1559,7 @@ Colocando o sistema em modo de baixo consumo é possível notar que há uma redu
 	\label{trace_snapshoot_5}
 \end{figure}
 
-Como era de se esperar, durante o modo de hibernação apenas o \textit{TaskManager} fica ativo e consumindo mais CPU do que o usual, quase de 11\%. O kernel tambem executa essa task com um espassamento maior em 5 vezes ao normal. A\ref{trace_snapshoot_4} o OBC sendo executado em modo HB\_MODE.
+Como era de se esperar, durante o modo de hibernação apenas o \textit{TaskManager} fica ativo e consumindo mais CPU do que o usual, quase de 11\%. O \textit{kernel} também executa essa \textit{task} com um espaçamento cinco vezes maior que o normal. em 5 vezes ao normal. A Figura \ref{trace_snapshoot_4} mostra o gráfico de processamento do OBC em modo de hibernação.
 
 
 \begin{figure}[h]
@@ -1533,7 +1571,8 @@ Como era de se esperar, durante o modo de hibernação apenas o \textit{TaskMana
 \end{figure}
 
 \newpage
-Por fim, alternou-se os modos de operação para e o resultado saiu como esperado. Na figura \ref{trace_snapshoot_8}  há 
+Por fim, alternou-se os modos de operação para que pudesse ter noção de como o sistema se comportaria em modo misto, saindo de um estado para o outro. O resultado mostrado na Figura \ref{trace_snapshoot_8} condiz com o esperado. Nos estagios iniciais há um grande uso de CPU, logo em seguida o sistema entra em modo de baixo consumo e apenas o \textit{TaskManager} fica ativo e sendo executado mais lentamente. Após o modo de hibernação, o sistema entra em modo nominal e todas as tasks são executadas sem limite de CPU. E por fim, o sistema foi colocado em modo de baixo consumo, e apenas as \textit{tasks} de controle(\textit{WTD Task} e \textit{TaskManager}) e manipulação de dados (\textit{HouseKeeeping} e \textit{DataManager}) foram executadas.
+
 \begin{figure}[h]
 	\centering
 	\caption{Snapshoot no Tracealyzer do sistema executando em todos os modos.}
@@ -1542,49 +1581,39 @@ Por fim, alternou-se os modos de operação para e o resultado saiu como esperad
 	\label{trace_snapshoot_8}
 \end{figure}
 
-Com essa sessão foi possível concluir que os estados estão sendo alternados conforme o nível de bateria, que no caso foi simulado pelo nível de intensidade de luz. Com isso o requisitos OBC-SW-R7 foi comprido.
-
 
 \chapter[Conclusão e Recomendações]{Conclusão e Recomendações}
 
 \section{Conclusão}
-Os objetivos da pesquisa foram alcançados em parte.
-- houve o controle da câmera CMOS.
-- Até o presente momento, a parceria está em fase de discussão. Sendo assim não foi possível realizar os teste com o PPT, mas o barramento ISA PC104 está com os pinos especificados para o realizar a interface.
-- O sistema possui um nível considerável de segurança pois foram implementados o Watchdog via FreeRTOS, WTD via MSP432 e um WTD via Hardware. Possui um sensor contra alta corrente. Isso minimizará os riscos de se usar componentes COTS sem tolerância a radiação.
-- X% dos requisitos foram alcançados. 
-- O uso de requisitos de outras missões serviram como base para a realização do projeto, entretanto nos próximos trabalhos seria interessante realizar o estudo aprofundado dos requisitos da missão para que o projeto tenha mais. 
-- Codesign. 
-- MSP432 como solução de baixo consumo e processamento intermediário. 
-- Uso do FreeRTOS como uma alternativa para um sistema operacional de baixo consumo e baixo processamento. 
-- Foi possível constatar que a máquina de estados da missão foi realizada. O auxílio de ferramentas como o tracealyzer permitiu a otimização das tasks. Devido a escassez de tempo, não foi possível realizar o modo SAAFE MODE.
-- Uso de ferramentas opensource.
-- GitHub como plataforma de versionamento e disseminação da pesquisa. Isso ajuda a criar softwares que possam ser reutilizados em futuros projetos. Sem contar que o código fica versionado.
--Open source.
-Os objetivos da pesquisa foram alcançados em parte.
-- houve o controle da câmera CMOS.
-- Até o presente momento, a parceria está em fase de discussão. Sendo assim não foi possível realizar os teste com o PPT, mas o barramento ISA PC104 está com os pinos especificados para o realizar a interface.
-- O sistema possui um nível considerável de segurança pois foram implementados o Watchdog via FreeRTOS, WTD via MSP432 e um WTD via Hardware. Possui um sensor contra alta corrente. Isso minimizará os riscos de se usar componentes COTS sem tolerância a radiação.
-- Xporcento dos requisitos foram alcançados. 
-- O uso de requisitos de outras missões serviram como base para a realização do projeto, entretanto nos próximos trabalhos seria interessante realizar o estudo aprofundado dos requisitos da missão para que o projeto tenha mais. 
-- Codesign. 
-- MSP432 como solução de baixo consumo e processamento intermediário. 
-- Uso do FreeRTOS como uma alternativa para um sistema operacional de baixo consumo e baixo processamento. 
-- Foi possível constatar que a máquina de estados da missão foi realizada. O auxílio de ferramentas como o tracealyzer permitiu a otimização das tasks. Devido a escassez de tempo, não foi possível realizar o modo SAAFE MODE.
-- Uso de ferramentas opensource.
-- GitHub como plataforma de versionamento e disseminação da pesquisa. Isso ajuda a criar softwares que possam ser reutilizados em futuros projetos. Sem contar que o código fica versionado.
--Open source.
+
+Este trabalho apresentou o projeto do \textit{On Board Computer} para a futura missão entra a Universidade de Brasília e o Instituto de Aviação Varsóvia. Como foi mencionado durante o texto, a negociação do projeto estava em andamento durante todo o projeto de pesquisa, o que impossibilitou a coleta de requisitos e o custeio dos componentes eletrônicos. Tais pontos não desmerecem o projeto, pois houve um acumulo de conhecimento enorme durante a pesquisa. 
+
+Inicialmente foi realizado uma conceituação básica do tema. Apresentou-se como são categorizados os pequenos satélites e seus principais subsistemas, como foco em nanosatélites. Foi mostrado qual é a importância do OBC em CubeSats e foi feito também uma comparação entre alguns OBCs utilizados em missões.  Para fechar a parte introdutória, expôs-se o ambiente espacial e sua influência nos equipamentos eletrônicos. Esses tópicos serviram de base para o entendimento dos fatores a serem analisados durante o processo de desenvolvimento do OBC.
+ 
+Logo em seguida, foi mostrado o procedimento utilizado para contornar a ausência de requisitos do OBC, procedimento que ajudou na limitação do escopo do projeto. Mostrou-se o critério utilizado para escolha do microcontrolador, componente mais importante do OBC. A partir desta primeira seleção,escolheu-se os outros componentes que o auxiliariam no controle do OBC, como sensor inercial, corrente, temperatura, etc. Também foi visto alguns sistemas para diminuir os riscos dos efeitos da radiação sobre o microcontrolador, como o uso de watchdog em vários níveis. Por fim, para a parte de hardware foi realizado o layout do circuito impresso no KiCad.
+
+Para o desenvolvimento do software utilizou-se a mesma alternativa para contornar os escassez de requisitos. Foi mostrado a arquitetura em camadas, proposta para ajudar na abstração dos componentes e interfaces. O pacote DriverLib foi utilizado como interface HAL, uma vez que suas APIs abstraem toda a tratativa dos registradores. Para a camada acima, foi escolhido o FreeRTOS como sistema operacional do OBC, ele é uma ótima para aplicações em sistemas críticos de tempo real onde o poder de processamento é limitado. Também foi desenvolvido a Camada de Serviço do Sistema, utilizando os conceitos de \textit{Unified Modeling Language} para facilitar a manutenção dessa camada em futuras melhorias. \newline\hl{Ongoing}\newline
+Durantes os testes com a launchpad, foi possível testar a coleta e armazenamento de dados, a solução antitravamento, consumo. O auxilio da ferramenta Tracealyzer facilitou a visualização dos modos de operação do sistema operacional. Algo interessante foi ver o consumo variando entre os modos de operação. 
+
+Alguns pontos não foram abordados durante a pesquisa devido algumas dificuldades que o aluno passou durante o desenvolvimento do OBC. Entrentando, tais pontos não desmerecem o trabalho, visto que foi possível desenvolver grande parte do software embarcado e o desenvolvimento por completo do layout da PCB. %Os pontos a serem melhoradas em futuras versões do trabalho serão expostas na seção a seguir.
+\newline\hl{Ongoing}\newline
+
+Algo importante a ser mencionado é o beneficio que a utilização da plataforma GitHub trouxe ao projeto. Todo o código ficou versionado no repositório do aluno, ao todo houveram trinta e dois commits, ou seja, trinta e duas versões do código. Caso haja uma modificação muito drástica no código e o não funcione perfeitamente, é possível voltar para uma versão mais estável. Outro ponto importante é que o GitHub serviu como divulgação da pesquisa. Até o presente momento, 135 visualizações e 16 clones no repositório do projeto.  
+
 
 \section{Recomendações}
 
-- Soldagem dos componentes. E teste da placa.
-- Projeto subestimado. Precisa de mais pessoas. Utilizar o projeto para a realização de um laboratório de aplicações espaciais. 
-- Parcerias com outras universidades/LAICAnSat/Inpe;
-- Realizar o teste com balão estratosférico.
-- Coleta de requisitos.
-- Sistema para mitigar falhas.
-- A possibilidade de usar componentes SMD menores.
-- Otimização do port.h e a utilização de uma fonte de clock de 32KHz para SysTick, com o intuito de usar no modo de hibernação. 
+Os trabalhos futuros são de extrema importância para a melhoria do OBC e êxito da futura missão. No decorrer do projeto Como esse foi um dos primeiros trabalhos pesquisa realizado realizado na missão, vários empecilhos foram desconsiderados durante a fase inicial da pesquisa. Tais pontos devem ser considerados nos próximos trabalhos.
+
+A compra e soldagem dos componentes é um ponto extrema prioridade, pois não foi possível testar a placa desenvolvida no projeto. Alguns componentes só poderão ser testados ao serem soldados na PCB, como é o caso do watchdog e da memória FRAM.
+
+Outro ponto que deve ser aprofundado é a utilização do clock de 32KHz como fonte de sincronismo do \textit{SysTick}, durante o modo de hibernação do satélite. Foi visto que a utilização de um único  clock, tanto para o modo de alto desempenho quanto para o modo de hibernação, não torna o OBC robusto em cenários de baixa bateria. Fazendo uma estimativa, o MSP432 aumentaria a vida útil da bateria, em modo de hibernação, em mais de duas mil vezes, consumindo 11uW@32KHz \footnote{Para mais detalhes, consultar Apêndice \ref{apendicec}}.
+
+O uso vários níveis de watchdog e sensor de \textit{overcurrent} não é necessário para diminuição do risco dos efeitos da radiação sobre o OBC. A utilização de componentes COTS oneram a confiabilidade do sistema e outras formas de proteção devem ser analisadas. Recomenda-se que haja pesquisas em para \textit{shields} metálicos para proteção de todo o sistema embarcado,  mas levando em consideração a massa  deste para não onerar o lançamento do satélite, visto que os lançadores cobram em torno de USD 20/kg\footnote{Para mais detalhes, consultar a pagina 18: \url{http://www.scielo.br/pdf/jatm/v9n3/2175-9146-jatm-09-03-0269.pdf}}.
+
+Foi constatado que o escopo do projeto foi subestimado e o projeto tem uma proporção bem maior do que foi imaginado. O desenvolvimento do projeto do OBC por apenas um aluno se to apenas uma pessoa realizando o desenvolvimento do sistema fica enviavel. O uso da metodologia de co-design é ideal para engenheiros que possuem grande experiencia no desenvolvimento de soluções embarcadas, mas a nivel de graduação, ela se torna muito dificil pois há inumeros pontos que o aluno travou no software e a parte de hardware ficou parada tambem, algo que não era pra acontecer. Sugere-se que o projeto seja dividio para no minimo dois alunos, um para o hardware e outro para o \textit{firmware}. O aluno realmente encoraja o prosseguimento desde projeto e abertura de mais temas para mais alunos.
 
 
+Por fim, poderia ser abordada a parceria com o Grupo de Pesquisa LAICAnSat. Essa parceria seria ideal para o desenvolvimento de outros subsistemas da missão e teste do OBC, como \textit{payload} de teste, em lançamentos com balão estratosférico. Os testes seriam possível pois a interface de comunicação do sistema embarcado do LAICAnSat também utilizam o barramento ISA BUS e as o padrão PC104. 
 
+É encorajado o prosseguimento desse projeto e a abertura de demais temas para projeto de pesquisa e trabalho de graduação. O seguimento aeroespacial é um dois mais e que possibilitam a interdisciplinaridade entre os cursos.

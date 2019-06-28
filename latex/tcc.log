@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.17)  26 JUN 2019 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.17)  28 JUN 2019 01:34
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1330,8 +1330,242 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen290
 \SOUL@uldp=\dimen291
 \SOUL@ulht=\dimen292
-)) (fixos/comandos.tex) (fixos/customizacoes.sty) (editaveis/informacoes.tex)
-(fixos/informacoes.tex) (fixos/setup.tex
+))
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunit
+x.sty"
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3
+.sty"
+Package: expl3 2019-05-28 L3 programming layer (loader) 
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3
+-code.tex"
+Package: expl3 2019-05-28 L3 programming layer (code)
+\c_max_int=\count309
+\l_tmpa_int=\count310
+\l_tmpb_int=\count311
+\g_tmpa_int=\count312
+\g_tmpb_int=\count313
+\g__kernel_prg_map_int=\count314
+\c__ior_term_ior=\count315
+\c_log_iow=\count316
+\l_iow_line_count_int=\count317
+\l__iow_line_target_int=\count318
+\l__iow_one_indent_int=\count319
+\l__iow_indent_int=\count320
+\c_zero_dim=\dimen293
+\c_max_dim=\dimen294
+\l_tmpa_dim=\dimen295
+\l_tmpb_dim=\dimen296
+\g_tmpa_dim=\dimen297
+\g_tmpb_dim=\dimen298
+\c_zero_skip=\skip270
+\c_max_skip=\skip271
+\l_tmpa_skip=\skip272
+\l_tmpb_skip=\skip273
+\g_tmpa_skip=\skip274
+\g_tmpb_skip=\skip275
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count321
+\l__intarray_loop_int=\count322
+\c__intarray_sp_dim=\dimen299
+\g__intarray_font_int=\count323
+\c__fp_leading_shift_int=\count324
+\c__fp_middle_shift_int=\count325
+\c__fp_trailing_shift_int=\count326
+\c__fp_big_leading_shift_int=\count327
+\c__fp_big_middle_shift_int=\count328
+\c__fp_big_trailing_shift_int=\count329
+\c__fp_Bigg_leading_shift_int=\count330
+\c__fp_Bigg_middle_shift_int=\count331
+\c__fp_Bigg_trailing_shift_int=\count332
+\c__kernel_randint_max_int=\count333
+\g__fp_array_int=\count334
+\l__fp_array_loop_int=\count335
+\l__sort_length_int=\count336
+\l__sort_min_int=\count337
+\l__sort_top_int=\count338
+\l__sort_max_int=\count339
+\l__sort_true_max_int=\count340
+\l__sort_block_int=\count341
+\l__sort_begin_int=\count342
+\l__sort_end_int=\count343
+\l__sort_A_int=\count344
+\l__sort_B_int=\count345
+\l__sort_C_int=\count346
+\l__tl_analysis_normal_int=\count347
+\l__tl_analysis_index_int=\count348
+\l__tl_analysis_nesting_int=\count349
+\l__tl_analysis_type_int=\count350
+\l__regex_internal_a_int=\count351
+\l__regex_internal_b_int=\count352
+\l__regex_internal_c_int=\count353
+\l__regex_balance_int=\count354
+\l__regex_group_level_int=\count355
+\l__regex_mode_int=\count356
+\c__regex_cs_in_class_mode_int=\count357
+\c__regex_cs_mode_int=\count358
+\l__regex_catcodes_int=\count359
+\l__regex_default_catcodes_int=\count360
+\c__regex_catcode_D_int=\count361
+\c__regex_catcode_S_int=\count362
+\c__regex_catcode_L_int=\count363
+\c__regex_catcode_O_int=\count364
+\c__regex_catcode_A_int=\count365
+\c__regex_all_catcodes_int=\count366
+\l__regex_show_lines_int=\count367
+\l__regex_min_state_int=\count368
+\l__regex_max_state_int=\count369
+\l__regex_left_state_int=\count370
+\l__regex_right_state_int=\count371
+\l__regex_capturing_group_int=\count372
+\l__regex_min_pos_int=\count373
+\l__regex_max_pos_int=\count374
+\l__regex_curr_pos_int=\count375
+\l__regex_start_pos_int=\count376
+\l__regex_success_pos_int=\count377
+\l__regex_curr_char_int=\count378
+\l__regex_curr_catcode_int=\count379
+\l__regex_last_char_int=\count380
+\l__regex_case_changed_char_int=\count381
+\l__regex_curr_state_int=\count382
+\l__regex_step_int=\count383
+\l__regex_min_active_int=\count384
+\l__regex_max_active_int=\count385
+\l__regex_replacement_csnames_int=\count386
+\l__regex_match_count_int=\count387
+\l__regex_min_submatch_int=\count388
+\l__regex_submatch_int=\count389
+\l__regex_zeroth_submatch_int=\count390
+\g__regex_trace_regex_int=\count391
+\c_empty_box=\box76
+\l_tmpa_box=\box77
+\l_tmpb_box=\box78
+\g_tmpa_box=\box79
+\g_tmpb_box=\box80
+\l__box_top_dim=\dimen300
+\l__box_bottom_dim=\dimen301
+\l__box_left_dim=\dimen302
+\l__box_right_dim=\dimen303
+\l__box_top_new_dim=\dimen304
+\l__box_bottom_new_dim=\dimen305
+\l__box_left_new_dim=\dimen306
+\l__box_right_new_dim=\dimen307
+\l__box_internal_box=\box81
+\l__coffin_internal_box=\box82
+\l__coffin_internal_dim=\dimen308
+\l__coffin_offset_x_dim=\dimen309
+\l__coffin_offset_y_dim=\dimen310
+\l__coffin_x_dim=\dimen311
+\l__coffin_y_dim=\dimen312
+\l__coffin_x_prime_dim=\dimen313
+\l__coffin_y_prime_dim=\dimen314
+\c_empty_coffin=\box83
+\l__coffin_aligned_coffin=\box84
+\l__coffin_aligned_internal_coffin=\box85
+\l_tmpa_coffin=\box86
+\l_tmpb_coffin=\box87
+\g_tmpa_coffin=\box88
+\g_tmpb_coffin=\box89
+\l__coffin_bounding_shift_dim=\dimen315
+\l__coffin_left_corner_dim=\dimen316
+\l__coffin_right_corner_dim=\dimen317
+\l__coffin_bottom_corner_dim=\dimen318
+\l__coffin_top_corner_dim=\dimen319
+\l__coffin_scaled_total_height_dim=\dimen320
+\l__coffin_scaled_width_dim=\dimen321
+\c__coffin_empty_coffin=\box90
+\l__coffin_display_coffin=\box91
+\l__coffin_display_coord_coffin=\box92
+\l__coffin_display_pole_coffin=\box93
+\l__coffin_display_offset_dim=\dimen322
+\l__coffin_display_x_dim=\dimen323
+\l__coffin_display_y_dim=\dimen324
+\g__file_internal_ior=\read3
+\l__seq_internal_a_int=\count392
+\l__seq_internal_b_int=\count393
+\c__deprecation_minus_one=\count394
+)
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\l3pdf
+mode.def"
+File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
+\l__driver_internal_box=\box94
+\l__driver_color_stack_int=\count395
+))
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xpa
+rse\xparse.sty"
+Package: xparse 2019-05-28 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count396
+\g__xparse_grabber_int=\count397
+\l__xparse_m_args_int=\count398
+\l__xparse_v_nesting_int=\count399
+)
+Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstex
+t.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen
+.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks50
+\ex@=\dimen325
+))
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/l3k
+eys2e\l3keys2e.sty"
+Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box95
+\l__siunitx_tmp_dim=\dimen326
+\l__siunitx_tmp_int=\count400
+\l__siunitx_number_mantissa_length_int=\count401
+\l__siunitx_number_uncert_length_int=\count402
+\l__siunitx_round_int=\count403
+\l__siunitx_process_decimal_int=\count404
+\l__siunitx_process_uncertainty_int=\count405
+\l__siunitx_process_fixed_int=\count406
+\l__siunitx_process_integer_min_int=\count407
+\l__siunitx_process_precision_int=\count408
+\l__siunitx_group_min_int=\count409
+\l__siunitx_angle_marker_box=\box96
+\l__siunitx_angle_unit_box=\box97
+\l__siunitx_angle_marker_dim=\dimen327
+\l__siunitx_angle_unit_dim=\dimen328
+\l__siunitx_unit_int=\count410
+\l__siunitx_unit_denominator_int=\count411
+\l__siunitx_unit_numerator_int=\count412
+\l__siunitx_unit_prefix_int=\count413
+\l__siunitx_unit_prefix_base_int=\count414
+\l__siunitx_unit_prefix_gram_int=\count415
+\l__siunitx_number_product_int=\count416
+\c__siunitx_one_fill_skip=\skip276
+\l__siunitx_table_unit_align_skip=\skip277
+\l__siunitx_table_exponent_dim=\dimen329
+\l__siunitx_table_integer_dim=\dimen330
+\l__siunitx_table_mantissa_dim=\dimen331
+\l__siunitx_table_marker_dim=\dimen332
+\l__siunitx_table_result_dim=\dimen333
+\l__siunitx_table_uncert_dim=\dimen334
+\l__siunitx_table_fill_pre_dim=\dimen335
+\l__siunitx_table_fill_post_dim=\dimen336
+\l__siunitx_table_fill_mid_dim=\dimen337
+\l__siunitx_table_pre_box=\box98
+\l__siunitx_table_post_box=\box99
+\l__siunitx_table_mantissa_box=\box100
+\l__siunitx_table_result_box=\box101
+\l__siunitx_table_number_align_skip=\skip278
+\l__siunitx_table_text_align_skip=\skip279
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\tra
+nslator.sty"
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+)) (fixos/comandos.tex) (fixos/customizacoes.sty)
+(editaveis/informacoes.tex) (fixos/informacoes.tex) (fixos/setup.tex
 Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 )
 \tcc@idxfile=\write5
@@ -1427,7 +1661,7 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 9.
  ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box76
+\AtBeginShipoutBox=\box102
 Package hyperref Info: Link coloring ON on input line 9.
 
 ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\namer
@@ -1438,7 +1672,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 titlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count309
+\c@section@level=\count417
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1449,8 +1683,8 @@ LaTeX Info: Redefining \nameref on input line 9.
 LaTeX Info: Redefining \degres on input line 9.
 LaTeX Info: Redefining \dots on input line 9.
 LaTeX Info: Redefining \up on input line 9.
-\myptabbox=\box77
-\myptabboxwidth=\skip270
+\myptabbox=\box103
+\myptabboxwidth=\skip280
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 9.
@@ -1458,17 +1692,17 @@ Package lastpage Info: Please have a look at the pageslts package at
 ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\su
 pp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen293
-\scratchbox=\box78
-\nofMPsegments=\count311
-\nofMParguments=\count312
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen294
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count418
+\scratchdimen=\dimen338
+\scratchbox=\box104
+\nofMPsegments=\count419
+\nofMParguments=\count420
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count421
+\MPscratchDim=\dimen339
+\MPnumerator=\count422
+\makeMPintoPDFobject=\count423
+\everyMPtoPDFconversion=\toks52
 )
 ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epsto
 pdf-base.sty"
@@ -1496,10 +1730,144 @@ Package gensymb Info: Using \Omega for \ohm on input line 9.
 
 Package gensymb Warning: Not defining \micro.
 
-\c@lstlisting=\count316
+\c@lstlisting=\count424
 ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.df
+u"
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+)
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\tra
+nslator-basic-dictionary-English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+)
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\tra
+nslator-basic-dictionary-French.dict"
+Dictionary: translator-basic-dictionary, Language: French 
+)
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\tra
+nslator-basic-dictionary-Spanish.dict"
+Dictionary: translator-basic-dictionary, Language: Spanish 
+)
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\tra
+nslator-basic-dictionary-Portuguese.dict"
+Dictionary: translator-basic-dictionary, Language: portuguese 
+)
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunit
+x-abbreviations.cfg"
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 9.
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)<<ot1.cmap>>
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 9.
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)<<oml.cmap>>
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 9.
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)<<oms.cmap>>
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 9.
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 9.
+<<omx.cmap>>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 9.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 9.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 9.
+
+("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmss.fd"
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 9.
+ ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd
+"
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)<<ot1tt.cmap>>
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 12.
 
 ("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
@@ -1519,7 +1887,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./figuras/capa-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/capa-eps-converted-to.pdf, id=7, 814.04124pt x 1149.29375pt>
+<figuras/capa-eps-converted-to.pdf, id=12, 814.04124pt x 1149.29375pt>
 File: figuras/capa-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/capa-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/capa-eps-converted-to.pdf  used on input line 
@@ -1530,38 +1898,8 @@ Package pdftex.def Info: figuras/capa-eps-converted-to.pdf  used on input line
 {C:/Users/Guilherme/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figur
 as/capa-eps-converted-to.pdf>] [2
 
-]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 14.
-
-("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 14.
-
-("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 14.
-
-
-("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 14.
-
-
-("C:\Users\Guilherme\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 14.
-<<omx.cmap>>
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 14.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 14.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.14 
@@ -1645,13 +1983,18 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 68.
 
+Overfull \hbox (1.5877pt too wide) detected at line 88
+ \T1/lmss/bx/n/12 101
+ []
+
+
 Overfull \hbox (1.5877pt too wide) detected at line 92
- \T1/lmss/bx/n/12 111
+ \T1/lmss/bx/n/12 113
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 96
- \T1/lmss/bx/n/12 113
+ \T1/lmss/bx/n/12 115
  []
 
 ) [20]) (editaveis/introducao.tex
@@ -1672,7 +2015,7 @@ le-men-tary Metal-Oxide-Semiconductor\T1/lmr/m/n/12 );
 
 
 ]) (editaveis/aspectosgerais.tex) (editaveis/consideracoes.tex [22]
-<figuras/categoria_satellite.PNG, id=445, 690.32906pt x 395.97937pt>
+<figuras/categoria_satellite.PNG, id=444, 690.32906pt x 395.97937pt>
 File: figuras/categoria_satellite.PNG Graphic file (type png)
 <use figuras/categoria_satellite.PNG>
 Package pdftex.def Info: figuras/categoria_satellite.PNG  used on input line 14
@@ -1681,13 +2024,13 @@ Package pdftex.def Info: figuras/categoria_satellite.PNG  used on input line 14
  [23
 
  <./figuras/categoria_satellite.PNG>]
-<figuras/lancamentoPequenoSatellite.PNG, id=455, 713.66624pt x 448.67625pt>
+<figuras/lancamentoPequenoSatellite.PNG, id=454, 713.66624pt x 448.67625pt>
 File: figuras/lancamentoPequenoSatellite.PNG Graphic file (type png)
 <use figuras/lancamentoPequenoSatellite.PNG>
 Package pdftex.def Info: figuras/lancamentoPequenoSatellite.PNG  used on input 
 line 28.
 (pdftex.def)             Requested size: 392.51764pt x 246.77269pt.
-<figuras/cubesatVariacoes.PNG, id=461, 548.80031pt x 265.74281pt>
+<figuras/cubesatVariacoes.PNG, id=460, 548.80031pt x 265.74281pt>
 File: figuras/cubesatVariacoes.PNG Graphic file (type png)
 <use figuras/cubesatVariacoes.PNG>
 Package pdftex.def Info: figuras/cubesatVariacoes.PNG  used on input line 42.
@@ -1697,12 +2040,12 @@ Package pdftex.def Info: figuras/cubesatVariacoes.PNG  used on input line 42.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24 <./figuras/lancamentoPequenoSatellite.PNG>]
-Overfull \hbox (1.86201pt too wide) in paragraph at lines 55--56
+Overfull \hbox (1.87112pt too wide) in paragraph at lines 55--56
 \T1/lmr/m/n/12 para o Pa-drão Cu-be-Sat. Em 2003, Puig-Suari e Cal-Poly de-sen-
 vol-ve-ram o \T1/lmr/m/it/12 Poly-PicoSatellite
  []
 
-<figuras/cubesat3u+.PNG, id=474, 810.77907pt x 524.71031pt>
+<figuras/cubesat3u+.PNG, id=473, 810.77907pt x 524.71031pt>
 File: figuras/cubesat3u+.PNG Graphic file (type png)
 <use figuras/cubesat3u+.PNG>
 Package pdftex.def Info: figuras/cubesat3u+.PNG  used on input line 63.
@@ -1711,13 +2054,13 @@ Package pdftex.def Info: figuras/cubesat3u+.PNG  used on input line 63.
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
  [25 <./figuras/cubesatVariacoes.PNG>] [26 <./figuras/cubesat3u+.PNG>] [27]
-<figuras/estrutura_satellite.png, id=491, 701.2599pt x 213.9192pt>
+<figuras/estrutura_satellite.png, id=490, 701.2599pt x 213.9192pt>
 File: figuras/estrutura_satellite.png Graphic file (type png)
 <use figuras/estrutura_satellite.png>
 Package pdftex.def Info: figuras/estrutura_satellite.png  used on input line 98
 .
 (pdftex.def)             Requested size: 399.7223pt x 121.9352pt.
-<figuras/cubesat-structure-main.jpg, id=495, 602.25pt x 401.5pt>
+<figuras/cubesat-structure-main.jpg, id=494, 602.25pt x 401.5pt>
 File: figuras/cubesat-structure-main.jpg Graphic file (type jpg)
 <use figuras/cubesat-structure-main.jpg>
 Package pdftex.def Info: figuras/cubesat-structure-main.jpg  used on input line
@@ -1725,23 +2068,23 @@ Package pdftex.def Info: figuras/cubesat-structure-main.jpg  used on input line
 (pdftex.def)             Requested size: 271.01pt x 180.67332pt.
  [28 <./figuras/estrutura_satellite.png> <./figuras/cubesat-structure-main.jpg>
 ]
-<figuras/eps.png, id=503, 120.45pt x 81.1833pt>
+<figuras/eps.png, id=502, 120.45pt x 81.1833pt>
 File: figuras/eps.png Graphic file (type png)
 <use figuras/eps.png>
 Package pdftex.def Info: figuras/eps.png  used on input line 133.
 (pdftex.def)             Requested size: 264.98895pt x 178.60257pt.
-<figuras/aodcs.png, id=507, 120.45pt x 56.8524pt>
+<figuras/aodcs.png, id=506, 120.45pt x 56.8524pt>
 File: figuras/aodcs.png Graphic file (type png)
 <use figuras/aodcs.png>
 Package pdftex.def Info: figuras/aodcs.png  used on input line 147.
 (pdftex.def)             Requested size: 325.21379pt x 153.50089pt.
  [29 <./figuras/eps.png> <./figuras/aodcs.png>]
-<figuras/tt_c.png, id=519, 120.45pt x 42.1575pt>
+<figuras/tt_c.png, id=518, 120.45pt x 42.1575pt>
 File: figuras/tt_c.png Graphic file (type png)
 <use figuras/tt_c.png>
 Package pdftex.def Info: figuras/tt_c.png  used on input line 161.
 (pdftex.def)             Requested size: 264.98895pt x 92.7461pt.
-<figuras/Cubesat-OBC-module-1.jpg, id=521, 1927.2pt x 1084.05pt>
+<figuras/Cubesat-OBC-module-1.jpg, id=520, 1927.2pt x 1084.05pt>
 File: figuras/Cubesat-OBC-module-1.jpg Graphic file (type jpg)
 <use figuras/Cubesat-OBC-module-1.jpg>
 Package pdftex.def Info: figuras/Cubesat-OBC-module-1.jpg  used on input line 1
@@ -1751,36 +2094,36 @@ Package pdftex.def Info: figuras/Cubesat-OBC-module-1.jpg  used on input line 1
 Underfull \vbox (badness 2005) has occurred while \output is active []
 
  [30 <./figuras/tt_c.png> <./figuras/Cubesat-OBC-module-1.jpg>] [31]
-<figuras/floripasatobdh.PNG, id=534, 633.11531pt x 414.79968pt>
+<figuras/floripasatobdh.PNG, id=533, 633.11531pt x 414.79968pt>
 File: figuras/floripasatobdh.PNG Graphic file (type png)
 <use figuras/floripasatobdh.PNG>
 Package pdftex.def Info: figuras/floripasatobdh.PNG  used on input line 222.
 (pdftex.def)             Requested size: 316.55687pt x 207.39934pt.
-<figuras/openObc.PNG, id=535, 411.03563pt x 371.13657pt>
+<figuras/openObc.PNG, id=534, 411.03563pt x 371.13657pt>
 File: figuras/openObc.PNG Graphic file (type png)
 <use figuras/openObc.PNG>
 Package pdftex.def Info: figuras/openObc.PNG  used on input line 240.
 (pdftex.def)             Requested size: 164.41133pt x 148.45198pt.
  [32 <./figuras/floripasatobdh.PNG>]
-<figuras/isis.PNG, id=542, 538.26094pt x 396.7322pt>
+<figuras/isis.PNG, id=541, 538.26094pt x 396.7322pt>
 File: figuras/isis.PNG Graphic file (type png)
 <use figuras/isis.PNG>
 Package pdftex.def Info: figuras/isis.PNG  used on input line 258.
 (pdftex.def)             Requested size: 236.83554pt x 174.5627pt.
  [33 <./figuras/openObc.PNG> <./figuras/isis.PNG>]
-<figuras/fm430.PNG, id=552, 701.62125pt x 551.05875pt>
+<figuras/fm430.PNG, id=551, 701.62125pt x 551.05875pt>
 File: figuras/fm430.PNG Graphic file (type png)
 <use figuras/fm430.PNG>
 Package pdftex.def Info: figuras/fm430.PNG  used on input line 275.
 (pdftex.def)             Requested size: 385.89287pt x 303.08324pt.
  [34 <./figuras/fm430.PNG>] [35]
-<figuras/pc104.PNG, id=568, 587.19376pt x 547.2947pt>
+<figuras/pc104.PNG, id=567, 587.19376pt x 547.2947pt>
 File: figuras/pc104.PNG Graphic file (type png)
 <use figuras/pc104.PNG>
 Package pdftex.def Info: figuras/pc104.PNG  used on input line 342.
 (pdftex.def)             Requested size: 322.95757pt x 301.013pt.
  [36 <./figuras/pc104.PNG>]
-<figuras/radiation.jpg, id=575, 488.3043pt x 146.7081pt>
+<figuras/radiation.jpg, id=574, 488.3043pt x 146.7081pt>
 File: figuras/radiation.jpg Graphic file (type jpg)
 <use figuras/radiation.jpg>
 Package pdftex.def Info: figuras/radiation.jpg  used on input line 368.
@@ -1799,7 +2142,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
 [42]
-<figuras/arm-cortex-m-series-performance-graph.jpg, id=611, 1032.85875pt x 651.
+<figuras/arm-cortex-m-series-performance-graph.jpg, id=610, 1032.85875pt x 651.
 43375pt>
 File: figuras/arm-cortex-m-series-performance-graph.jpg Graphic file (type jpg)
 
@@ -1812,7 +2155,7 @@ d on input line 591.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [43]
-<figuras/msp432.PNG, id=617, 509.65407pt x 304.13625pt>
+<figuras/msp432.PNG, id=616, 509.65407pt x 304.13625pt>
 File: figuras/msp432.PNG Graphic file (type png)
 <use figuras/msp432.PNG>
 Package pdftex.def Info: figuras/msp432.PNG  used on input line 608.
@@ -1827,7 +2170,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [46] [47]
-<figuras/currentSensor.PNG, id=644, 308.65312pt x 249.93375pt>
+<figuras/currentSensor.PNG, id=643, 308.65312pt x 249.93375pt>
 File: figuras/currentSensor.PNG Graphic file (type png)
 <use figuras/currentSensor.PNG>
 Package pdftex.def Info: figuras/currentSensor.PNG  used on input line 730.
@@ -1837,36 +2180,34 @@ Package pdftex.def Info: figuras/currentSensor.PNG  used on input line 730.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [48]
-<figuras/mpu9250.PNG, id=653, 893.58844pt x 414.04688pt>
+<figuras/mpu9250.PNG, id=652, 893.58844pt x 414.04688pt>
 File: figuras/mpu9250.PNG Graphic file (type png)
 <use figuras/mpu9250.PNG>
 Package pdftex.def Info: figuras/mpu9250.PNG  used on input line 780.
 (pdftex.def)             Requested size: 357.42905pt x 165.6158pt.
 
-Overfull \hbox (7.05054pt too wide) in paragraph at lines 789--790
+Overfull \hbox (7.05185pt too wide) in paragraph at lines 789--790
 \T1/lmr/m/n/12 ra-tura de-di-cado à essa fun-ção é ideal, pois as fun-ções pri-
 má-rias do MPU9250/MSP432P4111
  []
 
 [49 <./figuras/currentSensor.PNG> <./figuras/mpu9250.PNG>]
-<figuras/MCP9700.PNG, id=661, 230.36063pt x 133.24782pt>
+<figuras/MCP9700.PNG, id=660, 230.36063pt x 133.24782pt>
 File: figuras/MCP9700.PNG Graphic file (type png)
 <use figuras/MCP9700.PNG>
 Package pdftex.def Info: figuras/MCP9700.PNG  used on input line 799.
 (pdftex.def)             Requested size: 138.21742pt x 79.9493pt.
-
-Overfull \hbox (56.06036pt too wide) in paragraph at lines 793--804
-\T1/lmr/m/n/12 ra-das da fi-cha téc-nica do sen-sor. http://ww1.microchip.com/d
-ownloads/en/devicedoc/20001942g.pdf
- []
-
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 816.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[50 <./figuras/MCP9700.PNG>]
-<figuras/pc104_32bit.PNG, id=672, 548.0475pt x 500.62032pt>
+
+Underfull \vbox (badness 1412) has occurred while \output is active []
+
+ [50 <./figuras/MCP9700.PNG>]
+<figuras/pc104_32bit.PNG, id=671, 548.0475pt x 500.62032pt>
 File: figuras/pc104_32bit.PNG Graphic file (type png)
 <use figuras/pc104_32bit.PNG>
 Package pdftex.def Info: figuras/pc104_32bit.PNG  used on input line 853.
@@ -1878,7 +2219,7 @@ Underfull \vbox (badness 8056) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 888.
  [52]
-<pcb_v1.pdf, id=685, page=1, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=684, page=1, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 1>
 Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 930.
@@ -1889,7 +2230,7 @@ Overfull \hbox (14.22638pt too wide) in paragraph at lines 929--932
  []
 
 [53 <./pcb_v1.pdf>]
-<figuras/pcbRealistic.PNG, id=698, 513.41812pt x 343.2825pt>
+<figuras/pcbRealistic.PNG, id=697, 513.41812pt x 343.2825pt>
 File: figuras/pcbRealistic.PNG Graphic file (type png)
 <use figuras/pcbRealistic.PNG>
 Package pdftex.def Info: figuras/pcbRealistic.PNG  used on input line 957.
@@ -1897,7 +2238,7 @@ Package pdftex.def Info: figuras/pcbRealistic.PNG  used on input line 957.
  [54 <./figuras/pcbRealistic.PNG>] [55
 
 ]
-<figuras/arquiteturaSof.PNG, id=712, 712.91344pt x 152.82094pt>
+<figuras/arquiteturaSof.PNG, id=711, 712.91344pt x 152.82094pt>
 File: figuras/arquiteturaSof.PNG Graphic file (type png)
 <use figuras/arquiteturaSof.PNG>
 Package pdftex.def Info: figuras/arquiteturaSof.PNG  used on input line 1014.
@@ -1935,7 +2276,7 @@ Overfull \hbox (0.30493pt too wide) in paragraph at lines 1095--1096
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [58] [59]
-<figuras/freertosTasks.PNG, id=755, 449.42906pt x 406.51875pt>
+<figuras/freertosTasks.PNG, id=754, 449.42906pt x 406.51875pt>
 File: figuras/freertosTasks.PNG Graphic file (type png)
 <use figuras/freertosTasks.PNG>
 Package pdftex.def Info: figuras/freertosTasks.PNG  used on input line 1144.
@@ -1943,37 +2284,53 @@ Package pdftex.def Info: figuras/freertosTasks.PNG  used on input line 1144.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60 <./figuras/freertosTasks.PNG>]
+ [60 <./figuras/freertosTasks.PNG>] [61] [62]
+Overfull \hbox (60.60208pt too wide) in alignment at lines 1207--1212
+ [] [] [] [] [] 
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-[61] [62] [63]
-<figuras/stateMachine.png, id=777, 749.04843pt x 343.2825pt>
+Overfull \hbox (60.60208pt too wide) in alignment at lines 1212--1214
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (60.60208pt too wide) in alignment at lines 1214--1217
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (60.60208pt too wide) in alignment at lines 1217--1219
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (60.60208pt too wide) in alignment at lines 1219--1231
+ [] [] [] [] [] 
+ []
+
+[63] [64]
+<figuras/stateMachine.png, id=782, 749.04843pt x 343.2825pt>
 File: figuras/stateMachine.png Graphic file (type png)
 <use figuras/stateMachine.png>
-Package pdftex.def Info: figuras/stateMachine.png  used on input line 1304.
+Package pdftex.def Info: figuras/stateMachine.png  used on input line 1334.
 (pdftex.def)             Requested size: 464.40523pt x 212.83293pt.
 
-Overfull \hbox (9.40523pt too wide) in paragraph at lines 1304--1305
+Overfull \hbox (9.40523pt too wide) in paragraph at lines 1334--1335
  [][] 
  []
 
-[64]
-<figuras/flowChart_obc.png, id=793, 222.8325pt x 458.46281pt>
+[65 <./figuras/stateMachine.png>]
+<figuras/flowChart_obc.png, id=799, 222.8325pt x 458.46281pt>
 File: figuras/flowChart_obc.png Graphic file (type png)
 <use figuras/flowChart_obc.png>
-Package pdftex.def Info: figuras/flowChart_obc.png  used on input line 1317.
+Package pdftex.def Info: figuras/flowChart_obc.png  used on input line 1347.
 (pdftex.def)             Requested size: 120.32776pt x 247.56622pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[65 <./figuras/stateMachine.png>]
 <figuras/CSS.png, id=801, 1041.8925pt x 1096.095pt>
 File: figuras/CSS.png Graphic file (type png)
 <use figuras/CSS.png>
-Package pdftex.def Info: figuras/CSS.png  used on input line 1332.
-(pdftex.def)             Requested size: 312.57016pt x 328.83104pt.
+Package pdftex.def Info: figuras/CSS.png  used on input line 1363.
+(pdftex.def)             Requested size: 375.08102pt x 394.5939pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1981,76 +2338,60 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [66 <./figuras/flowChart_obc.png>] [67 <./figuras/CSS.png>] [68
 
 ]
-<figuras/protoboard.png, id=819, 2299.6314pt x 716.6775pt>
-File: figuras/protoboard.png Graphic file (type png)
-<use figuras/protoboard.png>
-Package pdftex.def Info: figuras/protoboard.png  used on input line 1362.
-(pdftex.def)             Requested size: 344.92982pt x 107.49698pt.
 <figuras/telemetryPacket.png, id=821, 597.1911pt x 132.2541pt>
 File: figuras/telemetryPacket.png Graphic file (type png)
 <use figuras/telemetryPacket.png>
-Package pdftex.def Info: figuras/telemetryPacket.png  used on input line 1377.
+Package pdftex.def Info: figuras/telemetryPacket.png  used on input line 1411.
 (pdftex.def)             Requested size: 298.59482pt x 66.12688pt.
- [69 <./figuras/protoboard.png> <./figuras/telemetryPacket.png>]
-Overfull \hbox (92.61792pt too wide) in alignment at lines 1384--1389
- [] [] [] [] 
- []
-
-
-Overfull \hbox (92.61792pt too wide) in alignment at lines 1389--1391
- [] [] [] [] 
- []
-
-
-Overfull \hbox (92.61792pt too wide) in alignment at lines 1391--1401
- [] [] [] [] 
- []
-
-<figuras/telemetryData.PNG, id=829, 934.99312pt x 523.9575pt>
+<figuras/telemetryData.PNG, id=823, 934.99312pt x 523.9575pt>
 File: figuras/telemetryData.PNG Graphic file (type png)
 <use figuras/telemetryData.PNG>
-Package pdftex.def Info: figuras/telemetryData.PNG  used on input line 1408.
+Package pdftex.def Info: figuras/telemetryData.PNG  used on input line 1445.
 (pdftex.def)             Requested size: 448.7916pt x 251.49673pt.
-[70 <./figuras/telemetryData.PNG>]
-<figuras/hibernatexNormal.PNG, id=836, 987.69pt x 392.21532pt>
-File: figuras/hibernatexNormal.PNG Graphic file (type png)
-<use figuras/hibernatexNormal.PNG>
-Package pdftex.def Info: figuras/hibernatexNormal.PNG  used on input line 1450.
-
-(pdftex.def)             Requested size: 464.21437pt x 184.34122pt.
-
-Overfull \hbox (9.21437pt too wide) in paragraph at lines 1450--1451
- [][] 
- []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[71]
-<figuras/hibernatexLBM.PNG, id=843, 989.94844pt x 398.99063pt>
-File: figuras/hibernatexLBM.PNG Graphic file (type png)
-<use figuras/hibernatexLBM.PNG>
-Package pdftex.def Info: figuras/hibernatexLBM.PNG  used on input line 1460.
-(pdftex.def)             Requested size: 465.27583pt x 187.52562pt.
 
-Overfull \hbox (10.27583pt too wide) in paragraph at lines 1460--1461
+Underfull \vbox (badness 1270) has occurred while \output is active []
+
+ [69 <./figuras/telemetryPacket.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70 <./figuras/telemetryData.PNG>]
+<figuras/hibernatexNormal.PNG, id=834, 987.69pt x 392.21532pt>
+File: figuras/hibernatexNormal.PNG Graphic file (type png)
+<use figuras/hibernatexNormal.PNG>
+Package pdftex.def Info: figuras/hibernatexNormal.PNG  used on input line 1487.
+
+(pdftex.def)             Requested size: 464.21437pt x 184.34122pt.
+
+Overfull \hbox (9.21437pt too wide) in paragraph at lines 1487--1488
  [][] 
  []
 
+[71 <./figuras/hibernatexNormal.PNG>]
+<figuras/hibernatexLBM.PNG, id=842, 989.94844pt x 398.99063pt>
+File: figuras/hibernatexLBM.PNG Graphic file (type png)
+<use figuras/hibernatexLBM.PNG>
+Package pdftex.def Info: figuras/hibernatexLBM.PNG  used on input line 1498.
+(pdftex.def)             Requested size: 465.27583pt x 187.52562pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (10.27583pt too wide) in paragraph at lines 1498--1499
+ [][] 
+ []
 
- [72 <./figuras/hibernatexNormal.PNG> <./figuras/hibernatexLBM.PNG>]
-<figuras/trace_snapshoot_1.PNG, id=851, 781.41937pt x 499.8675pt>
+[72 <./figuras/hibernatexLBM.PNG>]
+<figuras/trace_snapshoot_1.PNG, id=852, 781.41937pt x 499.8675pt>
 File: figuras/trace_snapshoot_1.PNG Graphic file (type png)
 <use figuras/trace_snapshoot_1.PNG>
-Package pdftex.def Info: figuras/trace_snapshoot_1.PNG  used on input line 1486
+Package pdftex.def Info: figuras/trace_snapshoot_1.PNG  used on input line 1524
 .
 (pdftex.def)             Requested size: 398.5186pt x 254.92905pt.
-<figuras/trace_snapshoot_2.PNG, id=853, 770.12718pt x 460.72125pt>
+<figuras/trace_snapshoot_2.PNG, id=854, 770.12718pt x 460.72125pt>
 File: figuras/trace_snapshoot_2.PNG Graphic file (type png)
 <use figuras/trace_snapshoot_2.PNG>
-Package pdftex.def Info: figuras/trace_snapshoot_2.PNG  used on input line 1497
+Package pdftex.def Info: figuras/trace_snapshoot_2.PNG  used on input line 1535
 .
 (pdftex.def)             Requested size: 392.75966pt x 234.96472pt.
 
@@ -2058,40 +2399,56 @@ Package pdftex.def Info: figuras/trace_snapshoot_2.PNG  used on input line 1497
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [73 <./figuras/trace_snapshoot_1.PNG>]
-<figuras/trace_snapshoot_3.PNG, id=860, 781.41937pt x 503.63156pt>
+<figuras/trace_snapshoot_3.PNG, id=861, 781.41937pt x 503.63156pt>
 File: figuras/trace_snapshoot_3.PNG Graphic file (type png)
 <use figuras/trace_snapshoot_3.PNG>
-Package pdftex.def Info: figuras/trace_snapshoot_3.PNG  used on input line 1508
+Package pdftex.def Info: figuras/trace_snapshoot_3.PNG  used on input line 1546
 .
 (pdftex.def)             Requested size: 398.5186pt x 256.8487pt.
  [74 <./figuras/trace_snapshoot_2.PNG> <./figuras/trace_snapshoot_3.PNG>]
-<figuras/trace_snapshoot_5.PNG, id=868, 782.17218pt x 503.63156pt>
+<figuras/trace_snapshoot_5.PNG, id=869, 782.17218pt x 503.63156pt>
 File: figuras/trace_snapshoot_5.PNG Graphic file (type png)
 <use figuras/trace_snapshoot_5.PNG>
-Package pdftex.def Info: figuras/trace_snapshoot_5.PNG  used on input line 1519
+Package pdftex.def Info: figuras/trace_snapshoot_5.PNG  used on input line 1557
 .
 (pdftex.def)             Requested size: 383.26772pt x 246.78162pt.
-<figuras/trace_snapshoot_4.PNG, id=870, 784.43062pt x 505.13719pt>
+<figuras/trace_snapshoot_4.PNG, id=871, 784.43062pt x 505.13719pt>
 File: figuras/trace_snapshoot_4.PNG Graphic file (type png)
 <use figuras/trace_snapshoot_4.PNG>
-Package pdftex.def Info: figuras/trace_snapshoot_4.PNG  used on input line 1530
+Package pdftex.def Info: figuras/trace_snapshoot_4.PNG  used on input line 1568
 .
 (pdftex.def)             Requested size: 321.61864pt x 207.10759pt.
- [75 <./figuras/trace_snapshoot_5.PNG> <./figuras/trace_snapshoot_4.PNG>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[75 <./figuras/trace_snapshoot_5.PNG>]
 <figuras/trace_snapshoot_8.PNG, id=878, 781.4796pt x 500.5902pt>
 File: figuras/trace_snapshoot_8.PNG Graphic file (type png)
 <use figuras/trace_snapshoot_8.PNG>
-Package pdftex.def Info: figuras/trace_snapshoot_8.PNG  used on input line 1540
+Package pdftex.def Info: figuras/trace_snapshoot_8.PNG  used on input line 1579
 .
 (pdftex.def)             Requested size: 398.54932pt x 255.29762pt.
- [76 <./figuras/trace_snapshoot_8.PNG>]
+ [76 <./figuras/trace_snapshoot_4.PNG> <./figuras/trace_snapshoot_8.PNG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [77
 
-])
-(editaveis/textoepostexto.tex) (editaveis/elementosdotexto.tex)
-(editaveis/elementosdopostexto.tex) (editaveis/refPrev.tex [78]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1612--1612
+ [][] [][][]\T1/lmr/m/n/10 Para mais de-ta-lhes, con-sul-tar a pa-gina 18: [][]
+$<[]http : / / www . scielo . br / pdf / jatm / v9n3 /
+ []
+
+[78]) (editaveis/textoepostexto.tex) (editaveis/elementosdotexto.tex)
+(editaveis/elementosdopostexto.tex) (editaveis/refPrev.tex [79] [80
+
+]
 Overfull \hbox (10.7293pt too wide) in paragraph at lines 13--14
 \T1/lmr/m/n/12 freertos . org / Documentation / 161204 _ Mastering _ the _ Free
 RTOS _ Real _ Time _ Kernel-[]A _
@@ -2104,7 +2461,7 @@ RTOS _ Real _ Time _ Kernel-[]A _
  []
 
 
-Overfull \hbox (1.55292pt too wide) in paragraph at lines 17--18
+Overfull \hbox (1.56462pt too wide) in paragraph at lines 17--18
 \T1/lmr/m/n/12 eng . auburn . edu / ~baskiyar / MyArticles / Survey-[]of-[]RTOS
 -[]Informatica . pdf>[]$[][]. Acesso em: 06
  []
@@ -2118,16 +2475,14 @@ n _ 2011 . pdf ? sequence = 2 & isAllowed =
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79
-
-]
+ [81]
 Overfull \hbox (20.94362pt too wide) in paragraph at lines 23--24
 \T1/lmr/m/n/12 5418c831e4b0fa4ecac1bacd / t / 56e9b62337013b6c063a655a / 145815
 7095454 / cds _ rev13 _ nal2 .
  []
 
 
-Overfull \hbox (6.06865pt too wide) in paragraph at lines 25--27
+Overfull \hbox (6.08035pt too wide) in paragraph at lines 25--27
 \T1/lmr/m/n/12 2004. Dis-po-ní-vel em: [][]$<[]http : / / www . crn2 . inpe . b
 r / conasat1 / projetos _ cubesat / subsistemas /
  []
@@ -2139,19 +2494,19 @@ the % 20Thermal % 20Control % 20System .
  []
 
 
-Overfull \hbox (1.5842pt too wide) in paragraph at lines 28--29
+Overfull \hbox (1.5959pt too wide) in paragraph at lines 28--29
 \T1/lmr/m/n/12 0101-[]Thinking-[]Outside-[]the-[]Box-[]Space-[]Science-[]Beyond
 -[]the-[]CubeSat . pdf>[]$[][]. Acesso em: 25
  []
 
 
-Overfull \hbox (15.77225pt too wide) in paragraph at lines 30--31
+Overfull \hbox (15.79697pt too wide) in paragraph at lines 30--31
 \T1/lmr/m/n/12 [S.l.: s.n.], 2015. 59 p. Dis-po-ní-vel em: [][]$<[]https : / / 
 www . qb50 . eu / index . php / tech-[]docs / category /
  []
 
 
-Overfull \hbox (9.05698pt too wide) in paragraph at lines 42--43
+Overfull \hbox (9.06477pt too wide) in paragraph at lines 42--43
 \T1/lmr/m/n/12 %20Small % 20Satellites % 20Economic % 20Trends % 20Dec % 202016
 -[]FINAL . pdf>[]$[][]. Acesso em:
  []
@@ -2159,20 +2514,20 @@ Overfull \hbox (9.05698pt too wide) in paragraph at lines 42--43
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
+ [82]
 Overfull \hbox (22.35779pt too wide) in paragraph at lines 44--45
 \T1/lmr/m/n/12 sites / default / les / les / NP-[]2015-[]03-[]015-[]JSC _ Spa
 ce _ Environment-[]ISS-[]Mini-[]Book-[]2015-[]508 .
  []
 
 
-Overfull \hbox (0.80724pt too wide) in paragraph at lines 46--47
+Overfull \hbox (0.81894pt too wide) in paragraph at lines 46--47
 \T1/lmr/m/n/12 revistapesquisa . fapesp . br / wp-[]content / uploads / 2012 / 
 05 / 040-[]041-[]180 . pdf>[]$[][]. Acesso em: 25
  []
 
 
-Overfull \hbox (2.30841pt too wide) in paragraph at lines 48--49
+Overfull \hbox (2.32791pt too wide) in paragraph at lines 48--49
 \T1/lmr/m/n/12 calpoly . edu / cgi / viewcontent . cgi ? article = 1054 & conte
 xt = aerosp>[]$[][]. Acesso em: 17 jun. 2018. 
  []
@@ -2184,19 +2539,19 @@ Overfull \hbox (21.08894pt too wide) in paragraph at lines 50--51
  []
 
 
-Overfull \hbox (1.23643pt too wide) in paragraph at lines 52--53
+Overfull \hbox (1.24423pt too wide) in paragraph at lines 52--53
 \T1/lmr/m/n/12 04 / description-[]of-[]the-[]globalstar-[]system-[]gs-[]tr-[]94
 -[]0001-[]rev-[]e-[]2000-[]12-[]07 . pdf>[]$[][]. Acesso em:
  []
 
 
-Overfull \hbox (9.94125pt too wide) in paragraph at lines 56--57
+Overfull \hbox (9.96075pt too wide) in paragraph at lines 56--57
 \T1/lmr/m/n/12 INVENSENSE. MPU-9250 Pro-duct Spe-ci-fi-ca-tion Re-vi-sion 1.1. 
 2018. Dis-po-ní-vel em: [][]$<[]https :
  []
 
 
-Overfull \hbox (18.95828pt too wide) in paragraph at lines 56--57
+Overfull \hbox (18.96608pt too wide) in paragraph at lines 56--57
 \T1/lmr/m/n/12 / / www . invensense . com / wp-[]content / uploads / 2015 / 02 
 / PS-[]MPU-[]9250A-[]01-[]v1 . 1 . pdf>[]$[][]. Acesso
  []
@@ -2204,38 +2559,44 @@ Overfull \hbox (18.95828pt too wide) in paragraph at lines 56--57
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]
-Overfull \hbox (14.07753pt too wide) in paragraph at lines 68--69
+ [83]
+Overfull \hbox (14.08533pt too wide) in paragraph at lines 68--69
 \T1/lmr/m/n/12 category / QB50 _ system _ requirements _ issue _ 606e0 . pdf ? 
 download = 58 : qb50-[]docs>[]$[][]. Acesso
  []
 
 
-Overfull \hbox (31.05078pt too wide) in paragraph at lines 70--71
+Overfull \hbox (15.43079pt too wide) in paragraph at lines 70--71
+[][]$\T1/lmr/m/n/12 <[]http : / / ww1 . microchip . com / downloads / en / devi
+cedoc / 20001942g . pdf . Acessoem : 30set . 2018 .
+ []
+
+
+Overfull \hbox (31.05858pt too wide) in paragraph at lines 72--73
 \T1/lmr/m/n/12 com / cubesat-[]components / structures-[]and-[]deployable-[]mec
 hanisms / cubesat-[]structure / >[]$[][]. Acesso
  []
 
 
-Overfull \hbox (17.24104pt too wide) in paragraph at lines 74--75
+Overfull \hbox (17.24495pt too wide) in paragraph at lines 76--77
 \T1/lmr/m/n/12 em: [][]$<[]https : / / pdfs . semanticscholar . org / a13e / 52
 893d0fa3d08b2ce9e03b0b7e9592848a4f . pdf>[]$[][].
  []
 
 
-Overfull \hbox (10.06009pt too wide) in paragraph at lines 76--77
+Overfull \hbox (10.0809pt too wide) in paragraph at lines 78--79
 \T1/lmr/m/n/12 s.n.], 2008. 25 p. Dis-po-ní-vel em: [][]$<[]https : / / pc104 .
  org / wp-[]content / uploads / 2015 / 02 / PC104 _
  []
 
 
-Overfull \hbox (10.06009pt too wide) in paragraph at lines 78--79
+Overfull \hbox (10.0809pt too wide) in paragraph at lines 80--81
 \T1/lmr/m/n/12 s.n.], 2008. 33 p. Dis-po-ní-vel em: [][]$<[]https : / / pc104 .
  org / wp-[]content / uploads / 2015 / 02 / PC104 _
  []
 
 
-Overfull \hbox (2.78181pt too wide) in paragraph at lines 80--81
+Overfull \hbox (2.79352pt too wide) in paragraph at lines 82--83
 \T1/lmr/m/n/12 36 p. Dis-po-ní-vel em: [][]$<[]https : / / trs . jpl . nasa . g
 ov / bitstream / handle / 2014 / 7193 / 03-[]0863 . pdf ?
  []
@@ -2243,66 +2604,66 @@ ov / bitstream / handle / 2014 / 7193 / 03-[]0863 . pdf ?
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82]
-Overfull \hbox (2.9379pt too wide) in paragraph at lines 86--87
+ [84]
+Overfull \hbox (2.9496pt too wide) in paragraph at lines 88--89
 [][]$\T1/lmr/m/n/12 <[]https : / / www . sciencedirect . com / science / articl
 e / pii / S0094576511003742>[]$[][]. Acesso em: 11
  []
 
 
-Overfull \hbox (23.26237pt too wide) in paragraph at lines 90--91
+Overfull \hbox (23.27408pt too wide) in paragraph at lines 92--93
 \T1/lmr/m/n/12 MON MODE RANGE. 2018. Dis-po-ní-vel em: [][]$<[]http : / / www .
  ti . com / lit / ds / symlink / ina193a-[]ep .
  []
 
 
-Overfull \hbox (12.44272pt too wide) in paragraph at lines 92--93
+Overfull \hbox (12.45203pt too wide) in paragraph at lines 94--95
 \T1/lmr/m/n/12 TEXAS INS-TRU-MENTS (a) . \T1/lmr/bx/n/12 MSP432P411x, MSP432P40
 1x SimpleLink$[]$ Mixed-
  []
 
 LaTeX Font Info:    Font shape `OMS/lmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/b/n' tried instead on input line 96.
+(Font)              Font shape `OMS/lmsy/b/n' tried instead on input line 98.
 
-Overfull \hbox (27.68938pt too wide) in paragraph at lines 96--97
+Overfull \hbox (27.68938pt too wide) in paragraph at lines 98--99
 \T1/lmr/m/n/12 communityserver-[]discussions-[]components-[]les / 166 / MSP432
  _ 5F00 _ DriverLib _ 5F00 _ Users _
  []
 
 
-Overfull \hbox (10.81766pt too wide) in paragraph at lines 96--97
+Overfull \hbox (10.82545pt too wide) in paragraph at lines 98--99
 \T1/lmr/m/n/12 5F00 _ Guide _ 2D00 _ MSP432P4xx _ 2D00 _ 2 _ 5F00 _ 20 _ 5F00 _
  00 _ 5F00 _ 08 . pdf>[]$[][]. Acesso
  []
 
-) (editaveis/apendices.tex
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83]
-[84]
+ [85])
+(editaveis/apendices.tex [86]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[85
+[87
 
 
-] [86] [87
+] [88] [89
 
-] [88]
+] [90]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[89
+[91
 
-] [90]
+] [92]
 Overfull \hbox (22.66707pt too wide) in paragraph at lines 133--134
  [][] 
  []
 
-[91
+[93
 
-] [92
+] [94
 
 ]
 Underfull \vbox (badness 10000) detected at line 230
@@ -2343,7 +2704,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[93] [94] [95] [96] [97] [98]
+[95] [96] [97] [98] [99] [100]
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 1>
 Package pdftex.def Info: pcb_v1.pdf , page1 used on input line 502.
@@ -2353,7 +2714,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 501--504
  [][] 
  []
 
-<pcb_v1.pdf, id=1083, page=2, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1105, page=2, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 2>
 Package pdftex.def Info: pcb_v1.pdf , page2 used on input line 511.
@@ -2366,7 +2727,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 510--513
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1084, page=3, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1106, page=3, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 3>
 Package pdftex.def Info: pcb_v1.pdf , page3 used on input line 520.
@@ -2379,7 +2740,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 519--522
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1085, page=4, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1107, page=4, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 4>
 Package pdftex.def Info: pcb_v1.pdf , page4 used on input line 529.
@@ -2392,7 +2753,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 528--531
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1086, page=5, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1108, page=5, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 5>
 Package pdftex.def Info: pcb_v1.pdf , page5 used on input line 538.
@@ -2405,7 +2766,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 537--540
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1087, page=6, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1109, page=6, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 6>
 Package pdftex.def Info: pcb_v1.pdf , page6 used on input line 547.
@@ -2418,7 +2779,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 546--549
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1088, page=7, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1110, page=7, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 7>
 Package pdftex.def Info: pcb_v1.pdf , page7 used on input line 556.
@@ -2431,7 +2792,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 555--558
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1089, page=8, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1111, page=8, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 8>
 Package pdftex.def Info: pcb_v1.pdf , page8 used on input line 565.
@@ -2444,7 +2805,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 564--567
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1090, page=9, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1112, page=9, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 9>
 Package pdftex.def Info: pcb_v1.pdf , page9 used on input line 574.
@@ -2469,7 +2830,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 582--585
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/pcbRealistic_2.PNG, id=1091, 444.15938pt x 414.79968pt>
+<figuras/pcbRealistic_2.PNG, id=1113, 444.15938pt x 414.79968pt>
 File: figuras/pcbRealistic_2.PNG Graphic file (type png)
 <use figuras/pcbRealistic_2.PNG>
 Package pdftex.def Info: figuras/pcbRealistic_2.PNG  used on input line 592.
@@ -2477,7 +2838,7 @@ Package pdftex.def Info: figuras/pcbRealistic_2.PNG  used on input line 592.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/upperLayer_.PNG, id=1092, 934.2102pt x 440.6061pt>
+<figuras/upperLayer_.PNG, id=1114, 934.2102pt x 440.6061pt>
 File: figuras/upperLayer_.PNG Graphic file (type png)
 <use figuras/upperLayer_.PNG>
 Package pdftex.def Info: figuras/upperLayer_.PNG  used on input line 600.
@@ -2490,7 +2851,7 @@ Overfull \hbox (12.10396pt too wide) in paragraph at lines 600--601
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/bottomLayer_.PNG, id=1093, 906.5067pt x 437.2335pt>
+<figuras/bottomLayer_.PNG, id=1115, 906.5067pt x 437.2335pt>
 File: figuras/bottomLayer_.PNG Graphic file (type png)
 <use figuras/bottomLayer_.PNG>
 Package pdftex.def Info: figuras/bottomLayer_.PNG  used on input line 608.
@@ -2498,12 +2859,12 @@ Package pdftex.def Info: figuras/bottomLayer_.PNG  used on input line 608.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[99
+[101
 
-] [100 <./pcb_v1.pdf>] [101 <./pcb_v1.pdf>] [102 <./pcb_v1.pdf>] [103 <./pcb_v1
-.pdf>] [104 <./pcb_v1.pdf>] [105 <./pcb_v1.pdf>] [106 <./pcb_v1.pdf>]
-[107 <./pcb_v1.pdf>] [108 <./figuras/pcbRealistic_2.PNG>] [109 <./figuras/upper
-Layer_.PNG> <./figuras/bottomLayer_.PNG>] [110
+] [102 <./pcb_v1.pdf>] [103 <./pcb_v1.pdf>] [104 <./pcb_v1.pdf>] [105 <./pcb_v1
+.pdf>] [106 <./pcb_v1.pdf>] [107 <./pcb_v1.pdf>] [108 <./pcb_v1.pdf>]
+[109 <./pcb_v1.pdf>] [110 <./figuras/pcbRealistic_2.PNG>] [111 <./figuras/upper
+Layer_.PNG> <./figuras/bottomLayer_.PNG>] [112
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24.88> not available
@@ -2512,26 +2873,26 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24.88> not available
 
 pdfTeX warning: pdflatex.exe (file ./figuras/bom_v1.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figuras/bom_v1.pdf, id=1152, page=1, 597.55246pt x 845.07718pt>
+<figuras/bom_v1.pdf, id=1174, page=1, 597.55246pt x 845.07718pt>
 File: figuras/bom_v1.pdf Graphic file (type pdf)
 <use figuras/bom_v1.pdf, page 1>
 Package pdftex.def Info: figuras/bom_v1.pdf , page1 used on input line 620.
 (pdftex.def)             Requested size: 418.59917pt x 592.0142pt.
-[111 <./figuras/bom_v1.pdf>] [112
+[113 <./figuras/bom_v1.pdf>] [114
 
 ]
-<figuras/flowChart_obc.PNG, id=1173, 222.8325pt x 458.46281pt>
+<figuras/flowChart_obc.PNG, id=1196, 222.8325pt x 458.46281pt>
 File: figuras/flowChart_obc.PNG Graphic file (type png)
 <use figuras/flowChart_obc.PNG>
 Package pdftex.def Info: figuras/flowChart_obc.PNG  used on input line 636.
 (pdftex.def)             Requested size: 144.8394pt x 297.99728pt.
-<figuras/flowChart_hardware.PNG, id=1174, 210.03468pt x 435.87843pt>
+<figuras/flowChart_hardware.PNG, id=1197, 210.03468pt x 435.87843pt>
 File: figuras/flowChart_hardware.PNG Graphic file (type png)
 <use figuras/flowChart_hardware.PNG>
 Package pdftex.def Info: figuras/flowChart_hardware.PNG  used on input line 644
 .
 (pdftex.def)             Requested size: 84.01237pt x 174.34828pt.
-<figuras/flowChart_clockSetup.PNG, id=1175, 173.89969pt x 437.38406pt>
+<figuras/flowChart_clockSetup.PNG, id=1198, 173.89969pt x 437.38406pt>
 File: figuras/flowChart_clockSetup.PNG Graphic file (type png)
 <use figuras/flowChart_clockSetup.PNG>
 Package pdftex.def Info: figuras/flowChart_clockSetup.PNG  used on input line 6
@@ -2541,7 +2902,7 @@ Package pdftex.def Info: figuras/flowChart_clockSetup.PNG  used on input line 6
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/flowChart_taskCreate.PNG, id=1176, 70.76437pt x 397.485pt>
+<figuras/flowChart_taskCreate.PNG, id=1199, 70.76437pt x 397.485pt>
 File: figuras/flowChart_taskCreate.PNG Graphic file (type png)
 <use figuras/flowChart_taskCreate.PNG>
 Package pdftex.def Info: figuras/flowChart_taskCreate.PNG  used on input line 6
@@ -2550,7 +2911,7 @@ Package pdftex.def Info: figuras/flowChart_taskCreate.PNG  used on input line 6
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/flowChart_wdt.PNG, id=1177, 283.0575pt x 466.74374pt>
+<figuras/flowChart_wdt.PNG, id=1200, 283.0575pt x 466.74374pt>
 File: figuras/flowChart_wdt.PNG Graphic file (type png)
 <use figuras/flowChart_wdt.PNG>
 Package pdftex.def Info: figuras/flowChart_wdt.PNG  used on input line 668.
@@ -2558,7 +2919,7 @@ Package pdftex.def Info: figuras/flowChart_wdt.PNG  used on input line 668.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/flowChart_dataStorage.PNG, id=1178, 193.47281pt x 413.29407pt>
+<figuras/flowChart_dataStorage.PNG, id=1201, 193.47281pt x 413.29407pt>
 File: figuras/flowChart_dataStorage.PNG Graphic file (type png)
 <use figuras/flowChart_dataStorage.PNG>
 Package pdftex.def Info: figuras/flowChart_dataStorage.PNG  used on input line 
@@ -2567,7 +2928,7 @@ Package pdftex.def Info: figuras/flowChart_dataStorage.PNG  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/flowChart_houseKeeping.PNG, id=1179, 153.57375pt x 452.4403pt>
+<figuras/flowChart_houseKeeping.PNG, id=1202, 153.57375pt x 452.4403pt>
 File: figuras/flowChart_houseKeeping.PNG Graphic file (type png)
 <use figuras/flowChart_houseKeeping.PNG>
 Package pdftex.def Info: figuras/flowChart_houseKeeping.PNG  used on input line
@@ -2580,9 +2941,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 No file tcc.ind.
 
 AED: lastpage setting LastPage
-[113 <./figuras/flowChart_obc.PNG> <./figuras/flowChart_hardware.PNG>] [114 <./
+[115 <./figuras/flowChart_obc.PNG> <./figuras/flowChart_hardware.PNG>] [116 <./
 figuras/flowChart_clockSetup.PNG> <./figuras/flowChart_taskCreate.PNG>]
-[115 <./figuras/flowChart_wdt.PNG> <./figuras/flowChart_dataStorage.PNG> <./fig
+[117 <./figuras/flowChart_wdt.PNG> <./figuras/flowChart_dataStorage.PNG> <./fig
 uras/flowChart_houseKeeping.PNG>]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
@@ -2605,13 +2966,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 28601 strings out of 492895
- 525075 string characters out of 3121867
- 874838 words of memory out of 3000000
- 31487 multiletter control sequences out of 15000+200000
- 110687 words of font info for 69 fonts, out of 3000000 for 9000
+ 40891 strings out of 492895
+ 789385 string characters out of 3121867
+ 1083924 words of memory out of 3000000
+ 43690 multiletter control sequences out of 15000+200000
+ 660632 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,18n,62p,1211b,1200s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,18n,63p,1211b,1198s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -2646,9 +3007,9 @@ ts/type1/public/lm/lmsy7.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX
 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Guilherme/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Guilherme/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (117 pages, 43339173 bytes).
+Output written on tcc.pdf (119 pages, 11555197 bytes).
 PDF statistics:
- 1555 PDF objects out of 1728 (max. 8388607)
- 323 named destinations out of 1000 (max. 500000)
- 877 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1579 PDF objects out of 1728 (max. 8388607)
+ 327 named destinations out of 1000 (max. 500000)
+ 876 words of extra memory for PDF output out of 10000 (max. 10000000)
 
