@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.17)  28 JUN 2019 01:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.17)  5 JUL 2019 00:06
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -2476,31 +2476,31 @@ n _ 2011 . pdf ? sequence = 2 & isAllowed =
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [81]
-Overfull \hbox (20.94362pt too wide) in paragraph at lines 23--24
+Overfull \hbox (20.94362pt too wide) in paragraph at lines 25--26
 \T1/lmr/m/n/12 5418c831e4b0fa4ecac1bacd / t / 56e9b62337013b6c063a655a / 145815
 7095454 / cds _ rev13 _ nal2 .
  []
 
 
-Overfull \hbox (6.08035pt too wide) in paragraph at lines 25--27
+Overfull \hbox (6.08035pt too wide) in paragraph at lines 27--29
 \T1/lmr/m/n/12 2004. Dis-po-ní-vel em: [][]$<[]http : / / www . crn2 . inpe . b
 r / conasat1 / projetos _ cubesat / subsistemas /
  []
 
 
-Overfull \hbox (51.21906pt too wide) in paragraph at lines 25--27
+Overfull \hbox (51.21906pt too wide) in paragraph at lines 27--29
 \T1/lmr/m/n/12 TCS / COMPASS-[]1 % 20-[] % 20TCS % 20-[] % 20Design % 20of % 20
 the % 20Thermal % 20Control % 20System .
  []
 
 
-Overfull \hbox (1.5959pt too wide) in paragraph at lines 28--29
+Overfull \hbox (1.5959pt too wide) in paragraph at lines 30--31
 \T1/lmr/m/n/12 0101-[]Thinking-[]Outside-[]the-[]Box-[]Space-[]Science-[]Beyond
 -[]the-[]CubeSat . pdf>[]$[][]. Acesso em: 25
  []
 
 
-Overfull \hbox (15.79697pt too wide) in paragraph at lines 30--31
+Overfull \hbox (15.79697pt too wide) in paragraph at lines 32--33
 \T1/lmr/m/n/12 [S.l.: s.n.], 2015. 59 p. Dis-po-ní-vel em: [][]$<[]https : / / 
 www . qb50 . eu / index . php / tech-[]docs / category /
  []
@@ -2714,7 +2714,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 501--504
  [][] 
  []
 
-<pcb_v1.pdf, id=1105, page=2, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1097, page=2, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 2>
 Package pdftex.def Info: pcb_v1.pdf , page2 used on input line 511.
@@ -2727,7 +2727,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 510--513
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1106, page=3, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1098, page=3, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 3>
 Package pdftex.def Info: pcb_v1.pdf , page3 used on input line 520.
@@ -2740,7 +2740,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 519--522
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1107, page=4, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1099, page=4, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 4>
 Package pdftex.def Info: pcb_v1.pdf , page4 used on input line 529.
@@ -2753,7 +2753,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 528--531
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1108, page=5, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1100, page=5, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 5>
 Package pdftex.def Info: pcb_v1.pdf , page5 used on input line 538.
@@ -2766,7 +2766,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 537--540
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1109, page=6, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1101, page=6, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 6>
 Package pdftex.def Info: pcb_v1.pdf , page6 used on input line 547.
@@ -2779,7 +2779,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 546--549
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1110, page=7, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1102, page=7, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 7>
 Package pdftex.def Info: pcb_v1.pdf , page7 used on input line 556.
@@ -2792,7 +2792,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 555--558
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1111, page=8, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1103, page=8, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 8>
 Package pdftex.def Info: pcb_v1.pdf , page8 used on input line 565.
@@ -2805,7 +2805,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 564--567
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pcb_v1.pdf, id=1112, page=9, 845.1575pt x 598.235pt>
+<pcb_v1.pdf, id=1104, page=9, 845.1575pt x 598.235pt>
 File: pcb_v1.pdf Graphic file (type pdf)
 <use pcb_v1.pdf, page 9>
 Package pdftex.def Info: pcb_v1.pdf , page9 used on input line 574.
@@ -2830,7 +2830,7 @@ Overfull \hbox (59.72916pt too wide) in paragraph at lines 582--585
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/pcbRealistic_2.PNG, id=1113, 444.15938pt x 414.79968pt>
+<figuras/pcbRealistic_2.PNG, id=1105, 444.15938pt x 414.79968pt>
 File: figuras/pcbRealistic_2.PNG Graphic file (type png)
 <use figuras/pcbRealistic_2.PNG>
 Package pdftex.def Info: figuras/pcbRealistic_2.PNG  used on input line 592.
@@ -2838,7 +2838,7 @@ Package pdftex.def Info: figuras/pcbRealistic_2.PNG  used on input line 592.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/upperLayer_.PNG, id=1114, 934.2102pt x 440.6061pt>
+<figuras/upperLayer_.PNG, id=1106, 934.2102pt x 440.6061pt>
 File: figuras/upperLayer_.PNG Graphic file (type png)
 <use figuras/upperLayer_.PNG>
 Package pdftex.def Info: figuras/upperLayer_.PNG  used on input line 600.
@@ -2851,7 +2851,7 @@ Overfull \hbox (12.10396pt too wide) in paragraph at lines 600--601
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/bottomLayer_.PNG, id=1115, 906.5067pt x 437.2335pt>
+<figuras/bottomLayer_.PNG, id=1107, 906.5067pt x 437.2335pt>
 File: figuras/bottomLayer_.PNG Graphic file (type png)
 <use figuras/bottomLayer_.PNG>
 Package pdftex.def Info: figuras/bottomLayer_.PNG  used on input line 608.
@@ -2873,7 +2873,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24.88> not available
 
 pdfTeX warning: pdflatex.exe (file ./figuras/bom_v1.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figuras/bom_v1.pdf, id=1174, page=1, 597.55246pt x 845.07718pt>
+<figuras/bom_v1.pdf, id=1166, page=1, 597.55246pt x 845.07718pt>
 File: figuras/bom_v1.pdf Graphic file (type pdf)
 <use figuras/bom_v1.pdf, page 1>
 Package pdftex.def Info: figuras/bom_v1.pdf , page1 used on input line 620.
@@ -2881,18 +2881,18 @@ Package pdftex.def Info: figuras/bom_v1.pdf , page1 used on input line 620.
 [113 <./figuras/bom_v1.pdf>] [114
 
 ]
-<figuras/flowChart_obc.PNG, id=1196, 222.8325pt x 458.46281pt>
+<figuras/flowChart_obc.PNG, id=1188, 222.8325pt x 458.46281pt>
 File: figuras/flowChart_obc.PNG Graphic file (type png)
 <use figuras/flowChart_obc.PNG>
 Package pdftex.def Info: figuras/flowChart_obc.PNG  used on input line 636.
 (pdftex.def)             Requested size: 144.8394pt x 297.99728pt.
-<figuras/flowChart_hardware.PNG, id=1197, 210.03468pt x 435.87843pt>
+<figuras/flowChart_hardware.PNG, id=1189, 210.03468pt x 435.87843pt>
 File: figuras/flowChart_hardware.PNG Graphic file (type png)
 <use figuras/flowChart_hardware.PNG>
 Package pdftex.def Info: figuras/flowChart_hardware.PNG  used on input line 644
 .
 (pdftex.def)             Requested size: 84.01237pt x 174.34828pt.
-<figuras/flowChart_clockSetup.PNG, id=1198, 173.89969pt x 437.38406pt>
+<figuras/flowChart_clockSetup.PNG, id=1190, 173.89969pt x 437.38406pt>
 File: figuras/flowChart_clockSetup.PNG Graphic file (type png)
 <use figuras/flowChart_clockSetup.PNG>
 Package pdftex.def Info: figuras/flowChart_clockSetup.PNG  used on input line 6
@@ -2902,7 +2902,7 @@ Package pdftex.def Info: figuras/flowChart_clockSetup.PNG  used on input line 6
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/flowChart_taskCreate.PNG, id=1199, 70.76437pt x 397.485pt>
+<figuras/flowChart_taskCreate.PNG, id=1191, 70.76437pt x 397.485pt>
 File: figuras/flowChart_taskCreate.PNG Graphic file (type png)
 <use figuras/flowChart_taskCreate.PNG>
 Package pdftex.def Info: figuras/flowChart_taskCreate.PNG  used on input line 6
@@ -2911,7 +2911,7 @@ Package pdftex.def Info: figuras/flowChart_taskCreate.PNG  used on input line 6
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/flowChart_wdt.PNG, id=1200, 283.0575pt x 466.74374pt>
+<figuras/flowChart_wdt.PNG, id=1192, 283.0575pt x 466.74374pt>
 File: figuras/flowChart_wdt.PNG Graphic file (type png)
 <use figuras/flowChart_wdt.PNG>
 Package pdftex.def Info: figuras/flowChart_wdt.PNG  used on input line 668.
@@ -2919,7 +2919,7 @@ Package pdftex.def Info: figuras/flowChart_wdt.PNG  used on input line 668.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/flowChart_dataStorage.PNG, id=1201, 193.47281pt x 413.29407pt>
+<figuras/flowChart_dataStorage.PNG, id=1193, 193.47281pt x 413.29407pt>
 File: figuras/flowChart_dataStorage.PNG Graphic file (type png)
 <use figuras/flowChart_dataStorage.PNG>
 Package pdftex.def Info: figuras/flowChart_dataStorage.PNG  used on input line 
@@ -2928,7 +2928,7 @@ Package pdftex.def Info: figuras/flowChart_dataStorage.PNG  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras/flowChart_houseKeeping.PNG, id=1202, 153.57375pt x 452.4403pt>
+<figuras/flowChart_houseKeeping.PNG, id=1194, 153.57375pt x 452.4403pt>
 File: figuras/flowChart_houseKeeping.PNG Graphic file (type png)
 <use figuras/flowChart_houseKeeping.PNG>
 Package pdftex.def Info: figuras/flowChart_houseKeeping.PNG  used on input line
@@ -2968,7 +2968,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
 Here is how much of TeX's memory you used:
  40891 strings out of 492895
  789385 string characters out of 3121867
- 1083924 words of memory out of 3000000
+ 1082935 words of memory out of 3000000
  43690 multiletter control sequences out of 15000+200000
  660632 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3007,9 +3007,9 @@ ts/type1/public/lm/lmsy7.pfb><C:/Users/Guilherme/AppData/Local/Programs/MiKTeX
 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Guilherme/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Guilherme/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (119 pages, 11555197 bytes).
+Output written on tcc.pdf (119 pages, 11553052 bytes).
 PDF statistics:
- 1579 PDF objects out of 1728 (max. 8388607)
+ 1571 PDF objects out of 1728 (max. 8388607)
  327 named destinations out of 1000 (max. 500000)
  876 words of extra memory for PDF output out of 10000 (max. 10000000)
 

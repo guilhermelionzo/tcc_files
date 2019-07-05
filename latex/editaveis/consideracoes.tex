@@ -202,7 +202,7 @@ As funções mais importantes de um OBC são exemplificadas abaixo (STRAS et al.
 
 \subsection{Computadores de Bordo Existentes}
 
-Essa avaliação tem como objetivo mostrar ao leitor alguns OBCs, utilizados em missões CubeSat, e destacar as características mais relevantes. Uma coleta mais detalhada foi realizada e se encontra no Apêndice \ref{apendicea}.
+Essa avaliação tem como objetivo apresentar ao leitor alguns OBCs, utilizados em missões CubeSat, e destacar as características mais relevantes. Uma coleta mais detalhada foi realizada e se encontra no Apêndice \ref{apendicea}.
 
 \begin{itemize}
 
@@ -706,7 +706,7 @@ Para a escolha dos fornecedores, escolheu-se o site \textit{DigiKey}\footnote{Di
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
 PRODUTO          & Fornecedor                        & Temp OP          & Corrente & Vin               & Capacidade      & Protocolo \\ \midrule
-FM25V05-GTR      & Cypress Semiconductor Corporation & -40$^{\circ}$C $\sim$85$^{\circ}$C & 300uA    & 2 V $\sim$3.6 V   & 512Kb (64K x 8) & SPI       \\
+FM25V05-GTR      & Cypress Semi. Corp. & -40$^{\circ}$C $\sim$85$^{\circ}$C & 300uA    & 2 V $\sim$3.6 V   & 512Kb (64K x 8) & SPI       \\
 SQF-MSDM1-4G-21E & Advantech Corp                    & -40$^{\circ}$C $\sim$85$^{\circ}$C & 150uA    & 2.7 V $\sim$3.6 V & 4GB             & SPI       \\ \bottomrule
 \end{tabular}}}
 \end{table}
@@ -861,7 +861,7 @@ Como foi mencionado anteriormente, o formato da placa seguirá o padrão \textit
 
 De acordo com  Frost e Agasid (2015), missões de longa duração necessitam de mecanismos que diminuam o risco devido à radiação espacial. Como o microcontrolador e os componentes selecionados no projeto não possuem classificação \textit{Rad-Hard}, optou-se pela utilização de mecanismos que atenuassem as falhas. 
 
-A partir de uma breve pesquisa, levantou-se as seguintes estratégias:
+A partir de uma breve pesquisa, levantaram-se as seguintes estratégias:
 \begin{itemize}
 	\item Proteção Metálica (EMI \textit{Shielding});
 	\item Proteção contra corrente excessiva (\textit{OverCurrent});
@@ -914,7 +914,7 @@ Apos a escolha dos componentes é possível ter uma visão abrangente do \textit
 
 \end{comment}
 
-Para o elaboração da placa de circuito impresso utilizou-se o software KiCad\footnote{Para mais detalhes, consulte:  \url{http://www.kicad-pcb.org/}}. Essa ferramenta possui uma interface amigável e fácil de usar, sendo bem difundida na comunidade de engenharia eletrônica e \textit{hobistas}. O fato do KiCad ser \textit{Open Source} facilita a manutenção do OBC em futuras melhorias, pois não há a necessidade de comprar uma licença.
+Para a elaboração da placa de circuito impresso utilizou-se o software KiCad\footnote{Para mais detalhes, consulte:  \url{http://www.kicad-pcb.org/}}. Essa ferramenta possui uma interface amigável e fácil de usar, sendo bem difundida na comunidade de engenharia eletrônica e \textit{hobistas}. O fato do KiCad ser \textit{Open Source} facilita a manutenção do OBC em futuras melhorias, pois não há a necessidade de comprar uma licença.
 
 A Figura \ref{esquematicoObc} mostra o esquemático eletrônico do OBC. Nele há todos os competentes/sensores mencionados nas seções anteriores. Foi utilizado o \textit{datasheet} de cada componente para o desenvolvimento do esquemático. O Apêndice \ref{apendicee} possui todos os esquemáticos realizados.
 
@@ -1009,11 +1009,11 @@ A arquitetura de um software é um dos principais pontos a serem definidos em um
 
 \begin{figure}[h]
 	\centering
-	\caption{Arquitetura de abstração de Camadas.}
+	\caption{Arquitetura de abstração em Camadas.}
 	
 	\includegraphics[keepaspectratio=true,scale=0.7]{figuras/arquiteturaSof.PNG}
 	
-	Fonte: (EBRARY, 2018,  adaptado pág.1).
+	Fonte: (COHEN, 2014,  adaptado pág.15).
 	\label{fig22}
 \end{figure}
 
@@ -1022,7 +1022,7 @@ Abaixo há uma breve descrição de cada camada e sua aplicação no sistema fin
 \begin{itemize}
 \item \textbf{Camada de Abstração de Hardware} 
 
-A camada de abstração de \textit{hardware} (HAL, do inglês \textit{Hardware Abstraction Layer}), é uma camada de abstração de \textit{software} entre o \textit{hardware} do sistema embarcado e o sistema operacional. Em geral, o HAL inclui o bootloader, o pacote de suporte de placa, drivers e outros componentes. Ela é a camada de mais baixo nível do \textit{software} embarcado (EBRARY, 2018).
+A camada de abstração de \textit{hardware} (HAL, do inglês \textit{Hardware Abstraction Layer}), é uma camada de abstração de \textit{software} entre o \textit{hardware} do sistema embarcado e o sistema operacional. Em geral, o HAL inclui o bootloader, o pacote de suporte de placa, drivers e outros componentes. Ela é a camada de mais baixo nível do \textit{software} embarcado (COHEN, 2014).
 
 No sistema, a camada de HAL é desempenhada pelo pacote \textit{Driver Library} (\textit{DriverLib}), desenvolvido pela Texas Instruments, que tem o intuito de facilitar o desenvolvimento de projetos embarcados e ajudar na portabilidade dos códigos. Utilizando esse pacote, o desenvolvedor não necessita saber o que acontece a nível de registrador, tornando o desenvolvimento mais amigável e rápido  (TEXAS INSTRUMENTS, 2018).
 
@@ -1030,7 +1030,7 @@ O \textit{DriverLib} inclui a Interface de Programação de Aplicativos (APIs, d
 
 \item \textbf{Camada do Sistema Operacional}
 
-Um Sistema Operacional de Tempo Real (RTOS, do inglês \textit{Real-Time Operationg System}) é um sistema de \textit{software} que tem a habilidade de prover um serviço em um tempo pré-determinado. O RTOS gerencia uniformemente os recursos da camada inferior, camada HAL, oferecendo esses recursos em forma de serviços (EBRARY,2018).
+Um Sistema Operacional de Tempo Real (RTOS, do inglês \textit{Real-Time Operationg System}) é um sistema de \textit{software} que tem a habilidade de prover um serviço em um tempo pré-determinado. O RTOS gerencia uniformemente os recursos da camada inferior, camada HAL, oferecendo esses recursos em forma de serviços (COHEN, 2014).
 
 Escolher um RTOS é uma tarefa importante para dar suporte às interrupções, temporizadores, comunicação entre tarefas, sincronização, gerenciamento de memória, múltiplo acesso, prioridade de execução e escalonamento de tarefas (BASKIYAR ; MEGHANATHAN, 2005).
 
@@ -1038,14 +1038,14 @@ Analisando o Apêndice \ref{apendicea}, pôde-se afirmar que a maioria das miss�
 
 \item \textbf{Camada de Serviço do Sistema}
 
-A Camada de Serviço do Sistema (CSS) é uma interface que o sistema operacional fornece à Camada de Aplicação Final. Usando essa interface, os aplicativos podem acessar vários serviços fornecidos pelo sistema operacional. Essa camada geralmente inclui o sistema de arquivos, o gerenciador de tarefas, temporizadores, etc (EBRARY,2018).
+A Camada de Serviço do Sistema (CSS) é uma interface que o sistema operacional fornece à Camada de Aplicação Final. Usando essa interface, os aplicativos podem acessar vários serviços fornecidos pelo sistema operacional. Essa camada geralmente inclui o sistema de arquivos, o gerenciador de tarefas, temporizadores, etc (COHEN, 2014).
 
 Nesse caso, o FreeRTOS já oferece APIs que auxiliam o acesso de suas funcionalidades. Entretanto a CSS não estaria completa só com essas APIS, com isso há a necessidade de implementar mais funcionalidades nessa camada, levando em consideração os requisitos da Tabela \ref{tabela_req}. Mais adiante, será explicado a proposta de implementação.
 
 
 \item \textbf{Camada de Aplicação}
 
-A Camada de Aplicação Final (CAF) possui a maior hierarquia da Arquitetura em Camadas. Ela implementa as funcionalidades e tarefas do sistema. De uma forma geral, os níveis abaixo tem o objetivo de auxiliar a CAF (EBRARY, 2018).
+A Camada de Aplicação Final (CAF) possui a maior hierarquia da Arquitetura em Camadas. Ela implementa as funcionalidades e tarefas do sistema. De uma forma geral, os níveis abaixo tem o objetivo de auxiliar a CAF (COHEN, 2014).
 
 Como essa camada realizará tarefas específicas da missão, a necessidade de requisitos da aplicação deverão ser listados. Com isso, a CAF será desenvolvida em versões futuras do \textit{software} embarcado, implementando as funcionalidades exigidas pela missão.
 
