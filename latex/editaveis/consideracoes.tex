@@ -475,7 +475,7 @@ Esse capítulo descreverá o desenvolvimento do \textit{hardware}. Inicialmente 
 
 \section{Requisitos e Funcionalidades}
 \label{seção1_1}
-Para o desenvolvimento de qualquer projeto, a definição dos requisitos é essencial, pois essa etapa influenciará as demais fases e definirá as expectativas das partes interessadas. Até o presente momento, poucos requisitos foram delimitados, pois o projeto da missão CubeSat ainda está em fase de discussão. 
+Para o desenvolvimento de qualquer projeto, a definição dos requisitos é essencial, pois essa etapa influenciará as demais fases e definirá as expectativas das partes interessadas. Durante a fase inicial do projeto, poucos requisitos foram especificados, pois o acordo da missão CubeSat estava em fase de discussão. 
 
 A abordagem utilizada para contornar essa situação foi adicionar requisitos de CubeSats já lançados à alguns requisitos já especificados para a missão. No Apêndice \ref{apendiceb} há uma explicação sobre essa abordagem. 
 
@@ -968,7 +968,7 @@ A partir do BOM, realizou-se a cotação dos componentes na fornecedora online \
 
 Este capítulo visa descrever o desenvolvimento do \textit{software} embarcado. Inicialmente será mostrado os requisitos e funcionalidades consideradas no desenvolvimento do sistema. Logo em seguida, será exposto a arquitetura utilizada para a aplicação. Após essa etapa, será mostrado com mais detalhes os \textit{softwares} FreeRTOS, DriverLib e a camada de serviço do cliente. 
 
-Tendo em vista que a missão CubeSat ainda está em fase de discussão, a abordagem utilizada no desenvolvimento foi realizar um \textit{software} modular que, a medida que os requisitos se tornem definitivos, as funcionalidades fossem implementadas. Com isso, o \textit{software} desenvolvido servirá para teste do \textit{hardware} e deverá ser atualizado para a missão final.
+Tendo em vista que a missão CubeSat ainda estava em fase de discussão e poucos requisitos tinham sido especificados, utilizou-se uma abordagem modular no desenvolvimento do software embarcado. Sendo assim, a medida que os requisitos começaram a se tornar definitivos, as funcionalidades foram implementadas. Com isso, o \textit{software} desenvolvido servirá para teste do \textit{hardware} e deverá ser atualizado para a missão final.
 
 \section{Requisitos e Funcionalidades}
 
@@ -1383,20 +1383,18 @@ Com base na UML e no diagrama de interface do hardware foi realizado o código e
 
 Até o presente momento, as duas instituições estão discutindo os acordos da parceria. Esse fato impossibilitou a capitação de recursos para a compra dos componentes eletrônicos e fabricação da PCB. Sendo assim, os resultados apresentados são pertinentes ao teste em protoboard, utilizando a LaunchPad do MSP432 e alguns módulos COTS.
 
-Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Esse tipo de abordagem pode ser uma boa pois de certa forma a incidência de luz estará relacionada com a energia armazenada no EPS.
+Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Essa abordagem condiz de certa forma com a realidade, pois a incidência de luz interfere na quantidade de energia armazenada no \textit{EPS}.
 
-A Figura abaixo mostra a conexão dos componentes na LaunchPad.
+A Figura abaixo mostra a conexão dos componentes na LaunchPad. Nesta foto há os módulos COTS utilizados e a câmera (\textit{Paylod}).
 
-\hl{[LAUNCHPAD+PROTOBOARD FIGURE]}
-\begin{comment}
 \begin{figure}[h]
 \centering
-\caption{Protoboard.}
-\includegraphics[keepaspectratio=true,scale=0.15]{figuras/protoboard.png}
+\caption{Protoboard com os componentes COTS e a LaunchPad.}
+\includegraphics[keepaspectratio=true,scale=0.45]{figuras/protoboardCompleteDetail.png}
 
-\label{proto}
+\label{protoboardCompleteDetail}
 \end{figure}
-\end{comment}
+
 
 
 
@@ -1448,28 +1446,6 @@ Durante os testes houveram algumas falhas para armazenar o tempo relativo no com
 \end{figure}
 
 O desenvolvimento do driver de comunicação com a câmera teve um atraso pois houve um Em relação ao armazenamento da câmera, Até o presente momento os subsistemas não foram finalizados e o aluno enfrentou dificuldade para desenvolver o driver para a comunicação com a câmera.
-
-\section{Sistema Anti Travamento}
-
-Uma das grandes preocupações no desenvolvimento do OBC foi sobre a confiabilidade do sistema. O uso de componentes COTS poem em risco a vida útil da missão pois esses componentes não possui resistência à radiação. Como mencionado a \textit{Task} Task do WTD foi responsável por gerencias os travamentos a nível de software e desarar os watchdogs via hardware.
-
-A nível de software foi possível perceber que a \textit{task} do watchdog reiniciou a task que não setou o bit no tempo estabelecido. A imagem abaixo mostra a task do TT\&C sendo reiniciada.
-\newline\hl{[WTD SOFTWARE]}\newline
-No nível a baixo, ha o watchdog do microcontrolador. Caso algum travamento no sistema operacional ocorra, o microcontrolador a nível de\textit{hardrware} reiniciar o sistema. Foi possível constatar isso quando que a task do watchdog não reiniciou o timer do WTD do msp, a conexão com a seção foi perdida devido ao \textit{reset}.
-\newline\hl{[WTD MSP432]}\newline
-Por fim, há o WTD externo que resetará o OBC em caso de travamento do MSP432, trazendo mais robustez à solução. Esse componente não foi testado pois não há um modulo apenas o componente SMD.
-
-É claro que e essa solução só funcionará em casos de \textit{Single Event Upset} (SEU), já em outros casos, como o SEL, é possível que haja danos permanentes no OBC. 
-
-\begin{comment}
-	Mesmo com essa ressalva, pode se considerar que os requisitos pertinentes à robustez e solução antitravamento foram alcançados. 
-	
-	OBC-H-R2
-	OBC-H-R6
-	OBC-SW-R8
-	
-\end{comment}
-
 
 \section{Consumo}
 
@@ -1571,7 +1547,7 @@ Como era de se esperar, durante o modo de hibernação apenas o \textit{TaskMana
 \end{figure}
 
 \newpage
-Por fim, alternou-se os modos de operação para que pudesse ter noção de como o sistema se comportaria em modo misto, saindo de um estado para o outro. O resultado mostrado na Figura \ref{trace_snapshoot_8} condiz com o esperado. Nos estagios iniciais há um grande uso de CPU, logo em seguida o sistema entra em modo de baixo consumo e apenas o \textit{TaskManager} fica ativo e sendo executado mais lentamente. Após o modo de hibernação, o sistema entra em modo nominal e todas as tasks são executadas sem limite de CPU. E por fim, o sistema foi colocado em modo de baixo consumo, e apenas as \textit{tasks} de controle(\textit{WTD Task} e \textit{TaskManager}) e manipulação de dados (\textit{HouseKeeeping} e \textit{DataManager}) foram executadas.
+Por fim, alternou-se os modos de operação para que pudesse ter noção de como o sistema se comportaria em modo misto, saindo de um estado para o outro. O resultado mostrado na Figura \ref{trace_snapshoot_8} condiz com o esperado. Nos estágios iniciais há um grande uso de CPU, logo em seguida o sistema entra em modo de baixo consumo e apenas o \textit{TaskManager} fica ativo e sendo executado mais lentamente. Após o modo de hibernação, o sistema entra em modo nominal e todas as tasks são executadas sem limite de CPU. E por fim, o sistema foi colocado em modo de baixo consumo, e apenas as \textit{tasks} de controle(\textit{WTD Task} e \textit{TaskManager}) e manipulação de dados (\textit{HouseKeeeping} e \textit{DataManager}) foram executadas.
 
 \begin{figure}[h]
 	\centering
@@ -1580,6 +1556,101 @@ Por fim, alternou-se os modos de operação para que pudesse ter noção de como
 	
 	\label{trace_snapshoot_8}
 \end{figure}
+
+A utilização do programa \textit{Tracealyzer} permitiu verificar a maquina de estados do \textit{software} embarcado. Foi possível notar também que o \textit{TaskManager} é capaz de gerenciar as \textit{tasks} de acordo com algum \textit{input} externo (Ex.: nivel de bateria, luminosidade, etc). Também foi possível notar que o sistema em modo NM\_MODE ocupa 8 \%  de CPU, isso mostra que há aproximadamente 98 \% de CPU osciosa que pode ser utilizada para processamento da Payload, TTC, PPT, etc.
+
+\newpage
+\section{Sistema Anti Travamento}
+
+Uma das grandes preocupações no desenvolvimento do OBC foi sobre a confiabilidade do sistema. O uso de componentes COTS poem em risco a vida útil da missão pois esses componentes não possui resistência à radiação. Como mencionado a \textit{Task} Task do WTD foi responsável por gerencias os travamentos a nível de software e desarar os watchdogs via hardware.
+
+A nível de software foi possível perceber que a \textit{task} do watchdog reiniciou a task que não setou o bit no tempo estabelecido. A Figura \ref{watchDogFreeRTOS_2} abaixo mostra a task do TT\&C sendo reiniciada. É possivel notar que a task do TT\&C começa com o label \textbf{TT\&C Task (2)} e com a cor azul, Logo em
+
+\begin{figure}[h]
+	\centering
+	\caption{Snapshoot no Tracealyzer do sistema executando em todos os modos.}
+	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/watchDogFreeRTOS_2.PNG}
+	
+	\label{watchDogFreeRTOS_1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\caption{Snapshoot no Tracealyzer do sistema executando em todos os modos.}
+	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/watchDogFreeRTOS.PNG}
+	
+	\label{watchDogFreeRTOS}
+\end{figure}
+
+
+No nível a baixo, ha o watchdog do microcontrolador. Caso algum travamento no sistema operacional ocorra, o microcontrolador a nível de\textit{hardrware} reiniciar o sistema. Foi possível constatar isso quando que a task do watchdog não reiniciou o timer do WTD do msp, a conexão com a seção foi perdida devido ao \textit{reset}.
+
+\begin{figure}[h]
+	\centering
+	\caption{Snapshoot no Tracealyzer do sistema executando em todos os modos.}
+	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/trace_snapshoot_8.PNG}
+	
+	\label{trace_snapshoot_8}
+\end{figure}
+
+
+Por fim, há o WTD externo que resetará o OBC em caso de travamento do MSP432, trazendo mais robustez à solução. Esse componente não foi testado pois não há um modulo apenas o componente SMD.
+
+É claro que e essa solução só funcionará em casos de \textit{Single Event Upset} (SEU), já em outros casos, como o SEL, é possível que haja danos permanentes no OBC. 
+
+\begin{comment}
+Mesmo com essa ressalva, pode se considerar que os requisitos pertinentes à robustez e solução antitravamento foram alcançados. 
+
+OBC-H-R2
+OBC-H-R6
+OBC-SW-R8
+
+\end{comment}
+
+\newpage
+\section{Alocação de Memoria do FreeRTOS e do CSS}
+
+Para saber a memoria utilizada pelo kernel e a camada de serviço do sistema, utilizou-se a ferramenta \textit{Memory Allocation} da IDE do Code Composer. 
+
+Desabilitando a inclusão do CLI, Tracealyzer e as task do CSS, o espaço foi de 4\% de código e 2\% de RAM. Isso mostra que o sistema operacional ocupa apenas 5Kb e 2, possuindo um footprint pequeno. Esses valores seriam reduzido se retirassem algumas macros que não fazem parte do kernel de fato. Esses valores comprovam que o \textit{FreeRTOs} é uma otima solução para sistemas que não possuem muita memoria RAM mas que necessiitam de um sistema operacioanl de tempo real. A Figura \ref{memoryAllocation_RTOS} mostra os valores alocados para o código (MAIN) e CPU (SRAM\_CODE/SRAM\_DATA).
+
+\begin{figure}[h]
+	\centering
+	\caption{Snapshoot no Tracealyzer do sistema executando em todos os modos.}
+	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/memoryAllocation_RTOS.PNG}
+	
+	\label{memoryAllocation_RTOS}
+\end{figure}
+
+Quando há a inclusão de todas as bibliotecas, a memoria RAM tem um aumento considerável na memoria RAM. Esse aumento é devido ao uso do \textit{Tracealyzer} que utiliza parte da memoria RAM para o armazenamento das informações do sistema operacional. Mas como o \textit{FreeRTOS} gerencia os recursos de CPU, esse alocação de 99\% só é vista no boot inicial do sistema e em momentos de transição dos modos de operação. Em relação ao espaço do código, houve um aumento de 14\% algo relativamente pequeno. Isso mostra que a Camada de Serviço do Sistema possui um \textit{footprint} pequeno e que caso haja a necessidade de adicionar mais funcionalidades no sistema, há 86\% (215Kb) livres. 
+
+\begin{figure}[h]
+	\centering
+	\caption{Snapshoot no Tracealyzer do sistema executando em todos os modos.}
+	\includegraphics[keepaspectratio=true,scale=0.61]{figuras/memoryAllocation_Full.PNG}
+	
+	\label{memoryAllocation_Full}
+\end{figure}
+
+\section{Printed Circuit Board}
+
+A partir do layout realizado no KiCad, gerou-se os arquivos .gerbers que contem todas as informações para a a fabricação da PCB. Utilizou-se a fabricante PCBWay\footnote{\url{https://www.pcbway.com/orderonline.aspx}} para realizar a fabricação da PCB. O resultado final é mostrado na figura \ref{pcb_bothSides}.
+
+
+\begin{figure}[h]
+	\centering
+	\caption{Snapshoot no Tracealyzer do sistema executando em todos os modos.}
+	\includegraphics[keepaspectratio=true,scale=0.7]{figuras/pcb_bothSides.png}
+	
+	\label{pcb_bothSides}
+\end{figure}
+
+A fabricação da PCB representa o passo final que o projeto chegou. Os passos seguintes seriam a compra e soldagem dos componentes e, por fim, o teste da OBC. A seção \ref{Recomendações} mostrará as instruções para trabalhos futuros.
+
+
+Com o finalização do layout no KiCad, foi possivel gerar os .geerbes da PCB. Com esses arquivos foi enviado para o site da PCBWay, empresa que realiza as PCBs na China. 
+
+A Figura X mostra a PCB em suas vistas superior e inferior. A qualidade da PCB ficou otima, faltando apenas a compra e a soldagem dos componentes. A parte do Hardware parou na realização da PCB.
 
 
 \chapter[Conclusão e Recomendações]{Conclusão e Recomendações}
@@ -1595,14 +1666,14 @@ Logo em seguida, foi mostrado o procedimento utilizado para contornar a ausênci
 Para o desenvolvimento do software utilizou-se a mesma alternativa para contornar os escassez de requisitos. Foi mostrado a arquitetura em camadas, proposta para ajudar na abstração dos componentes e interfaces. O pacote DriverLib foi utilizado como interface HAL, uma vez que suas APIs abstraem toda a tratativa dos registradores. Para a camada acima, foi escolhido o FreeRTOS como sistema operacional do OBC, ele é uma ótima para aplicações em sistemas críticos de tempo real onde o poder de processamento é limitado. Também foi desenvolvido a Camada de Serviço do Sistema, utilizando os conceitos de \textit{Unified Modeling Language} para facilitar a manutenção dessa camada em futuras melhorias. \newline\hl{Ongoing}\newline
 Durantes os testes com a launchpad, foi possível testar a coleta e armazenamento de dados, a solução antitravamento, consumo. O auxilio da ferramenta Tracealyzer facilitou a visualização dos modos de operação do sistema operacional. Algo interessante foi ver o consumo variando entre os modos de operação. 
 
-Alguns pontos não foram abordados durante a pesquisa devido algumas dificuldades que o aluno passou durante o desenvolvimento do OBC. Entrentando, tais pontos não desmerecem o trabalho, visto que foi possível desenvolver grande parte do software embarcado e o desenvolvimento por completo do layout da PCB. %Os pontos a serem melhoradas em futuras versões do trabalho serão expostas na seção a seguir.
+Alguns pontos não foram abordados durante a pesquisa devido algumas dificuldades que o aluno passou durante o desenvolvimento do OBC. Entretanto, tais pontos não desmerecem o trabalho, visto que foi possível desenvolver grande parte do software embarcado e o desenvolvimento por completo do layout da PCB. %Os pontos a serem melhoradas em futuras versões do trabalho serão expostas na seção a seguir.
 \newline\hl{Ongoing}\newline
 
 Algo importante a ser mencionado é o beneficio que a utilização da plataforma GitHub trouxe ao projeto. Todo o código ficou versionado no repositório do aluno, ao todo houveram trinta e dois commits, ou seja, trinta e duas versões do código. Caso haja uma modificação muito drástica no código e o não funcione perfeitamente, é possível voltar para uma versão mais estável. Outro ponto importante é que o GitHub serviu como divulgação da pesquisa. Até o presente momento, 135 visualizações e 16 clones no repositório do projeto.  
 
 
 \section{Recomendações}
-
+\label{Recomendações}
 Os trabalhos futuros são de extrema importância para a melhoria do OBC e êxito da futura missão. No decorrer do projeto Como esse foi um dos primeiros trabalhos pesquisa realizado realizado na missão, vários empecilhos foram desconsiderados durante a fase inicial da pesquisa. Tais pontos devem ser considerados nos próximos trabalhos.
 
 A compra e soldagem dos componentes é um ponto extrema prioridade, pois não foi possível testar a placa desenvolvida no projeto. Alguns componentes só poderão ser testados ao serem soldados na PCB, como é o caso do watchdog e da memória FRAM.
@@ -1611,7 +1682,7 @@ Outro ponto que deve ser aprofundado é a utilização do clock de 32KHz como fo
 
 O uso vários níveis de watchdog e sensor de \textit{overcurrent} não é necessário para diminuição do risco dos efeitos da radiação sobre o OBC. A utilização de componentes COTS oneram a confiabilidade do sistema e outras formas de proteção devem ser analisadas. Recomenda-se que haja pesquisas em para \textit{shields} metálicos para proteção de todo o sistema embarcado,  mas levando em consideração a massa  deste para não onerar o lançamento do satélite, visto que os lançadores cobram em torno de USD 20/kg\footnote{Para mais detalhes, consultar a pagina 18: \url{http://www.scielo.br/pdf/jatm/v9n3/2175-9146-jatm-09-03-0269.pdf}}.
 
-Foi constatado que o escopo do projeto foi subestimado e o projeto tem uma proporção bem maior do que foi imaginado. O desenvolvimento do projeto do OBC por apenas um aluno se to apenas uma pessoa realizando o desenvolvimento do sistema fica enviavel. O uso da metodologia de co-design é ideal para engenheiros que possuem grande experiencia no desenvolvimento de soluções embarcadas, mas a nivel de graduação, ela se torna muito dificil pois há inumeros pontos que o aluno travou no software e a parte de hardware ficou parada tambem, algo que não era pra acontecer. Sugere-se que o projeto seja dividio para no minimo dois alunos, um para o hardware e outro para o \textit{firmware}. O aluno realmente encoraja o prosseguimento desde projeto e abertura de mais temas para mais alunos.
+Foi constatado que o escopo do projeto foi subestimado e o projeto tem uma proporção bem maior do que foi imaginado. O desenvolvimento do projeto do OBC por apenas um aluno se to apenas uma pessoa realizando o desenvolvimento do sistema fica enviável. O uso da metodologia de co-design é ideal para engenheiros que possuem grande experiencia no desenvolvimento de soluções embarcadas, mas a nível de graduação, ela se torna muito difícil pois há inúmeros pontos que o aluno travou no software e a parte de hardware ficou parada também, algo que não era pra acontecer. Sugere-se que o projeto seja divido para no minimo dois alunos, um para o hardware e outro para o \textit{firmware}. O aluno realmente encoraja o prosseguimento desde projeto e abertura de mais temas para mais alunos.
 
 
 Por fim, poderia ser abordada a parceria com o Grupo de Pesquisa LAICAnSat. Essa parceria seria ideal para o desenvolvimento de outros subsistemas da missão e teste do OBC, como \textit{payload} de teste, em lançamentos com balão estratosférico. Os testes seriam possível pois a interface de comunicação do sistema embarcado do LAICAnSat também utilizam o barramento ISA BUS e as o padrão PC104. 
