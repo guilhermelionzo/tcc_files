@@ -4,95 +4,96 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{21}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Contexto e Justificativa}{21}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Objetivos}{21}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}Metodologia}{22}{section.1.3}% 
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{23}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Contexto e Justificativa}{23}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Objetivos}{23}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Metodologia}{24}{section.1.3}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{23}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Pequenos Sat\IeC {\'e}lites}{23}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Padr\IeC {\~a}o CubeSat}{25}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Principais Subsistemas de um CubeSat}{27}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Vis\IeC {\~a}o Geral de um OBC}{31}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Computadores de Bordo Existentes}{31}{subsection.2.4.1}% 
-\contentsline {section}{\numberline {2.5}Padr\IeC {\~a}o PC/104}{35}{section.2.5}% 
-\contentsline {section}{\numberline {2.6}Ambiente Espacial}{36}{section.2.6}% 
-\contentsline {subsection}{\numberline {2.6.1}Radia\IeC {\c c}\IeC {\~a}o Espacial}{37}{subsection.2.6.1}% 
-\contentsline {subsection}{\numberline {2.6.2}Categoria de Componentes}{38}{subsection.2.6.2}% 
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{25}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Pequenos Sat\IeC {\'e}lites}{25}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Padr\IeC {\~a}o CubeSat}{27}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Principais Subsistemas de um CubeSat}{29}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Vis\IeC {\~a}o Geral de um OBC}{32}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Computadores de Bordo Existentes}{33}{subsection.2.4.1}% 
+\contentsline {section}{\numberline {2.5}Padr\IeC {\~a}o PC/104}{37}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}Ambiente Espacial}{38}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}Radia\IeC {\c c}\IeC {\~a}o Espacial}{39}{subsection.2.6.1}% 
+\contentsline {subsection}{\numberline {2.6.2}Categoria de Componentes}{40}{subsection.2.6.2}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Desenvolvimento do Hardware}}{41}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Requisitos e Funcionalidades}{41}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lise do Microcontrolador}{42}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Microcontrolador MSP432P4111}{44}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Unidade de Mem\IeC {\'o}ria}{45}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Portas e Perif\IeC {\'e}ricos}{46}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Consumo e Modos de Opera\IeC {\c c}\IeC {\~a}o}{46}{subsection.3.3.3}% 
-\contentsline {section}{\numberline {3.4}Unidade de Armazenamento}{46}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Perif\IeC {\'e}ricos}{48}{section.3.5}% 
-\contentsline {subsection}{\numberline {3.5.1}Sensor de Corrente}{48}{subsection.3.5.1}% 
-\contentsline {subsection}{\numberline {3.5.2}Sensor Inercial}{48}{subsection.3.5.2}% 
-\contentsline {subsection}{\numberline {3.5.3}Sensor de Temperatura}{50}{subsection.3.5.3}% 
-\contentsline {section}{\numberline {3.6}Interface de Programa\IeC {\c c}\IeC {\~a}o/\textit {Debug}}{50}{section.3.6}% 
-\contentsline {section}{\numberline {3.7}Dimens\IeC {\~o}es da Placa}{51}{section.3.7}% 
-\contentsline {section}{\numberline {3.8}Sistema para Mitigar Falhas}{52}{section.3.8}% 
-\contentsline {subsection}{\numberline {3.8.1}\textit {Watchdog} Externo}{52}{subsection.3.8.1}% 
-\contentsline {section}{\numberline {3.9}Placa de Circuito Impresso}{53}{section.3.9}% 
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Desenvolvimento do Hardware}}{43}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Requisitos e Funcionalidades}{43}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lise do Microcontrolador}{44}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Microcontrolador MSP432P4111}{46}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Unidade de Mem\IeC {\'o}ria}{47}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Portas e Perif\IeC {\'e}ricos}{48}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Consumo e Modos de Opera\IeC {\c c}\IeC {\~a}o}{48}{subsection.3.3.3}% 
+\contentsline {section}{\numberline {3.4}Unidade de Armazenamento}{49}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Perif\IeC {\'e}ricos}{50}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}Sensor de Corrente}{50}{subsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.5.2}Sensor Inercial}{51}{subsection.3.5.2}% 
+\contentsline {subsection}{\numberline {3.5.3}Sensor de Temperatura}{52}{subsection.3.5.3}% 
+\contentsline {section}{\numberline {3.6}Interface de Programa\IeC {\c c}\IeC {\~a}o/\textit {Debug}}{53}{section.3.6}% 
+\contentsline {section}{\numberline {3.7}Dimens\IeC {\~o}es da Placa}{53}{section.3.7}% 
+\contentsline {section}{\numberline {3.8}Sistema para Mitigar Falhas}{54}{section.3.8}% 
+\contentsline {subsection}{\numberline {3.8.1}\textit {Watchdog} Externo}{55}{subsection.3.8.1}% 
+\contentsline {section}{\numberline {3.9}Placa de Circuito Impresso}{56}{section.3.9}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento do Software}}{55}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Requisitos e Funcionalidades}{55}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Arquitetura do Software}{56}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}DriverLib}{58}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}FreeRTOS}{59}{section.4.4}% 
-\contentsline {subsection}{\numberline {4.4.1}APIs do FreeRTOS}{61}{subsection.4.4.1}% 
-\contentsline {subsection}{\numberline {4.4.2}Configura\IeC {\c c}\IeC {\~a}o do FreeRTOS}{62}{subsection.4.4.2}% 
-\contentsline {section}{\numberline {4.5}Desenvolvimento da Camada de Servi\IeC {\c c}os do Sistema}{63}{section.4.5}% 
-\contentsline {subsection}{\numberline {4.5.1}Desenvolvimento da UML}{65}{subsection.4.5.1}% 
-\contentsline {section}{\numberline {4.6}Desenvolvimento do C\IeC {\'o}digo}{66}{section.4.6}% 
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento do Software}}{59}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Requisitos e Funcionalidades}{59}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Arquitetura do Software}{60}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}\textit {DriverLib}}{62}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}FreeRTOS}{63}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}APIs do FreeRTOS}{65}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.2}Configura\IeC {\c c}\IeC {\~a}o do FreeRTOS}{66}{subsection.4.4.2}% 
+\contentsline {section}{\numberline {4.5}Desenvolvimento da Camada de Servi\IeC {\c c}os do Sistema}{67}{section.4.5}% 
+\contentsline {subsection}{\numberline {4.5.1}Desenvolvimento da UML}{69}{subsection.4.5.1}% 
+\contentsline {section}{\numberline {4.6}Desenvolvimento do C\IeC {\'o}digo}{71}{section.4.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Resultados e Discuss\IeC {\~a}o}}{69}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Aquisi\IeC {\c c}\IeC {\~a}o e Armazenamento de Dados}{69}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Consumo}{70}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Modos de Opera\IeC {\c c}\IeC {\~a}o}{72}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Sistema Anti Travamento}{78}{section.5.4}% 
-\contentsline {section}{\numberline {5.5}Aloca\IeC {\c c}\IeC {\~a}o de Memoria do FreeRTOS e do CSS}{80}{section.5.5}% 
-\contentsline {section}{\numberline {5.6}Printed Circuit Board}{80}{section.5.6}% 
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Resultados e Discuss\IeC {\~a}o}}{73}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Aquisi\IeC {\c c}\IeC {\~a}o e Armazenamento de Dados}{73}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Consumo}{74}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Modos de Opera\IeC {\c c}\IeC {\~a}o}{76}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Sistema Antitravamento}{80}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Aloca\IeC {\c c}\IeC {\~a}o de Memoria do FreeRTOS e da CSS}{82}{section.5.5}% 
+\contentsline {section}{\numberline {5.6}Printed Circuit Board}{84}{section.5.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o e Recomenda\IeC {\c c}\IeC {\~o}es}}{83}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Conclus\IeC {\~a}o}{83}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Recomenda\IeC {\c c}\IeC {\~o}es}{84}{section.6.2}% 
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o e Recomenda\IeC {\c c}\IeC {\~o}es}}{85}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Conclus\IeC {\~a}o}{85}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Recomenda\IeC {\c c}\IeC {\~o}es}{86}{section.6.2}% 
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\IeC {\^E}NCIAS}}{87}{chapter.7}% 
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {REFER\IeC {\^E}NCIAS}}{89}{chapter.7}% 
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{93}{section*.73}% 
+\contentsline {part}{\uppercase {Ap\^endices}}{95}{section*.75}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {An\IeC {\'a}lise das Miss\IeC {\~o}es Anteriores}}{95}{appendix.A}% 
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {An\IeC {\'a}lise das Miss\IeC {\~o}es Anteriores}}{97}{appendix.A}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Requisitos do OBC}}{97}{appendix.B}% 
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Requisitos do OBC}}{99}{appendix.B}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Modos de Opera\IeC {\c c}\IeC {\~a}o}}{99}{appendix.C}% 
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Modos de Opera\IeC {\c c}\IeC {\~a}o}}{101}{appendix.C}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Estimativa de Armazenamento de Dados}}{101}{appendix.D}% 
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Estimativa de Armazenamento de Dados}}{103}{appendix.D}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase {Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico}}{107}{appendix.E}% 
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase {Esquem\IeC {\'a}tico Eletr\IeC {\^o}nico}}{109}{appendix.E}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase {\textit {Bill of Material}}}{119}{appendix.F}% 
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase {\textit {Bill of Material}}}{121}{appendix.F}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {G}\MakeTextUppercase {Fluxogramas da Camada de Servi\IeC {\c c}o}}{121}{appendix.G}% 
+\contentsline {appendix}{\chapternumberline {G}\MakeTextUppercase {Fluxogramas da Camada de Servi\IeC {\c c}o}}{123}{appendix.G}% 
