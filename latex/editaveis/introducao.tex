@@ -14,17 +14,27 @@
  
 Pesquisadores da Universidade de Brasília (UnB) começaram a estudar a viabilidade de uma missão CubeSat 3U, para demonstrador tecnológico. Alguns estudos já começaram a ser realizados, com o intuito de oferecer soluções para essa futura missão
 
+\begin{comment}
+	content...
+
 Os pesquisadores da Universidade de Brasília (UnB) estão estudando a viabilidade de uma missão CubeSat 3U, para demonstrador tecnológico.O Instituto de Aviação Varsóvia (ILOT, do polonês \textit{Instytut Lotnictwa}) e a Universidade de Brasília (UNB) decidiram firmar uma cooperação tecnológica, em novembro de 2014. Entre várias oportunidades, essa cooperação possibilita estágios para alunos de graduação em Engenharia Aeroespacial no ILOT. Uma nova proposta está sendo discutida entre os pesquisadores das duas instituições, visando a criação de uma missão 3U CubeSat.
+\end{comment}
 
 Essa missão será destinada à validação de conceitos e teste de componentes, enquadrando-se como demonstrador tecnológico. Os objetivos iniciais, levantados pelos pesquisadores, são: uso de câmeras para monitoramento das calotas polares, com o intuito de estudar os efeitos da poluição; uso de um \textit{Pulsed Plasma Thruster} (PPT) para estudo de controle orbital;  uso de um acelerômetro para mapeamento do campo gravitacional terrestre.
 
 Um projeto desse porte abrirá várias oportunidades de pesquisa na área de subsistemas satelitais, sensoriamento remoto, controle orbital, entre outros. Alguns estudos já estão sendo realizados, com o intuito de oferecer soluções para essa futura missão. O presente trabalho faz parte dessa série de pesquisas e tem o intuito de realizar a construção de um computador de bordo (OBC, do inglês \textit{On-Board Computer}) para CubeSats.
 
-Com o proposito de oferecer uma base para o desenvolvimento do OBC, nos próximos capítulos será abordado um pouco melhor o contexto dos pequenos satélites e sua importância para o ambiente acadêmico. 
+Com o propósito de oferecer uma base para o desenvolvimento do OBC, nos próximos capítulos será abordado um pouco melhor o contexto dos pequenos satélites e sua importância para o ambiente acadêmico. 
 
-\section{Objetivos}
+\section{Objetivo}
 
-Este trabalho tem como objetivo principal o desenvolvimento de um OBC para o controle e gerenciamento do CubeSat da futura missão.  Os objetivos específicos são:
+\subsection{Objetivo Geral}
+
+Este trabalho tem como objetivo principal o desenvolvimento de um OBC para o controle e gerenciamento do CubeSat da futura missão.  
+
+\subsection{Objetivo Específico}
+
+Como forma de complementar o objetivo geral, os objetivos específicos da pesquisa são:
 
 \begin{itemize}
 	
@@ -44,9 +54,10 @@ Logo em seguida, foi feito o projeto preliminar do sistema. Para a parte de \tex
 
 Em paralelo ao estudo preliminar, foram realizados testes em \textit{protoboard}, visando a validação de alguns subsistemas separadamente. Nessa fase, os códigos para cada subsistema foram testados e, em seguida, unidos em um único código.
 
-Por fim, após a validação do sistema em \textit{protoboard}, realizou-se o projeto final do sistema. Para a parte de \textit{hardware}, foram realizados os esquemáticos, \textit{layout} da PCB (do inglês \textit{Printed Circuit Board}) e o BOM (do inglês \textit{Bill of Materials}). Ja para a parte de \textit{software}, foi feito a arquitetura do sistema, diagrama UML (do inglês \textit{Unified Modeling Language}), fluxograma das rotinas e código embarcado.
 
 \begin{comment}
+Por fim, após a validação do sistema em \textit{protoboard}, realizou-se o projeto final do sistema. Para a parte de \textit{hardware}, foram realizados os esquemáticos, \textit{layout} da PCB (do inglês \textit{Printed Circuit Board}) e o BOM (do inglês \textit{Bill of Materials}). Já para a parte de \textit{software}, foi feito a arquitetura do sistema, diagrama UML (do inglês \textit{Unified Modeling Language}), fluxograma das rotinas e código embarcado.
+
 \hl{*********}
 Por fim, após a validação do sistema em \textit{protoboard}, será feito o  projeto final do sistema. Para a parte de \textit{hardware}, serão entregues os esquemáticos, \textit{layout} da PCB (do inglês \textit{Printed Circuit Board}), BOM (do inglês \textit{Bill of Materials}) e simulações de circuitos analógicos. Para a parte de \textit{software}, será entregue a arquitetura do sistema, diagrama UML (do inglês \textit{Unified Modeling Language}) e fluxograma das rotinas.
 \hl{*********}
@@ -66,3 +77,7 @@ O TCC2 visará a criação da placa de circuito impresso, prototipagem, teste da
 	\label{fig01}
 \end{figure}
 \end{comment}
+
+\section{Divisão do Trabalho}
+
+Este trabalho é dividido em cinco partes. A primeira parte, \nameref{referencialTeorico}, tem o objetivo de introduzir os conceitos básicos para a concepção do trabalho. Já a segunda parte, \nameref{secaoHardware} e \nameref{secaoSoftware}, tem a finalidade de mostrar o desenvolvimento do software e do hardware do OBC. Após o detalhamento do desenvolvimento, será exposto os resultados obtidos na seção \nameref{secaoResul}. Por fim, na parte quarta parte será exposto as ideias que concluem o projeto, \nameref{secaoCR}.

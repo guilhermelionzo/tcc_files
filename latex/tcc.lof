@@ -1,5 +1,5 @@
 \babel@toc {brazil}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces Categoria de Pequenos Sat\IeC {\'e}lites e alguns exemplos.\relax }}{25}{figure.caption.11}% 
+\contentsline {figure}{\numberline {1}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Categoria de Pequenos Sat\IeC {\'e}lites e alguns exemplos.}\relax }}{25}{figure.caption.11}% 
 \contentsline {figure}{\numberline {2}{\ignorespaces Lan\IeC {\c c}amento de pequenos sat\IeC {\'e}lites entre 1995 e 2014.\relax }}{26}{figure.caption.12}% 
 \contentsline {figure}{\numberline {3}{\ignorespaces Algumas varia\IeC {\c c}\IeC {\~o}es de CubeSat.\relax }}{27}{figure.caption.13}% 
 \contentsline {figure}{\numberline {4}{\ignorespaces Especifica\IeC {\c c}\IeC {\~o}es Estruturais para um CubeSat 3U+.\relax }}{28}{figure.caption.14}% 
@@ -26,12 +26,12 @@
 \contentsline {figure}{\numberline {25}{\ignorespaces Arquitetura de abstra\IeC {\c c}\IeC {\~a}o em Camadas.\relax }}{60}{figure.caption.48}% 
 \contentsline {figure}{\numberline {26}{\ignorespaces Estados das Tasks no FreeRTOS\relax }}{64}{figure.caption.50}% 
 \contentsline {figure}{\numberline {27}{\ignorespaces Exemplo Timer UML.\relax }}{68}{figure.caption.53}% 
-\contentsline {figure}{\numberline {28}{\ignorespaces Maquina de Estados da Camada de Servi\IeC {\c c}o.\relax }}{69}{figure.caption.54}% 
+\contentsline {figure}{\numberline {28}{\ignorespaces M\IeC {\'a}quina de Estados da Camada de Servi\IeC {\c c}o.\relax }}{69}{figure.caption.54}% 
 \contentsline {figure}{\numberline {29}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do sistema.\relax }}{70}{figure.caption.55}% 
 \contentsline {figure}{\numberline {30}{\ignorespaces Diagrama de Arquivos do Sistema.\relax }}{71}{figure.caption.56}% 
-\contentsline {figure}{\numberline {31}{\ignorespaces Protoboard com os componentes COTS e a LaunchPad.\relax }}{73}{figure.caption.57}% 
+\contentsline {figure}{\numberline {31}{\ignorespaces Protoboard com os componentes COTS e a \textit {LaunchPad}.\relax }}{73}{figure.caption.57}% 
 \contentsline {figure}{\numberline {32}{\ignorespaces Formato do Pacote de Telemetria.\relax }}{74}{figure.caption.58}% 
-\contentsline {figure}{\numberline {33}{\ignorespaces Dados da telemetria armazenados no cart\IeC {\~a}o de memoria.\relax }}{74}{figure.caption.59}% 
+\contentsline {figure}{\numberline {33}{\ignorespaces Dados da telemetria armazenados no cart\IeC {\~a}o de mem\IeC {\'o}ria.\relax }}{74}{figure.caption.59}% 
 \contentsline {figure}{\numberline {34}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Nominal (amarelo).\relax }}{75}{figure.caption.60}% 
 \contentsline {figure}{\numberline {35}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre os Modos de hiberna\IeC {\c c}\IeC {\~a}o (azul) e Pouca Bateria (amarelo).\relax }}{76}{figure.caption.61}% 
 \contentsline {figure}{\numberline {36}{\ignorespaces Snapshoot no Tracealyzer durante a inicializa\IeC {\c c}\IeC {\~a}o do sistema.\relax }}{77}{figure.caption.62}% 
@@ -41,7 +41,7 @@
 \contentsline {figure}{\numberline {40}{\ignorespaces Snapshoot no Tracealyzer do sistema executando HB\_MODE.\relax }}{79}{figure.caption.66}% 
 \contentsline {figure}{\numberline {41}{\ignorespaces Snapshoot no Tracealyzer do sistema executando em todos os modos.\relax }}{80}{figure.caption.67}% 
 \contentsline {figure}{\numberline {42}{\ignorespaces Procedimento para simula\IeC {\c c}\IeC {\~a}o de travamento do \textit {TT\&CTask}.\relax }}{81}{figure.caption.68}% 
-\contentsline {figure}{\numberline {43}{\ignorespaces Event Log no Tracealyzer do \textit {WatchDogTask} sendo reinicializado.\relax }}{81}{figure.caption.69}% 
+\contentsline {figure}{\numberline {43}{\ignorespaces Event Log no Tracealyzer do \textit {WatchDogTask} sendo reinicializado.\relax }}{82}{figure.caption.69}% 
 \contentsline {figure}{\numberline {44}{\ignorespaces Grafico da CPU no Tracealyzer do \textit {WatchDogTask} sendo reinicializado.\relax }}{82}{figure.caption.70}% 
 \contentsline {figure}{\numberline {45}{\ignorespaces Valores de FLASH e RAM alocados para o \textit {FreeRTOS}.\relax }}{83}{figure.caption.71}% 
 \contentsline {figure}{\numberline {46}{\ignorespaces Valores de FLASH e RAM alocados para o \textit {software} embarcado.\relax }}{83}{figure.caption.72}% 

@@ -1,49 +1,56 @@
 \chapter[Referencial Teórico]{Referencial Teórico}
-
-Esta seção visa oferecer uma os conceitos básicos para o entendimento deste trabalho de pesquisa. Inicialmente será mostrado a categoria de pequenos satélites e a concepção do padrão CubeSat. Logo em seguida, serão expostos os principais subsistemas de um CubeSat, dando ênfase no computador de bordo. Será mostrado a importância do barramento PC104 e as interferências do ambiente espacial em sistemas embarcados.
+\label{referencialTeorico}
+Esta seção visa oferecer os conceitos básicos para o entendimento deste trabalho de pesquisa. Inicialmente será apresentado a categoria de pequenos satélites e a concepção do padrão CubeSat. Logo em seguida, serão expostos os principais subsistemas de um CubeSat, dando ênfase no computador de bordo. Por fim, será mostrado a importância do barramento PC104 e as interferências do ambiente espacial em sistemas embarcados.
 
 
 \section{Pequenos Satélites}
 
 O termo “pequenos satélites” é designado para caracterizar satélites que possuem massa úmida (massa do satélite mais massa do propelente) inferior a 500 kg. Esta definição cumpre a terminologia estabelecida pelo \textit{Small Space Technology Program} (SSTP) da NASA (FROST; AGASID, 2015). As subcategorias de pequenos satélites, e alguns exemplos de espaçonaves já lançadas, podem ser observadas na figura abaixo.
 
+\begin{center}
+		\footnotesize{Fonte:(BARNHART, 2008, pág.42).}
+\end{center}
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-	Fonte:(BARNHART, 2008, pág.42).
+
 	\includegraphics[keepaspectratio=true,scale=0.55]{figuras/categoria_satellite.PNG}
-	{\small\caption{Categoria de Pequenos Satélites e alguns exemplos.}}
+	\caption{\footnotesize{Categoria de Pequenos Satélites e alguns exemplos.}}
 	\label{fig02}
+}
 \end{figure}
 \FloatBarrier
 
 As espaçonaves são normalmente agrupadas conforme sua massa. Como visto na figura acima, pequenos satélites podem ser divididos nas seguintes subcategorias: minissatélites com massa entre 100-500kg, microsatélites com massa entre 10-100kg, nanosatélites com massa entre 1-10kg, picosatélites com massa entre 0.1-1kg e femtosatélites com massa entre 1-100g. No limite superior dessa categoria, existem minisatélites como o Globalstar, satélite de telecomunicações da empresa Globalstar LP, que possui massa úmida de 450kg (GLOBALSTAR, L.P, 2000). Já no extremo inferior, existem projetos como o KickSat que colocou em órbita 128 femtosatélites  com 5g (GRIFFITHS, 2017).
 
-Nas últimas décadas, houve um aumento no lançamento de nanosatélites. Esse crescimento pode ser observado na Figura \ref{fig03}, que mostra a quantidade de pequenos satélites colocados em órbita entre os anos de 1995 e 2014. Fatores como a miniaturização da eletrônica, otimização dos veículos lançadores e crescimento de empresas no setor ajudaram nesse crescimento (FACCHINETTI et al., 2016).
+Nas últimas décadas, houve um aumento no lançamento de nanosatélites. Esse crescimento pode ser observado na figura abaixo, que mostra a quantidade de pequenos satélites colocados em órbita entre os anos de 1995 e 2014. Fatores como a miniaturização da eletrônica, otimização dos veículos lançadores e crescimento de empresas no setor ajudaram nesse crescimento\footnote{Os CubeSats também são utilizados em modalidade \textit{ballonSat}, como é o exemplo do LAICAnSat. O grupo de pesquisas LAICA possui um linha de pesquisas no uso de balões estratosféricos para testes de plataformas com padrão CubeSat. (BARBOSA, 2019)} (FACCHINETTI et al., 2016).
 
-{\small
+
 	\begin{figure}[h]
 		\centering
-		Fonte:(WEKERLE; FILHO, 2017, pág.3).
+		\footnotesize{Fonte:(WEKERLE; FILHO, 2017, pág.3).}
 		\includegraphics[keepaspectratio=true,scale=0.55]{figuras/lancamentoPequenoSatellite.PNG}
-		\caption{Lançamento de pequenos satélites entre 1995 e 2014.}
-		\label{fig03}
+		\footnotesize{\caption{Lançamento de pequenos satélites entre 1995 e 2014.}}
+		\label{fig03A}
 	\end{figure}
-}
+
 
 Fazendo uma análise minuciosa nos sites Nanosatellite Database\footnote{ KULU, Erik. Nanosatellite Database by Erik. 2018. Disponível em: \url{http://www.nanosats.eu/}. Acesso em: 14 maio 2018.} e Space Launch Report\footnote{N2YO. Browse Satellites by Launch date. 2018. Disponível em:\url{https://www.n2yo.com/browse/}.  Acesso em: 14 maio 2018.}, sites que armazenam dados de missões satelitais, observa-se que em 2007 cerca de 2,6\%(9 de 348 satélites) eram CubeSats. Já em 2017 o número de lançamentos passou para 57,6\% (295 de 512 satélites). Tendo como base esses valores, pode-se afirmar que os CubeSats ajudaram a popularização da categoria de nanosatélites.
 
 De forma resumida, o CubeSat é um satélite cúbico de 10 cm de aresta e que pesa apenas alguns quilogramas, sendo muito utilizado no meio acadêmico como demonstrador tecnológico. Eles podem ser compostos por um único cubo (uma unidade ou 1U) ou vários cubos combinados formando, por exemplo, unidades 3U e 6U. A Figura \ref{fig04} mostra as configurações mais usuais de um CubeSat (FROST; AGASID, 2015).
 
-{\small
+
 	\begin{figure}[h]
+\footnotesize{
 		\centering
 		Fonte:(MABROUK, 2017, pág.1).
 		\includegraphics[keepaspectratio=true,scale=0.58]{figuras/cubesatVariacoes.PNG}
 		\caption{Algumas variações de CubeSat.}
 		\label{fig04}
+	}
 	\end{figure}
-}
+
 
 \section{Padrão CubeSat}
 
@@ -55,23 +62,25 @@ Mais tarde naquele ano, Twiggs e Puig-Suari disponibilizaram as especificações
 
 Com o passar dos anos, a documentação do \textit{CubeSat Standard} sofreu algumas alterações. A versão mais atualizada pode ser encontrada em alguns sites, como o Cubesat.org\footnote{CubeSat INFO. 2018. Disponível em:\url{https://goo.gl/P8vZYy}. Acesso em: 14 maio 2018.}. A Figura \ref{fig05} mostra as dimensões padronizadas de um CubeSat 3U+ (CUBESAT PROGRAM, 2014). Um ponto a ser mencionado é que o 3U+ foi criado para atender as demandas de sensoriamento remoto, possibilitando colocar uma câmera sem prejudicar o espaço interno da plataforma.
 
-{\small
+
 	\begin{figure}[h]
+		\footnotesize{
 		\centering
 		Fonte:(CUBESAT PROGRAM, 2014, pág.31).
 		\includegraphics[keepaspectratio=true,scale=0.55]{figuras/cubesat3u+.PNG}
 		\caption{Especificações Estruturais para um CubeSat 3U+.}		
 		\label{fig05}
+	}
 	\end{figure}
-}
 
-Graças aos CubeSats, muitas universidades possuem seu próprio programa espacial. Porém, o uso dessa tecnologia não é exclusiva apenas para grandes universidades; escolas secundárias, ensino médio e escolas primárias puderam desenvolver suas próprias missões (DEEPAK; TWIGGS, 2012). Um exemplo de projeto é o UbatubaSat, CubeSat feito pelos estudantes da escola municipal Tancredo de Almeida Neves, em Ubatuba-SP (FIORAVANTI, 2011).
+
+Graças aos CubeSats, muitas universidades possuem seu próprio programa espacial. Porém, o uso dessa tecnologia não é exclusiva apenas para grandes universidades. Escolas secundárias, ensino médio e escolas primárias puderam desenvolver suas próprias missões (DEEPAK; TWIGGS, 2012). Um exemplo de projeto é o UbatubaSat, CubeSat feito pelos estudantes da escola municipal Tancredo de Almeida Neves, em Ubatuba-SP (FIORAVANTI, 2011).
 
 Essa facilidade de acesso ao espaço é consequência de algumas características que o padrão CubeSat dispõem. De acordo com a empresa ISIS (2018), esses aspectos podem ser sintetizados em sete atributos:
 
 \begin{itemize}
 	
-	\item \textbf{Modularidade}: Por possuir um tamanho normatizado, tornou-se possível desenvolver módulos funcionais padronizados, como subsistemas de energía, comunicação, entre outros. Esse aspecto fez com que soluções de prateleira (COTS, do inglês \textit{Commercial Off-The-Shelf}) fossem amplamente utilizadas no projeto de algumas missões, agilizando e barateando o desenvolvimento do CubeSat;
+	\item \textbf{Modularidade}: Por possuir um tamanho normatizado, tornou-se possível desenvolver módulos funcionais padronizados, como subsistemas de energia, comunicação, entre outros. Esse aspecto fez com que soluções de prateleira (COTS, do inglês \textit{Commercial Off-The-Shelf}) fossem amplamente utilizadas no projeto de algumas missões, agilizando e barateando o desenvolvimento do CubeSat;
 	
 	\item \textbf{Lançamento}: Os CubeSats são tipicamente lançados no espaço como cargas contidas em contêineres padronizados, por exemplo, P-POD, visando a redução da complexidade e custo do lançamento;
 	\item \textbf{Custo}: Geralmente as missões CubeSat são desenvolvidas usando um "orçamento baixo", comparado às missões tradicionais;
@@ -84,18 +93,20 @@ Essa facilidade de acesso ao espaço é consequência de algumas característica
 
 \section{Principais Subsistemas de um CubeSat}
 
-Os CubeSats são formados por duas partes principais, que são: a Carga Útil (do inglês \textit{Payload}) e a plataforma (chamada em inglês de \textit{Bus}). A Carga Útil é definida de acordo com a missão do satélite, por exemplo: satélites para observação da Terra possuem como carga útil uma câmera; satélites para telecomunicações possuem um rádio; etc. A Plataforma tem o objetivo de abrigar a Carga Útil para que ela funcione normalmente no ambiente espacial. A Plataforma é geralmente composta por: Sistema Estrutural (SS, do inglês \textit{Structural System}), Sistema de Potência Elética (EPS, do inglês \textit{Electrical Power System}), Sistema de Controle e Determinação de Órbita \& Atitude (AODCS\footnote{Sensores Inerciais: giroscópios e acelerômetros.} ,do inglês \textit{Attitude and Orbit Determination and Control System}), Controle de Telecomando e Telemetria (TT\&C, do inglês \textit{Telemetry Telecomand Control}) e o Computador de Bordo (OBC, do inglês \textit{On-Board Computer}). 
+Os CubeSats são formados por duas partes principais, que são: a Carga Útil (do inglês \textit{Payload}) e a Plataforma (chamada em inglês de \textit{Bus}). A Carga Útil é definida de acordo com a missão do satélite, por exemplo: satélites para observação da Terra possuem como carga útil uma câmera; satélites para telecomunicações possuem um rádio; etc. A Plataforma tem o objetivo de abrigar a Carga Útil para que ela funcione normalmente no ambiente espacial. A Plataforma é geralmente composta por: Sistema Estrutural (SS, do inglês \textit{Structural System}), Sistema de Potência Elética (EPS, do inglês \textit{Electrical Power System}), Sistema de Controle e Determinação de Órbita \& Atitude (AODCS\footnote{Sensores Inerciais: giroscópios e acelerômetros.} ,do inglês \textit{Attitude and Orbit Determination and Control System}), Controle de Telecomando e Telemetria (TT\&C, do inglês \textit{Telemetry Telecomand Control}) e o Computador de Bordo (OBC, do inglês \textit{On-Board Computer}). 	
 
 \newpage
 
 A Figura \ref{fig06} visa ilustrar esses subsistemas (ADDAIM; KHERRAS; ZANTOU, 2010).
 
 \begin{figure}[h]
+\footnotesize{
 	\centering
 	Fonte:(ADDAIM; KHERRAS ; ZANTOU, 2010, adaptado pág.6).
 	\includegraphics[keepaspectratio=true,scale=0.57]{figuras/estrutura_satellite.png}
 	\caption{Arquitetura de um Satélite.}	
 	\label{fig06}
+}
 \end{figure}
 \FloatBarrier
 
@@ -109,33 +120,40 @@ Abaixo há uma breve descrição dos subsistemas e alguns exemplos de componente
 	\item \textbf{SS}: Esse subsistema visa proteger o satélite dos efeitos do ambiente espacial e servir como interface com o veículo lançador. O SS deve ser leve e resistente, sem contar que deve blindar ao máximo a radiação espacial. Geralmente o material utilizado na estrutura é alguma liga de alumínio.  A Figura \ref{fig07} mostra o \textit{Structure Subsystem} da NanoAvionics\footnote{Empresa NanoAvionics. 2018. Disponível em:\url{https://n-avionics.com/}. Acesso em: 30 maio 2018.}.
 	
 	\begin{figure}[h]
+\footnotesize{
 		\centering
-		Fonte:(NANO AVIONICS, 2018, pág.1).	
+		Fonte:(NANO AVIONICS, 2018, pág.1).	\linebreak
 		\includegraphics[keepaspectratio=true,scale=0.45]{figuras/cubesat-structure-main.jpg}
 		\caption{Estrutura 3U Padrão NanoAvionics.}
 		\label{fig07}
+	}
 	\end{figure}
 	\FloatBarrier
 	
 	\item \textbf{EPS}: O \textit{Electrical Power System} tem o objetivo de fornecer energia elétrica à todos os subsistemas, inclusive a carga útil. Ele é responsável pela geração, armazenamento e distribuição da energia elétrica. Os principais elementos de um EPS são: baterias, painéis solares e switchs. A Figura \ref{fig08} é mostra os principais elementos de um EPS.
 	
 	\begin{figure}[h]
+	\footnotesize{
 		\centering
 		Fonte:(CUBESTAR, 2018, pág.1).\linebreak
+		
 		\includegraphics[keepaspectratio=true,scale=2.2]{figuras/eps.png}
 		\caption{Principais componentes de um EPS.}
 		\label{fig08}
+	}
 	\end{figure}
 	\FloatBarrier
 	
-	\item \textbf{AODCS}: Esse subsistema tem o objetivo de garantir que câmeras e antenas estejam apontados para os alvos predeterminados. Os principais componentes do AODCS são: rodas de reação, sensores inerciais, fotodiodos  e magnetorques. Recentemente estão sendo utilizados módulos PPT (\textit{Pulsed Plasma Thruster}) para compensar o arrasto atmosférico. A Figura \ref{fig09} é mostra o AODCS (esquerda)  e PPT (direita) da empresa Clyde Space\footnote{Empresa Clyde Space. 2018. Disponível em:\url{https://www.clyde.space/}. Acesso em: 30 maio 2018.}.
+	\item \textbf{AODCS}: Esse subsistema tem o objetivo de garantir que câmeras e antenas estejam apontadas para os alvos pré determinados. Os principais componentes do AODCS são: rodas de reação, sensores inerciais, fotodiodos  e magnetorques. Recentemente estão sendo utilizados módulos PPT (\textit{Pulsed Plasma Thruster}) para compensar o arrasto atmosférico. A Figura \ref{fig09} é mostra o AODCS (esquerda)  e PPT (direita) da empresa Clyde Space\footnote{Empresa Clyde Space. 2018. Disponível em:\url{https://www.clyde.space/}. Acesso em: 30 maio 2018.}.
 	
 	\begin{figure}[h]
+	\footnotesize{
 		\centering
 		Fonte: (CLYDE SPACE, 2018, pág.1).\linebreak
 		\includegraphics[keepaspectratio=true,scale=2.7]{figuras/aodcs.png}
 		\caption{Componentes AODCS da empresa Clyde Space.}
 		\label{fig09}
+	}
 	\end{figure}
 	\FloatBarrier
 	
@@ -143,22 +161,26 @@ Abaixo há uma breve descrição dos subsistemas e alguns exemplos de componente
 	
 	
 	\begin{figure}[h]
+	\footnotesize{
 		\centering
 		Fonte:(ENDUROSAT, 2018a).\linebreak
 		\includegraphics[keepaspectratio=true,scale=2.2]{figuras/tt_c.png}
 		\caption{Componentes TT\&C da empresa EnduroSat.}
 		\label{fig10}
+	}
 	\end{figure}
 	\FloatBarrier
 	
-	\item \textbf{OBC}: O satélite precisa de um subsistema capaz de gerenciar todos os outros subsistemas. O OBC tem o intuito de garantir o funcionamento de todos os subsistemas de acordo com os telecomandos, provindos da estação de solo, e do software embarcado. Os principais componentes são: microcontrolador, sistema operacional e módulo de armazenamento.  A Figura \ref{fig11} mostra o OBC da empresa EnduroSat.
+	\item \textbf{OBC}: O satélite precisa de um subsistema capaz de gerenciar todos os outros subsistemas. O OBC tem o intuito de garantir o funcionamento de todos os subsistemas de acordo com os telecomandos, provindos da estação de solo, e do \textit{software} embarcado. Os principais componentes são: microcontrolador, sistema operacional e módulo de armazenamento.  A Figura \ref{fig11} mostra o OBC da empresa EnduroSat.
 	
 	\begin{figure}[h]
+		\footnotesize{
 		\centering	
 		Fonte:(ENDUROSAT, 2018b, pág.1).
 		\includegraphics[keepaspectratio=true,scale=0.2]{figuras/Cubesat-OBC-module-1.jpg}
 		\caption{Computador de bordo da empresa EnduroSat.}
 		\label{fig11}
+	}
 	\end{figure}
 	\FloatBarrier
 \end{itemize}
@@ -183,24 +205,26 @@ As funções mais importantes de um OBC são exemplificadas abaixo (STRAS et al.
 
 \subsection{Computadores de Bordo Existentes}
 
-Essa avaliação tem como objetivo apresentar ao leitor alguns OBCs, utilizados em missões CubeSat, e destacar as características mais relevantes. Ao final dessa seção há o resumo das características mais relevantes destes OBcs. Uma coleta mais detalhada foi realizada e se encontra no Apêndice \ref{apendicea}.
+Essa avaliação tem como objetivo apresentar ao leitor alguns OBCs, utilizados em missões CubeSat, e destacar as características mais relevantes. Ao final dessa seção há o resumo das características mais relevantes destes OBCs. Uma coleta mais detalhada foi realizada e se encontra no Apêndice \ref{apendicea}.
 
 \begin{itemize}
 	
 	\item \textbf{FloripaSat OBDH}
 	
-	O projeto FloripaSat, da Universidade Federal de Santa Catarina (UFSC), possui um  computador de bordo que é responsável pela sincronização de ações e fluxo de dados entre os subsistemas (\textit{Payload} e EPS) e com a Segmento Terrestre. Esse subsistema é composto por seis submodulos: CPU (MCU: CPU + RAM + \textit{Program Flash}), memória não volátil, \textit{Driver}s de controle, unidade de medição inercial (IMU), Sensores de Corrente (sensor de Sol) e interfaces de comunicação (FLORIPASAT,2016).
+	O projeto FloripaSat, da Universidade Federal de Santa Catarina (UFSC), possui um  computador de bordo que é responsável pela sincronização de ações e fluxo de dados entre os subsistemas (\textit{Payload} e EPS) e com a Segmento Terrestre. Esse subsistema é composto por seis submodulos: CPU (MCU: CPU + RAM + \textit{Program Flash}), memória não volátil, \textit{Drivers} de controle, unidade de medição inercial (IMU), Sensores de Corrente (sensor de Sol) e interfaces de comunicação (FLORIPASAT,2016).
 	
 	O sistema responsável pela execução do \textit{firmware} consiste de SoC que contém uma CPU, Memória RAM e Flash (usado para armazenamento de programas e status dos registradores). O Microcontrolador escolhido foi o MSP430F6659IPZ da Texas Instruments. Tal microcontrolador, conhecido por ter um baixo consumo, possui sete modos de operação de consumo, 4 timers de 16-bits, 12 AD/DA de 12-bits, 6 interfaces de comunicação serial, bloco de \textit{real-time clock} (RTC) e mais de 74 pinos de I/O. O \textit{clock} de operação do OBDH é de 32MHz (FLORIPASAT,2016).
 	
 	Provendo um sistema de redundância, há um monitor de tensão com um \textit{Watchdog Timer} (FLORIPASAT,2016). A Figura \ref{fig12} mostra a arquitetura do FloripaSat OBDH.
 	
 	\begin{figure}[h]
+		\footnotesize{
 		\centering
 		Fonte: (FLORIPASAT,2016, pág.45).\linebreak
 		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/floripasatobdh.PNG}
 		\caption{Arquitetura do OBDH do FloripaSat.}
 		\label{fig12}
+	}
 	\end{figure}
 	\FloatBarrier
 	
@@ -211,12 +235,14 @@ Essa avaliação tem como objetivo apresentar ao leitor alguns OBCs, utilizados 
 	A arquitetura proposta utiliza o processador TMS570LS0432 do fabricante Texas Instruments, o qual possui: núcleo ARM Cortex-R4 em duas CPUs; detecção e correção de falhas em suas memórias RAM e ROM internas; \textit{hardware} BIST (Auto-teste interno de fábrica) tanto na CPU quanto na memória RAM; e outras características de segurança como o monitoramento do \textit{clock} e da tensão de alimentação. Uma memória \textit{Flash} externa foi utilizada para armazenamento de código e dados. Foram disponibilizadas duas interfaces I2C para a comunicação com os subsistemas existentes em um CubeSat, sendo uma exclusiva para comunicação com o Transponder e outra comum para os demais. A arquitetura é complementada por uma interface UART para diagnóstico e depuração, sinais PWM para acionamento das bobinas de torque e entradas ADC para medição da intensidade da luz solar nas faces do satélite. Estão previstos ainda um cartão MicroSD para armazenamentos de dados e uma interface CAN para tráfego de informações transmitidas em tempo real, garantindo assim um controle rígido de erros e a recepção de mensagens (OPENOBC, 2017).
 	
 	\begin{figure}[h]
+	\footnotesize{
 		\centering
 		
 		Fonte: (OPENOBC, 2017, pág.28). \linebreak
 		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/openObc.PNG}
 		\caption{Arquitetura do OpenOBC.}
 		\label{fig13}
+	}
 	\end{figure}
 	\FloatBarrier
 	
@@ -227,24 +253,29 @@ Essa avaliação tem como objetivo apresentar ao leitor alguns OBCs, utilizados 
 	A fabricante não disponibilizou a arquitetura do iOBC. A Figura \ref{fig14} mostra a placa eletrônica do iOBC. 
 	
 	\begin{figure}[h]
+	\footnotesize{
 		\centering
 		Fonte: Empresa ISIS\footnote{Empresa ISIS. 2018. Disponível em:\url{goo.gl/NfTdwS}. Acesso em: 31 maio 2018.}. \linebreak
 		\includegraphics[keepaspectratio=true,scale=0.44]{figuras/isis.PNG}
 		\caption{Placa Eletrônica - iOBC.}
 		\label{fig14}
+	}
 	\end{figure}
 	\FloatBarrier
+	
 	\newpage
 	\item \textbf{FM430 \textit{Flight Module}}
 	
 	O FM430, da fabricante Pumpkin Inc, é uma solução compacta para sistemas ambientais difíceis. Possui como microcontrolador o MSP430F1612 de 16-bit, da fabricante Texas Instruments, com velocidade de \textit{clock} de 7,3728 MHz. 50-60kB ROM e 2-10kB de RAM, 48 pinos I/O, 2 USART, 2 SPI, 1 I2C, 12-bit A/D e D/A, sensor de temperatura. SD Card para armazenamento (32MB – 2GB). Uma porta USB (\textit{Universal Serial Bus}) e um conector de fonte de alimentação externa para facilitar a configuração pré-lançamento. A unidade do microcontrolador consome mais de 100 mW de potência (PUMPKIN,2008).
 	
 	\begin{figure}[h]
+	\footnotesize{
 		\centering
 		Fonte:(PUMPKIN, 2008, pág.6).\linebreak
 		\includegraphics[keepaspectratio=true,scale=0.55]{figuras/fm430.PNG}
 		\caption{Arquitetura do FM430.}
 		\label{fig15}
+	}
 	\end{figure}
 	\FloatBarrier
 \end{itemize}
@@ -280,7 +311,8 @@ Essa avaliação tem como objetivo apresentar ao leitor alguns OBCs, utilizados 
 					UART           & 3                  & 1                 & 7                 & 2                 \\ \hline
 		\end{tabular}}}
 	\end{table}
-	
+\centering
+\footnotesize{Fonte: Autoria própria.}
 \end{itemize}
 
 
@@ -305,11 +337,13 @@ O PC/104 é o padrão de placas eletrônicas mais utilizado na indústria e em m
 A tecnologia PC/104 é vantajosa para missões CubeSat devido a padronização de dimensões, barramentos, interfaces mecânicas e elétricas. Esses fatores acarretam na redução de custos, riscos e tempo envolvidos no projeto, sem contar na versatilidade de integrar outras soluções presentes no mercado, que utilizam o mesmo padrão (JANES,2006). A Figura \ref{fig16} mostra as dimensões mecânicas para uma placa PC/104 de 8-bits. 
 
 \begin{figure}[h]
+\footnotesize{
 	\centering
 	Fonte: (PC/104 Embedded Consortium, 2008, pág.15).\linebreak	
 	\includegraphics[keepaspectratio=true,scale=0.55]{figuras/pc104.PNG}
 	\caption{ PCB Padrão PC104 8-bits.}
 	\label{fig16}
+}
 \end{figure}
 \FloatBarrier
 
@@ -329,10 +363,15 @@ A quantidade de radiação que incide nos satélites depende da altitude e do ti
 De acordo com Petkov (2003), os efeitos provocados por essas radiações podem ser classificados de acordo com a Figura \ref{fig17}.
 
 \begin{figure}[h]
+\footnotesize{
 	\centering
-	\includegraphics[keepaspectratio=true,scale=0.55]{figuras/radiation.jpg}
+	\footnotesize{Fonte: (PETKOV, 2003, adaptado pág. 3).}
+	
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.58]{figuras/radiation_.png}
 	\caption{Classificação dos efeitos da Radiação Espacial.}
 	\label{fig17}
+}
 \end{figure}
 \FloatBarrier
 
@@ -353,9 +392,13 @@ De acordo com Petkov (2003), os efeitos provocados por essas radiações podem s
 					Total Ionizing Dose (TID)           & \begin{tabular}[c]{@{}l@{}}Incidência de radiação sobre o material. Ao longo do \\ tempo ocasiona mudança nas características elétricas, \\ levando à falhas\end{tabular} \\
 					Displacement Damage (DD)            & \begin{tabular}[c]{@{}l@{}}Deslocamento dos átomos em semicondutores, levando à \\ alteração das características elétricas do dispositivo\end{tabular}                    \\ \bottomrule
 		\end{tabular}}}
+	
+	\centering
+	\footnotesize{Fonte: (PETKOV, 2003, pág. 3).}
+	
 	\end{table}
 	
-	
+	\newpage
 	\item \textbf{ Efeito de Evento Único}
 	
 	Efeitos de Evento Único (SEE, do inglês Single Event Effect) são efeitos ocorridos em dispositivos eletrônicos devido a passagem de uma única partícula pelo sistema. Essa passagem pode mudar um elemento bi estável ou estado digital de uma memória, acarretando em efeitos temporários e permanentes (PETKOV, 2003).
@@ -376,7 +419,8 @@ De acordo com Petkov (2003), os efeitos provocados por essas radiações podem s
 					Enhanced Low Dose Rate Sensitivity (ELDRS) & \begin{tabular}[c]{@{}l@{}}Falha permanente do dispositivo causada pela \\ radiação em baixas doses\end{tabular}                    \\ \bottomrule
 		\end{tabular}}}
 	\end{table}
-	
+	\centering
+	\footnotesize{Fonte: (PETKOV, 2003, pág. 3).}
 \end{itemize}
 
 \subsection{Categoria de Componentes}
@@ -419,7 +463,7 @@ A resistência a radiação dos componentes é um fator muito importante para es
 	
 	\item \textit{Rad-Hard:}
 	\begin{itemize}
-		\item Projetado e processado para um nível de dureza específico
+		\item Projetado e processado para um nível de resistência específico
 		\item Vários testes realizados com o substrato do chip
 		\item Níveis de resistência: 
 		\begin{itemize}
@@ -443,7 +487,7 @@ Esse capítulo descreverá o desenvolvimento do \textit{hardware}. Inicialmente 
 \label{seção1_1}
 Para o desenvolvimento de qualquer projeto, a definição dos requisitos é essencial, pois essa etapa influenciará as demais fases e definirá as expectativas das partes interessadas. Durante a fase inicial do projeto, poucos requisitos foram especificados, pois o acordo da missão CubeSat estava em fase de discussão. 
 
-A abordagem utilizada para contornar essa situação foi adicionar requisitos de CubeSats já lançados à alguns requisitos já especificados para a missão. No Apêndice \ref{apendiceb} há uma explicação sobre essa abordagem. 
+A abordagem utilizada para contornar essa situação foi adicionar requisitos de CubeSats já lançados a alguns requisitos já especificados para a missão. No Apêndice \ref{apendiceb} há a explicação mas detalhada sobre essa abordagem. 
 
 Com base no Apêndice \ref{apendiceb}, foi possível delimitar as funcionalidades para o \textit{hardware} do sistema. Esses requisitos podem ser vistos na Tabela \ref{tabela1}.
 
@@ -463,6 +507,9 @@ Com base no Apêndice \ref{apendiceb}, foi possível delimitar as funcionalidade
 			OBC-H-R6            & Possuir soluções que protejam o sistema contra falhas.                                                                                                                                                                                        \\ \hline
 			OBC-H-R7            & Possuir armazenamento não volátil de dados.                                                                                                                                                                                                   \\ \bottomrule
 	\end{tabular}}
+	\centering
+\footnotesize{Fonte: Autoria própria.}
+
 \end{table}
 
 \section{Análise do Microcontrolador}
@@ -480,10 +527,10 @@ O microcontrolador é um dos componente mais importante do OBC, pois ele executa
 	Possuir GPIO (do inglês \textit{General-Purpose Input/Output}) se torna importante para a comunicação com outros subsistemas do satélite. 
 	
 	\item \textbf{Interfaces Seriais (UART, I2C, SPI):}
-	Os protocolos seriais são os mais utilizados entre os protocolos de comunicação digital. Com isso, possuir pinos dedicados à esses protocolos ajuda no desenvolvimento do OBC.
+	Os protocolos seriais são os mais utilizados entre os protocolos de comunicação digital. Com isso, possuir pinos dedicados a esses protocolos ajuda no desenvolvimento do OBC.
 	
 	\item \textbf{PWM:}
-	Para o controle de atitude será necessário utilizar motores de passo, consequentemente há a necessidade de pinos que gerem sinais PWM.
+	Para o controle de atitude será necessário utilizar motores de passo, consequentemente há necessidade de pinos que gerem sinais PWM.
 	
 	\item \textbf{Frequência de Operação:}
 	Em aplicações embarcadas, a performance do microcontrolador é normalmente proporcional à frequência do \textit{clock}.
@@ -514,6 +561,8 @@ A partir das características acima, procurou-se por microcontroladores das fabr
 				ATSAMD21J18      & \begin{tabular}[c]{@{}c@{}}5mW \\ @ 48MHz\end{tabular}    & 20 AD & 52  & 6 UART/SPI/I2C                                                    & sim & sim                                                       & 48MHz      & -40 a 85                                                                         \\
 				ADuCM360         & \begin{tabular}[c]{@{}c@{}}18,15mW \\ @16MHz\end{tabular} & 4 AD  & 19  & \begin{tabular}[c]{@{}c@{}}1 UART, \\ 1 SPI,\\ 2 I2C\end{tabular} & sim & sim                                                       & 16MHz      & -40 a 125                                                                        \\ \bottomrule
 	\end{tabular}}}
+	\centering
+\footnotesize{Fonte: Autoria própria.}
 \end{table}
 
 Após a seleção dos microcontroladores, foi colocado pesos para cada característica de acordo com a importância no sistema, como é visto na Tabela \ref{tabela3}. Vale a pena ressaltar que os dados acima foram retirados dos \textit{datasheet} de cada microcontrolador. 
@@ -536,6 +585,8 @@ Após a seleção dos microcontroladores, foi colocado pesos para cada caracter�
 				ATSAMD21J18      & 5       & 2,5 & 1,86 & 4               & 3   & 3                                                         & 2,4        & 3,03                                                                             & 24,79 \\
 				ADuCM360         & 1,93    & 0,5 & 0,68 & 3,5             & 3   & 3                                                         & 0,8        & 4                                                                                & 17,41 \\ \bottomrule
 	\end{tabular}}}
+	\centering
+\footnotesize{Fonte: Autoria própria.}
 \end{table}
 
 A partir da tabela acima pode-se observar que microcontroladores MSP432P4111 e o ATSAMD21J18 possuem as maiores notas. Ambos contam com processadores da família ARM Cortex M, sendo o Microchip da categoria M0+ e o TI da categoria M4F. Alguns pontos podem ser levantados em comparação aos dois microcontroladores:
@@ -551,14 +602,15 @@ A partir da tabela acima pode-se observar que microcontroladores MSP432P4111 e o
 
 
 \begin{figure}[h]
-	
+\footnotesize{	
 	\centering
-	\caption{ Performance dos processadores CORTEX-M.}
-	\includegraphics[keepaspectratio=true,scale=0.4]{figuras/arm-cortex-m-series-performance-graph.jpg}
-	
 	Fonte:(ARM Microcontrollers, 2018, pág.1).
+	\includegraphics[keepaspectratio=true,scale=0.4]{figuras/arm-cortex-m-series-performance-graph.jpg}
+	\caption{ Performance dos processadores CORTEX-M.}
+	
 	
 	\label{fig18}
+}
 \end{figure}
 \FloatBarrier
 
@@ -569,11 +621,13 @@ A partir da análise acima, pode-se concluir que o MSP432P4111 é a melhor opç�
 As características do MSP432P4111 serão apresentadas nessa seção. Será mostrado o processador, unidade de memória interna, periféricos e consumo de energia em cada modo de operação. As referências utilizadas para essa seção foram o DataSheet do microcontrolador (Texas Instruments, 2018) e o livro Microcontroller Engineering with MSP432 (BAI, 2016). A Figura \ref{fig19} mostra o diagrama de blocos do MSP432P4111.
 
 \begin{figure}[h]
+	\footnotesize{
 	\centering
 	Fonte: (Texas Instruments, 2018, pág.3).
 	\includegraphics[keepaspectratio=true,scale=0.8]{figuras/msp432.PNG}
 	\caption{Arquitetura do microcontrolador MSP432P4111.}	
 	\label{fig19}
+}
 \end{figure}
 \FloatBarrier
 
@@ -619,7 +673,7 @@ No Apêndice \ref{apendicec} há uma tabela que mostra todos os modos de operaç
 
 \section{Unidade de Armazenamento}
 
-Geralmente, em projetos de sistemas embarcados, após a escolha do microcontrolador é realizada a escolha da memória. Mesmo o microprocessador possuindo 2048KB de memória Flash e 256KB de SRAM, será implementado um banco de memória externo que será destinada ao armazenamento do dados de telemetria e da \textit{payload}.
+Geralmente, em projetos de sistemas embarcados, após a escolha do microcontrolador é realizada a escolha da memória. Mesmo o microprocessador possuindo 2048KB de memória Flash e 256KB de SRAM, será implementado um banco de memória externo que será destinado ao armazenamento do dados de telemetria e da \textit{payload}.
 
 Diante da grande variedade de memórias disponíveis, a escolha do tipo de memória para esta aplicação se tornou uma tarefa exaustiva. Nesse processo de escolha, foi utilizada uma tabela comparativa, presente no \textit{Small Spacecraft Technology State of the Art} (FROST; AGASID,2015) e ilustrada abaixo.
 
@@ -649,11 +703,11 @@ Diante da grande variedade de memórias disponíveis, a escolha do tipo de memó
 	Fonte: (FROST; AGASID, 2015, pág.97).\linebreak
 \end{table}
 
-De acordo com a Tabela \ref{tabela_memoria}, as memória MRAM e FERAM (ou FRAM) são as que mais resistem a radiação (TID), o que as caracterizam como ótimas alternativas para a unidade de armazenamento. Comparando-se essas memórias, pôde-se observar que ambas possuem as seguintes características em comum: não-volatilidade, tensão de operação, retenção de dados, ciclos de operação, tempo de acesso, TID, SEU e  faixa de temperatura.
+De acordo com a Tabela \ref{tabela_memoria}, as memória MRAM e FERAM (ou FRAM) são as que mais resistem à radiação (TID), o que as caracterizam como ótimas alternativas para a unidade de armazenamento. Comparando-se essas memórias, pôde-se observar que ambas possuem as seguintes características em comum: não-volatilidade, tensão de operação, retenção de dados, ciclos de operação, tempo de acesso, TID, SEU e  faixa de temperatura.
 
-Dentre as características distintas entre as memórias MRAM e FRAM, observa-se que a memória do MRAM gasta três vezes mais energia que a memória do FRAM. Como o quesito consumo elétrico é primordial em aplicações espaciais, a memória FRAM foi escolhida para compor a unidade de armazenamento. Essa memória será destinada para arquivar o software embarcado.
+Dentre as características distintas entre as memórias MRAM e FRAM, observa-se que a memória do MRAM gasta três vezes mais energia que a memória do FRAM. Como o quesito consumo elétrico é primordial em aplicações espaciais, a memória FRAM foi escolhida para compor a unidade de armazenamento. Essa memória será destinada para arquivar o \textit{software} embarcado.
 
-Para escolher o tamanho da memória FRAM, há a necessidade de estimar o tamanho do software embarcado. Esse software depende de vários fatores, como: redundâncias, funcionalidades implementadas, segurança, algoritmos, etc, o que torna essa estimativa muito complicada. Sendo assim, definiu-se o espaço como o dobro da memória SRAM do microcontrolador,  resultando em 512KB.
+Para escolher o tamanho da memória FRAM, há a necessidade de estimar o tamanho do \textit{software} embarcado. Esse \textit{software} depende de vários fatores, como: redundâncias, funcionalidades implementadas, segurança, algoritmos, etc, o que torna essa estimativa muito complicada. Sendo assim, definiu-se o espaço como o dobro da memória SRAM do microcontrolador,  resultando em 512KB.
 
 Em relação ao espaço para a telemetria e dados dos subsistemas, foi realizado uma estimativa, utilizando os parâmetros de armazenamento de dados da missão \textit{SWISSCube}. Esses parâmetros foram adaptados ao contexto do projeto, adicionando os dados proveniente da Câmera. A estimativa da quantidade de dados se encontra no Apêndice \ref{apendiced}.
 
@@ -675,6 +729,8 @@ Para a escolha dos fornecedores, escolheu-se o site \textit{DigiKey}\footnote{Di
 				FM25V05-GTR      & Cypress Semi. Corp. & -40$^{\circ}$C $\sim$85$^{\circ}$C & 300uA    & 2 V $\sim$3.6 V   & 512Kb (64K x 8) & SPI       \\
 				SQF-MSDM1-4G-21E & Advantech Corp                    & -40$^{\circ}$C $\sim$85$^{\circ}$C & 150uA    & 2.7 V $\sim$3.6 V & 4GB             & SPI       \\ \bottomrule
 	\end{tabular}}}
+	\centering
+
 \end{table}
 
 \section{Periféricos}
@@ -690,13 +746,16 @@ A figura \ref{fig20} mostra o esquemático eletrônico de uma aplicação usual 
 
 
 \begin{figure}[h]
+\footnotesize{
 	\centering
 	Fonte:(ALLEGRO, 2017, pág.1)\linebreak
 	\includegraphics[keepaspectratio=true,scale=0.52]{figuras/currentSensor.PNG}
 	\caption{Esquemático Eletrônico de uma aplicação usual do ACS70331.}
 	\label{fig20}
+}
 \end{figure}
 \FloatBarrier
+
 A tabela \ref{tab_ina} mostra as especificações do ACS70331. Essas informações foram retiradas da ficha técnica do sensor.
 
 \begin{table}[h]
@@ -710,6 +769,8 @@ A tabela \ref{tab_ina} mostra as especificações do ACS70331. Essas informaçõ
 				Produto    & Fornecedor        & \begin{tabular}[c]{@{}c@{}}Temp Op\\ {[}$^{\circ}$C{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textit{Overcurrent limit} \\ {[}A{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Vin \\ {[}V{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Erro\\ {[}\%{]}\end{tabular} \\ \hline
 				ACS70331 & Allegro & -40$\sim$125                                                        & $\pm$ 5                                                        & 3$\sim$5                                           & 5                                                     \\ \hline
 	\end{tabular}}}
+	\centering
+\footnotesize{Fonte:(ALLEGRO, 2017, adaptado).}
 \end{table}
 
 %\subsection{Sensor de Tensão}
@@ -731,16 +792,20 @@ A Tabela \ref{tab_ive} mostra as especificações do MPU9250. Essas informaçõe
 				Produto  & Fornecedor     & \begin{tabular}[c]{@{}c@{}}Temp. Op. \\ {[}$^{\circ}$C{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Corrente \\ {[}mA{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Vin \\ {[}V{]}\end{tabular} & Resolução {[}bit{]}                                                                         & Protocolo \\ \midrule
 				MPU-9250 & TDK InvenSense & -40 $\sim$85                                                           & 3.2mA                                                        & 2.4 $\sim$3.6                                          & \begin{tabular}[c]{@{}c@{}}Giro./Ace. -\textgreater 16\\ Mag. -\textgreater 14\end{tabular} & SPI/I2C   \\ \bottomrule
 	\end{tabular}}}
+	\centering
+\footnotesize{Fonte:(INVENSENSE, 2018, adaptado).}
 \end{table}
 
 A Figura \ref{mpu} mostra o esquemático eletrônico de uma aplicação usual do MPU9250, utilizando protocolo I2C(esquerda) e SPI (direita).
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
 	Fonte:(INVENSENSE, 2018, pág.20)\linebreak
 	\includegraphics[keepaspectratio=true,scale=0.4]{figuras/mpu9250.PNG}
 	\caption{Esquemático Eletrônico de uma aplicação usual do MPU9250.}	
 	\label{mpu}
+}
 \end{figure}
 \FloatBarrier
 \subsection{Sensor de Temperatura}
@@ -749,14 +814,16 @@ Mesmo o MPU9250 e o MSP432P4111 possuindo um sensor de temperatura, foi escolhid
 
 O sensor de temperatura escolhido foi o MCP9701T, da fabricante Microchip, devido sua fácil usabilidade e baixo consumo. O dispositivo comunica através de uma saída analógica, sendo capaz de medir temperaturas com uma precisão de 2 $^{\circ}$C em uma faixa de temperatura de -40$^{\circ}$C a 125$^{\circ}$C (MICROCHIP, 2016).
 
-A tabela \ref{caracTMP} mostra as especificações do MCP9701T. Essas informações foram retiradas da ficha técnica do sensor.
+A Tabela \ref{caracTMP} mostra as especificações do MCP9701T. Essas informações foram retiradas da ficha técnica do sensor.
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
 	Fonte:(MICROCHIP, 2016, pág.20)\linebreak
 	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/MCP9700.PNG}
 	\caption{Esquemático Eletrônico de uma aplicação usual do MCP9700.}
 	\label{MCP9700}
+}
 \end{figure}
 \FloatBarrier
 \begin{table}[h]
@@ -768,6 +835,8 @@ A tabela \ref{caracTMP} mostra as especificações do MCP9701T. Essas informaç�
 		Produto   & Fornecedor                                                   & \begin{tabular}[c]{@{}c@{}}Temp. Op. \\ {[}$^{\circ}$C{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Corrente \\ {[}uA{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Vin \\ {[}V{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Resolução \\ {[}bit{]}\end{tabular} & Comunicação \\ \midrule
 		MCP9701T & \begin{tabular}[c]{@{}c@{}}Microchip\end{tabular} & -55 $\sim$127                                                          & 60                                                           & 2.7 $\sim$5.5                                          & 12                                                             & Analógico       \\ \bottomrule
 	\end{tabular}
+	\centering
+\footnotesize{Fonte:(MICROCHIP, 2016, adaptado).}
 \end{table}
 
 \section{Interface de Programação/\textit{Debug}}
@@ -793,7 +862,12 @@ Os pinos destinados para a interface JTAG/SDW são mostrados na Tabela \ref{jtag
 		TDI & JTAG test data input & P.92        
 		\\ \bottomrule
 	\end{tabular}
+\begin{center}
+	\footnotesize{
+		Fonte: (Texas Instruments, 2018, adaptado).}
+\end{center}
 \end{table}
+
 
 
 %\subsection{Barramento PC104}
@@ -804,13 +878,16 @@ Os pinos destinados para a interface JTAG/SDW são mostrados na Tabela \ref{jtag
 Como foi mencionado anteriormente, o formato da placa seguirá o padrão \textit{PC/104-Plus}. Esse padrão é comumente visto em missões CubeSat. A placa possui dimensões físicas de 90.17 x 95.89 mm, possuindo 4 furos M3 nas extremidades da placa. A Figura \ref{pc104} ilustra as dimensões da placa estabelecida pelo \textit{PC/104 Consorsium}.
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
 	Fonte:(PC/104 EMBEDDED CONSORTIUM, 2008, pág.20)	
-	\includegraphics[keepaspectratio=true,scale=0.7]{figuras/pc104_32bit.PNG}
+	\includegraphics[keepaspectratio=true,scale=0.64]{figuras/pc104_32bit.PNG}
 	\caption{Dimensões do módulo PC/104-Plus em polegadas e milímetros.}
 	\label{pc104}
+}
 \end{figure}
 \FloatBarrier
+
 \section{Sistema para Mitigar Falhas}
 
 De acordo com  Frost e Agasid (2015), missões de longa duração necessitam de mecanismos que diminuam o risco devido à radiação espacial. Como o microcontrolador e os componentes selecionados no projeto não possuem classificação \textit{Rad-Hard}, optou-se pela utilização de mecanismos que atenuassem as falhas. 
@@ -823,7 +900,7 @@ A partir de uma breve pesquisa, levantaram-se as seguintes estratégias:
 	\item \textit{Watchdog} externo.
 \end{itemize}
 
-Dentre as estratégias acima, a única que será discutida é a\textit{Watchdog} externo pois é uma solução simples e que não demanda muito tempo de implementação. As demais estratégias podem ser implementadas em uma segunda versão do computador de bordo.
+%Dentre as estratégias acima, a única que será discutida é a\textit{Watchdog} externo, pois é uma solução simples e que não demanda muito tempo de implementação. As demais estratégias podem ser implementadas em uma segunda versão do computador de bordo.
 
 \begin{comment}
 \subsection{Proteção contra corrente excessiva (\textit{OverCurrent})}
@@ -856,7 +933,7 @@ A escolha do tempo de \textit{reset} será feita durante o teste do protótipo. 
 
 \begin{comment}
 
-Apos a escolha dos componentes é possível ter uma visão abrangente do \textit{hardware}, como é mostrado na Figura \ref{arquiteturaOBC}. Como é possível notar, ha algumas interfaces que ainda nao foram definidas, como os pinos do modulo \textit{PPT} e \textit{TTC}.
+Apos a escolha dos componentes é possível ter uma visão abrangente do \textit{hardware}, como é mostrado na Figura \ref{arquiteturaOBC}. Como é possível notar, ha algumas interfaces que ainda nao foram definidas, como os pinos do módulo \textit{PPT} e \textit{TTC}.
 
 
 \begin{figure}[h]
@@ -868,7 +945,7 @@ Apos a escolha dos componentes é possível ter uma visão abrangente do \textit
 \FloatBarrier
 \end{comment}
 
-Para a elaboração da placa de circuito impresso utilizou-se o software KiCad\footnote{Para mais detalhes, consulte:  \url{http://www.kicad-pcb.org/}}. Essa ferramenta possui uma interface amigável e fácil de usar, sendo bem difundida na comunidade de engenharia eletrônica e \textit{hobistas}. O fato do KiCad ser \textit{Open Source} facilita a manutenção do OBC em futuras melhorias, pois não há a necessidade de comprar uma licença.
+Para a elaboração da placa de circuito impresso utilizou-se o \textit{software} KiCad\footnote{Para mais detalhes, consulte:  \url{http://www.kicad-pcb.org/}}. Essa ferramenta possui uma interface amigável e fácil de usar, sendo bem difundida na comunidade de engenharia eletrônica e \textit{hobistas}. O fato do KiCad ser \textit{Open Source} facilita a manutenção do OBC em futuras melhorias, pois não há a necessidade de comprar uma licença.
 
 A Figura \ref{esquematicoObc} mostra o esquemático eletrônico do OBC. Nele há todos os competentes/sensores mencionados nas seções anteriores. Foi utilizado o \textit{datasheet} de cada componente para o desenvolvimento do esquemático. O Apêndice \ref{apendicee} possui todos os esquemáticos realizados.
 
@@ -877,14 +954,18 @@ A Figura \ref{esquematicoObc} mostra o esquemático eletrônico do OBC. Nele há
 
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
 	
+		\centering
+	\footnotesize{Fonte: Autoria própria.}
 	
 	\begin{tabular}{@{}c@{\hspace{.5cm}}c@{}}
 		\includegraphics[page=1,width=1.0\textwidth]{pcb_v1.pdf}
 	\end{tabular}
 	\caption{Esquemático Eletrônico do OBC.}
 	\label{esquematicoObc}
+}
 \end{figure}
 \FloatBarrier
 
@@ -892,11 +973,11 @@ A Figura \ref{esquematicoObc} mostra o esquemático eletrônico do OBC. Nele há
 
 \newpage
 
-Após a realização do esquemático, exportou-se o arquivo de conexões (.net) e o importou no ambiente "pcbnew" do KiCad. Esse ambiente permite realizar o roteamento das trilhas, criação de planos de alimentação, etc. Essa foi uma das etapas mais trabalhosas da pesquisa pois o roteamento é realizado manualmente. 
+Após a realização do esquemático, exportou-se o arquivo de conexões (.net) e o importou no ambiente "pcbnew" do KiCad. Esse ambiente permite realizar o roteamento das trilhas, criação de planos de alimentação, etc. Essa foi uma das etapas mais trabalhosas da pesquisa, pois o roteamento é realizado manualmente. 
 
 Com o intuito de reduzir custo e aumentar a flexibilidade do projeto, os componentes SMD escolhidos possuíam tamanho 1206 (aproximadamente 3.2mm por 1.6mm). Essa escolha permite que os componentes sejam soldados manualmente sem ajuda de maquinário robotizado. A Figura \ref{pcb_isoView} mostra PCB após o roteamento das trilhas.
 
-\begin{comment}, com o intuito de nao utilizar maquinas automatizadas para realizar a soldagem dos compont Como a soldagem de componentes utilizando maquinas automatizadas é um processo caro e difícil de achar, utilizou-se componentes SMD 1206 (aproximadamente 3.2mm por 1.6mm) para soldar os componentes manualmente. 
+\begin{comment}, com o intuito de nao utilizar máquinas automatizadas para realizar a soldagem dos compont Como a soldagem de componentes utilizando máquinas automatizadas é um processo caro e difícil de achar, utilizou-se componentes SMD 1206 (aproximadamente 3.2mm por 1.6mm) para soldar os componentes manualmente. 
 \end{comment}
 \begin{comment}
 
@@ -905,30 +986,34 @@ content...
 \end{comment}
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-	
+		\centering
+	\footnotesize{Fonte: Autoria própria.}
 	
 	\includegraphics[keepaspectratio=true,scale=0.78]{figuras/pcbRealistic.PNG}
 	\caption{PCB - Vista Isométrica.}
 	\label{pcb_isoView}
+}
 \end{figure}
 \FloatBarrier
+
 Alguns componentes não estão presentes na renderização 3D pois não foi possível desenha-los, devido ao tempo limitado do projeto. No Apêndice \ref{apendicee} há as imagens do plano de terra e plano de alimentação da PCB.
 
 A partir do BOM, realizou-se a cotação dos componentes na fornecedora online \textit{DigiKey}. O valor ficou em US\$ 56,34 (BRL 216,73) e o frete em US\$40,00 (BRL 153,88). No Apêndice \ref{apendiceg} há a lista do \textit{Bill Of Material}. 
 
 
 \chapter[Desenvolvimento do Software]{Desenvolvimento do Software}
+\label{secaoSoftware}
+Este capítulo visa descrever o desenvolvimento do \textit{software} embarcado. Inicialmente será apresentado os requisitos e funcionalidades consideradas no desenvolvimento do sistema. Logo em seguida, será exposto a arquitetura utilizada para a aplicação. Por fim, será mostrado com mais detalhes os \textit{softwares} FreeRTOS, DriverLib e a camada de serviço do cliente. 
 
-Este capítulo visa descrever o desenvolvimento do \textit{software} embarcado. Inicialmente será mostrado os requisitos e funcionalidades consideradas no desenvolvimento do sistema. Logo em seguida, será exposto a arquitetura utilizada para a aplicação. Após essa etapa, será mostrado com mais detalhes os \textit{softwares} FreeRTOS, DriverLib e a camada de serviço do cliente. 
-
-Tendo em vista que a missão CubeSat ainda estava em fase de discussão e poucos requisitos tinham sido especificados, utilizou-se uma abordagem modular no desenvolvimento do software embarcado. Sendo assim, a medida que os requisitos começaram a se tornar definitivos, as funcionalidades foram implementadas. Com isso, o \textit{software} desenvolvido servirá para teste do \textit{hardware} e deverá ser atualizado para a missão final.
+Tendo em vista que a missão CubeSat ainda estava em fase de discussão e poucos requisitos tinham sido especificados, utilizou-se uma abordagem modular no desenvolvimento do \textit{software} embarcado. Sendo assim, a medida que os requisitos começaram a se tornar definitivos, as funcionalidades foram implementadas. Com isso, o \textit{software} desenvolvido servirá para teste do \textit{hardware} e deverá ser atualizado para a missão final.
 
 \section{Requisitos e Funcionalidades}
 
 Para o desenvolvimento de qualquer projeto, a definição dos requisitos é essencial, pois essa etapa influenciará todo o projeto e definirá as expectativas das partes interessadas. Como mencionado acima, poucos requisitos foram delimitados devido à fase inicial da missão CubeSat.
 
-A abordagem utilizada para contornar essa situação foi adicionando requisitos de CubeSats já lançados com alguns requisitos já especificados para a missão, mesma abordagem utilizada na Seção \ref{secaoHardware}.
+A abordagem utilizada para contornar essa situação foi adicionar requisitos de CubeSats já lançados com alguns requisitos já especificados para a missão, mesma abordagem utilizada na Seção \ref{secaoHardware}.
 
 Com base no Apêndice \ref{apendiceb}, foi possível delimitar as funcionalidades para o \textit{hardware} do sistema. Esses requisitos podem ser vistos na tabela abaixo.
 
@@ -952,22 +1037,26 @@ Com base no Apêndice \ref{apendiceb}, foi possível delimitar as funcionalidade
 				OBC-SW-R7                    & \begin{tabular}[c]{@{}l@{}}O OBC deve alternar os modos de operação de acordo com o a potência na bateria.\end{tabular}                                                                                                                                                                             \\ \hline
 				OBC-SW-R8                    & O OBC deve possuir um sistema anti travamento.                                                                                                                                                                                                                                                         \\ \bottomrule
 	\end{tabular}}}
+	\centering
+\footnotesize{Fonte: Autoria própria.}
 \end{table}
 
 
 \section{Arquitetura do Software}
 
-A arquitetura de um software é um dos principais pontos a serem definidos em um projeto de \textit{software}, pois a arquitetura influenciará na manutenibilidade e reusabilidade do sistema. Existem várias arquiteturas de \textit{software}, sendo as mais usuais: Arquitetura Baseada em Camadas (LBA, do inglês \textit{Layered-based Architecture}), Arquitetura Orientada em Serviços (SOA, do inglês \textit{Service Oriented Architecture}) e a Arquitetura Baseada em Desenvolvimento (CBD, do inglês \textit{Component-based Development}). Dentre essas, a arquitetura que melhor atende os padrões de modularidade é a Arquitetura em Camadas, pois abstrai o \textit{software} embarcado de acordo com sua proximidade com o \textit{hardware} (BACELO, 2010).
+A arquitetura de um \textit{software} é um dos principais pontos a serem definidos em um projeto de \textit{software}, pois a arquitetura influenciará na manutenibilidade e reusabilidade do sistema. Existem várias arquiteturas de \textit{software}, sendo as mais usuais: Arquitetura Baseada em Camadas (LBA, do inglês \textit{Layered-based Architecture}), Arquitetura Orientada em Serviços (SOA, do inglês \textit{Service Oriented Architecture}) e a Arquitetura Baseada em Desenvolvimento (CBD, do inglês \textit{Component-based Development}). Dentre essas, a arquitetura que melhor atende os padrões de modularidade é a Arquitetura em Camadas, pois abstrai o \textit{software} embarcado de acordo com sua proximidade com o \textit{hardware} (BACELO, 2010).
 
 A arquitetura em camadas (do inglês \textit{Layered Architecture}) é muito utilizada em sistemas embarcados, pois ajuda na abstração de alguns componentes e interfaces. Isso faz com que o usuário não precise ter noção de partes muito específicas do sistema, facilitando na usabilidade e na atualização do \textit{software}. A figura abaixo mostra uma arquitetura em camadas de abstração, a mesma que será utilizada no sistema.
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
 	
 	Fonte: (COHEN, 2014,  adaptado pág.15).
 	\includegraphics[keepaspectratio=true,scale=0.68]{figuras/arquiteturaSof.PNG}
 	\caption{Arquitetura de abstração em Camadas.}
 	\label{fig22}
+}
 \end{figure}
 \FloatBarrier
 Abaixo há uma breve descrição de cada camada e sua aplicação no sistema final.
@@ -987,7 +1076,7 @@ Abaixo há uma breve descrição de cada camada e sua aplicação no sistema fin
 	
 	Escolher um RTOS é uma tarefa importante para dar suporte às interrupções, temporizadores, comunicação entre tarefas, sincronização, gerenciamento de memória, múltiplo acesso, prioridade de execução e escalonamento de tarefas (BASKIYAR ; MEGHANATHAN, 2005).
 	
-	Analisando o Apêndice \ref{apendicea}, pôde-se afirmar que a maioria das missões utilizavam RTOS, sendo os mais comuns o FreeRTOS e o Linux. Dentre esses, apenas o FreeRTOS possui suporte para o MSP432P4111 pois o Linux necessita de um \textit{hardware} com maior velocidade de \textit{clock} e maior memória RAM. Tendo esse cenário, o sistema operacional escolhido para o sistema foi o FreeRTOS e ele será explicado mais adiante. 
+	Analisando o Apêndice \ref{apendicea}, pôde-se afirmar que a maioria das missões utilizavam RTOS, sendo os mais comuns o FreeRTOS e o Linux. Dentre esses, apenas o FreeRTOS possui suporte para o MSP432P4111 pois o Linux necessita de um \textit{hardware} com maior velocidade de \textit{clock} e maior memória RAM. Tendo esse cenário, o sistema operacional escolhido para o sistema foi o FreeRTOS. Mais detalhes sobre esse sistema serão explicados adiante. 
 	
 	\item \textbf{Camada de Serviço do Sistema}
 	
@@ -1010,10 +1099,7 @@ Abaixo há uma breve descrição de cada camada e sua aplicação no sistema fin
 
 Como mencionado na seção anterior, o \textit{DriverLib} é um conjunto de APIs utilizado para controlar, configurar e manipular os periféricos do microcontrolador, MSP432P411. Além de deixar o código mais intuitivo, esse pacote auxilia a criação de um código de fácil portabilidade entre as plataformas da família MSP432 e MSP430.
 
-Utilizar o \textit{DriverLib} como camada de HAL é vantajoso em virtude de ser uma solução testada por profissionais e bem documentada. O Guia do Usuário do \textit{DriverLib} apresenta um exemplo onde compara a configuração do \textit{MasterClock} à nível de registradores, Código \ref{lst:codigo1}, e utilizando a API-\textit{CS\_initClockSignal()} do \textit{DriverLib}, Código \ref{lst:codigo2}. Com esse exemplo fica evidente o grau de abstração e facilidade que o \textit{DriverLib} oferece.
-
-Como mencionado na seção anterior, o \textit{DriverLib} é um conjunto de APIs utilizado para controlar, configurar e manipular os periféricos do microcontrolador, MSP432P411. Além de deixar o código mais intuitivo, esse pacote auxilia a criação de um código de fácil portabilidade entre as plataformas da família MSP432 e MSP430.
-
+Utilizar o \textit{DriverLib} como camada de HAL é vantajoso em virtude de ser uma solução testada por profissionais e bem documentada. O Guia do Usuário do \textit{DriverLib} apresenta um exemplo onde compara a configuração do \textit{MasterClock} a nível de registradores, Código \ref{lst:codigo1}, e utilizando a API-\textit{CS\_initClockSignal()} do \textit{DriverLib}, Código \ref{lst:codigo2}. Com esse exemplo fica evidente o grau de abstração e facilidade que o \textit{DriverLib} oferece.
 
 \lstset{
 	backgroundcolor=\color{gray!20},%
@@ -1061,7 +1147,7 @@ A tabela abaixo mostra as vinte e cinco APIs do pacote, assim como  uma breve de
 			\begin{tabular}{@{}|rl|l|rl|@{}}
 				\cmidrule(r){1-2} \cmidrule(l){4-5}
 				\multicolumn{1}{|c}{\textbf{API}} & \multicolumn{1}{c|}{\textbf{Descrição}}                                                                                                                                                                                                                  &  & \multicolumn{1}{c}{\textbf{API}} & \multicolumn{1}{c|}{\textbf{Descrição}}                                                                                                                                                                                           \\ \cmidrule(r){1-2} \cmidrule(l){4-5} 
-				ADC4                              & \begin{tabular}[c]{@{}l@{}}Permite o controlar os \\ conversores Analógico Digital.\end{tabular}                                                                                                                                                         &  & PMAP                             & \begin{tabular}[c]{@{}l@{}}Essa API permite configurar o modulo Port Mapping \\ Controller. Esse modulo é responsável por \\ reconfigurar as funções digitais de cada porta.\end{tabular}                                         \\
+				ADC4                              & \begin{tabular}[c]{@{}l@{}}Permite o controlar os \\ conversores Analógico Digital.\end{tabular}                                                                                                                                                         &  & PMAP                             & \begin{tabular}[c]{@{}l@{}}Essa API permite configurar o módulo Port Mapping \\ Controller. Esse módulo é responsável por \\ reconfigurar as funções digitais de cada porta.\end{tabular}                                         \\
 				AES256                            & \begin{tabular}[c]{@{}l@{}}Permite a criptografia e descriptografia \\ de dados de 128bits, de acordo com o \\ padrão (AES256)\end{tabular}                                                                                                              &  & PSS                              & \begin{tabular}[c]{@{}l@{}}Permite a configuração das várias entradas de \\ alimentação do microcontrolador, de modo \\ a otimizar a eficiência energética.\end{tabular}                                                          \\
 				COMP\_E                           & \begin{tabular}[c]{@{}l@{}}Essa API fornece um conjunto de funções \\ para inicializar os módulos COMP\_E,\\ de comparação de dois sinais de entrada analógicos.\end{tabular}                                                                            &  & REF\_A                           & \begin{tabular}[c]{@{}l@{}}Permite configurar e ativar o uso da tensão de \\ referência REF\_A\end{tabular}                                                                                                                       \\
 				CRC32                             & \begin{tabular}[c]{@{}l@{}}Permite fornecer um conjunto de funções para \\ a verificação de dados. Essas funções são uteis \\ quando há a necessidade de verificar a acurácia \\ de um dado recebido em um canal de comunicação.\end{tabular}            &  & ResetCtl                         & \begin{tabular}[c]{@{}l@{}}Permite configurar e manipular as funções do reset \\ do microcontrolador, tanto soft reset quanto \\ hard reset.\end{tabular}                                                                         \\
@@ -1070,40 +1156,46 @@ A tabela abaixo mostra as vinte e cinco APIs do pacote, assim como  uma breve de
 				FlashCtl                          & \begin{tabular}[c]{@{}l@{}}Permite o controlar o processo de gravar, \\ apagar e configurar a memória interna do processador.\end{tabular}                                                                                                               &  & SysCtl                           & \begin{tabular}[c]{@{}l@{}}Essa API junta os módulos do sistema que não \\ se encaixam em nenhum periférico especifico.\end{tabular}                                                                                              \\
 				FPU                               & \begin{tabular}[c]{@{}l@{}}Essa API fornece métodos para manipular o \\ comportamento da Unidade de Ponto Flutuante \\ (FPU do inglês Floating-Point Unit) do \\ processador Cortex-M.\end{tabular}                                                      &  & SysTick                          & \begin{tabular}[c]{@{}l@{}}O SysTick é um temporizador simples que fornece\\ uma interrupção periódica para RTOS, mas ele \\ pode ser usado para outros fins de temporização.\end{tabular}                                        \\
 				GPIO                              & \begin{tabular}[c]{@{}l@{}}Permite configurar e ativar os pinos de entrada/saída \\ do microcontrolador e configurar as interrupções.\end{tabular}                                                                                                       &  & Timer32                          & \begin{tabular}[c]{@{}l@{}}Permite a configuração do \\ Timer32 (contador de 32 bits).\end{tabular}                                                                                                                               \\
-				I2C                               & \begin{tabular}[c]{@{}l@{}}Essa API fornece o controle do barramento eUSCI\_B, \\ no modo I2C, permitindo a configuração da frequência \\ de transmissão, envio/recebimento de dados, status, etc.\end{tabular}                                          &  & Timer\_A                         & \begin{tabular}[c]{@{}l@{}}Essa API permite configurar o modulo TimerA. \\ Esse modulo é um temporizador/contador de 16 bits, \\ suportando múltiplos modos captura/comparação, \\ PWM e temporização de intervalos.\end{tabular} \\
-				NVIC                              & \begin{tabular}[c]{@{}l@{}}Permite controlar o Nested Vectored Interrupt \\ Controller (NVIC). Esse modulo ativa, desativa, registra e \\ configura as prioridades das interrupções do microcontrolador.\end{tabular}                                    &  & UART                             & \begin{tabular}[c]{@{}l@{}}Essa API fornece o controle do barramento \\ serial USCI, permitindo a configuração \\ da frequência de transmissão, envio/recebimento \\ de dados, status, etc.\end{tabular}                          \\
+				I2C                               & \begin{tabular}[c]{@{}l@{}}Essa API fornece o controle do barramento eUSCI\_B, \\ no modo I2C, permitindo a configuração da frequência \\ de transmissão, envio/recebimento de dados, status, etc.\end{tabular}                                          &  & Timer\_A                         & \begin{tabular}[c]{@{}l@{}}Essa API permite configurar o módulo TimerA. \\ Esse módulo é um temporizador/contador de 16 bits, \\ suportando múltiplos modos captura/comparação, \\ PWM e temporização de intervalos.\end{tabular} \\
+				NVIC                              & \begin{tabular}[c]{@{}l@{}}Permite controlar o Nested Vectored Interrupt \\ Controller (NVIC). Esse módulo ativa, desativa, registra e \\ configura as prioridades das interrupções do microcontrolador.\end{tabular}                                    &  & UART                             & \begin{tabular}[c]{@{}l@{}}Essa API fornece o controle do barramento \\ serial USCI, permitindo a configuração \\ da frequência de transmissão, envio/recebimento \\ de dados, status, etc.\end{tabular}                          \\
 				MPU                               & \begin{tabular}[c]{@{}l@{}}Essa API fornece funções para configurar o \\ Memory Protection Unit (MPU). O MPU é acoplado \\ ao núcleo do processador Cortex-M e fornece um meio de \\ estabelecer permissões de acesso à regiões da memória.\end{tabular} &  & WDT\_A                           & Permite o controle do Watchdog padrão do sistema.                                                                                                                                                                                 \\
 				PCM                               & \begin{tabular}[c]{@{}l@{}}Permite o gerenciamento dos estados de \\ energia do microcontrolador.\end{tabular}                                                                                                                                           &  & \multicolumn{1}{l}{}             &                                                                                                                                                                                                                                   \\ \cmidrule(r){1-2} \cmidrule(l){4-5} 
 	\end{tabular}}}
+
+\centering
+\footnotesize{(TEXAS INSTRUMENTS, 2016, adaptado).}
+
 \end{table}
 
 \newpage
 
 \section{FreeRTOS}
 
-O \textit{FreeRTOS} é um kernel (gerenciador) utilizado em aplicações embarcadas que necessitam de aplicação em tempo real, sendo normalmente empregado em CubeSats. Esse kernel, desenvolvido e mantido pela Real Time Engineers Ltd, é distribuído gratuitamente sobre a licença \textit{General Public License} (GPL) (BARRY, 2016). O \textit{FreeRTOS} foi desenvolvido para ser pequeno, portátil e escalável; de acordo com o site oficial\footnote{Disponível em \url{https://www.freertos.org}. Acesso em: 18/06/2018} o kernel possui uma imagem típica de 6K a 12K bytes.
+O \textit{FreeRTOS} é um \textit{kernel} (gerenciador) utilizado em aplicações embarcadas que necessitam de aplicação em tempo real, sendo normalmente empregado em CubeSats. Esse \textit{kernel}, desenvolvido e mantido pela Real Time Engineers Ltd, é distribuído gratuitamente sobre a licença \textit{General Public License} (GPL) (BARRY, 2016). O \textit{FreeRTOS} foi desenvolvido para ser pequeno, portátil e escalável; de acordo com o site oficial\footnote{Disponível em \url{https://www.freertos.org}. Acesso em: 18/06/2018} o \textit{kernel} possui uma imagem típica de 6K a 12K bytes.
 
 O FreeRTOS é utilizado tanto em sistemas Não Críticos de Tempo Real (Soft-RTOS), quanto em sistemas Críticos de Tempo Real (Hard-RTOS). Aplicações Soft-RTOS possuem um tempo específico para a realização de uma tarefa, mas o não cumprimento do prazo de execução não causa uma falha no sistema. Por exemplo, caso as luzes internas do carro não acenderem no instante em que a porta for aberta, o usuário não estaria em risco. Já as aplicações Hard-RTOS, o não cumprimento do prazo resulta em falha do sistema. Por exemplo, se o sensor de colisão do carro atrasar a sua resposta, o usuário estaria em grande risco (BARRY, 2016).
 
-No caso de aplicações aeroespaciais, o sistema deve ser projetado para ser um Hard-RTOS pois o travamento do \textit{software} embarcado ocasionaria em falha total do sistema. Foi percebido que todas as missões pesquisadas, Apêndice \ref{apendiceb}, possuíam algum tipo de sistema operacional para gerenciar as tarefas embarcadas.
+No caso de aplicações aeroespaciais, o sistema deve ser projetado para ser um Hard-RTOS, pois o travamento do \textit{software} embarcado ocasionaria em falha total do sistema. Foi percebido que todas as missões pesquisadas, Apêndice \ref{apendiceb}, possuíam algum tipo de sistema operacional para gerenciar as tarefas embarcadas.
 
 No FreeRTOS, cada tarefa em execução é chamada de ‘\textit{task}’. Para manter um padrão, será utilizada essa nomenclatura. No contexto do projeto, o uso das tasks é fundamental para criar um certo nível de abstração e garantir o requisito de Hard-RTOS. Por exemplo, a leitura da tensão da bateria é de extrema importância, então ela possuirá maior prioridade em relação a task de envio de dados; pois se o satélite consumir por completo a carga da bateria, ocasionando a perda do satélite.
 
 Uma task só pode estar em quatro estados: \textit{Ready}, \textit{Running}, \textit{Suspend} e \textit{Blocked}. As APIs são encarregadas de alterar os estados de cada \textit{task}. Os estados são melhores ilustrados na figura abaixo, onde há evidenciado as APIs responsáveis pela mudança.
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
 	
 	Fonte: (LIN,2010, adaptado pág.20)
 	\includegraphics[keepaspectratio=true,scale=0.8]{figuras/freertosTasks.PNG}
 	\caption{Estados das Tasks no FreeRTOS}
-
+	
 	\label{fig23}
+}
 \end{figure}
 \FloatBarrier
 \subsection{APIs do FreeRTOS}
 
-As APIs do FreeRTOS foram criadas para facilitar o desenvolvimento, fazendo uma interface entre o usuário e o kernel. De acordo com o site oficial há 145 APIs que são agrupadas nas seguintes categorias:
+As APIs do FreeRTOS foram criadas para facilitar o desenvolvimento, fazendo uma interface entre o usuário e o \textit{kernel}. De acordo com o site oficial há 145 APIs que são agrupadas nas seguintes categorias:
 
 \begin{itemize}
 	\item\textit{Task Creation}, permite que o usuário crie ou elimine uma \textit{task} do sistema.
@@ -1138,7 +1230,7 @@ Abaixo há uma breve descrição sobre as APIs das categorias \textit{Task Creat
 				\textbf{Categoria}             & \multicolumn{1}{c}{\textbf{Nome da API}} & \textbf{Funcionalidade}                                                                                                                                                                                                             \\ \midrule
 				\multirow{3}{*}{Task Creation} & xTaskCreate()                            & \begin{tabular}[c]{@{}l@{}}Criação de uma task com sua prioridade. \\ Se a prioridade for maior que a task em \\ execução, a task criada começa sua \\ execução. A API retorna um handler\\ para a tarefa.\end{tabular}             \\ \cmidrule(l){2-3} 
 				& xTaskCreateStatic()                      & \begin{tabular}[c]{@{}l@{}}Cria uma task, semelhante ao xTaskCreate. \\ Entretanto, o tamanho destinado para a \\ RAM é definido pelo usuário e é alocado \\ estaticamente. A API retorna um handler \\ para a tarefa.\end{tabular} \\ \cmidrule(l){2-3} 
-				& vTaskDelete()                            & \begin{tabular}[c]{@{}l@{}}Realiza a remoção da tarefa. Se a task \\ estiver em execução, o kernel  busca \\ uma tarefa de maior prioridade para \\ ser executada.\end{tabular}                                                     \\ \midrule
+				& vTaskDelete()                            & \begin{tabular}[c]{@{}l@{}}Realiza a remoção da tarefa. Se a task \\ estiver em execução, o \textit{kernel}  busca \\ uma tarefa de maior prioridade para \\ ser executada.\end{tabular}                                                     \\ \midrule
 				\multirow{8}{*}{Task Control}  & vTaskDelay()                             & \begin{tabular}[c]{@{}l@{}}Coloca a task, que está em execução, \\ no modo Blocked e aciona o timer para \\ despertar.\end{tabular}                                                                                                 \\ \cmidrule(l){2-3} 
 				& vTaskDelayUntil()                        & \begin{tabular}[c]{@{}l@{}}Coloca uma tarefa em execução no \\ estado de Blocked e configura o \\ tempo de resumo.\end{tabular}                                                                                                     \\ \cmidrule(l){2-3} 
 				& uxTaskPriorityGet()                      & \begin{tabular}[c]{@{}l@{}}Retorna a prioridade da task a partir \\ do seu handler.\end{tabular}                                                                                                                                    \\ \cmidrule(l){2-3} 
@@ -1148,13 +1240,17 @@ Abaixo há uma breve descrição sobre as APIs das categorias \textit{Task Creat
 				& xTaskResumeFromISR()                     & \begin{tabular}[c]{@{}l@{}}Coloca a tarefa suspensa no estado de \\ Ready quando o Scheduler estiver \\ parado.\end{tabular}                                                                                                        \\ \cmidrule(l){2-3} 
 				& xTaskAbortDelay()                        & \begin{tabular}[c]{@{}l@{}}Força uma tarefa a sair do modo \\ Blocked e entrar no Ready\end{tabular}                                                                                                                                \\ \bottomrule
 	\end{tabular}}}
+
+\centering
+\footnotesize{(BARRY, 2016, adaptado).}
+
 \end{table}
 
 %\newpage
 \vspace{20pt}
 \subsection{Configuração do FreeRTOS}
 
-Como o \textit{kernel} do FreeRTOS é comum para a maioria dos microcontroladores, o porting é essencial para adaptar o sistema para o tipo de microcontrolador usado. No site da empresa há um template dos arquivos \textbf{portmacro.h} e \textbf{FreeRTOSConfig.h} para o MSP432. Foram modificados poucos parâmetros, pois o aluno estava se adaptando à tecnologia. Na tabela \ref{port_freertos} há os parâmetros modificados.
+Como o \textit{kernel} do FreeRTOS é comum para a maioria dos microcontroladores, o \textit{porting} é essencial para adaptar o sistema para o tipo de microcontrolador usado. No site da empresa há um template dos arquivos \textbf{portmacro.h} e \textbf{FreeRTOSConfig.h} para o MSP432. Foram modificados poucos parâmetros, pois o aluno estava se adaptando à tecnologia. Na tabela \ref{port_freertos} há os parâmetros modificados.
 
 \newpage
 \begin{longtable}[c]{ccccl}
@@ -1180,7 +1276,10 @@ Como o \textit{kernel} do FreeRTOS é comum para a maioria dos microcontroladore
 	FreeRTOSConfig.h & configUSE\_IDLE\_HOOK              & Habilitado                      &                      &                               \\
 	FreeRTOSConfig.h & configUSE\_TICK\_HOOK              & Habilitado                      &                      &                               \\
 	FreeRTOSConfig.h & configPRE\_SLEEP\_PROCESSING( x )  & vPreSleepProcessing( x )        & \multicolumn{1}{l}{} &                               \\
-	FreeRTOSConfig.h & configPOST\_SLEEP\_PROCESSING( x ) & vPostSleepProcessing( x )       & \multicolumn{1}{l}{} &                               \\ \cline{1-3}
+	FreeRTOSConfig.h & configPOST\_SLEEP\_PROCESSING( x ) & vPostSleepProcessing( x )       & \multicolumn{1}{l}{} &                               \\ \cline{1-3}\linebreak
+	
+	\centering{
+	\footnotesize{Fonte: Autoria própria.}}
 \end{longtable}
 
 
@@ -1196,6 +1295,8 @@ A Linguagem de Modelagem Unificada (UML, do inglês \textit{Unified Modeling Lan
 	\item portabilidade do \textit{software} para várias plataformas e linguagens;
 	
 	\item linguagem de modelagem amplamente utilizada na engenharia de \textit{software}.
+		\centering
+	\footnotesize{Fonte: Autoria própria.}
 \end{itemize}
 
 
@@ -1222,7 +1323,7 @@ De acordo com Douglass (2009), o \textit{FunctionalC} é a extensão da UML que 
 				& Diagrama de Arquivos         & Diagrama de Classes     & \begin{tabular}[c]{@{}l@{}}Mostra o conjunto de arquivos .c e .h \\ e suas relações.\end{tabular}                                                                                                                \\
 				& Diagrama do Código           & nenhum                  & Mostra o código-fonte gerado.                                                                                                                                                                                    \\ \hline
 				\multirow{3}{*}{Comportamento} & Diagrama de Mensagens        & Diagrama Sequencial     & \begin{tabular}[c]{@{}l@{}}Mostra sequências de chamadas e \\ eventos enviados entre um conjunto \\ de arquivos, incluindo valores de \\ parâmetros passados.\end{tabular}                                       \\
-				& Maquina de Estados           & Diagrama de Estados     & \begin{tabular}[c]{@{}l@{}}Mostra a máquina de estado para \\ arquivos e como suas funções \\ e ações incluídas são executadas \\ à medida que eventos (síncronos ou \\ assíncronos) são recebidos.\end{tabular} \\
+				& Máquina de Estados           & Diagrama de Estados     & \begin{tabular}[c]{@{}l@{}}Mostra a máquina de estado para \\ arquivos e como suas funções \\ e ações incluídas são executadas \\ à medida que eventos (síncronos ou \\ assíncronos) são recebidos.\end{tabular} \\
 				& Fluxograma                   & Diagrama de Atividades  & \begin{tabular}[c]{@{}l@{}}Detalha o fluxo de controle para\\  uma função ou caso de uso.\end{tabular}                                                                                                           \\ \hline
 	\end{tabular}}}
 	Fonte: (DOUGLASS, pag 3,2009).
@@ -1232,6 +1333,7 @@ De acordo com Douglass (2009), o \textit{FunctionalC} é a extensão da UML que 
 Para ilustrar como é realizada a implementação de um diagrama UML em linguagem C, considera-se um arquivo Timer, que tem o objetivo de atualizar o tempo. Ele possui como atributo os segundos e minutos, bem como métodos e operações, como: Reset() e Tick().  A função Reset() poderia inicializar as variáveis para zero, e a função Tick() poderia incrementar o tempo a cada segundo. Em UML esse elemento seria representado conforme a Figura \textcolor{blue}{25}. Em C++ seria realizado uma classe, mas em C seria implementado conforme mostra o Código \ref{lst:codigo3}.
 
 \begin{figure}[h]
+	
 	\centering
 	\caption{Exemplo Timer UML.}
 	
@@ -1272,7 +1374,7 @@ void tick();
 
 \subsection{Desenvolvimento da UML}
 
-Analisando os requisitos do sistema, Tabela \ref{tabela_req}, foi possível abstrair as funções principais exigidas para o software: Controle das Tarefas, Coleta de Dados e Armazenamento. Sendo assim, foram realizado a Máquina de Estados, Fluxograma e o Diagrama de Arquivos necessário para o software embarcado. 
+Analisando os requisitos do sistema, Tabela \ref{tabela_req}, foi possível abstrair as funções principais exigidas para o \textit{software}: Controle das Tarefas, Coleta de Dados e Armazenamento. Sendo assim, foram realizado a Máquina de Estados, Fluxograma e o Diagrama de Arquivos necessário para o \textit{software} embarcado. 
 
 \begin{itemize}
 	
@@ -1282,24 +1384,31 @@ Analisando os requisitos do sistema, Tabela \ref{tabela_req}, foi possível abst
 	
 	\begin{figure}[h]
 		\centering
-		
-		
+\footnotesize{			
+			\centering
+		\footnotesize{Fonte: Autoria própria.}
 		\includegraphics[keepaspectratio=true,scale=0.62]{figuras/stateMachine.png}
-		\caption{Maquina de Estados da Camada de Serviço.}
+		\caption{Máquina de Estados da Camada de Serviço.}
 		\label{uml_me}
+	}
 	\end{figure}
 	\FloatBarrier
+	
 	\item \textbf{Fluxograma}
 	
 	Como o \textit{kernel} escolhido foi o \textit{FreeRTOS} as atividades do OBC foi divididas em \textit{Tasks}. A CCS possui 8 rotinas, sendo: uma de controle (\textbf{TaskManager}); uma de coleta de dados (\textbf{HouseKeeping}); uma de armazenamento (\textbf{DataStorage}); uma de controle de travamento (\textbf{WatchDogTask}); cinco de referentes à camada de aplicação. A Figura \ref{uml_floxograma} mostra o fluxograma de inicialização do sistema e no Apêndice \ref{apendicef} há os demais fluxogramas da CSS. 
 	
 	\begin{figure}[h]
+	\footnotesize{	
 		\centering
 		
+			\centering
+		\footnotesize{Fonte: Autoria própria.}
 		
 		\includegraphics[keepaspectratio=true,scale=0.54]{figuras/flowChart_obc.png}
 		\caption{Fluxograma de Inicialização do sistema.}
 		\label{uml_floxograma}
+	}
 	\end{figure}
 	\FloatBarrier
 	
@@ -1311,11 +1420,14 @@ Analisando os requisitos do sistema, Tabela \ref{tabela_req}, foi possível abst
 	%\newpage
 	
 	\begin{figure}[h]
+	\footnotesize{	
 		\centering
-		
+			\centering
+		\footnotesize{Fonte: Autoria própria.}
 		\includegraphics[keepaspectratio=true,scale=0.36]{figuras/CSS.png}
 		\caption{Diagrama de Arquivos do Sistema.}
 		\label{uml_da}
+	}
 	\end{figure}
 	\FloatBarrier
 	\begin{comment}
@@ -1330,20 +1442,24 @@ Analisando os requisitos do sistema, Tabela \ref{tabela_req}, foi possível abst
 \newpage
 \section{Desenvolvimento do Código}
 
-Com base na UML e no diagrama de interface do hardware foi realizado o código embarcado. O Ambiente de Desenvolvimento (IDE, do ingles \textit{Integrated Development Environment}) escolhido foi o \textit{Code Composer Studio}, devido  a familiaridade do aluno com a ferramenta. Todo o código foi colocado no repositório\footnote{Código disponível em: \url{https://github.com/guilhermelionzo/firmware_onBoardComputer}} do aluno no GitHub. 
+Com base na UML e no diagrama de interface do \textit{hardware} foi realizado o código embarcado. O Ambiente de Desenvolvimento (IDE, do ingles \textit{Integrated Development Environment}) escolhido foi o \textit{Code Composer Studio}, devido  a familiaridade do aluno com a ferramenta. Todo o código foi colocado no repositório\footnote{Código disponível em: \url{https://github.com/guilhermelionzo/firmware_onBoardComputer}} do aluno no GitHub. 
 
 \chapter[Resultados e Discussão]{Resultados e Discussão}
+\label{secaoResul}
+Como mencionado anteriormente, o projeto da missão estava em sendo estruturado e analisado. Esse fato impossibilitou a capitação de recursos para a compra dos componentes eletrônicos. Sendo assim, os resultados apresentados são pertinentes ao teste em protoboard, utilizando a \textit{LaunchPad} do MSP432 e alguns módulos COTS.
 
-Como mencionado anteriormente, o projeto da missão estava em sendo estruturado e analisado. Esse fato impossibilitou a capitação de recursos para a compra dos componentes eletrônicos. Sendo assim, os resultados apresentados são pertinentes ao teste em protoboard, utilizando a LaunchPad do MSP432 e alguns módulos COTS.
-
-Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Essa abordagem condiz, de certa forma, com a realidade pois a incidência de luz interfere na quantidade de energia armazenada no \textit{EPS}. A Figura \ref{protoboardCompleteDetail} mostra a conexão dos componentes na LaunchPad. Nesta foto há os módulos COTS utilizados (SD Card, MPU9255 e \textit{photoresistor}) e a câmera (\textit{Paylod}).
+Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Essa abordagem condiz, de certa forma, com a realidade pois a incidência de luz interfere na quantidade de energia armazenada no \textit{EPS}. A Figura \ref{protoboardCompleteDetail} mostra a conexão dos componentes na \textit{LaunchPad}. Nesta foto há os módulos COTS utilizados (SD Card, MPU9255 e \textit{photoresistor}) e a câmera (\textit{Paylod}).
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-	\caption{Protoboard com os componentes COTS e a LaunchPad.}
-	\includegraphics[keepaspectratio=true,scale=0.57]{figuras/protoboardCompleteDetail.png}
+		\centering
+	\footnotesize{Fonte: Autoria própria.}
 	
+	\includegraphics[keepaspectratio=true,scale=0.57]{figuras/protoboardCompleteDetail.png}
+	\caption{Protoboard com os componentes COTS e a \textit{LaunchPad}.}
 	\label{protoboardCompleteDetail}
+}
 \end{figure}
 \FloatBarrier
 
@@ -1353,11 +1469,15 @@ O serviço de armazenamento de aquisição e armazenamento de dados é feito pel
 
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	
 	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/telemetryPacket.png}
 	\caption{Formato do Pacote de Telemetria.}
 	\label{telemetryPacket}
+}
 \end{figure}
 \FloatBarrier
 \begin{comment}
@@ -1386,46 +1506,59 @@ OBC-SW-R3                    & O OBC deve realizar um log de eventos do sistema.
 \newpage
 Durante os testes houveram algumas falhas para armazenar o tempo relativo no computador de bordo e alguns valores tiveram valor nulo. Não foi encontrar o motivo exato desse problema, mas uma possível causa é na conversão dos valores gerados pelo SysTick do sistema. A Figura \ref{telemetryData} mostra os dados armazenados durante os testes. 
 
+
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-	
+\centering
+\footnotesize{Fonte: Autoria própria.}
+
 	\includegraphics[keepaspectratio=true,scale=0.48]{figuras/telemetryData.PNG}
-	\caption{Dados da telemetria armazenados no cartão de memoria.}
+	\caption{Dados da telemetria armazenados no cartão de memória.}
 	\label{telemetryData}
+}
 \end{figure}
 \FloatBarrier
+
 Não foi possível realizar a aquisição das imagens provenientes da Câmera. O protocolo de controle da câmera (via I2C)  foi desenvolvido, mas o protocolo de controle do FIFO (via SPI) está em fase de implementação. Durante os testes, não foi possível ler o valor do registrador teste do FIFO. Algumas possíveis causas desse problema seja a configuração da interface SPI, como por exemplo o \textit{clock}, fase, polaridade e direção de transmissão. 
 
 \section{Consumo}
 
 Um dos critérios mais importantes para o design de um OBC é o consumo energético em várias condições de operação. Ainda é mais importante nanosatélites onde a fonte de energia é limitada pela área dos painéis solares. 
 
-Os testes de consumo foram realizados utilizando a ferramenta \textit{EnergyTracer} do \textit{Code Composer Studio}. Essa ferramenta mede a corrente sendo consumida no barramento JTAG/SW, sendo assim ela permite calcular a corrente de todos os módulos/sensores alimentados pela launchpad. 
+Os testes de consumo foram realizados utilizando a ferramenta \textit{EnergyTracer} do \textit{Code Composer Studio}. Essa ferramenta mede a corrente sendo consumida no barramento JTAG/SW, sendo assim ela permite calcular a corrente de todos os módulos/sensores alimentados pela \textit{Launchpad}. 
 
-Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Houveram três baterias de teste de cinco minutos, um para cada estado. Os dados do consumo de cada um está presente na tabela 1.
+Para simular o \textit{EPS} do CubeSat, foi utilizado um \textit{photoresistor} para indicar o nível de bateria. Houveram três baterias de testes de cinco minutos, um para cada estado. Os dados do consumo de cada um está presente na Tabela 1.
 
 Comparando o estado de nominal com o estado de hibernação, observa-se que houve uma economia de mais de 40\%, aumentando a vida da bateria em dois dias. A Figura \ref{hibernatexNormal} mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-	
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/hibernatexNormal.PNG}
 	\caption{Comparação entre os Modos de hibernação (azul) e Nominal (amarelo).}
 	\label{hibernatexNormal}
+}
 \end{figure}
 \FloatBarrier
 
-Não foi possível concluir a mesma melhoria comparando o modo de baixo consumo com o modo de hibernação. Houve apenas uma economia de 9\%, 0.6 dias. Esse fato ocorre por que o modo de hibernação não está completamente otimizado. A fonte de sincronismo durante esse estado ainda continua sendo 48MHz. O ideal seria utilizar o \textit{clock} externo de 32KHz para realizar as interrupções do \textit{kernel}. Infelizmente devido à inexperiência do aluno com o FreeRTOS, não foi possível adicionar uma segunda fonte de sincronismo no modo de baixo consumo. A Figura \ref{hibernatexLBM} mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
+Não foi possível concluir a mesma melhoria comparando o modo de baixo consumo com o modo de hibernação. Houve apenas uma economia de 9\%, 0.6 dias. Esse fato ocorre porque o modo de hibernação não está completamente otimizado. A fonte de sincronismo durante esse estado ainda continua sendo 48MHz. O ideal seria utilizar o \textit{clock} externo de 32KHz para realizar as interrupções do \textit{kernel}. Infelizmente devido à inexperiência do aluno com o FreeRTOS, não foi possível adicionar uma segunda fonte de sincronismo no modo de baixo consumo. A Figura \ref{hibernatexLBM} mostra a comparação em forma gráfica, hibernação em azul e nominal em amarelo.
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-	
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	\includegraphics[keepaspectratio=true,scale=0.470]{figuras/hibernatexLBM.PNG}
 	\caption{Comparação entre os Modos de hibernação (azul) e Pouca Bateria (amarelo).}
 	\label{hibernatexLBM}
+}
 \end{figure}
 \FloatBarrier
-Apesar de não ter sido implementado o \textit{clock} de baixa frequência para o modo de hibernação, é possível confinar que o software embarcado consegue alterar o modo de operação dependendo de uma fonte externa. Sendo assim, o requisito OBC-SW-R7 foi cumprido.
+
+Apesar de não ter sido implementado o \textit{clock} de baixa frequência para o modo de hibernação, é possível confirmar que o \textit{software} embarcado consegue alterar o modo de operação dependendo de uma fonte externa. Sendo assim, o requisito OBC-SW-R7 foi cumprido.
 
 
 
@@ -1439,28 +1572,35 @@ Fazendo uma estimativa com os outros sensores/periféricos. A tabela abaixo most
 \section{Modos de Operação}
 
 
-Para testar a máquina de estados do OBC, utilizou-se o software Tracealyzer, da empresa Percepio\footnote{Para mais detalhes da empresa consulte \url{https://percepio.com/}}. Essa ferramenta consiste em uma interface gráfica que interpreta os dados gerados durante a execução do FreeRTOS. Os dados são armazenados em um \textit{buffer}, na memória RAM do microcontrolador, e após a solicitação do Tracealyzer são enviados para o computador. Utilizou-se a ferramenta em modo \textit{snapshoot}, o que consiste em pegar os dados do \textit{buffer} e interpretar na interface gráfica. O modo \textit{streaming}, que consiste em pegar os dados em modo continuo, não foi utilizado pois não havia o cabo de \textit{debug} J-link.
+Para testar a máquina de estados do OBC, foi utilizado o \textit{software} Tracealyzer, da empresa Percepio\footnote{Para mais detalhes da empresa consulte \url{https://percepio.com/}}. Essa ferramenta consiste em uma interface gráfica que interpreta os dados gerados durante a execução do FreeRTOS. Os dados são armazenados em um \textit{buffer}, na memória RAM do microcontrolador, e após a solicitação do Tracealyzer são enviados para o computador. Utilizou-se a ferramenta em modo \textit{snapshoot}, o que consiste em pegar os dados do \textit{buffer} e interpretar na interface gráfica. O modo \textit{streaming}, que consiste em pegar os dados em modo contínuo, não foi utilizado pois não havia o cabo de \textit{debug} J-link.
 
 No decorrer dos testes foi possível observar vários fenômenos interessantes. Durante a inicialização do sistema, nota-se que há um grande consumo de CPU pelas \textit{Tasks}, principalmente \textit{DataStorage},devido a montagem da imagem do SD Card. Isso acontece pois o sistema operacional está alocando memória para as \textit{tasks,queues} e outros \textit{handlers}. A Figura \ref{trace_snapshoot_1} mostra a inicialização do sistema.
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	\caption{Snapshoot no Tracealyzer durante a inicialização do sistema.}
 	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/trace_snapshoot_1.PNG}
 	
 	\label{trace_snapshoot_1}
+}
 \end{figure}
 \FloatBarrier
 
-Após alguns segundos foi possível notar que a task do \textit{DataStorage} ainda consome muita CPU. Isso ocorre pois durante os testes os dados dos sensores foram convertidos e armazenados, o que consome muito processamento. É bem provável que salvar os dados em sua forma original diminuirá o poder de processamento em mais da metade. Figura \ref{trace_snapshoot_2}
+Após alguns segundos foi possível notar que a task do \textit{DataStorage} ainda consome muita CPU. Isso ocorre pois durante os testes os dados dos sensores foram convertidos e armazenados, consumindo muito processamento. É bem provável que salvar os dados em sua forma original diminuirá o poder de processamento em mais da metade. Figura \ref{trace_snapshoot_2}
 
 
 \begin{figure}[h]
+	\footnotesize{	
 	\centering
-	
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/trace_snapshoot_2.PNG}
 	\caption{Snapshoot no Tracealyzer alguns segundos após a inicialização do sistema.}
 	\label{trace_snapshoot_2}
+}
 \end{figure}
 \FloatBarrier
 
@@ -1468,6 +1608,8 @@ Após o período de inicialização, colocando o sistema em modo de alta perform
 
 \begin{figure}[h]
 	\centering
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	
 	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/trace_snapshoot_3.PNG}
 	\caption{Snapshoot no Tracealyzer do sistema executando NM\_MODE.}
@@ -1475,27 +1617,34 @@ Após o período de inicialização, colocando o sistema em modo de alta perform
 \end{figure}
 \FloatBarrier
 
-\newpage
-Colocando o sistema em modo de baixo consumo é possível notar que há uma redução no tempo de execução das \textit{Tasks}, que durante os testes esse tempo foi cinco vezes maior que o tempo de execução nominal, como mostrado na Figura \ref{trace_snapshoot_5}. Também é visto que as \textit{Tasks} com menos prioridade foram coladas em modo de sleep, restando apenas as \textit{Tasks} que são de controle(\textit{WTD Task} e \textit{TaskManager}) e manipulação de dados (\textit{HouseKeeeping} e \textit{DataManager})
+Colocando o sistema em modo de baixo consumo é possível notar que há uma redução no tempo de execução das \textit{Tasks}, que durante os testes esse tempo foi cinco vezes maior que o tempo de execução nominal, como mostrado na Figura \ref{trace_snapshoot_5}. Também é visto que as \textit{Tasks} com menos prioridade foram colocadas em modo de \textit{sleep}, restando apenas as \textit{Tasks} que são de controle(\textit{WTD Task} e \textit{TaskManager}) e manipulação de dados (\textit{HouseKeeeping} e \textit{DataManager})
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	
 	\includegraphics[keepaspectratio=true,scale=0.43]{figuras/trace_snapshoot_5.PNG}
 	\caption{Snapshoot no Tracealyzer do sistema executando BLLM1\_MODE.}
 	\label{trace_snapshoot_5}
+}
 \end{figure}
 \FloatBarrier
 
-Como era de se esperar, durante o modo de hibernação apenas o \textit{TaskManager} fica ativo e consumindo mais CPU do que o usual, quase de 11\%. O \textit{kernel} também executa essa \textit{task} com um espaçamento cinco vezes maior que o normal. em 5 vezes ao normal. A Figura \ref{trace_snapshoot_4} mostra o gráfico de processamento do OBC em modo de hibernação.
+Como era de se esperar, durante o modo de hibernação apenas o \textit{TaskManager} fica ativo e consumindo mais CPU do que o usual, quase de 11\%. O \textit{kernel} também executa essa \textit{task} com um espaçamento cinco vezes maior que o normal. A Figura \ref{trace_snapshoot_4} mostra o gráfico de processamento do OBC em modo de hibernação.
 
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	
 	\includegraphics[keepaspectratio=true,scale=0.41]{figuras/trace_snapshoot_4.PNG}
 	\caption{Snapshoot no Tracealyzer do sistema executando HB\_MODE.}
 	\label{trace_snapshoot_4}
+}
 \end{figure}
 \FloatBarrier
 
@@ -1503,32 +1652,39 @@ Como era de se esperar, durante o modo de hibernação apenas o \textit{TaskMana
 Por fim, alternou-se os modos de operação para que pudesse ter noção de como o sistema se comportaria em modo misto, saindo de um estado para o outro. O resultado mostrado na Figura \ref{trace_snapshoot_8} condiz com o esperado. Nos estágios iniciais há um grande uso de CPU, logo em seguida o sistema entra em modo de baixo consumo e apenas o \textit{TaskManager} fica ativo e sendo executado mais lentamente. Após o modo de hibernação, o sistema entra em modo nominal e todas as tasks são executadas sem limite de CPU. E por fim, o sistema foi colocado em modo de baixo consumo, e apenas as \textit{tasks} de controle(\textit{WTD Task} e \textit{TaskManager}) e manipulação de dados (\textit{HouseKeeeping} e \textit{DataManager}) foram executadas.
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-	
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	\includegraphics[keepaspectratio=true,scale=0.51]{figuras/trace_snapshoot_8.PNG}
 	\caption{Snapshoot no Tracealyzer do sistema executando em todos os modos.}
 	\label{trace_snapshoot_8}
+}
 \end{figure}
 \FloatBarrier
 
-A utilização do programa \textit{Tracealyzer} permitiu verificar a maquina de estados do \textit{software} embarcado. Foi possível notar também que o \textit{TaskManager} é capaz de gerenciar as \textit{tasks} de acordo com algum \textit{input} externo (Ex.: nível de bateria, luminosidade, etc). Também foi possível notar que o sistema em modo NM\_MODE ocupa 8 \%  de CPU, isso mostra que há aproximadamente 98 \% de CPU ociosa que pode ser utilizada para processamento da Payload, T\&TC, PPT, etc.
+A utilização do programa \textit{Tracealyzer} permitiu verificar a máquina de estados do \textit{software} embarcado. Foi possível notar também que o \textit{TaskManager} é capaz de gerenciar as \textit{tasks} de acordo com algum \textit{input} externo (Ex.: nível de bateria, luminosidade, etc). Também foi possível notar que o sistema em modo NM\_MODE ocupa 8 \%  de CPU, isso mostra que há aproximadamente 98 \% de CPU ociosa que pode ser utilizada para processamento da Payload, T\&TC, PPT, etc.
 
 \section{Sistema Antitravamento}
 
-Uma das grandes preocupações no desenvolvimento do OBC estava na confiabilidade do sistema. O uso de componentes COTS põem em risco a vida útil da missão, pois tais componentes não possuem resistência à radiação. Sendo assim, foi utilizado no projeto três tipos de Watchdog: via software (\textit{WatchDogTask}); interno (contador do MSP432); externo (STWD100).
+Uma das grandes preocupações no desenvolvimento do OBC estava na confiabilidade do sistema. O uso de componentes COTS põem em risco a vida útil da missão, pois tais componentes não possuem resistência à radiação. Sendo assim, foi utilizado no projeto três tipos de Watchdog: via \textit{software} (\textit{WatchDogTask}); interno (contador do MSP432); externo (STWD100).
 
 Para testar a \textit{WatchDogTask}, simulou-se um travamento na \textit{task} do \textit{TT\&C}. utilizou-se um contador que seria incrementado a cada loop. Se o contador fosse igual a 20, o TT\&C não setaria o bit no \textit{WATCHDOG\_EVENT\_GROUP}, simulando um travamento. Esse procedimento é mostrado na figura abaixo.  
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
+	\newline
 	\includegraphics[keepaspectratio=true,scale=0.63]{figuras/workflow_test_WTD.PNG}
 	\caption{Procedimento para simulação de travamento do \textit{TT\&CTask}.}	
 	\label{watchDogFreeRTOS_0}
+}
 \end{figure}
 \FloatBarrier
 
-Como era de se esperar, a \textit{WatchDogTask} conferiu os bits setados no handler e deletou a \textit{TT\&C Task}, conforme mostrado nas Figuras \ref{watchDogFreeRTOS_1} e \ref{watchDogFreeRTOS}. Antes de ser delatada, a \textit{task} do TT\&C possuia a label  \textbf{TT\&C Task (2)} [azul] e, apos ser reiniciada, mudou para \textbf{TT\&C Task (3)} [verde].
+Como era de se esperar, a \textit{WatchDogTask} conferiu os bits setados no handler e deletou a \textit{TT\&C Task}, conforme mostrado nas Figuras \ref{watchDogFreeRTOS_1} e \ref{watchDogFreeRTOS}. Antes de ser delatada, a \textit{task} do TT\&C possuia a label  \textbf{TT\&C Task (2)} [azul] e, após ser reiniciada, mudou para \textbf{TT\&C Task (3)} [verde].
 
 \begin{comment}
 . Esses eventos são melhores ilustrados 
@@ -1541,27 +1697,33 @@ Na Figura \ref{watchDogFreeRTOS} há outra imagem da mesma sequencia de eventos,
 \end{comment} 
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	\includegraphics[keepaspectratio=true,scale=0.63]{figuras/watchDogFreeRTOS_3.PNG}
 	\caption{Event Log no Tracealyzer do \textit{WatchDogTask} sendo reinicializado.}	
 	\label{watchDogFreeRTOS_1}
+}
 \end{figure}
 \FloatBarrier
 
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	\includegraphics[keepaspectratio=true,scale=0.65]{figuras/watchDogFreeRTOS_description.PNG}
 	\caption{Grafico da CPU no Tracealyzer do \textit{WatchDogTask} sendo reinicializado.}	
 	\label{watchDogFreeRTOS}
+}
 \end{figure}
 
 
 No nível abaixo, há o \textit{watchdog} do microcontrolador. Caso ocorra algum travamento no sistema operacional, o MSP432, a nível de \textit{hardrware}, reiniciará o sistema.
 
-Por fim, na camada mais baixa há o \textit{Watchdog} externo que resetará o OBC caso o MSP432 trave, trazendo mais robustez à solução. Não foi possível testar o componente STWD100 pois não ha o modulo COTS desse dispositivo, apenas sendo encontrado em montagem SMD. 
+Por fim, na camada mais baixa há o \textit{Watchdog} externo que resetará o OBC caso o MSP432 trave, trazendo mais robustez à solução. Não foi possível testar o componente STWD100 pois não ha o módulo COTS desse dispositivo, apenas sendo encontrado em montagem SMD. 
 
 O uso do \textit{Watchdog} em três níveis trará mais confiabilidade ao OBC. Entretanto, essa solução só funcionará em casos de \textit{Single Event Upset} (SEU), já em outros casos, como o SEL, é possível que haja danos permanentes no OBC. 
 
@@ -1575,44 +1737,54 @@ OBC-SW-R8
 \end{comment}
 
 
-\section{Alocação de Memoria do FreeRTOS e da CSS}
+\section{Alocação de Memória do FreeRTOS e da CSS}
 
-Quantificar o espaço utilizado pelo \textit{software} embarcado é extremamente importante, pois novas funcionalidades serão implementadas e o microcontrolador deverá possuir memoria suficiente para acomoda-las. Para saber a memória utilizada pelo \textit{kernel} e a camada de serviço do sistema, utilizou-se a ferramenta \textit{Memory Allocation} da IDE do Code Composer. 
+Quantificar o espaço utilizado pelo \textit{software} embarcado é extremamente importante, pois novas funcionalidades serão implementadas e o microcontrolador deverá possuir memória suficiente para acomoda-las. Para saber a memória utilizada pelo \textit{kernel} e a camada de serviço do sistema, utilizou-se a ferramenta \textit{Memory Allocation} da IDE do Code Composer. 
 
-Desabilitando a inclusão do CLI, Tracealyzer e as \textit{task} do CSS, o espaço ocupado pelo \textit{FreeRTOS} foi de 5Kb para o código e 1,5Kb para a RAM. Isso mostra que o sistema operacional ocupa apenas 4\% de memoria FLASH e 2\% de memoria RAM, conforme é mostrado na Figura \ref{memoryAllocation_RTOS}. possuindo um footprint pequeno. Esses valores seriam reduzido se fosse retirado algumas macros que não fazem parte do kernel. Esses valores comprovam que o \textit{FreeRTOS} é uma ótima solução para sistemas que não possuem muita memoria FLASH/RAM mas que necessitam de um sistema operacional de tempo real. 
+Desabilitando a inclusão do CLI, Tracealyzer e as \textit{task} do CSS, o espaço ocupado pelo \textit{FreeRTOS} foi de 5Kb para o código e 1,5Kb para a RAM. Isso mostra que o sistema operacional ocupa apenas 4\% de memória FLASH e 2\% de memória RAM, conforme é mostrado na Figura \ref{memoryAllocation_RTOS}, possuindo um \textit{footprint} pequeno. Esses valores seriam reduzido se fosse retirado algumas macros que não fazem parte do \textit{kernel}. Esses valores comprovam que o \textit{FreeRTOS} é uma ótima solução para sistemas que não possuem muita memória FLASH/RAM mas que necessitam de um sistema operacional de tempo real. 
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	\includegraphics[keepaspectratio=true,scale=0.6]{figuras/memoryAllocation_RTOS.PNG}
 	\caption{Valores de FLASH e RAM alocados para o \textit{FreeRTOS}.}	
 	\label{memoryAllocation_RTOS}
+}
 \end{figure}
 \FloatBarrier
 
-Quando há a inclusão de todas as bibliotecas, é percebido um aumento considerável na memoria RAM, conforme mostrado na Figura \ref{memoryAllocation_Full}. Esse aumento é devido ao uso do \textit{Tracealyzer} que utiliza parte da memoria RAM para o armazenamento das informações do sistema operacional. Mas como o \textit{FreeRTOS} gerencia os recursos de CPU, essa alocação de 99\% só é vista no boot inicial do sistema e em momentos de transição dos modos de operação. Em relação ao espaço do código, houve um aumento de 14\% algo relativamente pequeno. Isso mostra que a Camada de Serviço do Sistema possui um \textit{footprint} pequeno e que caso haja a necessidade de adicionar mais funcionalidades no sistema, há 86\% (215Kb) de memoria FLASH livre. 
+Quando há a inclusão de todas as bibliotecas, é percebido um aumento considerável na memória RAM, conforme mostrado na Figura \ref{memoryAllocation_Full}. Esse aumento é devido ao uso do \textit{Tracealyzer} que utiliza parte da memória RAM para o armazenamento das informações do sistema operacional. Mas como o \textit{FreeRTOS} gerencia os recursos de CPU, essa alocação de 99\% só é vista no boot inicial do sistema e em momentos de transição dos modos de operação. Em relação ao espaço do código, houve um aumento de 14\% algo relativamente pequeno. Isso mostra que a Camada de Serviço do Sistema possui um \textit{footprint} pequeno e que caso haja a necessidade de adicionar mais funcionalidades no sistema, há 86\% (215Kb) de memória FLASH livre. 
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
-
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	\includegraphics[keepaspectratio=true,scale=0.64]{figuras/memoryAllocation_Full.PNG}
 	\caption{Valores de FLASH e RAM alocados para o \textit{software} embarcado.}	
 	\label{memoryAllocation_Full}
+}
 \end{figure}
 \FloatBarrier
 
 \newpage
 \section{Printed Circuit Board}
 
-A partir do layout realizado no KiCad, gerou-se os arquivos .gerbers que contem todas as informações para a a fabricação da PCB. Utilizou-se a fabricante PCBWay\footnote{Para mais informações, consulte: \url{https://www.pcbway.com/orderonline.aspx}} para realizar a fabricação da PCB. O resultado final é mostrado na figura \ref{pcb_bothSides}.
+A partir do layout realizado no KiCad, gerou-se os arquivos .gerbers que contêm todas as informações para a fabricação da PCB. Utilizou-se a fabricante PCBWay\footnote{Para mais informações, consulte: \url{https://www.pcbway.com/orderonline.aspx}} para realizar a fabricação da PCB. O resultado final é mostrado na Figura \ref{pcb_bothSides}.
 
 
 \begin{figure}[h]
+\footnotesize{	
 	\centering
+			\centering
+	\footnotesize{Fonte: Autoria própria.}
 	
 	\includegraphics[keepaspectratio=true,scale=0.7]{figuras/pcb_bothSides.png}
 	\caption{Vista superior e inferior da PCB.}
 	\label{pcb_bothSides}
+}
 \end{figure}
 \FloatBarrier
 
@@ -1627,22 +1799,22 @@ A Figura X mostra a PCB em suas vistas superior e inferior. A qualidade da PCB f
 
 
 \chapter[Conclusão e Recomendações]{Conclusão e Recomendações}
-
+\label{secaoCR}
 \section{Conclusão}
 
-Este trabalho apresentou o projeto do \textit{On Board Computer} para a futura missão entra a Universidade de Brasília e o Instituto de Aviação Varsóvia. Como foi mencionado durante o texto, a negociação do projeto estava em andamento durante todo o projeto de pesquisa, o que impossibilitou a coleta de requisitos e o custeio dos componentes eletrônicos. Tais pontos não desmerecem o projeto, pois houve um acumulo de conhecimento enorme durante a pesquisa. 
+Este trabalho apresentou o projeto do \textit{On Board Computer} para a futura missão CubeSat da Universidade de Brasília. Como foi mencionado durante o texto, a negociação do projeto estava em andamento durante todo o projeto de pesquisa, o que impossibilitou a coleta de requisitos e o custeio dos componentes eletrônicos. Tais pontos não desmerecem o projeto, pois houve um acúmulo de conhecimento enorme durante a pesquisa. 
 
-Inicialmente foi realizado uma conceituação básica do tema. Apresentou-se a categorização dos pequenos satélites e seus principais subsistemas, com foco nos nanosatélites. Mostrou-se a importância do OBC em CubeSats, bem como a comparação entre alguns OBCs utilizados em missões.  Para fechar a parte introdutória, expôs-se o ambiente espacial e sua influência nos equipamentos eletrônicos. Esses tópicos serviram de base para o entendimento dos fatores a serem analisados durante o processo de desenvolvimento do OBC.
+Inicialmente foi realizado uma conceituação básica do tema. Apresentou-se a categorização dos pequenos satélites e seus principais subsistemas, com foco nos nanosatélites. Foi apresentado a importância do OBC em CubeSats, bem como a comparação entre alguns OBCs utilizados em missões.  Para fechar a parte introdutória, expôs-se o ambiente espacial e sua influência nos equipamentos eletrônicos. Esses tópicos serviram de base para o entendimento dos fatores a serem analisados durante o processo de desenvolvimento do OBC.
 
 Logo em seguida, foi mostrado o procedimento utilizado para contornar a ausência de requisitos do OBC, procedimento que ajudou na limitação do escopo do projeto. Mostrou-se o critério utilizado para escolha do microcontrolador, componente mais importante do OBC. A partir desta primeira seleção, escolheu-se os outros componentes que o auxiliariam no controle do OBC, como sensor inercial, corrente, temperatura, etc. 
 
-Também foi visto alguns sistemas para diminuir os riscos dos efeitos da radiação sobre o microcontrolador, como o uso de watchdog em vários níveis. Por fim, para a parte de hardware foi realizado o layout do circuito impresso no KiCad.
+Também foi visto alguns sistemas para diminuir os riscos dos efeitos da radiação sobre o microcontrolador, como o uso de \textit{watchdog} em vários níveis. Por fim, para a parte de \textit{hardware} foi realizado o layout do circuito impresso no KiCad.
 
-Para o desenvolvimento do software utilizou-se a mesma alternativa para contornar os escassez de requisitos. Foi mostrado a arquitetura em camadas, proposta para ajudar na abstração dos componentes e interfaces. O pacote DriverLib foi utilizado como interface HAL, uma vez que suas APIs abstraem toda a tratativa dos registradores do microcontrolador. Para a camada acima, foi escolhido o FreeRTOS como sistema operacional do OBC, sendo uma ótima escolha para sistemas críticos de tempo real onde o poder de processamento é limitado. Também foi desenvolvido a Camada de Serviço do Sistema, utilizando os conceitos de \textit{Unified Modeling Language} para facilitar a manutenção dessa camada em futuras melhorias. 
+Para o desenvolvimento do \textit{software} utilizou-se a mesma alternativa para contornar os escassez de requisitos. Foi mostrado a arquitetura em camadas, proposta para ajudar na abstração dos componentes e interfaces. O pacote DriverLib foi utilizado como interface HAL, uma vez que suas APIs abstraem toda a tratativa dos registradores do microcontrolador. Para a camada acima, foi escolhido o FreeRTOS como sistema operacional do OBC, sendo uma ótima escolha para sistemas críticos de tempo real onde o poder de processamento é limitado. Também foi desenvolvido a Camada de Serviço do Sistema, utilizando os conceitos de \textit{Unified Modeling Language} para facilitar a manutenção dessa camada em futuras melhorias. 
 
-Durantes os testes com a launchpad, foi possível testar a coleta e armazenamento de dados, a solução antitravamento e consumo. A utilização da ferramenta Tracealyzer facilitou a visualização dos modos de operação do sistema operacional. Tal ferramenta ajudou na validação dos modos de operação do \textit{software} embarcado. Foi visto que o consumo do microcontrolador atende aos requisitos de baixo consumo de um CubeSat.    
+Durantes os testes com a \textit{Launchpad}, foi possível testar a coleta e armazenamento de dados, a solução antitravamento e consumo. A utilização da ferramenta Tracealyzer facilitou a visualização dos modos de operação do sistema operacional. Tal ferramenta ajudou na validação dos modos de operação do \textit{software} embarcado. Foi visto que o consumo do microcontrolador atende aos requisitos de baixo consumo de um CubeSat.    
 
-Alguns pontos não foram abordados, ou desenvolvidos, durante a pesquisa devido algumas dificuldades que o aluno passou durante o desenvolvimento do OBC. Entretanto, tais pontos não desmerecem o trabalho, visto que foi possível desenvolver grande parte do software embarcado e o desenvolvimento por completo do layout da PCB. %Os pontos a serem melhoradas em futuras versões do trabalho serão expostas na seção a seguir.
+Alguns pontos não foram abordados, ou desenvolvidos, durante a pesquisa devido algumas dificuldades que o aluno passou durante o desenvolvimento do OBC. Entretanto, tais pontos não desmerecem o trabalho, visto que foi possível desenvolver grande parte do \textit{software} embarcado e o desenvolvimento por completo do layout da PCB. %Os pontos a serem melhoradas em futuras versões do trabalho serão expostas na seção a seguir.
 
 Algo importante a ser mencionado é o benefício que a utilização da plataforma GitHub trouxe ao projeto, todo o código ficou versionado no repositório do aluno. Ao todo houveram trinta e dois commits, ou seja, trinta e duas versões do código. Caso haja uma modificação muito drástica no código e este não funcione perfeitamente, é possível voltar para uma versão mais estável. Outro ponto importante é que o GitHub serviu como divulgação da pesquisa. Até o presente momento, 135 visualizações e 16 clones no repositório do projeto.  
 
@@ -1651,15 +1823,15 @@ Algo importante a ser mencionado é o benefício que a utilização da plataform
 \label{Recomendações}
 Os trabalhos futuros são de extrema importância para a melhoria do OBC e êxito da futura missão. Como este foi um dos primeiros trabalhos pesquisa realizado na missão, vários empecilhos foram desconsiderados durante a fase inicial da pesquisa. Tais pontos devem ser considerados nos próximos trabalhos.
 
-A compra e soldagem dos componentes é um ponto extrema prioridade, pois não foi possível testar a placa desenvolvida no projeto. Alguns componentes só poderão ser testados ao serem soldados na PCB, como é o caso do watchdog externo e da memória FRAM.
+A compra e soldagem dos componentes é um ponto extrema prioridade, pois não foi possível testar a placa desenvolvida no projeto. Alguns componentes só poderão ser testados ao serem soldados na PCB, como é o caso do \textit{watchdog} externo e da memória FRAM.
 
 Outro ponto que deve ser aprofundado é a utilização do \textit{clock} de 32KHz como fonte de sincronismo do \textit{SysTick}, durante o modo de hibernação do satélite. Foi visto que a utilização de um único  \textit{clock}, tanto para o modo de alto desempenho quanto para o modo de hibernação, não torna o OBC robusto em cenários de baixa bateria. Fazendo uma estimativa, o MSP432 aumentaria a vida útil da bateria, em modo de hibernação, em mais de duas mil vezes, consumindo 11uW caso utilizasse o \textit{clock} de 32KHz \footnote{Para mais detalhes, consultar Apêndice \ref{apendicec}}.
 
-O uso de vários níveis de watchdog não é necessário para diminuição do risco dos efeitos da radiação sobre o OBC. A utilização de componentes COTS diminuem a confiabilidade do sistema e outras formas de proteção devem ser analisadas. Recomenda-se que haja pesquisas em \textit{shields} metálicos para proteção de todo o sistema embarcado,  mas levando em consideração a massa  deste para não onerar o lançamento do satélite, visto que os lançadores cobram em torno de USD 20/kg\footnote{Para mais detalhes, consultar a página 18: \url{http://www.scielo.br/pdf/jatm/v9n3/2175-9146-jatm-09-03-0269.pdf}}.
+O uso de vários níveis de \textit{watchdog} não é necessário para diminuição do risco dos efeitos da radiação sobre o OBC. A utilização de componentes COTS diminuem a confiabilidade do sistema e outras formas de proteção devem ser analisadas. Recomenda-se que haja pesquisas em \textit{shields} metálicos para proteção de todo o sistema embarcado,  mas levando em consideração a massa  deste para não onerar o lançamento do satélite, visto que os lançadores cobram em torno de USD 20/kg\footnote{Para mais detalhes, consultar a página 18: \url{http://tiny.cc/fhjsaz}}.
 
-Foi constatado que o escopo do projeto foi subestimado e o projeto tem uma proporção bem maior do que foi imaginado. O desenvolvimento do OBC, tanto para o \textit{hardware} quanto para o \textit{software} utilizando apenas um aluno se torna inviável. O uso da metodologia co-design é ideal para engenheiros que possuem grande experiencia no desenvolvimento de soluções embarcadas, mas a nível de graduação, ela se torna muito difícil pois há inúmeros pontos que o aluno pode travar durante o projeto. Sugere-se que o projeto seja divido para no mínimo dois alunos, um para o \textit{hardware} e outro para o \textit{software}. 
+Foi constatado que o escopo do projeto foi subestimado e o projeto tem uma proporção bem maior do que foi imaginado. O desenvolvimento do OBC, tanto para o \textit{hardware} quanto para o \textit{software} utilizando apenas um aluno se torna inviável. O uso da metodologia co-design é ideal para engenheiros que possuem grande experiência no desenvolvimento de soluções embarcadas, mas a nível de graduação, ela se torna muito difícil pois há inúmeros pontos que o aluno pode travar durante o projeto. Sugere-se que o projeto seja divido para no mínimo dois alunos, um para o \textit{hardware} e outro para o \textit{software}. 
 
-Por fim, poderia ser abordada a parceria com o grupo de pesquisa LAICAnSat. Essa parceria seria ideal para o desenvolvimento de outros subsistemas da missão e teste do OBC, como \textit{payload} de teste, em lançamentos com balão estratosférico. Os testes seriam possível pois a interface de comunicação do sistema embarcado do LAICAnSat também utilizam o barramento ISA BUS e as o padrão PC104. 
+Por fim, poderia ser abordada a parceria com o grupo de pesquisa LAICAnSat. Essa parceria seria ideal para o desenvolvimento de outros subsistemas da missão e teste do OBC, como \textit{payload} de teste, em lançamentos com balão estratosférico. Os testes seriam possível pois a interface de comunicação do sistema embarcado do LAICAnSat também utilizam o barramento \textit{ISA BUS} e as o padrão PC104. 
 
-É encorajado o prosseguimento desse projeto e a abertura de demais temas para projeto de pesquisa e trabalho de graduação. O seguimento aeroespacial é um dois mais e que possibilitam a interdisciplinaridade entre os cursos.
+É encorajado o prosseguimento desse projeto e a abertura de demais temas para projeto de pesquisa e trabalho de graduação. O seguimento aeroespacial é um dois mais abrangentes e isso possibilita a interdisciplinaridade entre os cursos.
 \FloatBarrier

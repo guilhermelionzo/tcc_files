@@ -8,8 +8,11 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{23}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Contexto e Justificativa}{23}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Objetivos}{23}{section.1.2}% 
+\contentsline {section}{\numberline {1.2}Objetivo}{23}{section.1.2}% 
+\contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{23}{subsection.1.2.1}% 
+\contentsline {subsection}{\numberline {1.2.2}Objetivo Espec\IeC {\'\i }fico}{23}{subsection.1.2.2}% 
 \contentsline {section}{\numberline {1.3}Metodologia}{24}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Divis\IeC {\~a}o do Trabalho}{24}{section.1.4}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{25}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Pequenos Sat\IeC {\'e}lites}{25}{section.2.1}% 
@@ -37,7 +40,7 @@
 \contentsline {section}{\numberline {3.6}Interface de Programa\IeC {\c c}\IeC {\~a}o/\textit {Debug}}{53}{section.3.6}% 
 \contentsline {section}{\numberline {3.7}Dimens\IeC {\~o}es da Placa}{53}{section.3.7}% 
 \contentsline {section}{\numberline {3.8}Sistema para Mitigar Falhas}{54}{section.3.8}% 
-\contentsline {subsection}{\numberline {3.8.1}\textit {Watchdog} Externo}{55}{subsection.3.8.1}% 
+\contentsline {subsection}{\numberline {3.8.1}\textit {Watchdog} Externo}{54}{subsection.3.8.1}% 
 \contentsline {section}{\numberline {3.9}Placa de Circuito Impresso}{56}{section.3.9}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento do Software}}{59}{chapter.4}% 
@@ -56,7 +59,7 @@
 \contentsline {section}{\numberline {5.2}Consumo}{74}{section.5.2}% 
 \contentsline {section}{\numberline {5.3}Modos de Opera\IeC {\c c}\IeC {\~a}o}{76}{section.5.3}% 
 \contentsline {section}{\numberline {5.4}Sistema Antitravamento}{80}{section.5.4}% 
-\contentsline {section}{\numberline {5.5}Aloca\IeC {\c c}\IeC {\~a}o de Memoria do FreeRTOS e da CSS}{82}{section.5.5}% 
+\contentsline {section}{\numberline {5.5}Aloca\IeC {\c c}\IeC {\~a}o de Mem\IeC {\'o}ria do FreeRTOS e da CSS}{83}{section.5.5}% 
 \contentsline {section}{\numberline {5.6}Printed Circuit Board}{84}{section.5.6}% 
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o e Recomenda\IeC {\c c}\IeC {\~o}es}}{85}{chapter.6}% 
